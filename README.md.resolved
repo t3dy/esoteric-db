@@ -2,6 +2,8 @@
 
 A local-first data engineering and analytics system designed to model complex, ambiguous, and multi-modal scholarly domains. It ingests thousands of PDFs and years of research logs to produce an interactive knowledge graph and reflexive inquiry dashboard.
 
+**[🌐 Live Portal: https://t3dy.github.io/esoteric-db/](https://t3dy.github.io/esoteric-db/)**
+
 ## Portfolio Narrative
 **The Problem**: Humanities research archives are typically unstructured "urban traffic"—PDFs, disparate notes, and sprawling chat transcripts.
 **The Solution**: I designed a system that treats this material as a structured database, modeling documents, scholars, iconographic symbols, and inquiry patterns as data frames with typed relationships. The workbench demonstrates mastery of ETL pipelines, relational schema design, inverted indexing, and multimodal data modeling.

@@ -1,1 +1,3355 @@
-[]
+[
+  {
+    "entity_id": 36067,
+    "name": "Agrippa",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 36075,
+    "name": "Albert",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36079,
+    "name": "Albertus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 9551,
+    "name": "Albertus Mag",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 155,
+    "name": "Albertus Magnus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36082,
+    "name": "Alchemical",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.27,
+    "gap": 0.27
+  },
+  {
+    "entity_id": 4281,
+    "name": "Alchemical Ideas",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 5572,
+    "name": "Alchemical Poetry",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 1005,
+    "name": "Alchemical Texts",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36066,
+    "name": "Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.18,
+    "gap": 0.18
+  },
+  {
+    "entity_id": 36019,
+    "name": "Alembic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 8836,
+    "name": "An Argument",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3149,
+    "name": "An Essay",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36164,
+    "name": "Ancient",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 856,
+    "name": "Ancient Wisdom",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36169,
+    "name": "Antiquity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36182,
+    "name": "Aquinas",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 36109,
+    "name": "Aristotle",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.11,
+    "gap": 0.11
+  },
+  {
+    "entity_id": 30302,
+    "name": "As Will",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36122,
+    "name": "Asclepius",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 9350,
+    "name": "Astral Magic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 1814,
+    "name": "Atalanta Fugiens",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 36170,
+    "name": "Athenian",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36151,
+    "name": "Augustine",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 361,
+    "name": "Barbara Obrist",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36036,
+    "name": "Bellows",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 10288,
+    "name": "Best Practices",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 14353,
+    "name": "Board Game Design",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36073,
+    "name": "Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.18,
+    "gap": 0.18
+  },
+  {
+    "entity_id": 15005,
+    "name": "Book About",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 1172,
+    "name": "Book Review",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2858,
+    "name": "Brown University",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9825,
+    "name": "Bruce Janacek",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 369,
+    "name": "Bruce Moran",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 31453,
+    "name": "By Wil",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36155,
+    "name": "Byzantine",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36118,
+    "name": "Century",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 27911,
+    "name": "Chaldean Theology",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36088,
+    "name": "Chapter",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.12,
+    "gap": 0.12
+  },
+  {
+    "entity_id": 2199,
+    "name": "Chemical Texts",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3227,
+    "name": "Chemical World",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36084,
+    "name": "Christian",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 868,
+    "name": "Christian Platonism",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36183,
+    "name": "Christianity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1603,
+    "name": "Contemporary Chemistry",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36187,
+    "name": "Copenhaver",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35909,
+    "name": "Copper",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36192,
+    "name": "Corp",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.09,
+    "gap": 0.09
+  },
+  {
+    "entity_id": 36128,
+    "name": "Corpus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 26385,
+    "name": "Corpus Hermet",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13419,
+    "name": "Corpus Hermeti",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3137,
+    "name": "Corpus Hermeticum",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 684,
+    "name": "Critical Edition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36041,
+    "name": "Crow",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 36023,
+    "name": "Crucible",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 5708,
+    "name": "Cultural History",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 11104,
+    "name": "Data Science",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 27689,
+    "name": "De Ente",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 28081,
+    "name": "De Hominis Dignitate",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 27637,
+    "name": "Della Mirandola",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 13724,
+    "name": "Did Pico",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 14532,
+    "name": "Digital Age",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 22271,
+    "name": "Divine Command",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 14032,
+    "name": "Divine Things",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36117,
+    "name": "Document",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 36040,
+    "name": "Dragon",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 36038,
+    "name": "Eagle",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 23642,
+    "name": "Earlier Works",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36103,
+    "name": "Early",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.1,
+    "gap": 0.1
+  },
+  {
+    "entity_id": 873,
+    "name": "Early Modern",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 5771,
+    "name": "Early Modern Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 2271,
+    "name": "Early Modern Chemistry",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 33973,
+    "name": "Early Modern Eng",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 6343,
+    "name": "Early Modern England",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 34752,
+    "name": "Early Modern Period",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36111,
+    "name": "Egypt",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 36083,
+    "name": "Egyptian",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 2229,
+    "name": "Elias Ashmole",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 17977,
+    "name": "Elizabethan England",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36074,
+    "name": "English",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 12004,
+    "name": "English Translation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36163,
+    "name": "Ficino",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 26968,
+    "name": "Five Books",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36031,
+    "name": "Flask",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 31656,
+    "name": "For Me",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 27807,
+    "name": "For Pico",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 31812,
+    "name": "For Shakespeare",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 859,
+    "name": "Frances Yates",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2284,
+    "name": "Francis Bacon",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 12310,
+    "name": "From Iamblichus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 132,
+    "name": "From The First",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 15080,
+    "name": "Game Character",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 14087,
+    "name": "Game Design",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15352,
+    "name": "Game World",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 2993,
+    "name": "Giordano Bruno",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 857,
+    "name": "Giovanni Pico",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 28059,
+    "name": "Giovanni Pico Della",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35905,
+    "name": "Gold",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 466,
+    "name": "Golden Dawn",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36191,
+    "name": "Great",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.22,
+    "gap": 0.22
+  },
+  {
+    "entity_id": 4269,
+    "name": "Great Man",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 819,
+    "name": "Great Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36080,
+    "name": "Greek",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 29223,
+    "name": "Greek Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36197,
+    "name": "Greeks",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35987,
+    "name": "Green Lion",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 16625,
+    "name": "Her Time",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36180,
+    "name": "Herm",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.1,
+    "gap": 0.1
+  },
+  {
+    "entity_id": 36086,
+    "name": "Hermes",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 36125,
+    "name": "Hermetic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 156,
+    "name": "Hermetic Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 9506,
+    "name": "Hermetic Texts",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3119,
+    "name": "Hermetic Tradition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36134,
+    "name": "Hermeticum",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36142,
+    "name": "Hermetism",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 34612,
+    "name": "Hidden Mysteries",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13797,
+    "name": "His Age",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 939,
+    "name": "His Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 27856,
+    "name": "His In",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 6388,
+    "name": "His Life",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 9054,
+    "name": "His Ph",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 27871,
+    "name": "His Work",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 8269,
+    "name": "His World",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3150,
+    "name": "His Writings",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36072,
+    "name": "History",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 6488,
+    "name": "Holy Ghost",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3355,
+    "name": "Holy Trinity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36114,
+    "name": "However",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 23170,
+    "name": "Human Nature",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36133,
+    "name": "Iamblichus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36119,
+    "name": "Ibid",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 10279,
+    "name": "In Build",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 25322,
+    "name": "In Chapter",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 6044,
+    "name": "In England",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 33261,
+    "name": "In Italy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 22867,
+    "name": "In Latin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 32996,
+    "name": "In Love",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9903,
+    "name": "In Plato",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 25172,
+    "name": "In Shakespeare",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 16366,
+    "name": "In The",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.89,
+    "gap": 0.89
+  },
+  {
+    "entity_id": 10908,
+    "name": "In The Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 36097,
+    "name": "Introduction",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 35908,
+    "name": "Iron",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 574,
+    "name": "Isaac Newton",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 11323,
+    "name": "Islamic Law",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 4662,
+    "name": "Jesus Christ",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36078,
+    "name": "John",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 358,
+    "name": "John Dee",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36149,
+    "name": "Journal",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 4455,
+    "name": "Kenelm Digby",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 11182,
+    "name": "Know About",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36171,
+    "name": "Late",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.25,
+    "gap": 0.25
+  },
+  {
+    "entity_id": 36069,
+    "name": "Latin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 25188,
+    "name": "Latin Text",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35907,
+    "name": "Lead",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 19221,
+    "name": "Learning Through",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 24969,
+    "name": "Let Us Have",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 14922,
+    "name": "Level Up",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36068,
+    "name": "Liber",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 16426,
+    "name": "Liberal Arts",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36065,
+    "name": "Library",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 34044,
+    "name": "Like It",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36037,
+    "name": "Lion",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 36130,
+    "name": "Marti",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 35900,
+    "name": "Mercury",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.09,
+    "gap": 0.09
+  },
+  {
+    "entity_id": 36196,
+    "name": "Michael",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1687,
+    "name": "Michael Maier",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36101,
+    "name": "Middle",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 9160,
+    "name": "Middle Platonic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 7007,
+    "name": "Middle Platonism",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35604,
+    "name": "Middle Platonists",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2379,
+    "name": "Modern Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 29623,
+    "name": "Modern Chemistry",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 250,
+    "name": "Modern Science",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 32516,
+    "name": "More Light",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15295,
+    "name": "More Like",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35957,
+    "name": "Morienus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36157,
+    "name": "Myst",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.09,
+    "gap": 0.09
+  },
+  {
+    "entity_id": 15468,
+    "name": "Narrative Design",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 7955,
+    "name": "Narrative Techniques",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 503,
+    "name": "Natural Knowledge",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 24633,
+    "name": "Natural Philo",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1128,
+    "name": "Natural Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36085,
+    "name": "Nature",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.22,
+    "gap": 0.22
+  },
+  {
+    "entity_id": 33262,
+    "name": "New His",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 25898,
+    "name": "Nicomachean Ethics",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3111,
+    "name": "Occult Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 28161,
+    "name": "Occult Science",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 18852,
+    "name": "Occult Sciences",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 24956,
+    "name": "Of God",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 931,
+    "name": "Of Virtue",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 25523,
+    "name": "On Agrippa",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 25187,
+    "name": "On Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 26455,
+    "name": "On Being",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 20435,
+    "name": "On God",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 19813,
+    "name": "On Gratian",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 28084,
+    "name": "On Man",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 28852,
+    "name": "On Plato",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 34473,
+    "name": "One God",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 6474,
+    "name": "Our Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36167,
+    "name": "Oxford",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35940,
+    "name": "Paracelsus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36089,
+    "name": "Paris",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35984,
+    "name": "Philosopher's Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 35915,
+    "name": "Philosophical Mercury",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 9565,
+    "name": "Philosophical Thought",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36112,
+    "name": "Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 36005,
+    "name": "Phoenix",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36092,
+    "name": "Pico",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 27628,
+    "name": "Pico Della Mirandola",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36162,
+    "name": "Plato",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.17,
+    "gap": 0.17
+  },
+  {
+    "entity_id": 6954,
+    "name": "Platonic Tradition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 30762,
+    "name": "Practical Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36087,
+    "name": "Press",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 2535,
+    "name": "Primary Sources",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36189,
+    "name": "Prof",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 36154,
+    "name": "Ptolemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35911,
+    "name": "Quicksilver",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 36052,
+    "name": "Ram",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.17,
+    "gap": 0.17
+  },
+  {
+    "entity_id": 2622,
+    "name": "Readers Di",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35986,
+    "name": "Rebis",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35990,
+    "name": "Red Dragon",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35988,
+    "name": "Red King",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 34609,
+    "name": "Red Sea",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4113,
+    "name": "Red Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36150,
+    "name": "Religion",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 36115,
+    "name": "Renaissance",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 8925,
+    "name": "Renaissance Man",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36116,
+    "name": "Robert",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1927,
+    "name": "Robert Fludd",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36108,
+    "name": "Roman",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 36176,
+    "name": "Rome",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36044,
+    "name": "Salamander",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 35902,
+    "name": "Salt",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 36070,
+    "name": "Science",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 6476,
+    "name": "Second Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3799,
+    "name": "Seventeenth Century",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35906,
+    "name": "Silver",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 3915,
+    "name": "Sir Kenelm Digby",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10210,
+    "name": "Social Media",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9237,
+    "name": "Some Ex",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 31617,
+    "name": "Spirit In",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 4180,
+    "name": "Spiritual Alchemy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36050,
+    "name": "Stag",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 13754,
+    "name": "Stanford Encyclopedia",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36077,
+    "name": "Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.25,
+    "gap": 0.25
+  },
+  {
+    "entity_id": 36132,
+    "name": "Studies",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 35901,
+    "name": "Sulfur",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36051,
+    "name": "Swan",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2486,
+    "name": "Tara Nummedal",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 21900,
+    "name": "That God",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 33060,
+    "name": "That We",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 3183,
+    "name": "The Act",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 8438,
+    "name": "The Age",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 31718,
+    "name": "The Al",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.13,
+    "gap": 0.13
+  },
+  {
+    "entity_id": 28337,
+    "name": "The Alchemical Corpus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 1016,
+    "name": "The Alchemist",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 4079,
+    "name": "The Alchemy Website",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 26992,
+    "name": "The Angel",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 31672,
+    "name": "The Ar",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.11,
+    "gap": 0.11
+  },
+  {
+    "entity_id": 1,
+    "name": "The Art",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 25319,
+    "name": "The Ass",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 2024,
+    "name": "The Atalanta",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3966,
+    "name": "The Author",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 16243,
+    "name": "The Authors",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 32665,
+    "name": "The Background",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 27847,
+    "name": "The Bar",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10591,
+    "name": "The Beast",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 27499,
+    "name": "The Beginning",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 6990,
+    "name": "The Being",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 27113,
+    "name": "The Bo",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.22,
+    "gap": 0.22
+  },
+  {
+    "entity_id": 3605,
+    "name": "The Body",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 168,
+    "name": "The Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 10806,
+    "name": "The Building",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10666,
+    "name": "The Cards",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 3789,
+    "name": "The Case",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 12552,
+    "name": "The Church",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 30082,
+    "name": "The Close",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4615,
+    "name": "The Com",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 6767,
+    "name": "The Complexity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15463,
+    "name": "The Composition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3084,
+    "name": "The Concept",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 25326,
+    "name": "The Conclusion",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10636,
+    "name": "The Contents",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3138,
+    "name": "The Corpus Hermeti",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 6691,
+    "name": "The Craft",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10676,
+    "name": "The Crocodile",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 34615,
+    "name": "The Darkness",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9420,
+    "name": "The De",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.12,
+    "gap": 0.12
+  },
+  {
+    "entity_id": 33765,
+    "name": "The Des",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 8112,
+    "name": "The Development",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 10690,
+    "name": "The Devil",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 22906,
+    "name": "The Dialectic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 27948,
+    "name": "The Dignity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 33277,
+    "name": "The Discoverie",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 32527,
+    "name": "The Earth",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.11,
+    "gap": 0.11
+  },
+  {
+    "entity_id": 18562,
+    "name": "The Education",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15653,
+    "name": "The Effect",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2795,
+    "name": "The Element",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 5074,
+    "name": "The Elements",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 7361,
+    "name": "The End",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 9076,
+    "name": "The English",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 23887,
+    "name": "The Estate",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 20524,
+    "name": "The Eyes",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4288,
+    "name": "The Face",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 4026,
+    "name": "The Father",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 20747,
+    "name": "The Fathers",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 17466,
+    "name": "The Fin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 17818,
+    "name": "The First",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.15,
+    "gap": 0.15
+  },
+  {
+    "entity_id": 16185,
+    "name": "The Five",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 7459,
+    "name": "The Form",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 4475,
+    "name": "The Foundation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15415,
+    "name": "The Functions",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 9688,
+    "name": "The Game",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.25,
+    "gap": 0.25
+  },
+  {
+    "entity_id": 14090,
+    "name": "The Gathering",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 34557,
+    "name": "The God",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 139,
+    "name": "The Grea",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 27424,
+    "name": "The Greater",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 16951,
+    "name": "The Greatest Benefit",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 833,
+    "name": "The Greek",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 13624,
+    "name": "The Guide",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 32979,
+    "name": "The Hand",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 28130,
+    "name": "The Hebrew",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 12485,
+    "name": "The Hermetic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1372,
+    "name": "The History",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 5424,
+    "name": "The House",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 8750,
+    "name": "The Idea",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 2647,
+    "name": "The Ideas",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 15894,
+    "name": "The Image",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 34168,
+    "name": "The Importance",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9505,
+    "name": "The Influence",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 29198,
+    "name": "The Intellect",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 12288,
+    "name": "The Interpretation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 20241,
+    "name": "The Introduction",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 10811,
+    "name": "The Invisible",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2094,
+    "name": "The Kabbalah",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 13602,
+    "name": "The Key",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 1847,
+    "name": "The King",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 11573,
+    "name": "The Language",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 22847,
+    "name": "The Latin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 20212,
+    "name": "The Le",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 4614,
+    "name": "The Lear",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 31528,
+    "name": "The Letter",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 683,
+    "name": "The Liber",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 124,
+    "name": "The Life",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 10812,
+    "name": "The Light",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 17118,
+    "name": "The Logic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4550,
+    "name": "The Lord",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4062,
+    "name": "The Magic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 23783,
+    "name": "The Man",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 1008,
+    "name": "The Master",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 33618,
+    "name": "The Matter",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13874,
+    "name": "The Meaning",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 11704,
+    "name": "The Measure",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 6778,
+    "name": "The Mechan",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 14533,
+    "name": "The Medium",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10693,
+    "name": "The Moon",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 26681,
+    "name": "The Mysteries",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 10647,
+    "name": "The Nature",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 11074,
+    "name": "The Need",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13138,
+    "name": "The Notion",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10786,
+    "name": "The Numbers",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2416,
+    "name": "The Occult",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 5506,
+    "name": "The Occult Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 6776,
+    "name": "The One",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 27138,
+    "name": "The Oration",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 22951,
+    "name": "The Order",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 643,
+    "name": "The Origin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 3289,
+    "name": "The Origins",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 22555,
+    "name": "The Parmenides",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 24917,
+    "name": "The Patriarch",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 26261,
+    "name": "The Philosopher",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.21,
+    "gap": 0.21
+  },
+  {
+    "entity_id": 22138,
+    "name": "The Philosophy",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 34181,
+    "name": "The Phoe",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9660,
+    "name": "The Place",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 22646,
+    "name": "The Platonic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 934,
+    "name": "The Poem",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 24937,
+    "name": "The Poems",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 19110,
+    "name": "The Pow",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 5563,
+    "name": "The Power",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 30748,
+    "name": "The Powers",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 28766,
+    "name": "The Pre",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 29435,
+    "name": "The Preservation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 13798,
+    "name": "The Prince",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 22517,
+    "name": "The Problem",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 34491,
+    "name": "The Problems",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 30773,
+    "name": "The Project",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 8706,
+    "name": "The Pursuit",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 8150,
+    "name": "The Quest",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 9658,
+    "name": "The Re",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.23,
+    "gap": 0.23
+  },
+  {
+    "entity_id": 32127,
+    "name": "The Reader",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3633,
+    "name": "The Republic",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13617,
+    "name": "The Ritual",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 31881,
+    "name": "The Roman",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10729,
+    "name": "The Root",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 6477,
+    "name": "The Rosary",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 10785,
+    "name": "The Rose",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15022,
+    "name": "The Rules",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15381,
+    "name": "The Sacred",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 7318,
+    "name": "The Se",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.2,
+    "gap": 0.2
+  },
+  {
+    "entity_id": 29143,
+    "name": "The Secret",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 18817,
+    "name": "The Section",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 16369,
+    "name": "The Sense",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 32690,
+    "name": "The Shadow",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 11590,
+    "name": "The Short",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10573,
+    "name": "The Signs",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 26485,
+    "name": "The Skin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 26463,
+    "name": "The Sophist",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 11385,
+    "name": "The Soul",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.06,
+    "gap": 0.06
+  },
+  {
+    "entity_id": 10749,
+    "name": "The Sphinx",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 19485,
+    "name": "The Spirit",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 16205,
+    "name": "The Spiritual",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 5562,
+    "name": "The Splendor",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 29205,
+    "name": "The Stanford Encyclopedia",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10692,
+    "name": "The Star",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 46,
+    "name": "The State",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 1820,
+    "name": "The Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.08,
+    "gap": 0.08
+  },
+  {
+    "entity_id": 7926,
+    "name": "The Story",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 17692,
+    "name": "The Strife",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 3786,
+    "name": "The Summa",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 10694,
+    "name": "The Sun",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 2136,
+    "name": "The Temple",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10634,
+    "name": "The Ten",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 9095,
+    "name": "The Text",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 29208,
+    "name": "The Texts",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 6782,
+    "name": "The Theology",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13135,
+    "name": "The Tradition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 30915,
+    "name": "The Transformation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 626,
+    "name": "The Transmission",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10656,
+    "name": "The Tree",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 25809,
+    "name": "The Trial",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 10696,
+    "name": "The Universe",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 6564,
+    "name": "The Use",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 23031,
+    "name": "The Way",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.09,
+    "gap": 0.09
+  },
+  {
+    "entity_id": 12529,
+    "name": "The Wisdom",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 31420,
+    "name": "The Woman",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 18675,
+    "name": "The Word",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 6692,
+    "name": "The Work",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.09,
+    "gap": 0.09
+  },
+  {
+    "entity_id": 706,
+    "name": "The Works",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 9202,
+    "name": "The World",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.07,
+    "gap": 0.07
+  },
+  {
+    "entity_id": 36110,
+    "name": "These",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.59,
+    "gap": 0.59
+  },
+  {
+    "entity_id": 6475,
+    "name": "This Art",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 19416,
+    "name": "This Book",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 28072,
+    "name": "This Truth",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36096,
+    "name": "Thomas",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 128,
+    "name": "Thomas Aquinas",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4499,
+    "name": "Thomas Tymme",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 2101,
+    "name": "Three Books",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 21218,
+    "name": "Through This",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36120,
+    "name": "Thus",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.04,
+    "gap": 0.04
+  },
+  {
+    "entity_id": 35910,
+    "name": "Tin",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.88,
+    "gap": 0.88
+  },
+  {
+    "entity_id": 35998,
+    "name": "Toad",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 36152,
+    "name": "Tradition",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  },
+  {
+    "entity_id": 36008,
+    "name": "Transmutation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 36193,
+    "name": "Trinity",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 13161,
+    "name": "Truth Does Not",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36011,
+    "name": "Universal Solvent",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36064,
+    "name": "University",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4420,
+    "name": "Urszula Szulakowska",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 21593,
+    "name": "User Experience",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35920,
+    "name": "Vinegar",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 30749,
+    "name": "Visual Representation",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 35904,
+    "name": "Vitriol",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 15064,
+    "name": "Web Development",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36188,
+    "name": "What",
+    "scholar_interest": 0.0,
+    "user_curiosity": 1.0,
+    "gap": 1.0
+  },
+  {
+    "entity_id": 19415,
+    "name": "What Can You",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 15494,
+    "name": "What Is",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.18,
+    "gap": 0.18
+  },
+  {
+    "entity_id": 15004,
+    "name": "What Is This",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 28914,
+    "name": "When Pico",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 4112,
+    "name": "White Stone",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 23813,
+    "name": "Who Is",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.12,
+    "gap": 0.12
+  },
+  {
+    "entity_id": 36099,
+    "name": "William",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 36048,
+    "name": "Wolf",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.02,
+    "gap": 0.02
+  },
+  {
+    "entity_id": 25669,
+    "name": "Wouter Hanegraa",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 7015,
+    "name": "Wouter Hanegraaff",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 21522,
+    "name": "You Know About",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.0,
+    "gap": 0.0
+  },
+  {
+    "entity_id": 848,
+    "name": "Young Man",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.01,
+    "gap": 0.01
+  },
+  {
+    "entity_id": 15083,
+    "name": "Your Own",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.03,
+    "gap": 0.03
+  },
+  {
+    "entity_id": 36098,
+    "name": "Zosimos",
+    "scholar_interest": 0.0,
+    "user_curiosity": 0.05,
+    "gap": 0.05
+  }
+]

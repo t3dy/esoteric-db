@@ -501,405 +501,470 @@
   "wordcloud": [
     {
       "word": "In The",
-      "weight": 12537
+      "weight": 18247
     },
     {
       "word": "The First",
-      "weight": 2876
+      "weight": 4131
     },
     {
       "word": "The Soul",
-      "weight": 2732
+      "weight": 3960
     },
     {
       "word": "The Alchemist",
-      "weight": 2184
-    },
-    {
-      "word": "Early Modern",
-      "weight": 2145
+      "weight": 3213
     },
     {
       "word": "The Role",
-      "weight": 2132
+      "weight": 3136
+    },
+    {
+      "word": "Early Modern",
+      "weight": 3130
     },
     {
       "word": "The Philosopher",
-      "weight": 1979
-    },
-    {
-      "word": "The World",
-      "weight": 1956
+      "weight": 2898
     },
     {
       "word": "The Idea",
-      "weight": 1941
+      "weight": 2829
+    },
+    {
+      "word": "The World",
+      "weight": 2815
     },
     {
       "word": "The Book",
-      "weight": 1903
+      "weight": 2718
     },
     {
       "word": "The Text",
-      "weight": 1843
+      "weight": 2644
     },
     {
       "word": "The Use",
-      "weight": 1767
+      "weight": 2587
     },
     {
       "word": "The Work",
-      "weight": 1753
+      "weight": 2541
     },
     {
       "word": "The One",
-      "weight": 1702
+      "weight": 2409
     },
     {
       "word": "The Sun",
-      "weight": 1617
+      "weight": 2380
     },
     {
       "word": "Natural Philosophy",
-      "weight": 1543
+      "weight": 2247
     },
     {
       "word": "The Concept",
-      "weight": 1524
+      "weight": 2233
     },
     {
       "word": "The Importance",
-      "weight": 1491
+      "weight": 2193
     },
     {
       "word": "Alchemical Texts",
-      "weight": 1425
-    },
-    {
-      "word": "Of God",
-      "weight": 1413
+      "weight": 2103
     },
     {
       "word": "His Work",
-      "weight": 1392
+      "weight": 2030
     },
     {
       "word": "The Nature",
-      "weight": 1379
+      "weight": 2022
     },
     {
-      "word": "The Body",
-      "weight": 1331
+      "word": "Of God",
+      "weight": 2018
     },
     {
       "word": "The Game",
-      "weight": 1330
+      "weight": 1981
     },
     {
-      "word": "The History",
-      "weight": 1301
+      "word": "The Body",
+      "weight": 1952
     },
     {
       "word": "The Universe",
-      "weight": 1289
+      "weight": 1871
     },
     {
-      "word": "The Art",
-      "weight": 1221
+      "word": "The History",
+      "weight": 1864
     },
     {
       "word": "The Power",
-      "weight": 1218
+      "weight": 1778
+    },
+    {
+      "word": "The Art",
+      "weight": 1753
     },
     {
       "word": "The Renaissance",
-      "weight": 1196
+      "weight": 1732
     },
     {
       "word": "The Key",
-      "weight": 1173
+      "weight": 1710
     },
     {
       "word": "The Spiritual",
-      "weight": 1139
+      "weight": 1669
     },
     {
       "word": "The Development",
-      "weight": 1106
+      "weight": 1625
     },
     {
       "word": "The End",
-      "weight": 1095
+      "weight": 1574
     },
     {
       "word": "The Hermetic",
-      "weight": 1057
-    },
-    {
-      "word": "The Way",
-      "weight": 1045
-    },
-    {
-      "word": "The Author",
-      "weight": 1043
+      "weight": 1518
     },
     {
       "word": "The Earth",
-      "weight": 1034
+      "weight": 1517
     },
     {
-      "word": "What Is",
-      "weight": 1008
+      "word": "The Way",
+      "weight": 1495
+    },
+    {
+      "word": "The Author",
+      "weight": 1482
     },
     {
       "word": "The Creation",
-      "weight": 999
+      "weight": 1459
+    },
+    {
+      "word": "What Is",
+      "weight": 1435
     },
     {
       "word": "The Transformation",
-      "weight": 944
+      "weight": 1383
     },
     {
       "word": "The Influence",
-      "weight": 933
+      "weight": 1365
     },
     {
       "word": "The Elements",
-      "weight": 910
-    },
-    {
-      "word": "New York",
-      "weight": 895
+      "weight": 1334
     },
     {
       "word": "The Spirit",
-      "weight": 837
+      "weight": 1217
     },
     {
-      "word": "Hermes Trismegistus",
-      "weight": 814
-    },
-    {
-      "word": "The Beginning",
-      "weight": 798
-    },
-    {
-      "word": "The Latin",
-      "weight": 793
+      "word": "New York",
+      "weight": 1177
     },
     {
       "word": "The Moon",
-      "weight": 787
+      "weight": 1151
     },
     {
-      "word": "The Greek",
-      "weight": 740
+      "word": "Hermes Trismegistus",
+      "weight": 1149
     },
     {
-      "word": "This Book",
-      "weight": 736
+      "word": "The Latin",
+      "weight": 1137
+    },
+    {
+      "word": "The Beginning",
+      "weight": 1136
     },
     {
       "word": "Atalanta Fugiens",
-      "weight": 718
+      "weight": 1059
     },
     {
       "word": "Alchemical Traditions",
-      "weight": 718
-    },
-    {
-      "word": "Divine Names",
-      "weight": 715
+      "weight": 1056
     },
     {
       "word": "The Stone",
-      "weight": 713
+      "weight": 1051
     },
     {
-      "word": "Middle Ages",
-      "weight": 707
+      "word": "This Book",
+      "weight": 1050
+    },
+    {
+      "word": "The Greek",
+      "weight": 1043
     },
     {
       "word": "Spiritual Alchemy",
-      "weight": 704
+      "weight": 1042
+    },
+    {
+      "word": "Divine Names",
+      "weight": 999
     },
     {
       "word": "The Structure",
-      "weight": 699
+      "weight": 995
     },
     {
       "word": "Giordano Bruno",
-      "weight": 696
+      "weight": 983
     },
     {
       "word": "The Word",
-      "weight": 682
+      "weight": 978
+    },
+    {
+      "word": "Middle Ages",
+      "weight": 971
     },
     {
       "word": "Pico Della Mirandola",
-      "weight": 678
-    },
-    {
-      "word": "John Dee",
-      "weight": 666
-    },
-    {
-      "word": "His Works",
-      "weight": 657
-    },
-    {
-      "word": "The University",
-      "weight": 656
+      "weight": 966
     },
     {
       "word": "On Alchemy",
-      "weight": 650
+      "weight": 957
     },
     {
       "word": "The Secrets",
-      "weight": 648
+      "weight": 951
+    },
+    {
+      "word": "His Works",
+      "weight": 946
+    },
+    {
+      "word": "John Dee",
+      "weight": 937
     },
     {
       "word": "The Need",
-      "weight": 633
+      "weight": 931
     },
     {
       "word": "Modern Chemistry",
-      "weight": 633
-    },
-    {
-      "word": "The Image",
-      "weight": 632
-    },
-    {
-      "word": "The Works",
-      "weight": 631
+      "weight": 928
     },
     {
       "word": "The Essence",
-      "weight": 617
+      "weight": 907
+    },
+    {
+      "word": "The Works",
+      "weight": 904
+    },
+    {
+      "word": "The Image",
+      "weight": 902
+    },
+    {
+      "word": "The University",
+      "weight": 879
     },
     {
       "word": "The Act",
-      "weight": 599
-    },
-    {
-      "word": "The Notion",
-      "weight": 593
+      "weight": 872
     },
     {
       "word": "The Foundation",
-      "weight": 593
-    },
-    {
-      "word": "Who Is",
-      "weight": 591
-    },
-    {
-      "word": "The Practice",
-      "weight": 587
+      "weight": 868
     },
     {
       "word": "The Union",
-      "weight": 585
+      "weight": 862
     },
     {
-      "word": "Della Mirandola",
-      "weight": 582
+      "word": "The Practice",
+      "weight": 860
     },
     {
-      "word": "The Intellect",
-      "weight": 578
+      "word": "The Notion",
+      "weight": 857
+    },
+    {
+      "word": "Who Is",
+      "weight": 849
     },
     {
       "word": "The Reader",
-      "weight": 577
+      "weight": 829
     },
     {
-      "word": "Giovanni Pico",
-      "weight": 575
+      "word": "The Intellect",
+      "weight": 829
     },
     {
-      "word": "That We",
-      "weight": 567
+      "word": "Della Mirandola",
+      "weight": 828
     },
     {
       "word": "Michael Maier",
-      "weight": 560
+      "weight": 825
     },
     {
-      "word": "The Case",
-      "weight": 556
-    },
-    {
-      "word": "The Light",
-      "weight": 555
+      "word": "That We",
+      "weight": 812
     },
     {
       "word": "The Evolution",
-      "weight": 553
+      "weight": 807
     },
     {
-      "word": "Natural Magic",
-      "weight": 545
+      "word": "The Case",
+      "weight": 798
+    },
+    {
+      "word": "The Light",
+      "weight": 795
     },
     {
       "word": "Divine Knowledge",
-      "weight": 541
+      "weight": 793
+    },
+    {
+      "word": "Natural Magic",
+      "weight": 789
+    },
+    {
+      "word": "Giovanni Pico",
+      "weight": 776
     },
     {
       "word": "The Mysteries",
-      "weight": 538
+      "weight": 766
     },
     {
       "word": "The Magician",
-      "weight": 519
+      "weight": 765
     },
     {
       "word": "Seventeenth Century",
-      "weight": 518
+      "weight": 760
     },
     {
       "word": "The Sacred",
-      "weight": 517
-    },
-    {
-      "word": "Marsilio Ficino",
-      "weight": 515
-    },
-    {
-      "word": "Cambridge University Press",
-      "weight": 515
-    },
-    {
-      "word": "The Occult",
-      "weight": 510
+      "weight": 748
     },
     {
       "word": "The Origins",
-      "weight": 506
+      "weight": 729
     },
     {
-      "word": "For Pico",
-      "weight": 504
+      "word": "The Occult",
+      "weight": 724
     },
     {
       "word": "The King",
-      "weight": 491
+      "weight": 722
+    },
+    {
+      "word": "For Pico",
+      "weight": 719
+    },
+    {
+      "word": "Marsilio Ficino",
+      "weight": 718
     },
     {
       "word": "The Texts",
-      "weight": 490
-    },
-    {
-      "word": "The Church",
-      "weight": 485
+      "weight": 708
     },
     {
       "word": "His Ideas",
-      "weight": 484
+      "weight": 707
+    },
+    {
+      "word": "The Church",
+      "weight": 706
+    },
+    {
+      "word": "Cambridge University Press",
+      "weight": 696
+    }
+  ],
+  "metrics": [
+    {
+      "name": "Hermeticism",
+      "scholar_interest": 85,
+      "user_curiosity": 92,
+      "gap": 7
+    },
+    {
+      "name": "Alchemy",
+      "scholar_interest": 78,
+      "user_curiosity": 95,
+      "gap": 17
+    },
+    {
+      "name": "Renaissance Magic",
+      "scholar_interest": 65,
+      "user_curiosity": 88,
+      "gap": 23
+    },
+    {
+      "name": "Neoplatonism",
+      "scholar_interest": 90,
+      "user_curiosity": 70,
+      "gap": -20
+    },
+    {
+      "name": "Rosicrucianism",
+      "scholar_interest": 55,
+      "user_curiosity": 82,
+      "gap": 27
+    },
+    {
+      "name": "Tarot Archetypes",
+      "scholar_interest": 40,
+      "user_curiosity": 98,
+      "gap": 58
+    },
+    {
+      "name": "Cabala",
+      "scholar_interest": 72,
+      "user_curiosity": 75,
+      "gap": 3
+    },
+    {
+      "name": "Gnosticism",
+      "scholar_interest": 82,
+      "user_curiosity": 80,
+      "gap": -2
+    },
+    {
+      "name": "Theurgy",
+      "scholar_interest": 68,
+      "user_curiosity": 85,
+      "gap": 17
+    },
+    {
+      "name": "Astrology",
+      "scholar_interest": 45,
+      "user_curiosity": 96,
+      "gap": 51
     }
   ],
   "total_docs": 1692,
-  "generated_at": "2026-02-16T00:08:58.505557"
+  "total_entities": 21730,
+  "total_chats": 249,
+  "total_questions": 1210,
+  "generated_at": "2026-02-16T09:19:05.755689"
 }

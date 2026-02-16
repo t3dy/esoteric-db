@@ -4,146 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esoteric DB - Insights</title>
+    <title>Esoteric DB - Premium Insights</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #334155;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .grad-primary {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
         }
     </style>
 </head>
 
-<body class="p-8">
+<body class="p-8 md:p-12 space-y-12">
 
-    <div class="max-w-6xl mx-auto space-y-8">
-        <!-- Header -->
-        <div class="flex items-center justify-between">
-            <div>
-                <h1 class="text-3xl font-bold text-slate-800">Project Insights</h1>
-                <p class="text-slate-500">Visualization Suite • <a href="index.html"
-                        class="text-indigo-600 hover:underline">Back to Landing</a></p>
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div>
+            <h1 class="text-5xl font-black tracking-tighter flex items-center gap-4">
+                <span class="p-3 grad-primary rounded-2xl shadow-xl shadow-indigo-900/40 text-white">📊</span>
+                Intelligence Suite
+            </h1>
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold mt-4">Research Analytics &
+                Distribution • <a href="index.html" class="text-indigo-400 hover:underline">Reference Manual</a></p>
+        </div>
+        <div id="status"
+            class="text-[9px] font-black bg-emerald-500/10 text-emerald-500 px-4 py-2 rounded-full border border-emerald-500/20 uppercase tracking-widest">
+            Synchronized
+        </div>
+    </header>
+
+    <!-- Hero Stats -->
+    <section class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass p-8 rounded-[2rem] space-y-2">
+            <div id="stat-docs" class="text-4xl font-black text-white">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-black tracking-widest">Manuscripts</div>
+        </div>
+        <div class="glass p-8 rounded-[2rem] space-y-2">
+            <div id="stat-entities" class="text-4xl font-black text-white">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-black tracking-widest">Entities cataloged</div>
+        </div>
+        <div class="glass p-8 rounded-[2rem] space-y-2">
+            <div id="stat-chats" class="text-4xl font-black text-white">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-black tracking-widest">Chat Sessions</div>
+        </div>
+        <div class="glass p-8 rounded-[2rem] space-y-2">
+            <div id="stat-questions" class="text-4xl font-black text-white">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-black tracking-widest">Research Inquiries</div>
+        </div>
+    </section>
+
+    <!-- Main Charts -->
+    <section class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Topic Chart -->
+        <div class="glass p-10 rounded-[3rem] space-y-8">
+            <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Thematic Density</h3>
+            <div class="h-80 relative">
+                <canvas id="topicChart"></canvas>
             </div>
-            <div id="status"
-                class="text-xs font-mono bg-blue-100 text-blue-700 px-3 py-1 rounded border border-blue-200">Loading
-                Data...</div>
         </div>
 
-        <!-- Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <!-- Topic Chart -->
-            <div class="bg-white p-6 rounded-xl shadow border border-slate-200">
-                <h3 class="font-bold text-slate-700 mb-4">Topic Distribution</h3>
-                <div class="h-64 relative">
-                    <canvas id="topicChart"></canvas>
-                </div>
-            </div>
-
-            <!-- Timeline Chart -->
-            <div class="bg-white p-6 rounded-xl shadow border border-slate-200">
-                <h3 class="font-bold text-slate-700 mb-4">Ingestion Timeline</h3>
-                <div class="h-64 relative">
-                    <canvas id="timelineChart"></canvas>
-                </div>
-            </div>
-
-            <!-- Word Cloud -->
-            <div class="bg-white p-6 rounded-xl shadow border border-slate-200 col-span-1 md:col-span-2">
-                <h3 class="font-bold text-slate-700 mb-4">Semantic Cloud</h3>
-                <div class="h-96 relative bg-slate-50 rounded" id="wordCloudContainer">
-                    <canvas id="wordCloudCanvas" class="w-full h-full"></canvas>
-                </div>
+        <!-- Timeline -->
+        <div class="glass p-10 rounded-[3rem] space-y-8">
+            <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Ingestion Momentum</h3>
+            <div class="h-80 relative">
+                <canvas id="timelineChart"></canvas>
             </div>
         </div>
-    </div>
+
+        <!-- Semantic Cloud -->
+        <div class="glass p-10 rounded-[3rem] space-y-8 col-span-1 lg:col-span-2">
+            <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest text-center">Conceptual Word Cloud
+            </h3>
+            <div class="h-96 relative rounded-3xl overflow-hidden" id="wordCloudContainer">
+                <canvas id="wordCloudCanvas" class="w-full h-full"></canvas>
+            </div>
+        </div>
+    </section>
 
     <script>
         async function init() {
             try {
                 const res = await fetch('stats.json');
-                if (!res.ok) throw new Error("Failed to load stats.json");
+                if (!res.ok) throw new Error("Stats not initialized");
                 const stats = await res.json();
 
-                renderCharts(stats);
-                document.getElementById('status').innerText = "System Ready";
-                document.getElementById('status').className = "text-xs font-mono bg-emerald-100 text-emerald-700 px-3 py-1 rounded border border-emerald-200";
+                document.getElementById('stat-docs').innerText = stats.total_docs || 0;
+                document.getElementById('stat-entities').innerText = stats.total_entities || 0;
+                document.getElementById('stat-chats').innerText = stats.total_chats || 0;
+                document.getElementById('stat-questions').innerText = stats.total_questions || 0;
 
+                renderCharts(stats);
             } catch (e) {
-                document.getElementById('status').innerText = "Error: " + e.message;
-                document.getElementById('status').className = "text-xs font-mono bg-red-100 text-red-700 px-3 py-1 rounded border border-red-200";
                 console.error(e);
+                document.getElementById('status').innerText = "Database Offline";
+                document.getElementById('status').className = "text-[9px] font-black bg-rose-500/10 text-rose-500 px-4 py-2 rounded-full border border-rose-500/20 uppercase tracking-widest";
             }
         }
 
         function renderCharts(stats) {
-            // Ensure data exists to prevent .map() crashes
             const topics = stats.topics || [];
             const timeline = stats.timeline || [];
             const wordcloud = stats.wordcloud || [];
 
-            // 1. Topic Doughnut
-            const ctxTopic = document.getElementById('topicChart').getContext('2d');
-            new Chart(ctxTopic, {
+            // 1. Topics
+            new Chart(document.getElementById('topicChart'), {
                 type: 'doughnut',
                 data: {
                     labels: topics.map(s => s.label),
                     datasets: [{
                         data: topics.map(s => s.value),
-                        backgroundColor: [
-                            '#4F46E5', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#6366F1'
-                        ],
-                        borderWidth: 0
+                        backgroundColor: ['#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#334155'],
+                        borderWidth: 0,
+                        hoverOffset: 20
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { position: 'right' } }
+                    plugins: {
+                        legend: { position: 'right', labels: { color: '#94a3b8', font: { size: 10, weight: 'bold' }, padding: 20 } }
+                    },
+                    cutout: '75%'
                 }
             });
 
-            // 2. Timeline Line Chart
+            // 2. Timeline
             const ctxTimeline = document.getElementById('timelineChart').getContext('2d');
-            new Chart(ctxTimeline, {
+            const gradient = ctxTimeline.createLinearGradient(0, 0, 0, 300);
+            gradient.addColorStop(0, 'rgba(99, 102, 241, 0.5)');
+            gradient.addColorStop(1, 'rgba(99, 102, 241, 0)');
+
+            new Chart(document.getElementById('timelineChart'), {
                 type: 'line',
                 data: {
                     labels: timeline.map(s => s.label),
                     datasets: [{
-                        label: 'Documents Added',
+                        label: 'Manuscripts Ingested',
                         data: timeline.map(s => s.value),
-                        borderColor: '#4F46E5',
-                        backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                        borderColor: '#6366f1',
+                        borderWidth: 4,
+                        backgroundColor: gradient,
                         fill: true,
+                        pointRadius: 0,
                         tension: 0.4
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    scales: { y: { beginAtZero: true } }
+                    scales: {
+                        y: { display: false, beginAtZero: true },
+                        x: { grid: { display: false }, ticks: { color: '#475569', font: { size: 10 } } }
+                    },
+                    plugins: { legend: { display: false } }
                 }
             });
 
             // 3. Word Cloud
             const canvas = document.getElementById('wordCloudCanvas');
             const container = document.getElementById('wordCloudContainer');
-
-            // Explicitly set canvas size to match container to prevent blurring/distortion
             canvas.width = container.offsetWidth;
             canvas.height = container.offsetHeight;
 
             WordCloud(canvas, {
                 list: wordcloud.map(x => [x.word, x.weight]),
-                gridSize: 8,
-                weightFactor: (size) => Math.log(size + 1) * 15,
-                fontFamily: 'Inter, sans-serif',
-                color: 'random-dark',
-                rotateRatio: 0.5,
+                gridSize: 10,
+                weightFactor: (size) => Math.log2(size + 1) * 12,
+                fontFamily: 'Crimson Pro, serif',
+                color: (word, weight) => weight > 50 ? '#f8fafc' : (weight > 20 ? '#a5b4fc' : '#475569'),
+                rotateRatio: 0,
                 backgroundColor: 'transparent'
             });
         }

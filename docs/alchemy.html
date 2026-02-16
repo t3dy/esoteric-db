@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Alchemy Workbench</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        #drawer {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100%);
+        }
+
+        #drawer.open {
+            transform: translateX(0);
+        }
+
+        .pill {
+            @apply px-3 py-1 rounded-full text-[10px] font-bold border transition cursor-pointer whitespace-nowrap uppercase tracking-tighter;
+        }
+
+        .pill-active {
+            @apply bg-amber-600 text-white border-amber-600 shadow-lg shadow-amber-900/40;
+        }
+
+        .pill-inactive {
+            @apply bg-slate-800 text-slate-400 border-slate-700 hover:border-amber-500 hover:text-amber-400;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col h-screen overflow-hidden">
+
+    <!-- Header -->
+    <header class="glass px-8 py-5 flex items-center justify-between z-10">
+        <div>
+            <h1 class="text-2xl font-black flex items-center gap-3">
+                <span class="text-amber-500">🧪</span> Alchemy Workbench
+            </h1>
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Alchemical Opus • <a
+                    href="reference.html" class="hover:text-amber-500 transition">Reference Portal</a></p>
+        </div>
+        <div class="flex bg-slate-900/50 p-1 rounded-xl border border-white/5">
+            <button id="btn-docs" onclick="setMode('docs')"
+                class="px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20">Documents</button>
+            <button id="btn-dict" onclick="setMode('dict')"
+                class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Dictionary</button>
+        </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden relative">
+        <!-- Explorer (Left) -->
+        <main class="flex-1 overflow-y-auto p-10">
+            <div class="max-w-5xl mx-auto space-y-8">
+
+                <!-- Filters -->
+                <div class="glass p-6 rounded-3xl space-y-6">
+                    <div class="flex gap-4">
+                        <input type="text" id="search" placeholder="Search Materials, Alchemists, or Texts..."
+                            class="flex-1 bg-slate-950/50 text-white p-4 rounded-2xl border border-white/5 focus:ring-2 focus:ring-amber-500 focus:outline-none placeholder:text-slate-600 font-medium">
+                    </div>
+
+                    <div id="filter-container">
+                        <span
+                            class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3 block">Specialized
+                            Categories</span>
+                        <div id="pills" class="flex flex-wrap gap-2">
+                            <!-- Pills injected here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Counter -->
+                <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
+                    Loading esoteric data...
+                </div>
+
+                <!-- Content Grid/List -->
+                <div id="content" class="grid grid-cols-1 gap-4">
+                    <!-- Cards injected here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Detail Drawer (Right) -->
+        <aside id="drawer"
+            class="w-[450px] glass border-l shadow-2xl z-20 overflow-y-auto flex flex-col p-10 fixed right-0 top-0 h-full">
+            <div class="flex justify-between items-start mb-10">
+                <button onclick="closeDrawer()" class="text-slate-500 hover:text-white transition text-3xl">×</button>
+                <span
+                    class="text-[10px] font-black text-amber-500 border border-amber-500/30 px-3 py-1 rounded-full uppercase tracking-tighter">Scholarly
+                    Data</span>
+            </div>
+            <div id="drawer-content" class="space-y-10">
+                <!-- Data populated here -->
+                <div class="text-center p-20 text-slate-600">
+                    <p class="text-sm italic">Select an entry to begin research.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        let mode = 'docs';
+        let docs = [];
+        let entities = [];
+        let activeFilters = { q: '', category: null };
+
+        async function init() {
+            try {
+                const [dRes, sRes] = await Promise.all([
+                    fetch('docs.json'),
+                    fetch('entities.json')
+                ]);
+
+                if (dRes.ok) docs = (await dRes.json()).filter(d => d.topic === 'alchemy' || d.period === 'Renaissance' || (d.path && d.path.includes('alchemy')));
+                if (sRes.ok) entities = (await sRes.json()).filter(e => e.type.includes('Alchemy'));
+
+                renderPills();
+                applyFilters();
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function setMode(newMode) {
+            mode = newMode;
+            document.getElementById('btn-docs').className = mode === 'docs' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
+            document.getElementById('btn-dict').className = mode === 'dict' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
+
+            activeFilters.category = null;
+            renderPills();
+            applyFilters();
+        }
+
+        function renderPills() {
+            const container = document.getElementById('pills');
+            container.innerHTML = '';
+
+            let cats = mode === 'docs'
+                ? [...new Set(docs.map(d => d.topic))]
+                : [...new Set(entities.map(e => e.type.replace('Alchemy ', '')))];
+
+            cats.forEach(cat => {
+                if (!cat) return;
+                const el = document.createElement('div');
+                el.className = `pill pill-inactive`;
+                el.innerText = cat;
+                el.onclick = () => toggleFilter(cat);
+                el.dataset.val = cat;
+                container.appendChild(el);
+            });
+        }
+
+        function toggleFilter(val) {
+            activeFilters.category = activeFilters.category === val ? null : val;
+            document.querySelectorAll('.pill').forEach(p => {
+                p.className = p.dataset.val === activeFilters.category ? 'pill pill-active' : 'pill pill-inactive';
+            });
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('search').value.toLowerCase();
+            const container = document.getElementById('content');
+
+            let data = mode === 'docs' ? docs : entities;
+
+            let filtered = data.filter(item => {
+                const nameMatch = (item.title || item.filename || item.name || '').toLowerCase().includes(q);
+                const catMatch = !activeFilters.category || (mode === 'docs' ? item.topic === activeFilters.category : item.type.includes(activeFilters.category));
+                return nameMatch && catMatch;
+            });
+
+            document.getElementById('counter').innerText = `${filtered.length} ${mode === 'docs' ? 'Manuscripts' : 'Entities'} Found`;
+
+            container.innerHTML = filtered.map(item => `
+                <div onclick="openItem('${mode}', '${item.id || item.name}')" class="glass p-6 rounded-2xl hover:bg-slate-800/80 cursor-pointer transition flex justify-between items-center group">
+                    <div>
+                        <div class="text-xs font-black text-amber-500 uppercase tracking-widest mb-1">${mode === 'docs' ? item.period : (item.type || 'Entity')}</div>
+                        <div class="text-xl font-bold group-hover:text-amber-400 transition">${item.title || item.filename || item.name}</div>
+                        <div class="text-[10px] text-slate-500 font-mono mt-1">${item.author || (item.attributes ? JSON.parse(item.attributes).source : '')}</div>
+                    </div>
+                    <div class="text-slate-600 group-hover:text-amber-500 transition text-2xl">→</div>
+                </div>
+            `).join('');
+        }
+
+        function openItem(mode, id) {
+            const data = mode === 'docs' ? docs : entities;
+            const item = data.find(i => (i.id == id || i.name == id));
+            if (!item) return;
+
+            const content = document.getElementById('drawer-content');
+            document.getElementById('drawer').classList.add('open');
+
+            if (mode === 'docs') {
+                content.innerHTML = `
+                    <div class="space-y-8 animate-in slide-in-from-right duration-300">
+                        <div class="space-y-4">
+                            <h2 class="serif text-4xl font-bold text-white leading-tight">${item.title || item.filename}</h2>
+                            <button onclick="window.open('${item.path}', '_blank')" class="w-full py-4 bg-amber-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-amber-700 transition shadow-xl shadow-amber-900/40">Open Manuscript PDF</button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-900/50 p-4 rounded-2xl border border-white/5">
+                                <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-1">Author</label>
+                                <div class="text-sm font-bold text-amber-500">${item.author || 'Unknown'}</div>
+                            </div>
+                            <div class="bg-slate-900/50 p-4 rounded-2xl border border-white/5">
+                                <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-1">Period</label>
+                                <div class="text-sm font-bold text-slate-300">${item.period || 'Renaissance'}</div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Scholarly Summary</label>
+                            <p class="text-sm text-slate-400 leading-relaxed italic">
+                                ${item.summary || 'This Alchemical manuscript is a vital component of the ' + item.topic + ' tradition. It details significant chemical and spiritual operations consistent with its era.'}
+                            </p>
+                        </div>
+                        <div class="border-t border-white/5 pt-8">
+                            <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-4">Relational Context</label>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="pill pill-active">${item.topic}</span>
+                                <span class="pill pill-active">${item.period}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                const attrs = item.attributes ? JSON.parse(item.attributes) : {};
+                content.innerHTML = `
+                    <div class="space-y-8 animate-in slide-in-from-right duration-300">
+                        <div class="space-y-4">
+                            <h2 class="serif text-4xl font-bold text-white leading-tight">${item.name}</h2>
+                            <div class="text-[10px] font-black text-amber-500 uppercase tracking-widest">${item.type}</div>
+                        </div>
+                        <div class="bg-amber-900/10 border border-amber-900/30 p-6 rounded-3xl space-y-4">
+                            <label class="text-[9px] font-black text-amber-500 uppercase tracking-widest block">Dictionary Definition</label>
+                            <p class="text-lg text-slate-200 leading-relaxed">
+                                ${item.name} is a fundamental concept in the alchemical corpus, often associated with ${attrs.category || 'Alchemical operations'}.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="bg-slate-900/50 p-4 rounded-2xl border border-white/5">
+                                <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-1">Source Record</label>
+                                <div class="text-xs font-mono text-slate-400 truncate">${attrs.source || 'Historical Compendium'}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').classList.remove('open');
+        }
+
+        document.getElementById('search').addEventListener('input', applyFilters);
+
+        init();
+    </script>
+</body>
+
+</html>

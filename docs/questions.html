@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Question Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+
+        .grad-indigo {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+    </style>
+</head>
+
+<body class="p-8 md:p-12 space-y-12">
+
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div>
+            <h1 class="text-4xl font-black tracking-tighter flex items-center gap-4">
+                <span class="p-3 grad-indigo rounded-2xl shadow-xl shadow-indigo-900/40">❓</span> Question Intelligence
+            </h1>
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold mt-3">Scholarly Inquiry Analysis •
+                <a href="reference.html" class="text-indigo-400 hover:underline">Reference Portal</a></p>
+        </div>
+        <div class="flex gap-4">
+            <div class="glass px-6 py-3 rounded-2xl">
+                <div id="count-q" class="text-2xl font-black text-white">0</div>
+                <div class="text-[8px] text-slate-500 uppercase font-black">Total Inquiries</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visualizations -->
+    <section class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="glass p-8 rounded-[2.5rem] space-y-6">
+            <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Inquiry Type Distribution</h3>
+            <canvas id="typeChart" height="200"></canvas>
+        </div>
+        <div class="glass p-8 rounded-[2.5rem] space-y-6">
+            <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Opus Stage Categorization</h3>
+            <canvas id="stageChart" height="200"></canvas>
+        </div>
+    </section>
+
+    <!-- Search & List -->
+    <section class="max-w-7xl mx-auto space-y-8">
+        <div class="flex gap-4">
+            <input type="text" id="search" oninput="render()" placeholder="Search inquiries by keyword..."
+                class="flex-1 bg-slate-900/50 border border-white/5 rounded-2xl p-4 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+        </div>
+
+        <div id="q-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Cards injected here -->
+        </div>
+    </section>
+
+    <script>
+        let questions = [];
+
+        async function init() {
+            try {
+                const res = await fetch('questions.json');
+                if (res.ok) {
+                    questions = await res.json();
+                    document.getElementById('count-q').innerText = questions.length;
+                    renderCharts();
+                    render();
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function renderCharts() {
+            const types = questions.reduce((acc, q) => { acc[q.type] = (acc[q.type] || 0) + 1; return acc; }, {});
+            const stages = questions.reduce((acc, q) => { acc[q.stage] = (acc[q.stage] || 0) + 1; return acc; }, {});
+
+            new Chart(document.getElementById('typeChart'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(types),
+                    datasets: [{
+                        label: 'Inquiries',
+                        data: Object.values(types),
+                        backgroundColor: '#6366f1',
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b' } },
+                        x: { grid: { display: false }, ticks: { color: '#64748b' } }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('stageChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(stages),
+                    datasets: [{
+                        data: Object.values(stages),
+                        backgroundColor: ['#ef4444', '#f8fafc', '#f59e0b', '#334155'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: { position: 'right', labels: { color: '#94a3b8', font: { size: 10, weight: 'bold' } } }
+                    },
+                    cutout: '70%'
+                }
+            });
+        }
+
+        function render() {
+            const q = document.getElementById('search').value.toLowerCase();
+            const container = document.getElementById('q-list');
+
+            const filtered = questions.filter(item => item.text.toLowerCase().includes(q));
+
+            container.innerHTML = filtered.map(item => `
+                <div class="glass p-6 rounded-3xl hover:bg-slate-800/50 transition border border-white/5 group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-indigo-400 border border-indigo-400/20 px-2 py-1 rounded">${item.type}</span>
+                        <span class="text-[9px] font-black uppercase tracking-widest text-slate-500">${item.stage}</span>
+                    </div>
+                    <p class="serif text-xl font-bold text-slate-200 leading-snug mb-4 group-hover:text-white transition">"${item.text}"</p>
+                    <div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-tighter text-slate-600">
+                        <span>Source: ${item.chat}</span>
+                        <span class="text-indigo-500">${item.topic}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

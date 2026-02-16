@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Table Laboratory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Premium Table Styling */
+        .markdown-table table {
+            @apply w-full border-collapse rounded-xl overflow-hidden text-sm;
+        }
+
+        .markdown-table th {
+            @apply bg-slate-800 text-emerald-400 font-black uppercase tracking-widest p-4 text-left border-b border-white/5;
+        }
+
+        .markdown-table td {
+            @apply p-4 border-b border-white/5 text-slate-300;
+        }
+
+        .markdown-table tr:hover {
+            @apply bg-white/5;
+        }
+
+        .grad-emerald {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        }
+    </style>
+</head>
+
+<body class="p-8 md:p-12 space-y-12">
+
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div>
+            <h1 class="text-4xl font-black tracking-tighter flex items-center gap-4">
+                <span class="p-3 grad-emerald rounded-2xl shadow-xl shadow-emerald-900/40 text-white">📊</span> Table
+                Laboratory
+            </h1>
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold mt-3">Extracted Tabular Data • <a
+                    href="reference.html" class="text-emerald-400 hover:underline">Reference Portal</a></p>
+        </div>
+        <div class="flex gap-4">
+            <div class="glass px-6 py-3 rounded-2xl">
+                <div id="count-t" class="text-2xl font-black text-white">0</div>
+                <div class="text-[8px] text-slate-500 uppercase font-black">Matrices Found</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="max-w-7xl mx-auto">
+        <div class="glass p-6 rounded-[2rem] flex flex-col md:flex-row gap-4">
+            <input type="text" id="search" oninput="render()" placeholder="Search tables (headers or content)..."
+                class="flex-1 bg-slate-900/50 border border-white/5 rounded-2xl p-4 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
+            <select id="topicFilter" onchange="render()"
+                class="bg-slate-900 border border-white/5 rounded-2xl p-4 text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <option value="all">All Topics</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section id="results" class="max-w-7xl mx-auto space-y-8">
+        <!-- Tables injected here -->
+    </section>
+
+    <script>
+        let tables = [];
+
+        async function init() {
+            try {
+                const res = await fetch('tables.json');
+                if (res.ok) {
+                    tables = await res.json();
+                    document.getElementById('count-t').innerText = tables.length;
+
+                    const topics = [...new Set(tables.map(t => t.topic))];
+                    const select = document.getElementById('topicFilter');
+                    topics.forEach(t => {
+                        const opt = document.createElement('option');
+                        opt.value = t;
+                        opt.innerText = t;
+                        select.appendChild(opt);
+                    });
+
+                    render();
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function render() {
+            const q = document.getElementById('search').value.toLowerCase();
+            const topic = document.getElementById('topicFilter').value;
+            const container = document.getElementById('results');
+
+            const filtered = tables.filter(item => {
+                const matchQ = item.content.toLowerCase().includes(q) || item.chat.toLowerCase().includes(q);
+                const matchTopic = topic === 'all' || item.topic === topic;
+                return matchQ && matchTopic;
+            });
+
+            container.innerHTML = filtered.map((item, idx) => `
+                <div class="glass p-8 rounded-[2.5rem] space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500" style="animation-delay: ${idx * 50}ms">
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-[10px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full border border-emerald-500/20 font-black uppercase">${item.topic}</span>
+                            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">${item.chat}</h2>
+                        </div>
+                        <button onclick="copyTable(${idx})" class="text-[10px] font-black text-slate-600 hover:text-emerald-400 uppercase transition">Copy Markdown</button>
+                    </div>
+                    <div class="markdown-table overflow-x-auto">
+                        ${marked.parse(item.content)}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function copyTable(idx) {
+            navigator.clipboard.writeText(tables[idx].content);
+            alert("Table markdown copied to clipboard.");
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

@@ -4,128 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esoteric DB - Landing</title>
+    <title>Esoteric Studies Database - Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
         }
 
-        h1,
-        h2,
-        h3 {
+        .serif {
             font-family: 'Crimson Pro', serif;
         }
 
-        .card {
-            transition: all 0.3s ease;
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        .card {
+            @apply relative overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.8s;
+        }
+
+        .card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .glow-indigo {
+            box-shadow: 0 0 40px -10px rgba(79, 70, 229, 0.3);
+        }
+
+        .glow-emerald {
+            box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+        }
+
+        .glow-amber {
+            box-shadow: 0 0 40px -10px rgba(245, 158, 11, 0.3);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
         }
     </style>
 </head>
 
-<body class="min-h-screen flex flex-col items-center justify-center p-4">
+<body class="min-h-screen p-8 md:p-20 flex flex-col items-center">
 
-    <div class="max-w-4xl w-full space-y-8">
-        <!-- Header -->
-        <div class="text-center space-y-2">
-            <h1 class="text-5xl text-indigo-400 italic">Esoteric Studies Database</h1>
-            <p class="text-slate-400 text-lg">V8.2.1 • Modular Portal</p>
-        </div>
+    <!-- Ambient background bloobs -->
+    <div
+        class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-900/20 blur-[120px] rounded-full -z-10 animate-float">
+    </div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-emerald-900/20 blur-[120px] rounded-full -z-10 animate-float"
+        style="animation-delay: -3s"></div>
 
-        <!-- Options Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+    <div class="max-w-7xl w-full space-y-20 relative">
 
-            <!-- 1. The Library -->
-            <a href="library.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-emerald-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-emerald-300">Document Library</h2>
-                    <span
-                        class="bg-emerald-900 text-emerald-200 text-[10px] px-2 py-0.5 rounded uppercase">Stable</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Direct PDF access & reference collection browsing.</p>
-                <div class="text-xs text-emerald-400 font-mono">Open &rarr;</div>
-            </a>
-
-            <!-- 2. Reference Portal -->
-            <a href="reference.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-indigo-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-indigo-300">Scholarship Portal</h2>
-                    <span class="bg-indigo-900 text-indigo-200 text-[10px] px-2 py-0.5 rounded uppercase">Modular</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Bookshelves, citations, and analytic metrics grid.</p>
-                <div class="text-xs text-indigo-400 font-mono">Enter &rarr;</div>
-            </a>
-
-            <!-- 3. Digital Dictionary -->
-            <a href="dictionary.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-amber-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-amber-300">Digital Dictionary</h2>
-                    <span class="bg-amber-900 text-amber-200 text-[10px] px-2 py-0.5 rounded uppercase">Modular</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Headwords, synthesis logs, and semantic meanings.</p>
-                <div class="text-xs text-amber-400 font-mono">Browse &rarr;</div>
-            </a>
-
-            <!-- 4. Project Insights -->
-            <a href="insights.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-blue-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-blue-300">Project Insights</h2>
-                    <span class="bg-blue-900 text-blue-200 text-[10px] px-2 py-0.5 rounded uppercase">Visual</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Topic distribution, timeline, and semantic clouds.</p>
-                <div class="text-xs text-blue-400 font-mono">Analyze &rarr;</div>
-            </a>
-
-            <!-- 5. Knowledge Graph -->
-            <a href="graph.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-violet-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-violet-300">Knowledge Graph</h2>
-                    <span class="bg-violet-900 text-violet-200 text-[10px] px-2 py-0.5 rounded uppercase">Beta</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Interactive connections between all entities.</p>
-                <div class="text-xs text-violet-400 font-mono">Explore &rarr;</div>
-            </a>
-
-            <!-- 6. Design Lab -->
-            <a href="design.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-rose-500 group">
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class="text-xl font-bold text-rose-300">Design Lab</h2>
-                    <span class="bg-rose-900 text-rose-200 text-[10px] px-2 py-0.5 rounded uppercase">Meta</span>
-                </div>
-                <p class="text-slate-400 text-xs mb-4">Task tracking, project phases, and designer notes.</p>
-                <div class="text-xs text-rose-400 font-mono">Verify &rarr;</div>
-            </a>
-
-        </div>
-
-        <!-- Legacy / Footer -->
-        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-            <a href="dashboard.html"
-                class="text-slate-500 hover:text-indigo-400 text-xs font-mono uppercase tracking-widest transition">
-                &gt; UNSTABLE: Launch Legacy Monolith
-            </a>
-            <div class="flex gap-4 text-xs font-mono">
-                <a href="docs.json" target="_blank" class="text-slate-600 hover:text-white underline">docs.json</a>
-                <a href="project_meta.json" target="_blank"
-                    class="text-slate-600 hover:text-white underline">project_meta.json</a>
+        <!-- Hero Section -->
+        <header class="text-center space-y-6">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full glass border border-white/5 text-[10px] font-black uppercase tracking-[0.4em] text-indigo-400 mb-4">
+                Research Node V8.4.5
             </div>
-        </div>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter serif italic text-white leading-tight">
+                Esoteric Studies <br /> <span class="text-indigo-500 not-italic">Database</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-slate-500 text-lg font-medium leading-relaxed">
+                A high-fidelity research portal for Alchemical manuscripts, Hermetic lineages, and automated
+                chat-intelligence data mining.
+            </p>
+        </header>
+
+        <!-- Category: Intelligence Dashboards -->
+        <section class="space-y-8">
+            <h3 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] px-4">Executive Intelligence
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Insights -->
+                <a href="insights.html" class="card glass p-8 rounded-[2.5rem] border-indigo-500/20 glow-indigo group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition duration-300">📊</div>
+                    <h2 class="text-xl font-bold text-white mb-2">Project Insights</h2>
+                    <p class="text-slate-500 text-xs leading-relaxed">System-wide metrics, thematic density, and
+                        ingestion timelines.</p>
+                </a>
+                <!-- Knowledge Graph -->
+                <a href="graph.html" class="card glass p-8 rounded-[2.5rem] border-indigo-500/20 glow-indigo group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition duration-300">🕸</div>
+                    <h2 class="text-xl font-bold text-white mb-2">Knowledge Graph</h2>
+                    <p class="text-slate-500 text-xs leading-relaxed">Interactive relational web of entities, topics,
+                        and sessions.</p>
+                </a>
+                <!-- Questions -->
+                <a href="questions.html" class="card glass p-8 rounded-[2.5rem] border-indigo-500/20 glow-indigo group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition duration-300">❓</div>
+                    <h2 class="text-xl font-bold text-white mb-2">Question Mining</h2>
+                    <p class="text-slate-500 text-xs leading-relaxed">Registry of inquiries extracted from 249 research
+                        chats.</p>
+                </a>
+                <!-- Tables -->
+                <a href="tables.html" class="card glass p-8 rounded-[2.5rem] border-indigo-500/20 glow-indigo group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition duration-300">📋</div>
+                    <h2 class="text-xl font-bold text-white mb-2">Table Laboratory</h2>
+                    <p class="text-slate-500 text-xs leading-relaxed">Centralized repository for all tabular data found
+                        in session logs.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Category: Research Portals -->
+        <section class="space-y-8">
+            <h3 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] px-4">Research Domains</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Hermeticism -->
+                <a href="hermetic.html" class="card glass p-10 rounded-[3rem] border-emerald-500/20 glow-emerald group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-4xl">🏛</div>
+                        <span
+                            class="text-[9px] font-black text-emerald-500 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">Hermetic
+                            Heritage</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-white mb-4 serif italic">Hermetic Workbench</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Trace the Chain of Gold through Late
+                        Antiquity and Renaissance lineages. High-fidelity lineage tracking and primary source analysis.
+                    </p>
+                    <div class="text-emerald-500 text-xs font-black uppercase tracking-widest">Access Lineage &rarr;
+                    </div>
+                </a>
+                <!-- Alchemy -->
+                <a href="alchemy.html" class="card glass p-10 rounded-[3rem] border-amber-500/20 glow-amber group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-4xl">🧪</div>
+                        <span
+                            class="text-[9px] font-black text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20 uppercase tracking-widest">Alchemical
+                            Opus</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-white mb-4 serif italic">Alchemy Workbench</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Explore the expanded dictionary of 300+
+                        materials, alchemists, and allegories. Dual-mode browsing for manuscripts and entities.</p>
+                    <div class="text-amber-500 text-xs font-black uppercase tracking-widest">Begin the Work &rarr;</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Category: Catalog & References -->
+        <section class="space-y-8">
+            <h3 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] px-4">Core Catalog</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="library.html" class="card glass p-8 rounded-[2.5rem] group">
+                    <h2 class="text-lg font-bold text-white mb-2">Manuscript Library</h2>
+                    <p class="text-slate-500 text-[10px] leading-relaxed">Direct entry point for PDF archives and
+                        document-level metadata.</p>
+                </a>
+                <a href="reference.html" class="card glass p-8 rounded-[2.5rem] group">
+                    <h2 class="text-lg font-bold text-white mb-2">Scholarship Portal</h2>
+                    <p class="text-slate-500 text-[10px] leading-relaxed">Reference bookshelves and dynamic scholarly
+                        interest metrics.</p>
+                </a>
+                <a href="dictionary.html" class="card glass p-8 rounded-[2.5rem] group">
+                    <h2 class="text-lg font-bold text-white mb-2">Digital Dictionary</h2>
+                    <p class="text-slate-500 text-[10px] leading-relaxed">The unified lexicon of esoteric terms and
+                        historical definitions.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="pt-20 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-slate-600">
+            <div class="text-[10px] font-mono uppercase tracking-widest">Project: Esoteric_Seed • Phase 30 Update</div>
+            <div class="flex gap-6">
+                <a href="design.html"
+                    class="hover:text-indigo-400 transition text-[10px] font-black uppercase tracking-widest">Design
+                    Lab</a>
+                <a href="dashboard.html"
+                    class="hover:text-amber-600 transition text-[10px] font-black uppercase tracking-widest">Legacy
+                    view</a>
+            </div>
+        </footer>
 
     </div>
 

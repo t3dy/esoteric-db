@@ -13,6 +13,7 @@ def init_chats_db(conn):
     cursor.execute("DROP TABLE IF EXISTS chats")
     cursor.execute("DROP TABLE IF EXISTS chat_messages")
     cursor.execute("DROP TABLE IF EXISTS questions")
+    cursor.execute("DROP TABLE IF EXISTS tables")
     
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS chats (
@@ -40,7 +41,17 @@ def init_chats_db(conn):
         chat_id TEXT,
         text TEXT,
         move_type TEXT,
+        opus_stage TEXT,
         order_index INTEGER,
+        FOREIGN KEY(chat_id) REFERENCES chats(id)
+    )
+    ''')
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS tables (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        chat_id TEXT,
+        content TEXT,
+        topic TEXT,
         FOREIGN KEY(chat_id) REFERENCES chats(id)
     )
     ''')
@@ -219,7 +230,7 @@ def ingest_all_chats(db_path, chats_dir):
     print(f"Ingestion complete. Chats: {chat_count}. Questions: {q_count}.")
 
 if __name__ == "__main__":
-    DB_PATH = "esoteric_v5.db"
+    DB_PATH = "esoteric.db"
     CHATS_DIR = r"e:\pdf\esoteric studies chats"
     
     print(f"Checking path: {CHATS_DIR}")

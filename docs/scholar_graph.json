@@ -1,4 +1,2400 @@
 {
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "36067",
+      "label": "Agrippa",
+      "type": "Entity"
+    },
+    {
+      "id": "36075",
+      "label": "Albert",
+      "type": "Entity"
+    },
+    {
+      "id": "36079",
+      "label": "Albertus",
+      "type": "Entity"
+    },
+    {
+      "id": "9551",
+      "label": "Albertus Mag",
+      "type": "Entity"
+    },
+    {
+      "id": "155",
+      "label": "Albertus Magnus",
+      "type": "Entity"
+    },
+    {
+      "id": "36082",
+      "label": "Alchemical",
+      "type": "Entity"
+    },
+    {
+      "id": "4281",
+      "label": "Alchemical Ideas",
+      "type": "Entity"
+    },
+    {
+      "id": "5572",
+      "label": "Alchemical Poetry",
+      "type": "Entity"
+    },
+    {
+      "id": "1005",
+      "label": "Alchemical Texts",
+      "type": "Entity"
+    },
+    {
+      "id": "36066",
+      "label": "Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "36019",
+      "label": "Alembic",
+      "type": "Entity"
+    },
+    {
+      "id": "8836",
+      "label": "An Argument",
+      "type": "Entity"
+    },
+    {
+      "id": "3149",
+      "label": "An Essay",
+      "type": "Entity"
+    },
+    {
+      "id": "36164",
+      "label": "Ancient",
+      "type": "Entity"
+    },
+    {
+      "id": "856",
+      "label": "Ancient Wisdom",
+      "type": "Entity"
+    },
+    {
+      "id": "36169",
+      "label": "Antiquity",
+      "type": "Entity"
+    },
+    {
+      "id": "36182",
+      "label": "Aquinas",
+      "type": "Entity"
+    },
+    {
+      "id": "36109",
+      "label": "Aristotle",
+      "type": "Entity"
+    },
+    {
+      "id": "30302",
+      "label": "As Will",
+      "type": "Entity"
+    },
+    {
+      "id": "36122",
+      "label": "Asclepius",
+      "type": "Entity"
+    },
+    {
+      "id": "9350",
+      "label": "Astral Magic",
+      "type": "Entity"
+    },
+    {
+      "id": "1814",
+      "label": "Atalanta Fugiens",
+      "type": "Entity"
+    },
+    {
+      "id": "36170",
+      "label": "Athenian",
+      "type": "Entity"
+    },
+    {
+      "id": "36151",
+      "label": "Augustine",
+      "type": "Entity"
+    },
+    {
+      "id": "361",
+      "label": "Barbara Obrist",
+      "type": "Entity"
+    },
+    {
+      "id": "36036",
+      "label": "Bellows",
+      "type": "Entity"
+    },
+    {
+      "id": "10288",
+      "label": "Best Practices",
+      "type": "Entity"
+    },
+    {
+      "id": "14353",
+      "label": "Board Game Design",
+      "type": "Entity"
+    },
+    {
+      "id": "36073",
+      "label": "Book",
+      "type": "Entity"
+    },
+    {
+      "id": "15005",
+      "label": "Book About",
+      "type": "Entity"
+    },
+    {
+      "id": "1172",
+      "label": "Book Review",
+      "type": "Entity"
+    },
+    {
+      "id": "2858",
+      "label": "Brown University",
+      "type": "Entity"
+    },
+    {
+      "id": "9825",
+      "label": "Bruce Janacek",
+      "type": "Entity"
+    },
+    {
+      "id": "369",
+      "label": "Bruce Moran",
+      "type": "Entity"
+    },
+    {
+      "id": "31453",
+      "label": "By Wil",
+      "type": "Entity"
+    },
+    {
+      "id": "36155",
+      "label": "Byzantine",
+      "type": "Entity"
+    },
+    {
+      "id": "36118",
+      "label": "Century",
+      "type": "Entity"
+    },
+    {
+      "id": "27911",
+      "label": "Chaldean Theology",
+      "type": "Entity"
+    },
+    {
+      "id": "36088",
+      "label": "Chapter",
+      "type": "Entity"
+    },
+    {
+      "id": "2199",
+      "label": "Chemical Texts",
+      "type": "Entity"
+    },
+    {
+      "id": "3227",
+      "label": "Chemical World",
+      "type": "Entity"
+    },
+    {
+      "id": "36084",
+      "label": "Christian",
+      "type": "Entity"
+    },
+    {
+      "id": "868",
+      "label": "Christian Platonism",
+      "type": "Entity"
+    },
+    {
+      "id": "36183",
+      "label": "Christianity",
+      "type": "Entity"
+    },
+    {
+      "id": "1603",
+      "label": "Contemporary Chemistry",
+      "type": "Entity"
+    },
+    {
+      "id": "36187",
+      "label": "Copenhaver",
+      "type": "Entity"
+    },
+    {
+      "id": "35909",
+      "label": "Copper",
+      "type": "Entity"
+    },
+    {
+      "id": "36192",
+      "label": "Corp",
+      "type": "Entity"
+    },
+    {
+      "id": "36128",
+      "label": "Corpus",
+      "type": "Entity"
+    },
+    {
+      "id": "26385",
+      "label": "Corpus Hermet",
+      "type": "Entity"
+    },
+    {
+      "id": "13419",
+      "label": "Corpus Hermeti",
+      "type": "Entity"
+    },
+    {
+      "id": "3137",
+      "label": "Corpus Hermeticum",
+      "type": "Entity"
+    },
+    {
+      "id": "684",
+      "label": "Critical Edition",
+      "type": "Entity"
+    },
+    {
+      "id": "36041",
+      "label": "Crow",
+      "type": "Entity"
+    },
+    {
+      "id": "36023",
+      "label": "Crucible",
+      "type": "Entity"
+    },
+    {
+      "id": "5708",
+      "label": "Cultural History",
+      "type": "Entity"
+    },
+    {
+      "id": "11104",
+      "label": "Data Science",
+      "type": "Entity"
+    },
+    {
+      "id": "27689",
+      "label": "De Ente",
+      "type": "Entity"
+    },
+    {
+      "id": "28081",
+      "label": "De Hominis Dignitate",
+      "type": "Entity"
+    },
+    {
+      "id": "27637",
+      "label": "Della Mirandola",
+      "type": "Entity"
+    },
+    {
+      "id": "13724",
+      "label": "Did Pico",
+      "type": "Entity"
+    },
+    {
+      "id": "14532",
+      "label": "Digital Age",
+      "type": "Entity"
+    },
+    {
+      "id": "22271",
+      "label": "Divine Command",
+      "type": "Entity"
+    },
+    {
+      "id": "14032",
+      "label": "Divine Things",
+      "type": "Entity"
+    },
+    {
+      "id": "36117",
+      "label": "Document",
+      "type": "Entity"
+    },
+    {
+      "id": "36040",
+      "label": "Dragon",
+      "type": "Entity"
+    },
+    {
+      "id": "36038",
+      "label": "Eagle",
+      "type": "Entity"
+    },
+    {
+      "id": "23642",
+      "label": "Earlier Works",
+      "type": "Entity"
+    },
+    {
+      "id": "36103",
+      "label": "Early",
+      "type": "Entity"
+    },
+    {
+      "id": "873",
+      "label": "Early Modern",
+      "type": "Entity"
+    },
+    {
+      "id": "5771",
+      "label": "Early Modern Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "2271",
+      "label": "Early Modern Chemistry",
+      "type": "Entity"
+    },
+    {
+      "id": "33973",
+      "label": "Early Modern Eng",
+      "type": "Entity"
+    },
+    {
+      "id": "6343",
+      "label": "Early Modern England",
+      "type": "Entity"
+    },
+    {
+      "id": "34752",
+      "label": "Early Modern Period",
+      "type": "Entity"
+    },
+    {
+      "id": "36111",
+      "label": "Egypt",
+      "type": "Entity"
+    },
+    {
+      "id": "36083",
+      "label": "Egyptian",
+      "type": "Entity"
+    },
+    {
+      "id": "2229",
+      "label": "Elias Ashmole",
+      "type": "Entity"
+    },
+    {
+      "id": "17977",
+      "label": "Elizabethan England",
+      "type": "Entity"
+    },
+    {
+      "id": "36074",
+      "label": "English",
+      "type": "Entity"
+    },
+    {
+      "id": "12004",
+      "label": "English Translation",
+      "type": "Entity"
+    },
+    {
+      "id": "36163",
+      "label": "Ficino",
+      "type": "Entity"
+    },
+    {
+      "id": "26968",
+      "label": "Five Books",
+      "type": "Entity"
+    },
+    {
+      "id": "36031",
+      "label": "Flask",
+      "type": "Entity"
+    },
+    {
+      "id": "31656",
+      "label": "For Me",
+      "type": "Entity"
+    },
+    {
+      "id": "27807",
+      "label": "For Pico",
+      "type": "Entity"
+    },
+    {
+      "id": "31812",
+      "label": "For Shakespeare",
+      "type": "Entity"
+    },
+    {
+      "id": "859",
+      "label": "Frances Yates",
+      "type": "Entity"
+    },
+    {
+      "id": "2284",
+      "label": "Francis Bacon",
+      "type": "Entity"
+    },
+    {
+      "id": "12310",
+      "label": "From Iamblichus",
+      "type": "Entity"
+    },
+    {
+      "id": "132",
+      "label": "From The First",
+      "type": "Entity"
+    },
+    {
+      "id": "15080",
+      "label": "Game Character",
+      "type": "Entity"
+    },
+    {
+      "id": "14087",
+      "label": "Game Design",
+      "type": "Entity"
+    },
+    {
+      "id": "15352",
+      "label": "Game World",
+      "type": "Entity"
+    },
+    {
+      "id": "2993",
+      "label": "Giordano Bruno",
+      "type": "Entity"
+    },
+    {
+      "id": "857",
+      "label": "Giovanni Pico",
+      "type": "Entity"
+    },
+    {
+      "id": "28059",
+      "label": "Giovanni Pico Della",
+      "type": "Entity"
+    },
+    {
+      "id": "35905",
+      "label": "Gold",
+      "type": "Entity"
+    },
+    {
+      "id": "466",
+      "label": "Golden Dawn",
+      "type": "Entity"
+    },
+    {
+      "id": "36191",
+      "label": "Great",
+      "type": "Entity"
+    },
+    {
+      "id": "4269",
+      "label": "Great Man",
+      "type": "Entity"
+    },
+    {
+      "id": "819",
+      "label": "Great Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "36080",
+      "label": "Greek",
+      "type": "Entity"
+    },
+    {
+      "id": "29223",
+      "label": "Greek Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "36197",
+      "label": "Greeks",
+      "type": "Entity"
+    },
+    {
+      "id": "35987",
+      "label": "Green Lion",
+      "type": "Entity"
+    },
+    {
+      "id": "16625",
+      "label": "Her Time",
+      "type": "Entity"
+    },
+    {
+      "id": "36180",
+      "label": "Herm",
+      "type": "Entity"
+    },
+    {
+      "id": "36086",
+      "label": "Hermes",
+      "type": "Entity"
+    },
+    {
+      "id": "36125",
+      "label": "Hermetic",
+      "type": "Entity"
+    },
+    {
+      "id": "156",
+      "label": "Hermetic Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "9506",
+      "label": "Hermetic Texts",
+      "type": "Entity"
+    },
+    {
+      "id": "3119",
+      "label": "Hermetic Tradition",
+      "type": "Entity"
+    },
+    {
+      "id": "36134",
+      "label": "Hermeticum",
+      "type": "Entity"
+    },
+    {
+      "id": "36142",
+      "label": "Hermetism",
+      "type": "Entity"
+    },
+    {
+      "id": "34612",
+      "label": "Hidden Mysteries",
+      "type": "Entity"
+    },
+    {
+      "id": "13797",
+      "label": "His Age",
+      "type": "Entity"
+    },
+    {
+      "id": "939",
+      "label": "His Book",
+      "type": "Entity"
+    },
+    {
+      "id": "27856",
+      "label": "His In",
+      "type": "Entity"
+    },
+    {
+      "id": "6388",
+      "label": "His Life",
+      "type": "Entity"
+    },
+    {
+      "id": "9054",
+      "label": "His Ph",
+      "type": "Entity"
+    },
+    {
+      "id": "27871",
+      "label": "His Work",
+      "type": "Entity"
+    },
+    {
+      "id": "8269",
+      "label": "His World",
+      "type": "Entity"
+    },
+    {
+      "id": "3150",
+      "label": "His Writings",
+      "type": "Entity"
+    },
+    {
+      "id": "36072",
+      "label": "History",
+      "type": "Entity"
+    },
+    {
+      "id": "6488",
+      "label": "Holy Ghost",
+      "type": "Entity"
+    },
+    {
+      "id": "3355",
+      "label": "Holy Trinity",
+      "type": "Entity"
+    },
+    {
+      "id": "36114",
+      "label": "However",
+      "type": "Entity"
+    },
+    {
+      "id": "23170",
+      "label": "Human Nature",
+      "type": "Entity"
+    },
+    {
+      "id": "36133",
+      "label": "Iamblichus",
+      "type": "Entity"
+    },
+    {
+      "id": "36119",
+      "label": "Ibid",
+      "type": "Entity"
+    },
+    {
+      "id": "10279",
+      "label": "In Build",
+      "type": "Entity"
+    },
+    {
+      "id": "25322",
+      "label": "In Chapter",
+      "type": "Entity"
+    },
+    {
+      "id": "6044",
+      "label": "In England",
+      "type": "Entity"
+    },
+    {
+      "id": "33261",
+      "label": "In Italy",
+      "type": "Entity"
+    },
+    {
+      "id": "22867",
+      "label": "In Latin",
+      "type": "Entity"
+    },
+    {
+      "id": "32996",
+      "label": "In Love",
+      "type": "Entity"
+    },
+    {
+      "id": "9903",
+      "label": "In Plato",
+      "type": "Entity"
+    },
+    {
+      "id": "25172",
+      "label": "In Shakespeare",
+      "type": "Entity"
+    },
+    {
+      "id": "16366",
+      "label": "In The",
+      "type": "Entity"
+    },
+    {
+      "id": "10908",
+      "label": "In The Book",
+      "type": "Entity"
+    },
+    {
+      "id": "36097",
+      "label": "Introduction",
+      "type": "Entity"
+    },
+    {
+      "id": "35908",
+      "label": "Iron",
+      "type": "Entity"
+    },
+    {
+      "id": "574",
+      "label": "Isaac Newton",
+      "type": "Entity"
+    },
+    {
+      "id": "11323",
+      "label": "Islamic Law",
+      "type": "Entity"
+    },
+    {
+      "id": "4662",
+      "label": "Jesus Christ",
+      "type": "Entity"
+    },
+    {
+      "id": "36078",
+      "label": "John",
+      "type": "Entity"
+    },
+    {
+      "id": "358",
+      "label": "John Dee",
+      "type": "Entity"
+    },
+    {
+      "id": "36149",
+      "label": "Journal",
+      "type": "Entity"
+    },
+    {
+      "id": "4455",
+      "label": "Kenelm Digby",
+      "type": "Entity"
+    },
+    {
+      "id": "11182",
+      "label": "Know About",
+      "type": "Entity"
+    },
+    {
+      "id": "36171",
+      "label": "Late",
+      "type": "Entity"
+    },
+    {
+      "id": "36069",
+      "label": "Latin",
+      "type": "Entity"
+    },
+    {
+      "id": "25188",
+      "label": "Latin Text",
+      "type": "Entity"
+    },
+    {
+      "id": "35907",
+      "label": "Lead",
+      "type": "Entity"
+    },
+    {
+      "id": "19221",
+      "label": "Learning Through",
+      "type": "Entity"
+    },
+    {
+      "id": "24969",
+      "label": "Let Us Have",
+      "type": "Entity"
+    },
+    {
+      "id": "14922",
+      "label": "Level Up",
+      "type": "Entity"
+    },
+    {
+      "id": "36068",
+      "label": "Liber",
+      "type": "Entity"
+    },
+    {
+      "id": "16426",
+      "label": "Liberal Arts",
+      "type": "Entity"
+    },
+    {
+      "id": "36065",
+      "label": "Library",
+      "type": "Entity"
+    },
+    {
+      "id": "34044",
+      "label": "Like It",
+      "type": "Entity"
+    },
+    {
+      "id": "36037",
+      "label": "Lion",
+      "type": "Entity"
+    },
+    {
+      "id": "36130",
+      "label": "Marti",
+      "type": "Entity"
+    },
+    {
+      "id": "35900",
+      "label": "Mercury",
+      "type": "Entity"
+    },
+    {
+      "id": "36196",
+      "label": "Michael",
+      "type": "Entity"
+    },
+    {
+      "id": "1687",
+      "label": "Michael Maier",
+      "type": "Entity"
+    },
+    {
+      "id": "36101",
+      "label": "Middle",
+      "type": "Entity"
+    },
+    {
+      "id": "9160",
+      "label": "Middle Platonic",
+      "type": "Entity"
+    },
+    {
+      "id": "7007",
+      "label": "Middle Platonism",
+      "type": "Entity"
+    },
+    {
+      "id": "35604",
+      "label": "Middle Platonists",
+      "type": "Entity"
+    },
+    {
+      "id": "2379",
+      "label": "Modern Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "29623",
+      "label": "Modern Chemistry",
+      "type": "Entity"
+    },
+    {
+      "id": "250",
+      "label": "Modern Science",
+      "type": "Entity"
+    },
+    {
+      "id": "32516",
+      "label": "More Light",
+      "type": "Entity"
+    },
+    {
+      "id": "15295",
+      "label": "More Like",
+      "type": "Entity"
+    },
+    {
+      "id": "35957",
+      "label": "Morienus",
+      "type": "Entity"
+    },
+    {
+      "id": "36157",
+      "label": "Myst",
+      "type": "Entity"
+    },
+    {
+      "id": "15468",
+      "label": "Narrative Design",
+      "type": "Entity"
+    },
+    {
+      "id": "7955",
+      "label": "Narrative Techniques",
+      "type": "Entity"
+    },
+    {
+      "id": "503",
+      "label": "Natural Knowledge",
+      "type": "Entity"
+    },
+    {
+      "id": "24633",
+      "label": "Natural Philo",
+      "type": "Entity"
+    },
+    {
+      "id": "1128",
+      "label": "Natural Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "36085",
+      "label": "Nature",
+      "type": "Entity"
+    },
+    {
+      "id": "33262",
+      "label": "New His",
+      "type": "Entity"
+    },
+    {
+      "id": "25898",
+      "label": "Nicomachean Ethics",
+      "type": "Entity"
+    },
+    {
+      "id": "3111",
+      "label": "Occult Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "28161",
+      "label": "Occult Science",
+      "type": "Entity"
+    },
+    {
+      "id": "18852",
+      "label": "Occult Sciences",
+      "type": "Entity"
+    },
+    {
+      "id": "24956",
+      "label": "Of God",
+      "type": "Entity"
+    },
+    {
+      "id": "931",
+      "label": "Of Virtue",
+      "type": "Entity"
+    },
+    {
+      "id": "25523",
+      "label": "On Agrippa",
+      "type": "Entity"
+    },
+    {
+      "id": "25187",
+      "label": "On Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "26455",
+      "label": "On Being",
+      "type": "Entity"
+    },
+    {
+      "id": "20435",
+      "label": "On God",
+      "type": "Entity"
+    },
+    {
+      "id": "19813",
+      "label": "On Gratian",
+      "type": "Entity"
+    },
+    {
+      "id": "28084",
+      "label": "On Man",
+      "type": "Entity"
+    },
+    {
+      "id": "28852",
+      "label": "On Plato",
+      "type": "Entity"
+    },
+    {
+      "id": "34473",
+      "label": "One God",
+      "type": "Entity"
+    },
+    {
+      "id": "6474",
+      "label": "Our Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "36167",
+      "label": "Oxford",
+      "type": "Entity"
+    },
+    {
+      "id": "35940",
+      "label": "Paracelsus",
+      "type": "Entity"
+    },
+    {
+      "id": "36089",
+      "label": "Paris",
+      "type": "Entity"
+    },
+    {
+      "id": "35984",
+      "label": "Philosopher's Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "35915",
+      "label": "Philosophical Mercury",
+      "type": "Entity"
+    },
+    {
+      "id": "9565",
+      "label": "Philosophical Thought",
+      "type": "Entity"
+    },
+    {
+      "id": "36112",
+      "label": "Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "36005",
+      "label": "Phoenix",
+      "type": "Entity"
+    },
+    {
+      "id": "36092",
+      "label": "Pico",
+      "type": "Entity"
+    },
+    {
+      "id": "27628",
+      "label": "Pico Della Mirandola",
+      "type": "Entity"
+    },
+    {
+      "id": "36162",
+      "label": "Plato",
+      "type": "Entity"
+    },
+    {
+      "id": "6954",
+      "label": "Platonic Tradition",
+      "type": "Entity"
+    },
+    {
+      "id": "30762",
+      "label": "Practical Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "36087",
+      "label": "Press",
+      "type": "Entity"
+    },
+    {
+      "id": "2535",
+      "label": "Primary Sources",
+      "type": "Entity"
+    },
+    {
+      "id": "36189",
+      "label": "Prof",
+      "type": "Entity"
+    },
+    {
+      "id": "36154",
+      "label": "Ptolemy",
+      "type": "Entity"
+    },
+    {
+      "id": "35911",
+      "label": "Quicksilver",
+      "type": "Entity"
+    },
+    {
+      "id": "36052",
+      "label": "Ram",
+      "type": "Entity"
+    },
+    {
+      "id": "2622",
+      "label": "Readers Di",
+      "type": "Entity"
+    },
+    {
+      "id": "35986",
+      "label": "Rebis",
+      "type": "Entity"
+    },
+    {
+      "id": "35990",
+      "label": "Red Dragon",
+      "type": "Entity"
+    },
+    {
+      "id": "35988",
+      "label": "Red King",
+      "type": "Entity"
+    },
+    {
+      "id": "34609",
+      "label": "Red Sea",
+      "type": "Entity"
+    },
+    {
+      "id": "4113",
+      "label": "Red Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "36150",
+      "label": "Religion",
+      "type": "Entity"
+    },
+    {
+      "id": "36115",
+      "label": "Renaissance",
+      "type": "Entity"
+    },
+    {
+      "id": "8925",
+      "label": "Renaissance Man",
+      "type": "Entity"
+    },
+    {
+      "id": "36116",
+      "label": "Robert",
+      "type": "Entity"
+    },
+    {
+      "id": "1927",
+      "label": "Robert Fludd",
+      "type": "Entity"
+    },
+    {
+      "id": "36108",
+      "label": "Roman",
+      "type": "Entity"
+    },
+    {
+      "id": "36176",
+      "label": "Rome",
+      "type": "Entity"
+    },
+    {
+      "id": "36044",
+      "label": "Salamander",
+      "type": "Entity"
+    },
+    {
+      "id": "35902",
+      "label": "Salt",
+      "type": "Entity"
+    },
+    {
+      "id": "36070",
+      "label": "Science",
+      "type": "Entity"
+    },
+    {
+      "id": "6476",
+      "label": "Second Book",
+      "type": "Entity"
+    },
+    {
+      "id": "3799",
+      "label": "Seventeenth Century",
+      "type": "Entity"
+    },
+    {
+      "id": "35906",
+      "label": "Silver",
+      "type": "Entity"
+    },
+    {
+      "id": "3915",
+      "label": "Sir Kenelm Digby",
+      "type": "Entity"
+    },
+    {
+      "id": "10210",
+      "label": "Social Media",
+      "type": "Entity"
+    },
+    {
+      "id": "9237",
+      "label": "Some Ex",
+      "type": "Entity"
+    },
+    {
+      "id": "31617",
+      "label": "Spirit In",
+      "type": "Entity"
+    },
+    {
+      "id": "4180",
+      "label": "Spiritual Alchemy",
+      "type": "Entity"
+    },
+    {
+      "id": "36050",
+      "label": "Stag",
+      "type": "Entity"
+    },
+    {
+      "id": "13754",
+      "label": "Stanford Encyclopedia",
+      "type": "Entity"
+    },
+    {
+      "id": "36077",
+      "label": "Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "36132",
+      "label": "Studies",
+      "type": "Entity"
+    },
+    {
+      "id": "35901",
+      "label": "Sulfur",
+      "type": "Entity"
+    },
+    {
+      "id": "36051",
+      "label": "Swan",
+      "type": "Entity"
+    },
+    {
+      "id": "2486",
+      "label": "Tara Nummedal",
+      "type": "Entity"
+    },
+    {
+      "id": "21900",
+      "label": "That God",
+      "type": "Entity"
+    },
+    {
+      "id": "33060",
+      "label": "That We",
+      "type": "Entity"
+    },
+    {
+      "id": "3183",
+      "label": "The Act",
+      "type": "Entity"
+    },
+    {
+      "id": "8438",
+      "label": "The Age",
+      "type": "Entity"
+    },
+    {
+      "id": "31718",
+      "label": "The Al",
+      "type": "Entity"
+    },
+    {
+      "id": "28337",
+      "label": "The Alchemical Corpus",
+      "type": "Entity"
+    },
+    {
+      "id": "1016",
+      "label": "The Alchemist",
+      "type": "Entity"
+    },
+    {
+      "id": "4079",
+      "label": "The Alchemy Website",
+      "type": "Entity"
+    },
+    {
+      "id": "26992",
+      "label": "The Angel",
+      "type": "Entity"
+    },
+    {
+      "id": "31672",
+      "label": "The Ar",
+      "type": "Entity"
+    },
+    {
+      "id": "1",
+      "label": "The Art",
+      "type": "Entity"
+    },
+    {
+      "id": "25319",
+      "label": "The Ass",
+      "type": "Entity"
+    },
+    {
+      "id": "2024",
+      "label": "The Atalanta",
+      "type": "Entity"
+    },
+    {
+      "id": "3966",
+      "label": "The Author",
+      "type": "Entity"
+    },
+    {
+      "id": "16243",
+      "label": "The Authors",
+      "type": "Entity"
+    },
+    {
+      "id": "32665",
+      "label": "The Background",
+      "type": "Entity"
+    },
+    {
+      "id": "27847",
+      "label": "The Bar",
+      "type": "Entity"
+    },
+    {
+      "id": "10591",
+      "label": "The Beast",
+      "type": "Entity"
+    },
+    {
+      "id": "27499",
+      "label": "The Beginning",
+      "type": "Entity"
+    },
+    {
+      "id": "6990",
+      "label": "The Being",
+      "type": "Entity"
+    },
+    {
+      "id": "27113",
+      "label": "The Bo",
+      "type": "Entity"
+    },
+    {
+      "id": "3605",
+      "label": "The Body",
+      "type": "Entity"
+    },
+    {
+      "id": "168",
+      "label": "The Book",
+      "type": "Entity"
+    },
+    {
+      "id": "10806",
+      "label": "The Building",
+      "type": "Entity"
+    },
+    {
+      "id": "10666",
+      "label": "The Cards",
+      "type": "Entity"
+    },
+    {
+      "id": "3789",
+      "label": "The Case",
+      "type": "Entity"
+    },
+    {
+      "id": "12552",
+      "label": "The Church",
+      "type": "Entity"
+    },
+    {
+      "id": "30082",
+      "label": "The Close",
+      "type": "Entity"
+    },
+    {
+      "id": "4615",
+      "label": "The Com",
+      "type": "Entity"
+    },
+    {
+      "id": "6767",
+      "label": "The Complexity",
+      "type": "Entity"
+    },
+    {
+      "id": "15463",
+      "label": "The Composition",
+      "type": "Entity"
+    },
+    {
+      "id": "3084",
+      "label": "The Concept",
+      "type": "Entity"
+    },
+    {
+      "id": "25326",
+      "label": "The Conclusion",
+      "type": "Entity"
+    },
+    {
+      "id": "10636",
+      "label": "The Contents",
+      "type": "Entity"
+    },
+    {
+      "id": "3138",
+      "label": "The Corpus Hermeti",
+      "type": "Entity"
+    },
+    {
+      "id": "6691",
+      "label": "The Craft",
+      "type": "Entity"
+    },
+    {
+      "id": "10676",
+      "label": "The Crocodile",
+      "type": "Entity"
+    },
+    {
+      "id": "34615",
+      "label": "The Darkness",
+      "type": "Entity"
+    },
+    {
+      "id": "9420",
+      "label": "The De",
+      "type": "Entity"
+    },
+    {
+      "id": "33765",
+      "label": "The Des",
+      "type": "Entity"
+    },
+    {
+      "id": "8112",
+      "label": "The Development",
+      "type": "Entity"
+    },
+    {
+      "id": "10690",
+      "label": "The Devil",
+      "type": "Entity"
+    },
+    {
+      "id": "22906",
+      "label": "The Dialectic",
+      "type": "Entity"
+    },
+    {
+      "id": "27948",
+      "label": "The Dignity",
+      "type": "Entity"
+    },
+    {
+      "id": "33277",
+      "label": "The Discoverie",
+      "type": "Entity"
+    },
+    {
+      "id": "32527",
+      "label": "The Earth",
+      "type": "Entity"
+    },
+    {
+      "id": "18562",
+      "label": "The Education",
+      "type": "Entity"
+    },
+    {
+      "id": "15653",
+      "label": "The Effect",
+      "type": "Entity"
+    },
+    {
+      "id": "2795",
+      "label": "The Element",
+      "type": "Entity"
+    },
+    {
+      "id": "5074",
+      "label": "The Elements",
+      "type": "Entity"
+    },
+    {
+      "id": "7361",
+      "label": "The End",
+      "type": "Entity"
+    },
+    {
+      "id": "9076",
+      "label": "The English",
+      "type": "Entity"
+    },
+    {
+      "id": "23887",
+      "label": "The Estate",
+      "type": "Entity"
+    },
+    {
+      "id": "20524",
+      "label": "The Eyes",
+      "type": "Entity"
+    },
+    {
+      "id": "4288",
+      "label": "The Face",
+      "type": "Entity"
+    },
+    {
+      "id": "4026",
+      "label": "The Father",
+      "type": "Entity"
+    },
+    {
+      "id": "20747",
+      "label": "The Fathers",
+      "type": "Entity"
+    },
+    {
+      "id": "17466",
+      "label": "The Fin",
+      "type": "Entity"
+    },
+    {
+      "id": "17818",
+      "label": "The First",
+      "type": "Entity"
+    },
+    {
+      "id": "16185",
+      "label": "The Five",
+      "type": "Entity"
+    },
+    {
+      "id": "7459",
+      "label": "The Form",
+      "type": "Entity"
+    },
+    {
+      "id": "4475",
+      "label": "The Foundation",
+      "type": "Entity"
+    },
+    {
+      "id": "15415",
+      "label": "The Functions",
+      "type": "Entity"
+    },
+    {
+      "id": "9688",
+      "label": "The Game",
+      "type": "Entity"
+    },
+    {
+      "id": "14090",
+      "label": "The Gathering",
+      "type": "Entity"
+    },
+    {
+      "id": "34557",
+      "label": "The God",
+      "type": "Entity"
+    },
+    {
+      "id": "139",
+      "label": "The Grea",
+      "type": "Entity"
+    },
+    {
+      "id": "27424",
+      "label": "The Greater",
+      "type": "Entity"
+    },
+    {
+      "id": "16951",
+      "label": "The Greatest Benefit",
+      "type": "Entity"
+    },
+    {
+      "id": "833",
+      "label": "The Greek",
+      "type": "Entity"
+    },
+    {
+      "id": "13624",
+      "label": "The Guide",
+      "type": "Entity"
+    },
+    {
+      "id": "32979",
+      "label": "The Hand",
+      "type": "Entity"
+    },
+    {
+      "id": "28130",
+      "label": "The Hebrew",
+      "type": "Entity"
+    },
+    {
+      "id": "12485",
+      "label": "The Hermetic",
+      "type": "Entity"
+    },
+    {
+      "id": "1372",
+      "label": "The History",
+      "type": "Entity"
+    },
+    {
+      "id": "5424",
+      "label": "The House",
+      "type": "Entity"
+    },
+    {
+      "id": "8750",
+      "label": "The Idea",
+      "type": "Entity"
+    },
+    {
+      "id": "2647",
+      "label": "The Ideas",
+      "type": "Entity"
+    },
+    {
+      "id": "15894",
+      "label": "The Image",
+      "type": "Entity"
+    },
+    {
+      "id": "34168",
+      "label": "The Importance",
+      "type": "Entity"
+    },
+    {
+      "id": "9505",
+      "label": "The Influence",
+      "type": "Entity"
+    },
+    {
+      "id": "29198",
+      "label": "The Intellect",
+      "type": "Entity"
+    },
+    {
+      "id": "12288",
+      "label": "The Interpretation",
+      "type": "Entity"
+    },
+    {
+      "id": "20241",
+      "label": "The Introduction",
+      "type": "Entity"
+    },
+    {
+      "id": "10811",
+      "label": "The Invisible",
+      "type": "Entity"
+    },
+    {
+      "id": "2094",
+      "label": "The Kabbalah",
+      "type": "Entity"
+    },
+    {
+      "id": "13602",
+      "label": "The Key",
+      "type": "Entity"
+    },
+    {
+      "id": "1847",
+      "label": "The King",
+      "type": "Entity"
+    },
+    {
+      "id": "11573",
+      "label": "The Language",
+      "type": "Entity"
+    },
+    {
+      "id": "22847",
+      "label": "The Latin",
+      "type": "Entity"
+    },
+    {
+      "id": "20212",
+      "label": "The Le",
+      "type": "Entity"
+    },
+    {
+      "id": "4614",
+      "label": "The Lear",
+      "type": "Entity"
+    },
+    {
+      "id": "31528",
+      "label": "The Letter",
+      "type": "Entity"
+    },
+    {
+      "id": "683",
+      "label": "The Liber",
+      "type": "Entity"
+    },
+    {
+      "id": "124",
+      "label": "The Life",
+      "type": "Entity"
+    },
+    {
+      "id": "10812",
+      "label": "The Light",
+      "type": "Entity"
+    },
+    {
+      "id": "17118",
+      "label": "The Logic",
+      "type": "Entity"
+    },
+    {
+      "id": "4550",
+      "label": "The Lord",
+      "type": "Entity"
+    },
+    {
+      "id": "4062",
+      "label": "The Magic",
+      "type": "Entity"
+    },
+    {
+      "id": "23783",
+      "label": "The Man",
+      "type": "Entity"
+    },
+    {
+      "id": "1008",
+      "label": "The Master",
+      "type": "Entity"
+    },
+    {
+      "id": "33618",
+      "label": "The Matter",
+      "type": "Entity"
+    },
+    {
+      "id": "13874",
+      "label": "The Meaning",
+      "type": "Entity"
+    },
+    {
+      "id": "11704",
+      "label": "The Measure",
+      "type": "Entity"
+    },
+    {
+      "id": "6778",
+      "label": "The Mechan",
+      "type": "Entity"
+    },
+    {
+      "id": "14533",
+      "label": "The Medium",
+      "type": "Entity"
+    },
+    {
+      "id": "10693",
+      "label": "The Moon",
+      "type": "Entity"
+    },
+    {
+      "id": "26681",
+      "label": "The Mysteries",
+      "type": "Entity"
+    },
+    {
+      "id": "10647",
+      "label": "The Nature",
+      "type": "Entity"
+    },
+    {
+      "id": "11074",
+      "label": "The Need",
+      "type": "Entity"
+    },
+    {
+      "id": "13138",
+      "label": "The Notion",
+      "type": "Entity"
+    },
+    {
+      "id": "10786",
+      "label": "The Numbers",
+      "type": "Entity"
+    },
+    {
+      "id": "2416",
+      "label": "The Occult",
+      "type": "Entity"
+    },
+    {
+      "id": "5506",
+      "label": "The Occult Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "6776",
+      "label": "The One",
+      "type": "Entity"
+    },
+    {
+      "id": "27138",
+      "label": "The Oration",
+      "type": "Entity"
+    },
+    {
+      "id": "22951",
+      "label": "The Order",
+      "type": "Entity"
+    },
+    {
+      "id": "643",
+      "label": "The Origin",
+      "type": "Entity"
+    },
+    {
+      "id": "3289",
+      "label": "The Origins",
+      "type": "Entity"
+    },
+    {
+      "id": "22555",
+      "label": "The Parmenides",
+      "type": "Entity"
+    },
+    {
+      "id": "24917",
+      "label": "The Patriarch",
+      "type": "Entity"
+    },
+    {
+      "id": "26261",
+      "label": "The Philosopher",
+      "type": "Entity"
+    },
+    {
+      "id": "22138",
+      "label": "The Philosophy",
+      "type": "Entity"
+    },
+    {
+      "id": "34181",
+      "label": "The Phoe",
+      "type": "Entity"
+    },
+    {
+      "id": "9660",
+      "label": "The Place",
+      "type": "Entity"
+    },
+    {
+      "id": "22646",
+      "label": "The Platonic",
+      "type": "Entity"
+    },
+    {
+      "id": "934",
+      "label": "The Poem",
+      "type": "Entity"
+    },
+    {
+      "id": "24937",
+      "label": "The Poems",
+      "type": "Entity"
+    },
+    {
+      "id": "19110",
+      "label": "The Pow",
+      "type": "Entity"
+    },
+    {
+      "id": "5563",
+      "label": "The Power",
+      "type": "Entity"
+    },
+    {
+      "id": "30748",
+      "label": "The Powers",
+      "type": "Entity"
+    },
+    {
+      "id": "28766",
+      "label": "The Pre",
+      "type": "Entity"
+    },
+    {
+      "id": "29435",
+      "label": "The Preservation",
+      "type": "Entity"
+    },
+    {
+      "id": "13798",
+      "label": "The Prince",
+      "type": "Entity"
+    },
+    {
+      "id": "22517",
+      "label": "The Problem",
+      "type": "Entity"
+    },
+    {
+      "id": "34491",
+      "label": "The Problems",
+      "type": "Entity"
+    },
+    {
+      "id": "30773",
+      "label": "The Project",
+      "type": "Entity"
+    },
+    {
+      "id": "8706",
+      "label": "The Pursuit",
+      "type": "Entity"
+    },
+    {
+      "id": "8150",
+      "label": "The Quest",
+      "type": "Entity"
+    },
+    {
+      "id": "9658",
+      "label": "The Re",
+      "type": "Entity"
+    },
+    {
+      "id": "32127",
+      "label": "The Reader",
+      "type": "Entity"
+    },
+    {
+      "id": "3633",
+      "label": "The Republic",
+      "type": "Entity"
+    },
+    {
+      "id": "13617",
+      "label": "The Ritual",
+      "type": "Entity"
+    },
+    {
+      "id": "31881",
+      "label": "The Roman",
+      "type": "Entity"
+    },
+    {
+      "id": "10729",
+      "label": "The Root",
+      "type": "Entity"
+    },
+    {
+      "id": "6477",
+      "label": "The Rosary",
+      "type": "Entity"
+    },
+    {
+      "id": "10785",
+      "label": "The Rose",
+      "type": "Entity"
+    },
+    {
+      "id": "15022",
+      "label": "The Rules",
+      "type": "Entity"
+    },
+    {
+      "id": "15381",
+      "label": "The Sacred",
+      "type": "Entity"
+    },
+    {
+      "id": "7318",
+      "label": "The Se",
+      "type": "Entity"
+    },
+    {
+      "id": "29143",
+      "label": "The Secret",
+      "type": "Entity"
+    },
+    {
+      "id": "18817",
+      "label": "The Section",
+      "type": "Entity"
+    },
+    {
+      "id": "16369",
+      "label": "The Sense",
+      "type": "Entity"
+    },
+    {
+      "id": "32690",
+      "label": "The Shadow",
+      "type": "Entity"
+    },
+    {
+      "id": "11590",
+      "label": "The Short",
+      "type": "Entity"
+    },
+    {
+      "id": "10573",
+      "label": "The Signs",
+      "type": "Entity"
+    },
+    {
+      "id": "26485",
+      "label": "The Skin",
+      "type": "Entity"
+    },
+    {
+      "id": "26463",
+      "label": "The Sophist",
+      "type": "Entity"
+    },
+    {
+      "id": "11385",
+      "label": "The Soul",
+      "type": "Entity"
+    },
+    {
+      "id": "10749",
+      "label": "The Sphinx",
+      "type": "Entity"
+    },
+    {
+      "id": "19485",
+      "label": "The Spirit",
+      "type": "Entity"
+    },
+    {
+      "id": "16205",
+      "label": "The Spiritual",
+      "type": "Entity"
+    },
+    {
+      "id": "5562",
+      "label": "The Splendor",
+      "type": "Entity"
+    },
+    {
+      "id": "29205",
+      "label": "The Stanford Encyclopedia",
+      "type": "Entity"
+    },
+    {
+      "id": "10692",
+      "label": "The Star",
+      "type": "Entity"
+    },
+    {
+      "id": "46",
+      "label": "The State",
+      "type": "Entity"
+    },
+    {
+      "id": "1820",
+      "label": "The Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "7926",
+      "label": "The Story",
+      "type": "Entity"
+    },
+    {
+      "id": "17692",
+      "label": "The Strife",
+      "type": "Entity"
+    },
+    {
+      "id": "3786",
+      "label": "The Summa",
+      "type": "Entity"
+    },
+    {
+      "id": "10694",
+      "label": "The Sun",
+      "type": "Entity"
+    },
+    {
+      "id": "2136",
+      "label": "The Temple",
+      "type": "Entity"
+    },
+    {
+      "id": "10634",
+      "label": "The Ten",
+      "type": "Entity"
+    },
+    {
+      "id": "9095",
+      "label": "The Text",
+      "type": "Entity"
+    },
+    {
+      "id": "29208",
+      "label": "The Texts",
+      "type": "Entity"
+    },
+    {
+      "id": "6782",
+      "label": "The Theology",
+      "type": "Entity"
+    },
+    {
+      "id": "13135",
+      "label": "The Tradition",
+      "type": "Entity"
+    },
+    {
+      "id": "30915",
+      "label": "The Transformation",
+      "type": "Entity"
+    },
+    {
+      "id": "626",
+      "label": "The Transmission",
+      "type": "Entity"
+    },
+    {
+      "id": "10656",
+      "label": "The Tree",
+      "type": "Entity"
+    },
+    {
+      "id": "25809",
+      "label": "The Trial",
+      "type": "Entity"
+    },
+    {
+      "id": "10696",
+      "label": "The Universe",
+      "type": "Entity"
+    },
+    {
+      "id": "6564",
+      "label": "The Use",
+      "type": "Entity"
+    },
+    {
+      "id": "23031",
+      "label": "The Way",
+      "type": "Entity"
+    },
+    {
+      "id": "12529",
+      "label": "The Wisdom",
+      "type": "Entity"
+    },
+    {
+      "id": "31420",
+      "label": "The Woman",
+      "type": "Entity"
+    },
+    {
+      "id": "18675",
+      "label": "The Word",
+      "type": "Entity"
+    },
+    {
+      "id": "6692",
+      "label": "The Work",
+      "type": "Entity"
+    },
+    {
+      "id": "706",
+      "label": "The Works",
+      "type": "Entity"
+    },
+    {
+      "id": "9202",
+      "label": "The World",
+      "type": "Entity"
+    },
+    {
+      "id": "36110",
+      "label": "These",
+      "type": "Entity"
+    },
+    {
+      "id": "6475",
+      "label": "This Art",
+      "type": "Entity"
+    },
+    {
+      "id": "19416",
+      "label": "This Book",
+      "type": "Entity"
+    },
+    {
+      "id": "28072",
+      "label": "This Truth",
+      "type": "Entity"
+    },
+    {
+      "id": "36096",
+      "label": "Thomas",
+      "type": "Entity"
+    },
+    {
+      "id": "128",
+      "label": "Thomas Aquinas",
+      "type": "Entity"
+    },
+    {
+      "id": "4499",
+      "label": "Thomas Tymme",
+      "type": "Entity"
+    },
+    {
+      "id": "2101",
+      "label": "Three Books",
+      "type": "Entity"
+    },
+    {
+      "id": "21218",
+      "label": "Through This",
+      "type": "Entity"
+    },
+    {
+      "id": "36120",
+      "label": "Thus",
+      "type": "Entity"
+    },
+    {
+      "id": "35910",
+      "label": "Tin",
+      "type": "Entity"
+    },
+    {
+      "id": "35998",
+      "label": "Toad",
+      "type": "Entity"
+    },
+    {
+      "id": "36152",
+      "label": "Tradition",
+      "type": "Entity"
+    },
+    {
+      "id": "36008",
+      "label": "Transmutation",
+      "type": "Entity"
+    },
+    {
+      "id": "36193",
+      "label": "Trinity",
+      "type": "Entity"
+    },
+    {
+      "id": "13161",
+      "label": "Truth Does Not",
+      "type": "Entity"
+    },
+    {
+      "id": "36011",
+      "label": "Universal Solvent",
+      "type": "Entity"
+    },
+    {
+      "id": "36064",
+      "label": "University",
+      "type": "Entity"
+    },
+    {
+      "id": "4420",
+      "label": "Urszula Szulakowska",
+      "type": "Entity"
+    },
+    {
+      "id": "21593",
+      "label": "User Experience",
+      "type": "Entity"
+    },
+    {
+      "id": "35920",
+      "label": "Vinegar",
+      "type": "Entity"
+    },
+    {
+      "id": "30749",
+      "label": "Visual Representation",
+      "type": "Entity"
+    },
+    {
+      "id": "35904",
+      "label": "Vitriol",
+      "type": "Entity"
+    },
+    {
+      "id": "15064",
+      "label": "Web Development",
+      "type": "Entity"
+    },
+    {
+      "id": "36188",
+      "label": "What",
+      "type": "Entity"
+    },
+    {
+      "id": "19415",
+      "label": "What Can You",
+      "type": "Entity"
+    },
+    {
+      "id": "15494",
+      "label": "What Is",
+      "type": "Entity"
+    },
+    {
+      "id": "15004",
+      "label": "What Is This",
+      "type": "Entity"
+    },
+    {
+      "id": "28914",
+      "label": "When Pico",
+      "type": "Entity"
+    },
+    {
+      "id": "4112",
+      "label": "White Stone",
+      "type": "Entity"
+    },
+    {
+      "id": "23813",
+      "label": "Who Is",
+      "type": "Entity"
+    },
+    {
+      "id": "36099",
+      "label": "William",
+      "type": "Entity"
+    },
+    {
+      "id": "36048",
+      "label": "Wolf",
+      "type": "Entity"
+    },
+    {
+      "id": "25669",
+      "label": "Wouter Hanegraa",
+      "type": "Entity"
+    },
+    {
+      "id": "7015",
+      "label": "Wouter Hanegraaff",
+      "type": "Entity"
+    },
+    {
+      "id": "21522",
+      "label": "You Know About",
+      "type": "Entity"
+    },
+    {
+      "id": "848",
+      "label": "Young Man",
+      "type": "Entity"
+    },
+    {
+      "id": "15083",
+      "label": "Your Own",
+      "type": "Entity"
+    },
+    {
+      "id": "36098",
+      "label": "Zosimos",
+      "type": "Entity"
+    }
+  ],
   "edges": []
 }

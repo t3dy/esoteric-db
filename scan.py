@@ -368,13 +368,30 @@ def export_json(conn, export_path, static=False):
     ''')
     wordcloud = [{"word": row[0], "weight": row[1]} for row in cursor.fetchall()]
 
+    # Metrics (Reference Portal)
+    cursor.execute("SELECT name, scholar_interest, user_curiosity, gap FROM metrics")
+    metrics_data = [{"name": r[0], "scholar_interest": r[1], "user_curiosity": r[2], "gap": r[3]} for r in cursor.fetchall()]
+
+    cursor.execute("SELECT COUNT(*) FROM entities")
+    total_entities = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM chats")
+    total_chats = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM questions")
+    total_questions = cursor.fetchone()[0]
+
     stats = { 
         "topics": topic_counts, 
         "authors": authors,
         "periods": period_counts,
         "timeline": timeline,
         "wordcloud": wordcloud,
+        "metrics": metrics_data,
         "total_docs": len(docs),
+        "total_entities": total_entities,
+        "total_chats": total_chats,
+        "total_questions": total_questions,
         "generated_at": datetime.now().isoformat()
     }
     with open(os.path.join(export_path, "stats.json"), "w") as f:
@@ -405,7 +422,24 @@ def export_json(conn, export_path, static=False):
     with open(os.path.join(export_path, "lists.json"), "w") as f:
         json.dump(lists, f, indent=2)
 
-    # 4. Knowledge Graph (graph.json)
+    # 4. Chat Intelligence (questions.json, tables.json)
+    cursor.execute("SELECT q.text, q.move_type, q.opus_stage, c.title, c.topic FROM questions q JOIN chats c ON q.chat_id = c.id")
+    questions = [{"text": r[0], "type": r[1], "stage": r[2], "chat": r[3], "topic": r[4]} for r in cursor.fetchall()]
+    with open(os.path.join(export_path, "questions.json"), "w") as f:
+        json.dump(questions, f, indent=2)
+
+    cursor.execute("SELECT t.content, t.topic, c.title FROM tables t JOIN chats c ON t.chat_id = c.id")
+    tables = [{"content": r[0], "topic": r[1], "chat": r[2]} for r in cursor.fetchall()]
+    with open(os.path.join(export_path, "tables.json"), "w") as f:
+        json.dump(tables, f, indent=2)
+
+    # 5. Specialized Entities (entities.json)
+    cursor.execute("SELECT name, type, attributes FROM entities")
+    all_ent = [{"name": r[0], "type": r[1], "attributes": r[2]} for r in cursor.fetchall()]
+    with open(os.path.join(export_path, "entities.json"), "w") as f:
+        json.dump(all_ent, f, indent=2)
+
+    # 6. Knowledge Graph (graph.json)
     nodes = []
     edges = []
     
