@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Cytoscape.js for Graph -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <!-- WordCloud2.js for Word Cloud -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
     <style>
         [x-cloak] {
             display: none !important;
@@ -145,14 +147,31 @@
         </div>
 
         <!-- Tab Content: Insights -->
+        <!-- Tab Content: Insights -->
         <div x-show="activeTab === 'insights'" x-cloak>
-            <div class="bg-white overflow-hidden shadow rounded-lg divide-y divide-gray-200">
-                <div class="px-4 py-5 sm:px-6">
-                    <h3 class="text-lg leading-6 font-medium text-gray-900">Document Distribution</h3>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">Counts by Topic.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Topic Distribution -->
+                <div class="bg-white overflow-hidden shadow rounded-lg p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Topic Distribution</h3>
+                    <div class="relative h-64">
+                        <canvas id="topicChart"></canvas>
+                    </div>
                 </div>
-                <div class="px-4 py-5 sm:p-6">
-                    <canvas id="topicChart" width="400" height="200"></canvas>
+
+                <!-- Word Cloud -->
+                <div class="bg-white overflow-hidden shadow rounded-lg p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Key Concepts</h3>
+                    <div class="relative h-64 bg-gray-50 rounded border flex items-center justify-center">
+                        <canvas id="wordCloudCanvas" class="w-full h-full"></canvas>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="bg-white overflow-hidden shadow rounded-lg p-4 col-span-1 md:col-span-2">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Library Growth Over Time</h3>
+                    <div class="relative h-64">
+                        <canvas id="timelineChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,6 +270,8 @@
                 docs: [],
                 chats: [],
                 activeChat: null,
+                statsData: null,
+                renderedInsights: false,
                 searchIndex: {}, // doc_id -> text
                 searchQuery: '', // Document filter
                 fullTextQuery: '', // Search tab query
@@ -317,9 +338,17 @@
                         // Load Stats
                         const statsRes = await fetch('stats.json');
                         if (statsRes.ok) {
-                            const stats = await statsRes.json();
-                            this.renderChart(stats);
+                            this.statsData = await statsRes.json();
                         }
+
+                        this.$watch('activeTab', val => {
+                            if (val === 'insights' && !this.renderedInsights && this.statsData) {
+                                this.$nextTick(() => {
+                                    this.renderCharts(this.statsData);
+                                    this.renderedInsights = true;
+                                });
+                            }
+                        });
 
                         // Load Search Index (Lazy load if active?)
                         if (this.config.features?.search) {
@@ -353,25 +382,64 @@
                     }
                 },
 
-                renderChart(stats) {
-                    const ctx = document.getElementById('topicChart').getContext('2d');
-                    new Chart(ctx, {
-                        type: 'bar',
+                renderCharts(stats) {
+                    // 1. Topic Doughnut
+                    const ctxTopic = document.getElementById('topicChart').getContext('2d');
+                    new Chart(ctxTopic, {
+                        type: 'doughnut',
                         data: {
-                            labels: stats.map(s => s.label),
+                            labels: stats.topics.map(s => s.label),
                             datasets: [{
-                                label: '# of Documents',
-                                data: stats.map(s => s.value),
-                                backgroundColor: 'rgba(79, 70, 229, 0.2)',
-                                borderColor: 'rgba(79, 70, 229, 1)',
-                                borderWidth: 1
+                                data: stats.topics.map(s => s.value),
+                                backgroundColor: [
+                                    '#4F46E5', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#6366F1'
+                                ],
+                                borderWidth: 0
                             }]
                         },
                         options: {
-                            scales: {
-                                y: { beginAtZero: true }
-                            }
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { position: 'right' } }
                         }
+                    });
+
+                    // 2. Timeline Line Chart
+                    const ctxTimeline = document.getElementById('timelineChart').getContext('2d');
+                    new Chart(ctxTimeline, {
+                        type: 'line',
+                        data: {
+                            labels: stats.timeline.map(s => s.label),
+                            datasets: [{
+                                label: 'Documents Added',
+                                data: stats.timeline.map(s => s.value),
+                                borderColor: '#4F46E5',
+                                backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: { y: { beginAtZero: true } }
+                        }
+                    });
+
+                    // 3. Word Cloud
+                    const canvas = document.getElementById('wordCloudCanvas');
+                    // Resize canvas to parent
+                    canvas.width = canvas.parentElement.offsetWidth;
+                    canvas.height = canvas.parentElement.offsetHeight;
+
+                    WordCloud(canvas, {
+                        list: stats.wordcloud.map(x => [x.word, x.weight]),
+                        gridSize: 8,
+                        weightFactor: (size) => Math.log(size + 1) * 15, // Log scale for better fit
+                        fontFamily: 'sans-serif',
+                        color: 'random-dark',
+                        rotateRatio: 0.5,
+                        backgroundColor: 'transparent'
                     });
                 },
 

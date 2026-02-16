@@ -1,370 +1,836 @@
-[
-  {
-    "label": "Shakespeare",
-    "value": 118
-  },
-  {
-    "label": "book review",
-    "value": 93
-  },
-  {
-    "label": "game studies",
-    "value": 79
-  },
-  {
-    "label": "neoplatonism",
-    "value": 75
-  },
-  {
-    "label": "Pico",
-    "value": 61
-  },
-  {
-    "label": "western esotericism religious studies",
-    "value": 54
-  },
-  {
-    "label": "book reviews unsorted",
-    "value": 54
-  },
-  {
-    "label": "alchemy",
-    "value": 46
-  },
-  {
-    "label": "magic",
-    "value": 45
-  },
-  {
-    "label": "history philosophy",
-    "value": 42
-  },
-  {
-    "label": "Dee",
-    "value": 41
-  },
-  {
-    "label": "pkd",
-    "value": 34
-  },
-  {
-    "label": "hp emblems",
-    "value": 34
-  },
-  {
-    "label": "databaseINBOX",
-    "value": 33
-  },
-  {
-    "label": "ancient magic gnostic pgm etc",
-    "value": 32
-  },
-  {
-    "label": "trithemius",
-    "value": 28
-  },
-  {
-    "label": "Hilma af Klint",
-    "value": 28
-  },
-  {
-    "label": "Arthurian",
-    "value": 27
-  },
-  {
-    "label": "Game Design",
-    "value": 25
-  },
-  {
-    "label": "hermetic",
-    "value": 24
-  },
-  {
-    "label": "O-Meara",
-    "value": 24
-  },
-  {
-    "label": "Agrippa",
-    "value": 24
-  },
-  {
-    "label": "Tarot",
-    "value": 22
-  },
-  {
-    "label": "music",
-    "value": 21
-  },
-  {
-    "label": "code social media content creation",
-    "value": 21
-  },
-  {
-    "label": "Bruno",
-    "value": 21
-  },
-  {
-    "label": "philosophy",
-    "value": 19
-  },
-  {
-    "label": "kabbalah",
-    "value": 18
-  },
-  {
-    "label": "chemistry",
-    "value": 18
-  },
-  {
-    "label": "renaissance magic",
-    "value": 17
-  },
-  {
-    "label": "religion",
-    "value": 17
-  },
-  {
-    "label": "learning",
-    "value": 17
-  },
-  {
-    "label": "intentionality",
-    "value": 17
-  },
-  {
-    "label": "crowley",
-    "value": 17
-  },
-  {
-    "label": "Copenhaver",
-    "value": 17
-  },
-  {
-    "label": "zosimos",
-    "value": 16
-  },
-  {
-    "label": "witchcraft studies Hutton",
-    "value": 16
-  },
-  {
-    "label": "renaissance studies",
-    "value": 16
-  },
-  {
-    "label": "pdf",
-    "value": 15
-  },
-  {
-    "label": "narrative and instructional design",
-    "value": 14
-  },
-  {
-    "label": "Islamicate Chill Pills",
-    "value": 14
-  },
-  {
-    "label": "atalanta fugiens",
-    "value": 13
-  },
-  {
-    "label": "articles",
-    "value": 13
-  },
-  {
-    "label": "Reuchlin",
-    "value": 13
-  },
-  {
-    "label": "RAW HPL PKD WSB etc misc SF",
-    "value": 13
-  },
-  {
-    "label": "medieval magic",
-    "value": 12
-  },
-  {
-    "label": "data sci",
-    "value": 12
-  },
-  {
-    "label": "Paracelsus",
-    "value": 12
-  },
-  {
-    "label": "hermetica",
-    "value": 11
-  },
-  {
-    "label": "medieval studies medieval philosophy",
-    "value": 10
-  },
-  {
-    "label": "Margaret Jacob",
-    "value": 10
-  },
-  {
-    "label": "psychedelic",
-    "value": 9
-  },
-  {
-    "label": "Robin Hood",
-    "value": 9
-  },
-  {
-    "label": "David Litwa",
-    "value": 9
-  },
-  {
-    "label": "poetry lit",
-    "value": 8
-  },
-  {
-    "label": "Digital Humanities",
-    "value": 8
-  },
-  {
-    "label": "bohme",
-    "value": 7
-  },
-  {
-    "label": "Devil",
-    "value": 7
-  },
-  {
-    "label": "Cavendish",
-    "value": 7
-  },
-  {
-    "label": "economics marxism",
-    "value": 6
-  },
-  {
-    "label": "Zika",
-    "value": 6
-  },
-  {
-    "label": "Rosicrucian",
-    "value": 6
-  },
-  {
-    "label": "Idriesh Shah",
-    "value": 6
-  },
-  {
-    "label": "Ficino",
-    "value": 6
-  },
-  {
-    "label": "Eranos",
-    "value": 6
-  },
-  {
-    "label": "spiritual alchemy",
-    "value": 5
-  },
-  {
-    "label": "roger bacon",
-    "value": 5
-  },
-  {
-    "label": "altered states",
-    "value": 5
-  },
-  {
-    "label": "Fludd",
-    "value": 5
-  },
-  {
-    "label": "Arabic alchemy",
-    "value": 5
-  },
-  {
-    "label": "magic squares",
-    "value": 4
-  },
-  {
-    "label": "emblem studies",
-    "value": 4
-  },
-  {
-    "label": "albertus magnus",
-    "value": 4
-  },
-  {
-    "label": "Bataille",
-    "value": 4
-  },
-  {
-    "label": "media studies",
-    "value": 3
-  },
-  {
-    "label": "haunt",
-    "value": 3
-  },
-  {
-    "label": "games",
-    "value": 3
-  },
-  {
-    "label": "design",
-    "value": 3
-  },
-  {
-    "label": "blake",
-    "value": 3
-  },
-  {
-    "label": "Rosarium Philosophorum",
-    "value": 3
-  },
-  {
-    "label": "Kircher",
-    "value": 3
-  },
-  {
-    "label": "occult",
-    "value": 2
-  },
-  {
-    "label": "illustrations",
-    "value": 2
-  },
-  {
-    "label": "early modern",
-    "value": 2
-  },
-  {
-    "label": "FM Van Helmont",
-    "value": 2
-  },
-  {
-    "label": "social science",
-    "value": 1
-  },
-  {
-    "label": "history of science",
-    "value": 1
-  },
-  {
-    "label": "cog sci",
-    "value": 1
-  },
-  {
-    "label": "art of memory",
-    "value": 1
-  },
-  {
-    "label": "Grimoire",
-    "value": 1
-  },
-  {
-    "label": "Christian Cabalah",
-    "value": 1
-  },
-  {
-    "label": "Apuleis",
-    "value": 1
-  }
-]
+{
+  "topics": [
+    {
+      "label": "Agrippa",
+      "value": 24
+    },
+    {
+      "label": "Apuleis",
+      "value": 1
+    },
+    {
+      "label": "Arabic alchemy",
+      "value": 5
+    },
+    {
+      "label": "Arthurian",
+      "value": 27
+    },
+    {
+      "label": "Bataille",
+      "value": 4
+    },
+    {
+      "label": "Bruno",
+      "value": 21
+    },
+    {
+      "label": "Cavendish",
+      "value": 7
+    },
+    {
+      "label": "Christian Cabalah",
+      "value": 1
+    },
+    {
+      "label": "Copenhaver",
+      "value": 17
+    },
+    {
+      "label": "David Litwa",
+      "value": 9
+    },
+    {
+      "label": "Dee",
+      "value": 41
+    },
+    {
+      "label": "Devil",
+      "value": 7
+    },
+    {
+      "label": "Digital Humanities",
+      "value": 8
+    },
+    {
+      "label": "Eranos",
+      "value": 6
+    },
+    {
+      "label": "FM Van Helmont",
+      "value": 2
+    },
+    {
+      "label": "Ficino",
+      "value": 6
+    },
+    {
+      "label": "Fludd",
+      "value": 5
+    },
+    {
+      "label": "Game Design",
+      "value": 25
+    },
+    {
+      "label": "Grimoire",
+      "value": 1
+    },
+    {
+      "label": "Hilma af Klint",
+      "value": 28
+    },
+    {
+      "label": "Idriesh Shah",
+      "value": 6
+    },
+    {
+      "label": "Islamicate Chill Pills",
+      "value": 14
+    },
+    {
+      "label": "Kircher",
+      "value": 3
+    },
+    {
+      "label": "Margaret Jacob",
+      "value": 10
+    },
+    {
+      "label": "O-Meara",
+      "value": 24
+    },
+    {
+      "label": "Paracelsus",
+      "value": 12
+    },
+    {
+      "label": "Pico",
+      "value": 61
+    },
+    {
+      "label": "RAW HPL PKD WSB etc misc SF",
+      "value": 13
+    },
+    {
+      "label": "Reuchlin",
+      "value": 13
+    },
+    {
+      "label": "Robin Hood",
+      "value": 9
+    },
+    {
+      "label": "Rosarium Philosophorum",
+      "value": 3
+    },
+    {
+      "label": "Rosicrucian",
+      "value": 6
+    },
+    {
+      "label": "Shakespeare",
+      "value": 118
+    },
+    {
+      "label": "Tarot",
+      "value": 22
+    },
+    {
+      "label": "Zika",
+      "value": 6
+    },
+    {
+      "label": "albertus magnus",
+      "value": 4
+    },
+    {
+      "label": "alchemy",
+      "value": 46
+    },
+    {
+      "label": "altered states",
+      "value": 5
+    },
+    {
+      "label": "ancient magic gnostic pgm etc",
+      "value": 32
+    },
+    {
+      "label": "art of memory",
+      "value": 1
+    },
+    {
+      "label": "articles",
+      "value": 13
+    },
+    {
+      "label": "atalanta fugiens",
+      "value": 13
+    },
+    {
+      "label": "blake",
+      "value": 3
+    },
+    {
+      "label": "bohme",
+      "value": 7
+    },
+    {
+      "label": "book review",
+      "value": 93
+    },
+    {
+      "label": "book reviews unsorted",
+      "value": 54
+    },
+    {
+      "label": "chemistry",
+      "value": 18
+    },
+    {
+      "label": "code social media content creation",
+      "value": 21
+    },
+    {
+      "label": "cog sci",
+      "value": 1
+    },
+    {
+      "label": "crowley",
+      "value": 17
+    },
+    {
+      "label": "data sci",
+      "value": 12
+    },
+    {
+      "label": "databaseINBOX",
+      "value": 33
+    },
+    {
+      "label": "design",
+      "value": 3
+    },
+    {
+      "label": "early modern",
+      "value": 2
+    },
+    {
+      "label": "economics marxism",
+      "value": 6
+    },
+    {
+      "label": "emblem studies",
+      "value": 4
+    },
+    {
+      "label": "game studies",
+      "value": 79
+    },
+    {
+      "label": "games",
+      "value": 3
+    },
+    {
+      "label": "haunt",
+      "value": 3
+    },
+    {
+      "label": "hermetic",
+      "value": 24
+    },
+    {
+      "label": "hermetica",
+      "value": 11
+    },
+    {
+      "label": "history of science",
+      "value": 1
+    },
+    {
+      "label": "history philosophy",
+      "value": 42
+    },
+    {
+      "label": "hp emblems",
+      "value": 34
+    },
+    {
+      "label": "illustrations",
+      "value": 2
+    },
+    {
+      "label": "intentionality",
+      "value": 17
+    },
+    {
+      "label": "kabbalah",
+      "value": 18
+    },
+    {
+      "label": "learning",
+      "value": 17
+    },
+    {
+      "label": "magic",
+      "value": 45
+    },
+    {
+      "label": "magic squares",
+      "value": 4
+    },
+    {
+      "label": "media studies",
+      "value": 3
+    },
+    {
+      "label": "medieval magic",
+      "value": 12
+    },
+    {
+      "label": "medieval studies medieval philosophy",
+      "value": 10
+    },
+    {
+      "label": "music",
+      "value": 21
+    },
+    {
+      "label": "narrative and instructional design",
+      "value": 14
+    },
+    {
+      "label": "neoplatonism",
+      "value": 75
+    },
+    {
+      "label": "occult",
+      "value": 2
+    },
+    {
+      "label": "pdf",
+      "value": 15
+    },
+    {
+      "label": "philosophy",
+      "value": 19
+    },
+    {
+      "label": "pkd",
+      "value": 34
+    },
+    {
+      "label": "poetry lit",
+      "value": 8
+    },
+    {
+      "label": "psychedelic",
+      "value": 9
+    },
+    {
+      "label": "religion",
+      "value": 17
+    },
+    {
+      "label": "renaissance magic",
+      "value": 17
+    },
+    {
+      "label": "renaissance studies",
+      "value": 16
+    },
+    {
+      "label": "roger bacon",
+      "value": 5
+    },
+    {
+      "label": "social science",
+      "value": 1
+    },
+    {
+      "label": "spiritual alchemy",
+      "value": 5
+    },
+    {
+      "label": "trithemius",
+      "value": 28
+    },
+    {
+      "label": "western esotericism religious studies",
+      "value": 54
+    },
+    {
+      "label": "witchcraft studies Hutton",
+      "value": 16
+    },
+    {
+      "label": "zosimos",
+      "value": 16
+    }
+  ],
+  "timeline": [
+    {
+      "label": "2023-05",
+      "value": 13
+    },
+    {
+      "label": "2024-09",
+      "value": 380
+    },
+    {
+      "label": "2024-10",
+      "value": 22
+    },
+    {
+      "label": "2024-11",
+      "value": 124
+    },
+    {
+      "label": "2024-12",
+      "value": 212
+    },
+    {
+      "label": "2025-01",
+      "value": 43
+    },
+    {
+      "label": "2025-05",
+      "value": 67
+    },
+    {
+      "label": "2025-06",
+      "value": 22
+    },
+    {
+      "label": "2025-07",
+      "value": 40
+    },
+    {
+      "label": "2025-08",
+      "value": 51
+    },
+    {
+      "label": "2025-09",
+      "value": 51
+    },
+    {
+      "label": "2025-10",
+      "value": 336
+    },
+    {
+      "label": "2025-11",
+      "value": 6
+    },
+    {
+      "label": "2026-01",
+      "value": 14
+    },
+    {
+      "label": "2026-02",
+      "value": 269
+    }
+  ],
+  "wordcloud": [
+    {
+      "word": "jstor",
+      "weight": 1763
+    },
+    {
+      "word": "university",
+      "weight": 1319
+    },
+    {
+      "word": "org",
+      "weight": 963
+    },
+    {
+      "word": "book",
+      "weight": 962
+    },
+    {
+      "word": "terms",
+      "weight": 910
+    },
+    {
+      "word": "history",
+      "weight": 762
+    },
+    {
+      "word": "http",
+      "weight": 723
+    },
+    {
+      "word": "www",
+      "weight": 712
+    },
+    {
+      "word": "shakespeare",
+      "weight": 688
+    },
+    {
+      "word": "century",
+      "weight": 676
+    },
+    {
+      "word": "content",
+      "weight": 648
+    },
+    {
+      "word": "renaissance",
+      "weight": 615
+    },
+    {
+      "word": "magic",
+      "weight": 606
+    },
+    {
+      "word": "philosophy",
+      "weight": 594
+    },
+    {
+      "word": "science",
+      "weight": 586
+    },
+    {
+      "word": "der",
+      "weight": 577
+    },
+    {
+      "word": "information",
+      "weight": 551
+    },
+    {
+      "word": "published",
+      "weight": 546
+    },
+    {
+      "word": "press",
+      "weight": 546
+    },
+    {
+      "word": "were",
+      "weight": 541
+    },
+    {
+      "word": "subject",
+      "weight": 538
+    },
+    {
+      "word": "conditions",
+      "weight": 535
+    },
+    {
+      "word": "und",
+      "weight": 534
+    },
+    {
+      "word": "your",
+      "weight": 521
+    },
+    {
+      "word": "author",
+      "weight": 505
+    },
+    {
+      "word": "pico",
+      "weight": 503
+    },
+    {
+      "word": "downloaded",
+      "weight": 485
+    },
+    {
+      "word": "studies",
+      "weight": 484
+    },
+    {
+      "word": "such",
+      "weight": 476
+    },
+    {
+      "word": "early",
+      "weight": 471
+    },
+    {
+      "word": "die",
+      "weight": 459
+    },
+    {
+      "word": "article",
+      "weight": 449
+    },
+    {
+      "word": "sonnets",
+      "weight": 448
+    },
+    {
+      "word": "modern",
+      "weight": 433
+    },
+    {
+      "word": "des",
+      "weight": 417
+    },
+    {
+      "word": "text",
+      "weight": 410
+    },
+    {
+      "word": "volume",
+      "weight": 406
+    },
+    {
+      "word": "study",
+      "weight": 405
+    },
+    {
+      "word": "alchemy",
+      "weight": 396
+    },
+    {
+      "word": "art",
+      "weight": 395
+    },
+    {
+      "word": "world",
+      "weight": 393
+    },
+    {
+      "word": "scholars",
+      "weight": 377
+    },
+    {
+      "word": "works",
+      "weight": 371
+    },
+    {
+      "word": "page",
+      "weight": 370
+    },
+    {
+      "word": "archive",
+      "weight": 370
+    },
+    {
+      "word": "stable",
+      "weight": 364
+    },
+    {
+      "word": "both",
+      "weight": 364
+    },
+    {
+      "word": "nature",
+      "weight": 340
+    },
+    {
+      "word": "upon",
+      "weight": 338
+    },
+    {
+      "word": "texts",
+      "weight": 338
+    },
+    {
+      "word": "review",
+      "weight": 337
+    },
+    {
+      "word": "series",
+      "weight": 334
+    },
+    {
+      "word": "von",
+      "weight": 333
+    },
+    {
+      "word": "english",
+      "weight": 326
+    },
+    {
+      "word": "part",
+      "weight": 319
+    },
+    {
+      "word": "edition",
+      "weight": 313
+    },
+    {
+      "word": "com",
+      "weight": 311
+    },
+    {
+      "word": "research",
+      "weight": 311
+    },
+    {
+      "word": "digital",
+      "weight": 310
+    },
+    {
+      "word": "life",
+      "weight": 307
+    },
+    {
+      "word": "alchemical",
+      "weight": 306
+    },
+    {
+      "word": "john",
+      "weight": 303
+    },
+    {
+      "word": "access",
+      "weight": 303
+    },
+    {
+      "word": "medieval",
+      "weight": 302
+    },
+    {
+      "word": "available",
+      "weight": 301
+    },
+    {
+      "word": "cambridge",
+      "weight": 300
+    },
+    {
+      "word": "vol",
+      "weight": 299
+    },
+    {
+      "word": "thought",
+      "weight": 297
+    },
+    {
+      "word": "man",
+      "weight": 284
+    },
+    {
+      "word": "students",
+      "weight": 282
+    },
+    {
+      "word": "books",
+      "weight": 281
+    },
+    {
+      "word": "scholarship",
+      "weight": 277
+    },
+    {
+      "word": "tradition",
+      "weight": 270
+    },
+    {
+      "word": "forms",
+      "weight": 268
+    },
+    {
+      "word": "journal",
+      "weight": 265
+    },
+    {
+      "word": "technology",
+      "weight": 261
+    },
+    {
+      "word": "game",
+      "weight": 255
+    },
+    {
+      "word": "christian",
+      "weight": 254
+    },
+    {
+      "word": "however",
+      "weight": 253
+    },
+    {
+      "word": "introduction",
+      "weight": 253
+    },
+    {
+      "word": "doi",
+      "weight": 253
+    },
+    {
+      "word": "utc",
+      "weight": 252
+    },
+    {
+      "word": "edited",
+      "weight": 248
+    },
+    {
+      "word": "society",
+      "weight": 244
+    },
+    {
+      "word": "support",
+      "weight": 243
+    },
+    {
+      "word": "social",
+      "weight": 243
+    },
+    {
+      "word": "should",
+      "weight": 242
+    },
+    {
+      "word": "library",
+      "weight": 239
+    },
+    {
+      "word": "della",
+      "weight": 238
+    },
+    {
+      "word": "form",
+      "weight": 237
+    },
+    {
+      "word": "london",
+      "weight": 236
+    },
+    {
+      "word": "ancient",
+      "weight": 235
+    },
+    {
+      "word": "range",
+      "weight": 234
+    },
+    {
+      "word": "https",
+      "weight": 234
+    },
+    {
+      "word": "three",
+      "weight": 230
+    },
+    {
+      "word": "philosophical",
+      "weight": 229
+    },
+    {
+      "word": "years",
+      "weight": 228
+    },
+    {
+      "word": "wide",
+      "weight": 228
+    },
+    {
+      "word": "knowledge",
+      "weight": 227
+    },
+    {
+      "word": "here",
+      "weight": 225
+    }
+  ]
+}

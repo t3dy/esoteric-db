@@ -239,9 +239,39 @@ def export_json(conn, export_path):
     with open(os.path.join(export_path, "docs.json"), "w") as f:
         json.dump(docs, f, indent=2)
 
-    # 2. Stats
-    cursor.execute("SELECT topic, COUNT(*) as count FROM documents GROUP BY topic ORDER BY count DESC")
-    stats = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+    # 2. Stats (stats.json)
+    # Counts by Topic
+    print("Computing stats...")
+    cursor.execute("SELECT topic, COUNT(*) FROM documents GROUP BY topic")
+    topic_counts = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+
+    # Timeline: Docs by Creation Date (Month)
+    cursor.execute("SELECT strftime('%Y-%m', created_at) as month, COUNT(*) FROM documents GROUP BY month ORDER BY month")
+    timeline_data = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+
+    # Word Cloud: Top 100 Words
+    # We'll do a simple heuristic on the `chunks` table.
+    # Limiting to a sample of chunks to avoid OOM on large libraries.
+    cursor.execute("SELECT text_content FROM chunks ORDER BY RANDOM() LIMIT 2000")
+    
+    word_freq = {}
+    stopwords = {"the", "and", "of", "to", "in", "a", "is", "that", "for", "it", "as", "was", "with", "on", "by", "this", "are", "be", "from", "at", "or", "an", "not", "have", "which", "but", "can", "if", "their", "has", "will", "all", "so", "one", "no", "what", "more", "when", "there", "about", "they", "its", "up", "into", "out", "new", "some", "my", "we", "you", "he", "she", "his", "her", "had", "been", "would", "who", "them", "other", "than", "then", "now", "only", "first", "also", "two", "do", "any", "like", "our", "work", "after", "most", "time", "may", "these", "over", "see", "use", "make", "well", "way", "even", "because", "between", "through", "being", "much", "many", "how", "those", "where", "while", "during", "before", "own", "just", "very", "back", "still"}
+    
+    for row in cursor.fetchall():
+        text = row[0].lower()
+        words = re.findall(r'\b[a-z]{3,}\b', text) # Words with 3+ chars
+        for w in words:
+            if w not in stopwords:
+                word_freq[w] = word_freq.get(w, 0) + 1
+    
+    top_words = sorted(word_freq.items(), key=lambda x: x[1], reverse=True)[:100]
+    word_cloud_data = [{"word": w, "weight": c} for w, c in top_words]
+
+    stats = {
+        "topics": topic_counts,
+        "timeline": timeline_data,
+        "wordcloud": word_cloud_data
+    }
     with open(os.path.join(export_path, "stats.json"), "w") as f:
         json.dump(stats, f, indent=2)
         
