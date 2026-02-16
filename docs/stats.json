@@ -1,0 +1,370 @@
+[
+  {
+    "label": "Shakespeare",
+    "value": 118
+  },
+  {
+    "label": "book review",
+    "value": 93
+  },
+  {
+    "label": "game studies",
+    "value": 79
+  },
+  {
+    "label": "neoplatonism",
+    "value": 75
+  },
+  {
+    "label": "Pico",
+    "value": 61
+  },
+  {
+    "label": "western esotericism religious studies",
+    "value": 54
+  },
+  {
+    "label": "book reviews unsorted",
+    "value": 54
+  },
+  {
+    "label": "alchemy",
+    "value": 46
+  },
+  {
+    "label": "magic",
+    "value": 45
+  },
+  {
+    "label": "history philosophy",
+    "value": 42
+  },
+  {
+    "label": "Dee",
+    "value": 41
+  },
+  {
+    "label": "pkd",
+    "value": 34
+  },
+  {
+    "label": "hp emblems",
+    "value": 34
+  },
+  {
+    "label": "databaseINBOX",
+    "value": 33
+  },
+  {
+    "label": "ancient magic gnostic pgm etc",
+    "value": 32
+  },
+  {
+    "label": "trithemius",
+    "value": 28
+  },
+  {
+    "label": "Hilma af Klint",
+    "value": 28
+  },
+  {
+    "label": "Arthurian",
+    "value": 27
+  },
+  {
+    "label": "Game Design",
+    "value": 25
+  },
+  {
+    "label": "hermetic",
+    "value": 24
+  },
+  {
+    "label": "O-Meara",
+    "value": 24
+  },
+  {
+    "label": "Agrippa",
+    "value": 24
+  },
+  {
+    "label": "Tarot",
+    "value": 22
+  },
+  {
+    "label": "music",
+    "value": 21
+  },
+  {
+    "label": "code social media content creation",
+    "value": 21
+  },
+  {
+    "label": "Bruno",
+    "value": 21
+  },
+  {
+    "label": "philosophy",
+    "value": 19
+  },
+  {
+    "label": "kabbalah",
+    "value": 18
+  },
+  {
+    "label": "chemistry",
+    "value": 18
+  },
+  {
+    "label": "renaissance magic",
+    "value": 17
+  },
+  {
+    "label": "religion",
+    "value": 17
+  },
+  {
+    "label": "learning",
+    "value": 17
+  },
+  {
+    "label": "intentionality",
+    "value": 17
+  },
+  {
+    "label": "crowley",
+    "value": 17
+  },
+  {
+    "label": "Copenhaver",
+    "value": 17
+  },
+  {
+    "label": "zosimos",
+    "value": 16
+  },
+  {
+    "label": "witchcraft studies Hutton",
+    "value": 16
+  },
+  {
+    "label": "renaissance studies",
+    "value": 16
+  },
+  {
+    "label": "pdf",
+    "value": 15
+  },
+  {
+    "label": "narrative and instructional design",
+    "value": 14
+  },
+  {
+    "label": "Islamicate Chill Pills",
+    "value": 14
+  },
+  {
+    "label": "atalanta fugiens",
+    "value": 13
+  },
+  {
+    "label": "articles",
+    "value": 13
+  },
+  {
+    "label": "Reuchlin",
+    "value": 13
+  },
+  {
+    "label": "RAW HPL PKD WSB etc misc SF",
+    "value": 13
+  },
+  {
+    "label": "medieval magic",
+    "value": 12
+  },
+  {
+    "label": "data sci",
+    "value": 12
+  },
+  {
+    "label": "Paracelsus",
+    "value": 12
+  },
+  {
+    "label": "hermetica",
+    "value": 11
+  },
+  {
+    "label": "medieval studies medieval philosophy",
+    "value": 10
+  },
+  {
+    "label": "Margaret Jacob",
+    "value": 10
+  },
+  {
+    "label": "psychedelic",
+    "value": 9
+  },
+  {
+    "label": "Robin Hood",
+    "value": 9
+  },
+  {
+    "label": "David Litwa",
+    "value": 9
+  },
+  {
+    "label": "poetry lit",
+    "value": 8
+  },
+  {
+    "label": "Digital Humanities",
+    "value": 8
+  },
+  {
+    "label": "bohme",
+    "value": 7
+  },
+  {
+    "label": "Devil",
+    "value": 7
+  },
+  {
+    "label": "Cavendish",
+    "value": 7
+  },
+  {
+    "label": "economics marxism",
+    "value": 6
+  },
+  {
+    "label": "Zika",
+    "value": 6
+  },
+  {
+    "label": "Rosicrucian",
+    "value": 6
+  },
+  {
+    "label": "Idriesh Shah",
+    "value": 6
+  },
+  {
+    "label": "Ficino",
+    "value": 6
+  },
+  {
+    "label": "Eranos",
+    "value": 6
+  },
+  {
+    "label": "spiritual alchemy",
+    "value": 5
+  },
+  {
+    "label": "roger bacon",
+    "value": 5
+  },
+  {
+    "label": "altered states",
+    "value": 5
+  },
+  {
+    "label": "Fludd",
+    "value": 5
+  },
+  {
+    "label": "Arabic alchemy",
+    "value": 5
+  },
+  {
+    "label": "magic squares",
+    "value": 4
+  },
+  {
+    "label": "emblem studies",
+    "value": 4
+  },
+  {
+    "label": "albertus magnus",
+    "value": 4
+  },
+  {
+    "label": "Bataille",
+    "value": 4
+  },
+  {
+    "label": "media studies",
+    "value": 3
+  },
+  {
+    "label": "haunt",
+    "value": 3
+  },
+  {
+    "label": "games",
+    "value": 3
+  },
+  {
+    "label": "design",
+    "value": 3
+  },
+  {
+    "label": "blake",
+    "value": 3
+  },
+  {
+    "label": "Rosarium Philosophorum",
+    "value": 3
+  },
+  {
+    "label": "Kircher",
+    "value": 3
+  },
+  {
+    "label": "occult",
+    "value": 2
+  },
+  {
+    "label": "illustrations",
+    "value": 2
+  },
+  {
+    "label": "early modern",
+    "value": 2
+  },
+  {
+    "label": "FM Van Helmont",
+    "value": 2
+  },
+  {
+    "label": "social science",
+    "value": 1
+  },
+  {
+    "label": "history of science",
+    "value": 1
+  },
+  {
+    "label": "cog sci",
+    "value": 1
+  },
+  {
+    "label": "art of memory",
+    "value": 1
+  },
+  {
+    "label": "Grimoire",
+    "value": 1
+  },
+  {
+    "label": "Christian Cabalah",
+    "value": 1
+  },
+  {
+    "label": "Apuleis",
+    "value": 1
+  }
+]
