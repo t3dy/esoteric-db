@@ -5,6 +5,14 @@ import json
 import argparse
 from datetime import datetime
 
+# Try importing pypdf for text extraction
+try:
+    import pypdf
+    HAS_PYPDF = True
+except ImportError:
+    HAS_PYPDF = False
+    print("Warning: pypdf not installed. Text extraction skipped.")
+
 # --- Configuration ---
 DB_NAME = "esoteric.db"
 EXPORT_DIR = "docs" # GitHub Pages defaults to root or /docs
@@ -34,7 +42,7 @@ def init_db(conn):
         size INTEGER,
         created_at DATETIME
     )
-    ''')
+    ''') 
 
     # --- Nub Tables (Future Features) ---
     # 1. Text Search / Chunking
@@ -91,6 +99,24 @@ def init_db(conn):
 
     conn.commit()
 
+def extract_text_from_pdf(filepath, max_pages=2):
+    """Extracts text from the first N pages of a PDF."""
+    if not HAS_PYPDF:
+        return []
+    
+    chunks = []
+    try:
+        reader = pypdf.PdfReader(filepath)
+        num_pages = len(reader.pages)
+        for i in range(min(num_pages, max_pages)):
+            page = reader.pages[i]
+            text = page.extract_text()
+            if text:
+                chunks.append((i + 1, text.strip()))
+    except Exception as e:
+        print(f"  Error extracting text from {os.path.basename(filepath)}: {e}")
+    return chunks
+
 def scan_and_ingest(conn, root_dir):
     """Scans directories and ingests files into SQLite."""
     cursor = conn.cursor()
@@ -119,7 +145,7 @@ def scan_and_ingest(conn, root_dir):
                         file_hash = hashlib.sha256(f.read()).hexdigest()
                     doc_id = file_hash # Use hash as ID for now
                     
-                    # Upsert (Insert or Ignore to avoid dupes)
+                    # Upsert Document
                     cursor.execute('''
                     INSERT INTO documents (id, hash, filename, path, topic, size, created_at)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -128,6 +154,17 @@ def scan_and_ingest(conn, root_dir):
                         topic=excluded.topic
                     ''', (doc_id, file_hash, filename, filepath, topic, size, created))
                     
+                    # Extract & Insert Chunks (Text)
+                    # Optimization: Only extract if we haven't already for this doc_id
+                    cursor.execute("SELECT COUNT(*) FROM chunks WHERE doc_id = ?", (doc_id,))
+                    if cursor.fetchone()[0] == 0:
+                        chunks = extract_text_from_pdf(filepath)
+                        for page_num, text in chunks:
+                            cursor.execute('''
+                            INSERT INTO chunks (doc_id, page_num, text_content)
+                            VALUES (?, ?, ?)
+                            ''', (doc_id, page_num, text))
+
                     count += 1
                     if count % 10 == 0:
                         print(f"Processed {count} files...", end="\r")
@@ -148,7 +185,6 @@ def export_json(conn, export_path):
     # 1. Catalog (docs.json)
     cursor.execute("SELECT id, filename, topic, size, created_at, path FROM documents")
     columns = [desc[0] for desc in cursor.description]
-    # Simple dict comprehension for rows
     docs = []
     for row in cursor.fetchall():
         docs.append(dict(zip(columns, row)))
@@ -156,19 +192,38 @@ def export_json(conn, export_path):
     with open(os.path.join(export_path, "docs.json"), "w") as f:
         json.dump(docs, f, indent=2)
         
-    # 2. Stats (stats.json) - For the "Insights" tab
+    # 2. Stats (stats.json)
     cursor.execute("SELECT topic, COUNT(*) as count FROM documents GROUP BY topic ORDER BY count DESC")
     stats = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
 
     with open(os.path.join(export_path, "stats.json"), "w") as f:
         json.dump(stats, f, indent=2)
 
-    # 3. Config (config.json) - To toggle "Seed" vs "Full" features
+    # 3. Search Index (search.json) - Lightweight!
+    # We export: doc_id -> combined text of first few pages (truncated)
+    print("Building search index...")
+    cursor.execute("SELECT doc_id, text_content FROM chunks")
+    search_index = {}
+    for doc_id, text in cursor.fetchall():
+        if doc_id not in search_index:
+            search_index[doc_id] = ""
+        # Limit total text per doc to ~1KB to keep JSON size manageable for static site
+        if len(search_index[doc_id]) < 1000: 
+            search_index[doc_id] += " " + text
+            
+    # Clean up whitespace
+    for k in search_index:
+        search_index[k] = " ".join(search_index[k].split())[:1000]
+
+    with open(os.path.join(export_path, "search.json"), "w") as f:
+        json.dump(search_index, f)
+
+    # 4. Config (config.json)
     config = {
         "features": {
-            "search": False, # Stub
-            "graph": False,  # Stub
-            "chat": False    # Stub
+            "search": True,  # ENABLED!
+            "graph": False, 
+            "chat": False
         },
         "generated_at": datetime.now().isoformat()
     }
@@ -185,5 +240,5 @@ if __name__ == "__main__":
     conn = sqlite3.connect(DB_NAME)
     init_db(conn)
     scan_and_ingest(conn, args.dir)
-    export_json(conn, EXPORT_DIR) # Export to docs/ folder for GitHub Pages
+    export_json(conn, EXPORT_DIR)
     conn.close()

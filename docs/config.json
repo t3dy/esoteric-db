@@ -1,8 +1,8 @@
 {
   "features": {
-    "search": false,
+    "search": true,
     "graph": false,
     "chat": false
   },
-  "generated_at": "2026-02-15T16:07:31.616599"
+  "generated_at": "2026-02-15T16:35:19.829597"
 }
