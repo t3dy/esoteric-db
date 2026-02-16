@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -74,11 +75,17 @@
             <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Hermetic Tradition • <a
                     href="reference.html" class="hover:text-emerald-500 transition">Reference Portal</a></p>
         </div>
-        <div class="flex bg-slate-900/50 p-1 rounded-xl border border-white/5">
-            <button id="btn-docs" onclick="setMode('docs')"
-                class="px-6 py-2 text-xs font-black rounded-lg transition-all bg-emerald-600 text-white shadow-lg shadow-emerald-900/20">Documents</button>
-            <button id="btn-figures" onclick="setMode('figures')"
-                class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Figures</button>
+        <div class="flex items-center gap-4">
+            <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
+                class="px-3 py-1.5 glass border border-white/10 rounded-lg text-slate-400 text-[10px] font-black hover:bg-slate-800 transition">
+                SEARCH <span class="ml-2 border border-white/20 px-1 rounded text-[9px]">CTRL K</span>
+            </button>
+            <div class="flex bg-slate-900/50 p-1 rounded-xl border border-white/5">
+                <button id="btn-docs" onclick="setMode('docs')"
+                    class="px-6 py-2 text-xs font-black rounded-lg transition-all bg-emerald-600 text-white shadow-lg shadow-emerald-900/20">Documents</button>
+                <button id="btn-figures" onclick="setMode('lineage')"
+                    class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Lineage</button>
+            </div>
         </div>
     </header>
 
@@ -87,67 +94,101 @@
         <main class="flex-1 overflow-y-auto p-10">
             <div class="max-w-5xl mx-auto space-y-8">
 
-                <!-- Filters -->
-                <div class="glass p-6 rounded-3xl space-y-6">
-                    <input type="text" id="search" placeholder="Search Lineages, Authors, or Treatises..."
-                        class="w-full bg-slate-950/50 text-white p-4 rounded-2xl border border-white/5 focus:ring-2 focus:ring-emerald-500 focus:outline-none placeholder:text-slate-600 font-medium">
-
-                    <div id="filter-container">
-                        <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3 block">Time
-                            Period / Lineage</span>
-                        <div id="pills" class="flex flex-wrap gap-2">
-                            <!-- Pills injected here -->
-                        </div>
+                <!-- Research Guide / Instructions -->
+                <div class="bg-emerald-900/10 border border-emerald-500/20 p-6 rounded-3xl flex gap-6 items-start">
+                    <div class="text-3xl text-emerald-500">📖</div>
+                    <div>
+                        <h3 class="font-black text-emerald-400 uppercase tracking-tighter text-sm mb-2">Hermetic
+                            Exploration Guide</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Welcome to the <span class="text-slate-200 font-bold">Hermetic Scholarly Gallery</span>. Use
+                            the tools above to navigate the tradition:
+                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Filter by Period</span>
+                            to trace the transmission of Gnosis through history.
+                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Toggle Figures</span>
+                            to see the scholars and magi behind the texts.
+                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Click any card</span>
+                            to expand deep metadata and view source PDFs.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Result Counter -->
-                <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
-                    Loading lineage data...
-                </div>
+            </div>
 
-                <!-- Content Grid/List -->
-                <div id="content" class="grid grid-cols-1 gap-4">
-                    <!-- Cards injected here -->
+            <!-- Golden Chain Visualizer (Lineage Mode Only) -->
+            <div id="lineage-visual" class="hidden space-y-8 animate-in fade-in duration-500">
+                <div id="epoch-banner" class="glass p-8 rounded-[2.5rem] border-emerald-500/20 glow-emerald">
+                    <!-- Banner content here -->
+                </div>
+                <div
+                    class="glass p-10 rounded-[3rem] overflow-hidden relative min-h-[500px] flex items-center justify-center">
+                    <svg id="golden-chain-svg" class="w-full h-full absolute inset-0"></svg>
+                    <div id="lineage-nodes" class="relative w-full h-full z-10"></div>
                 </div>
             </div>
-        </main>
 
-        <!-- Detail Drawer (Right) -->
-        <aside id="drawer"
-            class="w-[450px] glass border-l shadow-2xl z-20 overflow-y-auto flex flex-col p-10 fixed right-0 top-0 h-full">
-            <div class="flex justify-between items-start mb-10">
-                <button onclick="closeDrawer()" class="text-slate-500 hover:text-white transition text-3xl">×</button>
-                <span
-                    class="text-[10px] font-black text-emerald-500 border border-emerald-500/30 px-3 py-1 rounded-full uppercase tracking-tighter">Lineage
-                    Record</span>
+            <!-- Result Counter -->
+            <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
+                Loading lineage data...
             </div>
-            <div id="drawer-content" class="space-y-10">
-                <div class="text-center p-20 text-slate-600">
-                    <p class="text-sm italic">Select an entry to trace its history.</p>
-                </div>
+
+            <!-- Content Grid/List -->
+            <div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Cards injected here -->
             </div>
-        </aside>
+    </div>
+    </main>
+
+    <!-- Detail Drawer (Right) -->
+    <aside id="drawer"
+        class="w-[450px] glass border-l shadow-2xl z-20 overflow-y-auto flex flex-col p-10 fixed right-0 top-0 h-full">
+        <div class="flex justify-between items-start mb-10">
+            <button onclick="closeDrawer()" class="text-slate-500 hover:text-white transition text-3xl">×</button>
+            <span
+                class="text-[10px] font-black text-emerald-500 border border-emerald-500/30 px-3 py-1 rounded-full uppercase tracking-tighter">Lineage
+                Record</span>
+        </div>
+        <div id="drawer-content" class="space-y-10">
+            <div class="text-center p-20 text-slate-600">
+                <p class="text-sm italic">Select an entry to trace its history.</p>
+            </div>
+        </div>
+    </aside>
     </div>
 
     <script>
         let mode = 'docs';
         let docs = [];
         let figures = [];
+        let lineageData = null;
         let activeFilters = { q: '', category: null };
 
         async function init() {
             try {
-                const [dRes, sRes] = await Promise.all([
+                const [dRes, sRes, lRes] = await Promise.all([
                     fetch('docs.json'),
-                    fetch('entities.json')
+                    fetch('entities.json'),
+                    fetch('data/snapshots/hermetic_lineage.json')
                 ]);
 
                 if (dRes.ok) docs = (await dRes.json()).filter(d => d.topic === 'hermetic' || (d.path && d.path.includes('hermetic')));
                 if (sRes.ok) figures = (await sRes.json()).filter(e => e.type.includes('Hermetic'));
+                if (lRes.ok) lineageData = await lRes.json();
 
                 renderPills();
-                applyFilters();
+
+                // Handle Shared Routing Contract (V9.1)
+                if (window.omniParams) {
+                    if (window.omniParams.focus) {
+                        setMode('lineage');
+                        // Logic to focus node will go in renderLineage
+                    } else if (window.omniParams.q) {
+                        document.getElementById('search').value = window.omniParams.q;
+                        applyFilters();
+                    }
+                } else {
+                    applyFilters();
+                }
             } catch (e) {
                 console.error(e);
             }
@@ -156,11 +197,62 @@
         function setMode(newMode) {
             mode = newMode;
             document.getElementById('btn-docs').className = mode === 'docs' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-emerald-600 text-white shadow-lg shadow-emerald-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
-            document.getElementById('btn-figures').className = mode === 'figures' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-emerald-600 text-white shadow-lg shadow-emerald-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
+            document.getElementById('btn-figures').className = mode === 'lineage' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-emerald-600 text-white shadow-lg shadow-emerald-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
 
-            activeFilters.category = null;
-            renderPills();
-            applyFilters();
+            const lineageVisual = document.getElementById('lineage-visual');
+            const contentGrid = document.getElementById('content');
+            const filterBox = document.querySelector('.glass.p-6.rounded-3xl.space-y-6');
+
+            if (mode === 'lineage') {
+                lineageVisual.classList.remove('hidden');
+                contentGrid.classList.add('hidden');
+                filterBox.classList.add('hidden');
+                renderLineage();
+            } else {
+                lineageVisual.classList.add('hidden');
+                contentGrid.classList.remove('hidden');
+                filterBox.classList.remove('hidden');
+                renderPills();
+                applyFilters();
+            }
+        }
+
+        function renderLineage() {
+            if (!lineageData) return;
+            const banner = document.getElementById('epoch-banner');
+            const nodesContainer = document.getElementById('lineage-nodes');
+            const svg = document.getElementById('golden-chain-svg');
+
+            // Default epoch
+            const epoch = lineageData.epochs[0];
+            banner.innerHTML = `
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-[10px] font-black text-emerald-500 uppercase tracking-widest">Epoch Milestone</span>
+                    <span class="text-[10px] font-bold text-white bg-emerald-500/20 px-3 py-1 rounded-full uppercase tracking-widest">${epoch.range}</span>
+                </div>
+                <h2 class="text-4xl font-black text-white italic serif mb-4">${epoch.label}</h2>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-2xl italic">${epoch.banner}</p>
+                <div class="flex gap-4 mt-6">
+                    ${epoch.themes.map(t => `<span class="bg-emerald-500/10 text-emerald-400 text-[9px] font-black uppercase px-3 py-1 rounded-lg border border-emerald-500/20">${t}</span>`).join('')}
+                </div>
+            `;
+
+            // Simple Node Rendering
+            nodesContainer.innerHTML = lineageData.nodes.map((n, i) => `
+                <div class="absolute bg-slate-900 border border-emerald-500/40 p-4 rounded-2xl cursor-pointer hover:border-emerald-500 transition-all group" 
+                     style="left: ${20 + (i % 3) * 30}%; top: ${20 + Math.floor(i / 3) * 30}%; transform: translate(-50%, -50%)"
+                     onclick="openItem('figures', '${n.id}')">
+                    <div class="text-xs font-black text-emerald-500 uppercase tracking-tighter mb-1">${n.period}</div>
+                    <div class="text-sm font-bold text-white group-hover:text-emerald-400 serif italic">${n.label}</div>
+                </div>
+            `).join('');
+
+            // Draw Edges (Simple SVG)
+            svg.innerHTML = lineageData.edges.map(e => `
+                <line x1="20%" y1="20%" x2="50%" y2="20%" stroke="rgba(16, 185, 129, 0.1)" stroke-width="1" />
+            `).join('');
+
+            document.getElementById('counter').innerText = `${lineageData.nodes.length} Nodes in the Golden Chain`;
         }
 
         function renderPills() {
@@ -204,9 +296,11 @@
             container.innerHTML = filtered.map(item => `
                 <div onclick="openItem('${mode}', '${item.id || item.name}')" class="glass p-6 rounded-2xl hover:bg-slate-800/80 cursor-pointer transition flex justify-between items-center group">
                     <div>
-                        <div class="text-xs font-black text-emerald-500 uppercase tracking-widest mb-1">${mode === 'docs' ? item.period : (item.type || 'Figure')}</div>
-                        <div class="text-xl font-bold group-hover:text-emerald-400 transition">${item.title || item.filename || item.name}</div>
-                        <div class="text-[10px] text-slate-500 font-mono mt-1">${item.author || (item.attributes ? JSON.parse(item.attributes).source : '')}</div>
+                        <div class="text-xl font-bold group-hover:text-emerald-400 transition serif italic">${item.title || item.filename || item.name}</div>
+                        <div class="flex items-center gap-3 mt-1">
+                            <span class="text-[9px] font-black uppercase tracking-widest text-emerald-500/60">${mode === 'docs' ? (item.period || 'Renaissance') : (item.type || 'Figure')}</span>
+                            ${mode === 'docs' ? `<span class="text-[9px] text-slate-600 uppercase font-bold tracking-tighter opacity-0 group-hover:opacity-100 transition">View Treatise Details →</span>` : ''}
+                        </div>
                     </div>
                     <div class="text-slate-600 group-hover:text-emerald-500 transition text-2xl">→</div>
                 </div>
@@ -238,11 +332,17 @@
                                 <div class="text-sm font-bold text-slate-300">${item.period || 'Renaissance'}</div>
                             </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Hermetic Significance</label>
-                            <p class="text-sm text-slate-400 leading-relaxed italic">
-                                This text contains vital lineage data for the ${item.period} period. It serves as a bridge for the transmission of Aglaophamus's teachings through the Chain of Gold.
-                            </p>
+                        <div class="space-y-4">
+                            <label class="text-[9px] font-black text-emerald-500 uppercase tracking-widest block">Hermetic Significance & Lineage</label>
+                            <div class="bg-emerald-900/10 border border-emerald-500/20 p-6 rounded-3xl space-y-3">
+                                <p class="text-sm text-slate-300 leading-relaxed italic">
+                                    ${item.summary || `This treatise is a vital link in the ${item.period} transmission. It provides primary evidence for the 'Chain of Gold' (Aurea Catena) and the preservation of the Prisca Theologia.`}
+                                </p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-emerald-500/20 text-emerald-500 text-[8px] font-black uppercase rounded">Cited in Study Session</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[8px] font-black uppercase rounded">Primary Source</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 `;

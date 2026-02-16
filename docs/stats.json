@@ -70,11 +70,11 @@
     },
     {
       "label": "Shakespeare",
-      "value": 118
+      "value": 117
     },
     {
       "label": "Tarot",
-      "value": 22
+      "value": 21
     },
     {
       "label": "albertus magnus",
@@ -82,7 +82,7 @@
     },
     {
       "label": "alchemy",
-      "value": 247
+      "value": 242
     },
     {
       "label": "altered states",
@@ -146,7 +146,7 @@
     },
     {
       "label": "esoteric studies",
-      "value": 39
+      "value": 25
     },
     {
       "label": "game studies",
@@ -162,7 +162,7 @@
     },
     {
       "label": "hermetic",
-      "value": 24
+      "value": 50
     },
     {
       "label": "history of science",
@@ -222,7 +222,7 @@
     },
     {
       "label": "pkd",
-      "value": 35
+      "value": 34
     },
     {
       "label": "psychedelic",
@@ -230,7 +230,7 @@
     },
     {
       "label": "renaissance magic",
-      "value": 263
+      "value": 259
     },
     {
       "label": "renaissance studies",
@@ -964,7 +964,7 @@
   ],
   "total_docs": 1692,
   "total_entities": 21692,
-  "total_chats": 249,
-  "total_questions": 1210,
-  "generated_at": "2026-02-16T09:27:43.578860"
+  "total_chats": 0,
+  "total_questions": 0,
+  "generated_at": "2026-02-16T10:12:50.657108"
 }

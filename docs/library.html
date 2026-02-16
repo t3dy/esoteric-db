@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Charter:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -71,6 +72,10 @@
                     class="hover:text-emerald-600 transition">Return to Hub</a></p>
         </div>
         <div class="flex items-center gap-4">
+            <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
+                class="px-3 py-1.5 glass border border-slate-200 rounded-lg text-slate-400 text-[10px] font-black hover:bg-slate-50 transition">
+                SEARCH <span class="ml-2 border border-slate-200 px-1 rounded text-[9px]">CTRL K</span>
+            </button>
             <div id="stats-summary" class="text-xs font-mono text-slate-500">Loading metrics...</div>
         </div>
     </header>
@@ -173,7 +178,21 @@
                     document.getElementById('stats-summary').innerText = `${allDocs.length} DOCS • ${stats.topics.length} TOPICS`;
                 }
 
-                applyFilters();
+                // Handle Shared Routing Contract (V9.1)
+                if (window.omniParams) {
+                    if (window.omniParams.doc) {
+                        applyFilters(); // Ensure all docs are loaded/filtered
+                        openDoc(window.omniParams.doc);
+                    } else if (window.omniParams.q) {
+                        document.getElementById('search').value = window.omniParams.q;
+                        applyFilters();
+                    } else if (window.omniParams.topic) {
+                        toggleFilter('topic', window.omniParams.topic);
+                    }
+                } else {
+                    applyFilters();
+                }
+
             } catch (e) {
                 document.getElementById('list').innerHTML = `<tr><td colspan="4" class="p-12 text-center text-slate-400">Database offline or loading error.</td></tr>`;
             }
@@ -283,16 +302,14 @@
             const tbody = document.getElementById('list');
             tbody.innerHTML = docs.map(d => `
                 <tr onclick="openDoc('${d.id}')" class="group hover:bg-emerald-50 cursor-pointer transition">
-                    <td class="px-6 py-4">
-                        <div class="font-medium text-slate-900 group-hover:text-emerald-800 truncate max-w-lg">${d.title || d.filename}</div>
-                        <div class="text-[9px] text-slate-400 font-mono">${d.id}</div>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${d.author || 'Unknown'}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                         <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-2 py-0.5 rounded">${d.period || '-'}</span>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-right text-[10px] text-slate-400 font-bold uppercase">
-                        PDF
+                    <td class="px-6 py-4" colspan="4">
+                        <div class="flex items-center justify-between">
+                            <div class="font-bold text-slate-800 group-hover:text-emerald-700 text-lg serif">${d.title || d.filename}</div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-[9px] font-black uppercase tracking-widest text-slate-400 opacity-0 group-hover:opacity-100 transition">View Details →</span>
+                                <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-2 py-0.5 rounded">${d.period || '-'}</span>
+                            </div>
+                        </div>
                     </td>
                 </tr>
             `).join('');
@@ -344,6 +361,24 @@
                         <p class="text-xs text-slate-500 leading-relaxed italic">
                             ${doc.summary || 'Summary pending heuristic enrichment. This document is part of the ' + (doc.period || 'General') + ' scholarly corpus focusing on ' + (doc.topic || 'esoteric studies') + '.'}
                         </p>
+                    </div>
+
+                    <div class="space-y-3 pt-6 border-t border-slate-100">
+                        <label class="text-[9px] font-black text-slate-400 uppercase tracking-widest block">Quick Actions</label>
+                        <div class="grid grid-cols-1 gap-2">
+                             <button onclick="window.location.href='graph.html?focus=doc:${doc.id}'" class="flex justify-between items-center w-full p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold text-slate-600 hover:bg-emerald-50 hover:border-emerald-200 transition group">
+                                <span>View in Knowledge Graph</span>
+                                <span class="text-emerald-500 opacity-0 group-hover:opacity-100">🕸 →</span>
+                            </button>
+                            <button onclick="window.location.href='dictionary.html?q=${encodeURIComponent(doc.topic)}'" class="flex justify-between items-center w-full p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-200 transition group">
+                                <span>Check Dictionary Terms</span>
+                                <span class="text-amber-500 opacity-0 group-hover:opacity-100">📖 →</span>
+                            </button>
+                            <div class="p-3 bg-slate-100 border border-slate-200 rounded-xl text-[10px] text-slate-400 font-bold flex justify-between">
+                                <span>Related Chats</span>
+                                <span class="uppercase">Private Only</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="border-t pt-4">

@@ -1,0 +1,49 @@
+{
+  "version": "v9.1",
+  "generated_at": "2026-02-16T10:25:00Z",
+  "nodes": [
+    {"id": "hermes", "label": "Hermes Trismegistus", "period": "Late Antiquity", "kind": "figure", "importance": 1.0},
+    {"id": "asclepius", "label": "Asclepius", "period": "Late Antiquity", "kind": "figure", "importance": 0.8},
+    {"id": "poimandres", "label": "Poimandres", "period": "Late Antiquity", "kind": "figure", "importance": 0.9},
+    {"id": "aglaophamus", "label": "Aglaophamus", "period": "Ancient", "kind": "figure", "importance": 0.6},
+    {"id": "pythagoras", "label": "Pythagoras", "period": "Ancient", "kind": "figure", "importance": 0.8},
+    {"id": "plato", "label": "Plato", "period": "Ancient", "kind": "figure", "importance": 0.9},
+    {"id": "ficino", "label": "Marsilio Ficino", "period": "Renaissance", "kind": "figure", "importance": 0.9},
+    {"id": "bruno", "label": "Giordano Bruno", "period": "Renaissance", "kind": "figure", "importance": 0.8},
+    {"id": "dee", "label": "John Dee", "period": "Renaissance", "kind": "figure", "importance": 0.7}
+  ],
+  "edges": [
+    {"from": "hermes", "to": "aglaophamus", "type": "lineage", "label": "Prisca Theologia"},
+    {"from": "aglaophamus", "to": "pythagoras", "type": "transmission", "label": "Initiation"},
+    {"from": "pythagoras", "to": "plato", "type": "influence", "label": "Mathematical Gnosis"},
+    {"from": "hermes", "to": "ficino", "type": "rediscovery", "label": "1471 translation"},
+    {"from": "ficino", "to": "bruno", "type": "lineage", "label": "Eros & Magic"},
+    {"from": "ficino", "to": "dee", "type": "influence", "label": "Monas Hieroglyphica"}
+  ],
+  "epochs": [
+    {
+      "id": "late_antiquity",
+      "label": "Late Antiquity",
+      "range": "100–500 AD",
+      "banner": "The genesis of the Corpus Hermeticum in Roman Egypt.",
+      "themes": ["Gnosis", "Alchemy", "Astrology"],
+      "key_nodes": ["hermes", "asclepius", "poimandres"]
+    },
+    {
+      "id": "medieval",
+      "label": "Medieval Transition",
+      "range": "500–1400 AD",
+      "banner": "The preservation of Hermetica in the Arabic and Byzantine worlds.",
+      "themes": ["Alchemy", "Preservation"],
+      "key_nodes": []
+    },
+    {
+      "id": "renaissance",
+      "label": "Renaissance Revival",
+      "range": "1450–1650 AD",
+      "banner": "Marsilio Ficino transforms the Golden Chain for the Florentine Academy.",
+      "themes": ["Humanism", "Theurgy", "Magic"],
+      "key_nodes": ["ficino", "bruno", "dee"]
+    }
+  ]
+}

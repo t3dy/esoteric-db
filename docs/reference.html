@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;800&display=swap"
         rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
     <style>
         [x-cloak] {
             display: none !important;
@@ -38,166 +39,186 @@
                 <p class="text-slate-500">Scholarship Sources & Analytic Metrics • <a href="index.html"
                         class="text-indigo-600 hover:underline">Back to Landing</a></p>
             </div>
-            <div class="flex gap-2 bg-slate-200 p-1 rounded-lg self-start">
-                <button @click="mode = 'bookshelf'"
-                    :class="mode === 'bookshelf' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
-                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
-                    <span>📚</span> Bookshelf
+            <div class="flex items-center gap-4">
+                <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
+                    class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-400 text-[10px] font-black hover:bg-slate-50 transition">
+                    SEARCH <span class="ml-2 border border-slate-200 px-1 rounded text-[9px]">CTRL K</span>
                 </button>
-                <button @click="mode = 'metrics'"
-                    :class="mode === 'metrics' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
-                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
-                    <span>📊</span> Metrics Grid
-                </button>
-            </div>
-        </div>
-
-        <!-- Bookshelf Mode -->
-        <div x-show="mode === 'bookshelf'" x-cloak class="space-y-8 animate-in fade-in duration-500">
-            <!-- Hermetic -->
-            <div
-                class="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-slate-800">
-                <div class="flex justify-between items-start mb-6">
-                    <h3 class="text-3xl font-black">The Hermetic Tradition</h3>
-                    <a href="hermetic.html"
-                        class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold transition shadow-lg shadow-emerald-900/20">Open
-                        Portal</a>
+                <div class="flex gap-2 bg-slate-200 p-1 rounded-lg self-start">
+                    <button @click="mode = 'bookshelf'"
+                        :class="mode === 'bookshelf' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
+                        class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                        <span>📚</span> Bookshelf
+                    </button>
+                    <button @click="mode = 'metrics'"
+                        :class="mode === 'metrics' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
+                        class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                        <span>📊</span> Metrics Grid
+                    </button>
                 </div>
-                <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
-                    <template x-for="src in sources.filter(s => s.domain === 'Hermeticism')" :key="src.id">
-                        <div
-                            class="min-w-[220px] bg-white/5 backdrop-blur-md rounded-xl p-5 border border-white/5 hover:bg-white/10 transition cursor-default snap-start flex flex-col h-48 justify-between">
-                            <div>
-                                <div class="text-[10px] uppercase tracking-widest text-emerald-400 mb-2"
-                                    x-text="src.year"></div>
-                                <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
+            </div>
+
+            <!-- Bookshelf Mode -->
+            <div x-show="mode === 'bookshelf'" x-cloak class="space-y-8 animate-in fade-in duration-500">
+                <!-- Hermetic -->
+                <div
+                    class="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-slate-800">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-3xl font-black">The Hermetic Tradition</h3>
+                        <a href="hermetic.html"
+                            class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold transition shadow-lg shadow-emerald-900/20">Open
+                            Portal</a>
+                    </div>
+                    <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
+                        <template x-for="src in sources.filter(s => s.domain === 'Hermeticism')" :key="src.id">
+                            <div
+                                class="min-w-[220px] bg-white/5 backdrop-blur-md rounded-xl p-5 border border-white/5 hover:bg-white/10 transition cursor-default snap-start flex flex-col h-48 justify-between">
+                                <div>
+                                    <div class="text-[10px] uppercase tracking-widest text-emerald-400 mb-2"
+                                        x-text="src.year"></div>
+                                    <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
+                                </div>
+                                <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
                             </div>
-                            <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-
-            <!-- Alchemy -->
-            <div
-                class="bg-amber-950 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-amber-900/50">
-                <div class="flex justify-between items-start mb-6">
-                    <h3 class="text-3xl font-black">Alchemy</h3>
-                    <a href="alchemy.html"
-                        class="px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-sm font-bold transition shadow-lg shadow-amber-900/20">Open
-                        Portal</a>
-                </div>
-                <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
-                    <template x-for="src in sources.filter(s => s.domain === 'Alchemy')" :key="src.id">
-                        <div
-                            class="min-w-[220px] bg-white/5 backdrop-blur-md rounded-xl p-5 border border-white/5 hover:bg-white/10 transition cursor-default snap-start flex flex-col h-48 justify-between">
-                            <div>
-                                <div class="text-[10px] uppercase tracking-widest text-amber-400 mb-2"
-                                    x-text="src.year"></div>
-                                <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
-                            </div>
-                            <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </div>
-
-        <!-- Metrics Mode -->
-        <div x-show="mode === 'metrics'" x-cloak
-            class="bg-slate-900 rounded-[2.5rem] border border-white/5 shadow-2xl overflow-hidden animate-in fade-in duration-500">
-            <div class="p-8 border-b border-white/5 flex justify-between items-center">
-                <h3 class="text-xl font-black text-white uppercase tracking-tighter">Scholarly Momentum</h3>
-                <span
-                    class="text-[9px] font-black text-indigo-400 bg-indigo-400/10 px-3 py-1 rounded-full border border-indigo-400/20 uppercase tracking-widest">Live
-                    Research Analytics</span>
-            </div>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left text-sm">
-                    <thead class="bg-white/5 text-[10px] uppercase text-slate-500 font-black tracking-widest">
-                        <tr>
-                            <th class="px-8 py-6">Topic / Entity</th>
-                            <th class="px-8 py-6">Scholar Interest</th>
-                            <th class="px-8 py-6">User Curiosity</th>
-                            <th class="px-8 py-6">Desire Gap</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-white/5">
-                        <template x-for="row in metrics.sort((a,b) => b.gap - a.gap)" :key="row.name">
-                            <tr class="hover:bg-white-[0.02] transition group">
-                                <td class="px-8 py-6">
-                                    <div class="font-bold text-slate-200 group-hover:text-white transition"
-                                        x-text="row.name"></div>
-                                </td>
-                                <td class="px-8 py-6">
-                                    <div class="flex items-center gap-3">
-                                        <div class="h-1.5 rounded-full bg-slate-800 w-32 overflow-hidden shadow-inner">
-                                            <div class="h-full bg-slate-400" :style="`width: ${row.scholar_interest}%`">
-                                            </div>
-                                        </div>
-                                        <span class="text-[10px] font-mono text-slate-500"
-                                            x-text="row.scholar_interest + '%'"></span>
-                                    </div>
-                                </td>
-                                <td class="px-8 py-6">
-                                    <div class="flex items-center gap-3">
-                                        <div class="h-1.5 rounded-full bg-slate-800 w-32 overflow-hidden shadow-inner">
-                                            <div class="h-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)]"
-                                                :style="`width: ${row.user_curiosity}%`"></div>
-                                        </div>
-                                        <span class="text-[10px] font-mono text-indigo-400"
-                                            x-text="row.user_curiosity + '%'"></span>
-                                    </div>
-                                </td>
-                                <td class="px-8 py-6">
-                                    <span
-                                        class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter"
-                                        :class="row.gap > 20 ? 'bg-rose-500/10 text-rose-500 border border-rose-500/20' : (row.gap < 0 ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20' : 'bg-slate-800 text-slate-400')"
-                                        x-text="row.gap > 0 ? '+' + row.gap : row.gap"></span>
-                                </td>
-                            </tr>
                         </template>
-                    </tbody>
-                </table>
+                    </div>
+                </div>
+
+                <!-- Alchemy -->
+                <div
+                    class="bg-amber-950 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-amber-900/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-3xl font-black">Alchemy</h3>
+                        <a href="alchemy.html"
+                            class="px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-sm font-bold transition shadow-lg shadow-amber-900/20">Open
+                            Portal</a>
+                    </div>
+                    <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
+                        <template x-for="src in sources.filter(s => s.domain === 'Alchemy')" :key="src.id">
+                            <div
+                                class="min-w-[220px] bg-white/5 backdrop-blur-md rounded-xl p-5 border border-white/5 hover:bg-white/10 transition cursor-default snap-start flex flex-col h-48 justify-between">
+                                <div>
+                                    <div class="text-[10px] uppercase tracking-widest text-amber-400 mb-2"
+                                        x-text="src.year"></div>
+                                    <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
+                                </div>
+                                <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
             </div>
+
+            <!-- Metrics Mode -->
+            <div x-show="mode === 'metrics'" x-cloak
+                class="bg-slate-900 rounded-[2.5rem] border border-white/5 shadow-2xl overflow-hidden animate-in fade-in duration-500">
+                <div class="p-8 border-b border-white/5 flex justify-between items-center">
+                    <h3 class="text-xl font-black text-white uppercase tracking-tighter">Scholarly Momentum</h3>
+                    <div class="flex items-center gap-3">
+                        <template x-if="novelty && novelty.glows?.metrics_radar">
+                            <span
+                                class="text-[9px] font-black text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20 animate-pulse">NEW
+                                INSIGHTS</span>
+                        </template>
+                        <span
+                            class="text-[9px] font-black text-indigo-400 bg-indigo-400/10 px-3 py-1 rounded-full border border-indigo-400/20 uppercase tracking-widest">Live
+                            Research Analytics</span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-white/5 text-[10px] uppercase text-slate-500 font-black tracking-widest">
+                            <tr>
+                                <th class="px-8 py-6">Topic / Entity</th>
+                                <th class="px-8 py-6">Scholar Interest</th>
+                                <th class="px-8 py-6">User Curiosity</th>
+                                <th class="px-8 py-6">Desire Gap</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+                            <template x-for="row in metrics.sort((a,b) => b.gap - a.gap)" :key="row.name">
+                                <tr class="hover:bg-white-[0.02] transition group">
+                                    <td class="px-8 py-6">
+                                        <div class="font-bold text-slate-200 group-hover:text-white transition"
+                                            x-text="row.name"></div>
+                                    </td>
+                                    <td class="px-8 py-6">
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="h-1.5 rounded-full bg-slate-800 w-32 overflow-hidden shadow-inner">
+                                                <div class="h-full bg-slate-400"
+                                                    :style="`width: ${row.scholar_interest}%`">
+                                                </div>
+                                            </div>
+                                            <span class="text-[10px] font-mono text-slate-500"
+                                                x-text="row.scholar_interest + '%'"></span>
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-6">
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="h-1.5 rounded-full bg-slate-800 w-32 overflow-hidden shadow-inner">
+                                                <div class="h-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)]"
+                                                    :style="`width: ${row.user_curiosity}%`"></div>
+                                            </div>
+                                            <span class="text-[10px] font-mono text-indigo-400"
+                                                x-text="row.user_curiosity + '%'"></span>
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-6">
+                                        <span
+                                            class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter"
+                                            :class="row.gap > 20 ? 'bg-rose-500/10 text-rose-500 border border-rose-500/20' : (row.gap < 0 ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20' : 'bg-slate-800 text-slate-400')"
+                                            x-text="row.gap > 0 ? '+' + row.gap : row.gap"></span>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="loader" class="text-center py-12" x-show="loading">
+                <div
+                    class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-indigo-500 border-t-transparent">
+                </div>
+                <p class="mt-4 text-slate-500 font-mono text-[10px] uppercase tracking-widest">Synchronizing Esoteric
+                    Datasets...</p>
+            </div>
+
         </div>
 
-        <div id="loader" class="text-center py-12" x-show="loading">
-            <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-indigo-500 border-t-transparent">
-            </div>
-            <p class="mt-4 text-slate-500 font-mono text-[10px] uppercase tracking-widest">Synchronizing Esoteric
-                Datasets...</p>
-        </div>
+        <script>
+            function refApp() {
+                return {
+                    mode: 'bookshelf',
+                    sources: [],
+                    metrics: [],
+                    loading: true,
+                    novelty: null,
+                    async init() {
+                        try {
+                            const sRes = await fetch('sources.json');
+                            if (sRes.ok) this.sources = await sRes.json();
 
-    </div>
+                            const statsRes = await fetch('stats.json');
+                            if (statsRes.ok) {
+                                const stats = await statsRes.json();
+                                this.metrics = stats.metrics || [];
+                            }
 
-    <script>
-        function refApp() {
-            return {
-                mode: 'bookshelf',
-                sources: [],
-                metrics: [],
-                loading: true,
-                async init() {
-                    try {
-                        const sRes = await fetch('sources.json');
-                        if (sRes.ok) this.sources = await sRes.json();
+                            const nRes = await fetch('data/snapshots/novelty.json');
+                            if (nRes.ok) this.novelty = await nRes.json();
 
-                        const statsRes = await fetch('stats.json');
-                        if (statsRes.ok) {
-                            const stats = await statsRes.json();
-                            this.metrics = stats.metrics || [];
+                            this.loading = false;
+                        } catch (e) {
+                            console.error(e);
+                            this.loading = false;
                         }
-
-                        this.loading = false;
-                    } catch (e) {
-                        console.error(e);
-                        this.loading = false;
                     }
                 }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

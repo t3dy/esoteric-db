@@ -2,7 +2,7 @@
 
 A local-first data engineering and analytics system designed to model complex, ambiguous, and multi-modal scholarly domains. It ingests thousands of PDFs and years of research logs to produce an interactive knowledge graph and reflexive inquiry dashboard.
 
-**[🌐 Live Portal: https://t3dy.github.io/esoteric-db/](https://t3dy.github.io/esoteric-db/)**
+**[🌐 Live Portal: https://vileos.github.io/esoteric-studies-database/](https://vileos.github.io/esoteric-studies-database/)**
 
 ## Portfolio Narrative
 **The Problem**: Humanities research archives are typically unstructured "urban traffic"—PDFs, disparate notes, and sprawling chat transcripts.
@@ -32,6 +32,27 @@ A local-first data engineering and analytics system designed to model complex, a
 ### V. Reflexive Analytics (The "Desire Profile")
 - **Knowledge Gap Detection**: Detects "Desire Gaps" by cross-referencing high question density against low document availability in specific topic clusters.
 - **Trajectory Mapping**: Visualizes the evolution of research methodologies over time.
+
+---
+
+## 🏛 V9.1: Narrative & Interface Evolution
+
+This release focuses on unifying the research experience through structured data contracts and immersive narrative layers.
+
+### 🔍 Omni Search & Universal Navigation
+- **Command Palette (`Ctrl+K`)**: A system-wide search interface that indexes documents, dictionary entries, entities, and navigation commands.
+- **Shared Routing Contract**: Universal support for deep linking via query parameters across all portal pages.
+
+### ⛓ The "Golden Chain" Visualizer
+- **Lineage Gallery**: An interactive DAG-based tree in the Hermetic Workbench tracing the transmission of Hermetic thought across historical epochs.
+- **Epoch Milestone Banners**: Narrative summaries that provide context for major shifts in the tradition (Late Antiquity, Medieval, Renaissance).
+
+### 🔄 Discovery Loops & Quick Actions
+- **Dictionary Loops**: Data-driven recommendations that link alchemical terms to their primary source documents and related scholarship.
+- **Library Quick Actions**: Contextual sidebar in the document viewer allowing users to pivot instantly to the Knowledge Graph or Dictionary.
+
+### ✨ Ambient Discovery
+- **Feature Glows**: System-generated visual cues that highlight new data insights and metrics gaps, guiding the user toward under-utilized research paths.
 
 ---
 

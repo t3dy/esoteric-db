@@ -26,10 +26,14 @@ def init_db(conn):
         id TEXT PRIMARY KEY,
         hash TEXT,
         filename TEXT,
+        title TEXT,
         path TEXT,
         topic TEXT,
         author TEXT,
         period TEXT,
+        century TEXT,
+        language TEXT,
+        summary TEXT,
         size INTEGER,
         created_at DATETIME,
         enriched INTEGER DEFAULT 0
@@ -233,7 +237,7 @@ def init_db(conn):
     ''')
     conn.commit()
 
-def extract_text_silent(filepath, max_pages=3):
+def extract_text_silent(filepath, max_pages=5):
     if not HAS_PYPDF: return ""
     try:
         reader = pypdf.PdfReader(filepath)
@@ -246,6 +250,36 @@ def extract_text_silent(filepath, max_pages=3):
         return text.strip()
     except:
         return ""
+
+def extract_meta_heuristics(text, filename, topic_movement):
+    """Deeply mines author, time period, and topics from preamble text."""
+    author = "Unknown"
+    period = "Undetermined"
+    
+    # Author detection
+    author_matches = re.search(r'(?:By|Author|Written by|By the)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})', text, re.IGNORECASE)
+    if author_matches:
+        author = author_matches.group(1).strip()
+    elif " - " in filename:
+        author = filename.split(" - ", 1)[0].strip()
+    
+    # Time Period detection
+    text_lower = text.lower()
+    if any(k in text_lower for k in ["renaissance", "ficino", "15th century", "16th century"]): period = "Renaissance"
+    elif any(k in text_lower for k in ["medieval", "middle ages", "12th century", "13th century", "14th century"]): period = "Medieval"
+    elif any(k in text_lower for k in ["ancient", "bce", "plato", "aristotle", "neoplaton"]): period = "Ancient"
+    elif any(k in text_lower for k in ["gnostic", "papyri", "pgm", "hermetica", "nag hammadi"]): period = "Late Antiquity"
+    elif any(k in text_lower for k in ["enlightenment", "17th century", "18th century", "newton"]): period = "Enlightenment"
+    elif "19th century" in text_lower or "victorian" in text_lower: period = "19th Century"
+    elif any(k in text_lower for k in ["modern", "contemporary", "20th century", "21st century"]): period = "Contemporary"
+    
+    # Fallback to topic-based period if undetermined
+    if period == "Undetermined":
+        if topic_movement == "Alchemy": period = "Renaissance"
+        elif topic_movement == "Hermeticism": period = "Renaissance"
+        else: period = "Modern"
+
+    return author, period
 
 def mine_names_heuristic(text):
     # Filter out common starting words and short/junk phrases
@@ -283,20 +317,18 @@ def scan_and_ingest(conn, root_dir, enrich=False):
                     stats = os.stat(filepath)
                     doc_id = hashlib.md5(f"{filename}{stats.st_size}".encode()).hexdigest()[:12]
                     
-                    author = "Unknown"
-                    if " - " in filename: author = filename.split(" - ", 1)[0].strip()
-
-                    period = "Modern"
-                    p_lower = dirpath.lower()
-                    if "ancient" in p_lower or "antique" in p_lower: period = "Late Antique"
-                    elif "medieval" in p_lower: period = "Medieval"
-                    elif "renaissance" in p_lower: period = "Renaissance"
-                    elif "enlightenment" in p_lower: period = "Early Modern"
+                    # Read preamble for deep extraction
+                    preamble = extract_text_silent(filepath, max_pages=5)
+                    author, period = extract_meta_heuristics(preamble, filename, movement)
+                    
+                    # Clean title: Remove extension and author prefix if present
+                    clean_title = filename.rsplit(".", 1)[0]
+                    if " - " in clean_title: clean_title = clean_title.split(" - ", 1)[1].strip()
 
                     cursor.execute('''
-                    INSERT OR REPLACE INTO documents (id, filename, path, topic, author, period, size, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                    ''', (doc_id, filename, filepath, movement, author, period, stats.st_size, datetime.fromtimestamp(stats.st_ctime).isoformat()))
+                    INSERT OR REPLACE INTO documents (id, filename, path, topic, author, period, size, created_at, title)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ''', (doc_id, filename, filepath, movement, author, period, stats.st_size, datetime.fromtimestamp(stats.st_ctime).isoformat(), clean_title))
 
                     if enrich:
                         text = extract_text_silent(filepath)
@@ -328,7 +360,7 @@ def export_json(conn, export_path, static=False):
     os.makedirs(export_path, exist_ok=True)
     
     # 1. Documents (Relative paths if static)
-    cursor.execute("SELECT id, filename, topic, author, period, size, created_at, path, century, language, summary FROM documents")
+    cursor.execute("SELECT id, filename, topic, author, period, size, created_at, path, century, language, summary, title FROM documents")
     docs = []
     for r in cursor.fetchall():
         path = r[7]
@@ -345,7 +377,8 @@ def export_json(conn, export_path, static=False):
             "path": path,
             "century": r[8],
             "language": r[9],
-            "summary": r[10]
+            "summary": r[10],
+            "title": r[11]
         })
     
     with open(os.path.join(export_path, "docs.json"), "w") as f:
@@ -385,7 +418,7 @@ def export_json(conn, export_path, static=False):
     cursor.execute("SELECT COUNT(*) FROM chats")
     total_chats = cursor.fetchone()[0]
 
-    cursor.execute("SELECT COUNT(*) FROM questions")
+    cursor.execute("SELECT COUNT(*) FROM prompts")
     total_questions = cursor.fetchone()[0]
 
     stats = { 
@@ -430,8 +463,8 @@ def export_json(conn, export_path, static=False):
         json.dump(lists, f, indent=2)
 
     # 4. Chat Intelligence (questions.json, tables.json)
-    cursor.execute("SELECT q.text, q.move_type, q.opus_stage, c.title, c.topic FROM questions q JOIN chats c ON q.chat_id = c.id")
-    questions = [{"text": r[0], "type": r[1], "stage": r[2], "chat": r[3], "topic": r[4]} for r in cursor.fetchall()]
+    cursor.execute("SELECT q.text, q.move_type, q.opus_stage, c.title, c.topic, q.mentions_topic, q.mentions_figure, q.mentions_text, q.mentions_scholar FROM prompts q JOIN chats c ON q.chat_id = c.id")
+    questions = [{"text": r[0], "type": r[1], "stage": r[2], "chat": r[3], "topic": r[4], "mentions_topic": r[5], "mentions_figure": r[6], "mentions_text": r[7], "mentions_scholar": r[8]} for r in cursor.fetchall()]
     with open(os.path.join(export_path, "questions.json"), "w") as f:
         json.dump(questions, f, indent=2)
 

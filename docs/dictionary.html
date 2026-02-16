@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;800&display=swap"
         rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
     <style>
         [x-cloak] {
             display: none !important;
@@ -35,21 +36,31 @@
         <!-- Header -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-                <h1 class="text-4xl font-black text-slate-800">Digital Dictionary</h1>
+                <h1 class="text-4xl font-black text-slate-800 italic">Digital Dictionary</h1>
                 <p class="text-slate-500">Alchemical Headwords & Synthesis Log • <a href="index.html"
-                        class="text-indigo-600 hover:underline">Back to Landing</a></p>
+                        class="text-indigo-600 font-bold hover:underline">Back to Landing</a></p>
             </div>
-            <div class="flex gap-2 bg-slate-200 p-1 rounded-lg self-start">
-                <button @click="view = 'dictionary'"
-                    :class="view === 'dictionary' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
-                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
-                    <span>📖</span> Dictionary
+            <div class="flex items-center gap-4">
+                <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
+                    class="px-3 py-1.5 glass bg-white border border-slate-200 rounded-lg text-slate-400 text-[10px] font-black hover:bg-slate-50 transition">
+                    SEARCH <span class="ml-2 border border-slate-200 px-1 rounded text-[9px]">CTRL K</span>
                 </button>
-                <button @click="view = 'chats'"
-                    :class="view === 'chats' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
-                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
-                    <span>💬</span> Chat Explorer
-                </button>
+                <div class="flex gap-4 p-4 bg-white border border-slate-200 rounded-2xl shadow-sm" x-if="stats">
+                    <div class="text-center">
+                        <div class="text-[10px] font-black text-slate-400 uppercase">Entries</div>
+                        <div class="text-xl font-bold text-slate-800" x-text="stats.total_entries"></div>
+                    </div>
+                    <div class="w-px bg-slate-100"></div>
+                    <div class="text-center">
+                        <div class="text-[10px] font-black text-rose-400 uppercase">Missing Def</div>
+                        <div class="text-xl font-bold text-rose-600" x-text="stats.missing_short_definition"></div>
+                    </div>
+                    <div class="w-px bg-slate-100"></div>
+                    <div class="text-center">
+                        <div class="text-[10px] font-black text-indigo-400 uppercase">Gaps</div>
+                        <div class="text-xl font-bold text-indigo-600" x-text="stats.thin_evidence_count"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -79,21 +90,56 @@
                         <div class="text-indigo-600 font-serif italic" x-text="activeEntry.short_definition"></div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-slate-100">
-                            <div class="space-y-2">
-                                <h3
-                                    class="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-slate-400"></div> Physical Mode
-                                </h3>
-                                <p class="text-sm text-slate-700 leading-relaxed pl-4 border-l-2 border-slate-200"
-                                    x-text="activeEntry.physical_meaning"></p>
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <h3
+                                        class="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-slate-400"></div> Physical Mode
+                                    </h3>
+                                    <p class="text-sm text-slate-700 leading-relaxed pl-4 border-l-2 border-slate-200"
+                                        x-text="activeEntry.physical_meaning"></p>
+                                </div>
+                                <div class="space-y-2">
+                                    <h3
+                                        class="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-rose-400"></div> Spiritual Mode
+                                    </h3>
+                                    <p class="text-sm text-slate-700 leading-relaxed pl-4 border-l-2 border-rose-200"
+                                        x-text="activeEntry.spiritual_meaning"></p>
+                                </div>
                             </div>
-                            <div class="space-y-2">
-                                <h3
-                                    class="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-rose-400"></div> Spiritual Mode
-                                </h3>
-                                <p class="text-sm text-slate-700 leading-relaxed pl-4 border-l-2 border-rose-200"
-                                    x-text="activeEntry.spiritual_meaning"></p>
+
+                            <!-- Discovery Loop (V9.1) -->
+                            <div class="space-y-6 bg-slate-50 p-6 rounded-3xl border border-slate-100">
+                                <h3 class="text-[10px] font-black text-indigo-600 uppercase tracking-widest mb-4">
+                                    Discovery Loop: Primary Sources</h3>
+                                <div class="space-y-3">
+                                    <template x-for="rec in getRecommendations()" :key="rec.doc_id">
+                                        <div class="p-3 bg-white border border-slate-200 rounded-xl hover:border-indigo-300 transition cursor-pointer group"
+                                            @click="window.location.href='library.html?doc=' + rec.doc_id">
+                                            <div class="text-[10px] font-bold text-slate-400 uppercase"
+                                                x-text="rec.reason"></div>
+                                            <div class="text-xs font-bold text-slate-800 group-hover:text-indigo-600 truncate"
+                                                x-text="rec.title"></div>
+                                        </div>
+                                    </template>
+                                    <template x-if="!getRecommendations().length">
+                                        <p class="text-[10px] text-slate-400 italic">No direct primary source links
+                                            found in current index.</p>
+                                    </template>
+                                </div>
+                                <div class="pt-4 border-t border-slate-200 mt-4">
+                                    <h3 class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2">Also
+                                        Explore</h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        <template x-for="sub in getRelatedEntries()" :key="sub.slug">
+                                            <span
+                                                class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] text-indigo-500 font-black cursor-pointer hover:bg-indigo-50"
+                                                @click="activeEntry = dictionary.find(i => i.slug === sub.slug) || dictionary.find(i => i.headword === sub.headword)"
+                                                x-text="sub.headword"></span>
+                                        </template>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -169,10 +215,15 @@
                 activeChat: null,
                 activeMessages: [],
                 loading: true,
+                stats: null,
+                recommendations: {},
                 async init() {
                     try {
                         const dRes = await fetch('dictionary.json');
                         if (dRes.ok) this.dictionary = await dRes.json();
+
+                        const sRes = await fetch('coverage.json');
+                        if (sRes.ok) this.stats = await sRes.json();
 
                         const cRes = await fetch('chats.json');
                         if (cRes.ok) this.chats = await cRes.json();
@@ -180,8 +231,23 @@
                         const mRes = await fetch('messages.json');
                         if (mRes.ok) this.messages = await mRes.json();
 
+                        const rRes = await fetch('data/snapshots/recommendations.json');
+                        if (rRes.ok) this.recommendations = await rRes.json();
+
                         this.loading = false;
-                        if (this.dictionary.length > 0) this.activeEntry = this.dictionary[0];
+
+                        // Handle Shared Routing Contract (V9.1)
+                        if (window.omniParams) {
+                            if (window.omniParams.entry) {
+                                const headword = window.omniParams.entry.replace(/-/g, ' ');
+                                this.activeEntry = this.dictionary.find(i => i.headword.toLowerCase() === headword.toLowerCase());
+                            } else if (window.omniParams.q) {
+                                this.search = window.omniParams.q;
+                                if (this.filteredDictionary.length > 0) this.activeEntry = this.filteredDictionary[0];
+                            }
+                        } else if (this.dictionary.length > 0) {
+                            this.activeEntry = this.dictionary[0];
+                        }
                     } catch (e) {
                         console.error(e);
                         this.loading = false;
@@ -194,6 +260,16 @@
                 selectChat(chat) {
                     this.activeChat = chat;
                     this.activeMessages = this.messages.filter(m => m.chat_id === chat.id).sort((a, b) => a.index - b.index);
+                },
+                getRecommendations() {
+                    if (!this.activeEntry || !this.recommendations) return [];
+                    const slug = this.activeEntry.slug || this.activeEntry.headword.toLowerCase().replace(/ /g, '-');
+                    return (this.recommendations[slug]?.recommended_docs || []);
+                },
+                getRelatedEntries() {
+                    if (!this.activeEntry || !this.recommendations) return [];
+                    const slug = this.activeEntry.slug || this.activeEntry.headword.toLowerCase().replace(/ /g, '-');
+                    return (this.recommendations[slug]?.recommended_entries || []);
                 }
             }
         }

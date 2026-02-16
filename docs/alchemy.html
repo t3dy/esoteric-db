@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -211,9 +212,11 @@
             container.innerHTML = filtered.map(item => `
                 <div onclick="openItem('${mode}', '${item.id || item.name}')" class="glass p-6 rounded-2xl hover:bg-slate-800/80 cursor-pointer transition flex justify-between items-center group">
                     <div>
-                        <div class="text-xs font-black text-amber-500 uppercase tracking-widest mb-1">${mode === 'docs' ? item.period : (item.type || 'Entity')}</div>
-                        <div class="text-xl font-bold group-hover:text-amber-400 transition">${item.title || item.filename || item.name}</div>
-                        <div class="text-[10px] text-slate-500 font-mono mt-1">${item.author || (item.attributes ? JSON.parse(item.attributes).source : '')}</div>
+                        <div class="text-xl font-bold group-hover:text-amber-400 transition serif italic">${item.title || item.filename || item.name}</div>
+                        <div class="flex items-center gap-3 mt-1">
+                            <span class="text-[9px] font-black uppercase tracking-widest text-amber-500/60">${mode === 'docs' ? (item.period || 'Renaissance') : (item.type || 'Entity')}</span>
+                            ${mode === 'docs' ? `<span class="text-[9px] text-slate-600 uppercase font-bold tracking-tighter opacity-0 group-hover:opacity-100 transition">View Manuscript Details →</span>` : ''}
+                        </div>
                     </div>
                     <div class="text-slate-600 group-hover:text-amber-500 transition text-2xl">→</div>
                 </div>

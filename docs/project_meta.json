@@ -114,9 +114,24 @@
       "name": "Phase 30: Premium Design & Metrics Facelift (UX/DH) [COMPLETE]",
       "completed": 4,
       "total": 4
+    },
+    {
+      "name": "Phase 31: Metadata Enrichment & UX Refinement (V8.5) [IN PROGRESS]",
+      "completed": 4,
+      "total": 6
+    },
+    {
+      "name": "Phase 32: Alchemy Dictionary Enrichment (V8.6) [PLANNING]",
+      "completed": 0,
+      "total": 7
+    },
+    {
+      "name": "Phase 33: Hermetic Tradition Gallery & Deep Scan (V8.7) [PLANNING]",
+      "completed": 2,
+      "total": 5
     }
   ],
-  "total_tasks": 85,
-  "completed_tasks": 75,
-  "current_focus": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]"
+  "total_tasks": 103,
+  "completed_tasks": 81,
+  "current_focus": "Phase 31: Metadata Enrichment & UX Refinement (V8.5) [IN PROGRESS]"
 }
