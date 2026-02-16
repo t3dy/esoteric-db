@@ -25,7 +25,40 @@
             height: 600px;
             display: block;
         }
+
+        #error-log {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #991b1b;
+            color: #fff;
+            padding: 1rem;
+            z-index: 9999;
+            font-family: monospace;
+            font-size: 12px;
+            display: none;
+            max-height: 200px;
+            overflow: auto;
+        }
     </style>
+    <script>
+        window.onerror = function (msg, url, line, col, error) {
+            const el = document.getElementById('error-log');
+            if (el) {
+                el.style.display = 'block';
+                el.innerHTML += `<div><strong>Error:</strong> ${msg} <br> ${url}:${line}:${col}</div><hr>`;
+            }
+            return false;
+        };
+        window.addEventListener('unhandledrejection', function (event) {
+            const el = document.getElementById('error-log');
+            if (el) {
+                el.style.display = 'block';
+                el.innerHTML += `<div><strong>Promise Rejection:</strong> ${event.reason}</div><hr>`;
+            }
+        });
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans" x-data="app()">
@@ -113,12 +146,6 @@
                     Dictionary <span
                         class="ml-1 bg-rose-100 text-rose-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-rose-200 transition">V7</span>
                 </a>
-                <a @click.prevent="activeTab = 'reference'" href="#"
-                    :class="activeTab === 'reference' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
-                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
-                    Reference <span
-                        class="ml-1 bg-emerald-100 text-emerald-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-emerald-200 transition">V8</span>
-                </a>
                 <a @click.prevent="activeTab = 'docs'" href="#"
                     :class="activeTab === 'docs' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                     class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
@@ -148,6 +175,8 @@
                     <h3 class="font-bold text-gray-900">Authors</h3>
                     <p class="text-xs text-gray-500" x-text="`${statsData?.authors?.length || 0} Names`"></p>
                 </div>
+                <!-- ... (Checking lower half) -->
+
                 <div class="bg-white p-4 rounded shadow border-l-4 border-yellow-500 hover:shadow-md transition cursor-pointer"
                     @click="browseCategory('Figures')">
                     <h3 class="font-bold text-gray-900">Historical Figures</h3>
@@ -1218,46 +1247,49 @@
 
     <script>
         function app() {
-            return {
+            const data = {
                 activeTab: 'browse',
+                activeDashboard: null,
+                activePortal: null,
+                activeChat: null,
+                activeDoc: null,
+                activeImage: null,
+                browsingCategory: null,
+                dashboardType: null,
+
+                // DATA CONTAINERS
+                config: {},
                 docs: [],
                 chats: [],
                 messages: [],
                 questions: [],
-                metricsData: [],
                 images: [],
                 tables: [],
                 compendium: [],
                 glossary: [],
                 entities: [],
                 dictionary: [],
-                // V8 Reference Layer
                 sources: [],
                 notes: [],
-                notes: [],
                 metrics: [],
-                // V8.1 Docs & Meta
-                docs: [],
                 projectMeta: null,
-                activeDoc: null,
-                activeImage: null,
-                listsData: null,
-                activeChat: null,
+
+                // DERIVED DATA CONTAINERS
                 statsData: null,
-                renderedInsights: false,
+                listsData: null,
+                metricsData: [],
                 searchIndex: {},
+
+                // UI STATE
                 searchQuery: '',
                 fullTextQuery: '',
                 chatSearch: '',
-                config: {},
                 questionSearch: '',
                 moveFilter: '',
+                renderedInsights: false,
                 cy: null,
 
-                browsingCategory: null,
-                activeDashboard: null,
-                dashboardType: null,
-                activePortal: null,
+                // CONSTANTS
                 portals: [
                     {
                         id: 'alchemy',
@@ -1282,6 +1314,7 @@
                     }
                 ],
 
+                // GETTERS
                 get currentCategoryList() {
                     if (!this.browsingCategory) return [];
                     if (this.browsingCategory === 'Topics') return this.statsData?.topics?.map(t => t.label) || [];
@@ -1296,8 +1329,6 @@
                     const q = this.activeDashboard.toLowerCase();
                     if (this.dashboardType === 'Topics') return this.docs.filter(d => d.topic.toLowerCase() === q);
                     if (this.dashboardType === 'Authors') return this.docs.filter(d => d.author.toLowerCase() === q);
-                    // For figures/scholars, we'd filter by 'MENTIONS' in a real setup.
-                    // For now, return a slice of the library to demo the UI.
                     return this.docs.slice(0, 10);
                 },
 
@@ -1313,7 +1344,7 @@
                     if (this.moveFilter) {
                         qs = qs.filter(item => item.type === this.moveFilter);
                     }
-                    return qs.slice(0, 50); // Pagination/Limit
+                    return qs.slice(0, 50);
                 },
 
                 get filteredChats() {
@@ -1359,21 +1390,14 @@
                 get searchResults() {
                     if (!this.fullTextQuery || this.fullTextQuery.length <= 2) return [];
                     const q = this.fullTextQuery.toLowerCase();
-
-                    // Find docs where the search index contains the query
                     const results = [];
                     for (const [docId, text] of Object.entries(this.searchIndex)) {
                         if (text.toLowerCase().includes(q)) {
-                            // Is it a Doc or a Q&A?
                             if (docId.startsWith('qa_')) {
-                                // Q&A Result
-                                // We don't have metadata in `this.docs` for these.
-                                // We construct a result object directly.
                                 const idx = text.toLowerCase().indexOf(q);
                                 const start = Math.max(0, idx - 40);
                                 const end = Math.min(text.length, idx + 80);
                                 const snippet = text.substring(start, end);
-
                                 results.push({
                                     id: docId,
                                     filename: 'Chat Exchange',
@@ -1381,10 +1405,8 @@
                                     snippet: snippet
                                 });
                             } else {
-                                // Document Result
                                 const doc = this.docs.find(d => d.id === docId);
                                 if (doc) {
-                                    // Extract snippet
                                     const idx = text.toLowerCase().indexOf(q);
                                     const start = Math.max(0, idx - 40);
                                     const end = Math.min(text.length, idx + 80);
@@ -1394,7 +1416,7 @@
                             }
                         }
                     }
-                    return results.slice(0, 50); // Limit results
+                    return results.slice(0, 50);
                 },
 
                 highlight(text, query) {
@@ -1411,12 +1433,13 @@
                     return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
                 },
 
+
                 async init() {
                     console.log("Initializing App...");
 
                     try {
                         // Load Config
-                        const configRes = await fetch('config.json');
+                        const configRes = await fetch('config.json?v=' + Date.now());
                         if (configRes.ok) {
                             this.config = await configRes.json();
                             if (this.config.mode === 'static') {
@@ -1714,7 +1737,8 @@
                         }
                     });
                 }
-            }
+            };
+            return data;
         }
     </script>
 </body>
