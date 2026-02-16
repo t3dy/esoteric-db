@@ -321,19 +321,35 @@ def export_json(conn, export_path, static=False):
     os.makedirs(export_path, exist_ok=True)
     
     # 1. Documents (Relative paths if static)
-    cursor.execute("SELECT id, filename, topic, author, period, size, created_at, path FROM documents")
+    cursor.execute("SELECT id, filename, topic, author, period, size, created_at, path, century, language, summary FROM documents")
     docs = []
     for r in cursor.fetchall():
         path = r[7]
         if static:
             path = os.path.basename(path) # Hide absolute local paths
-        docs.append({"id": r[0], "filename": r[1], "topic": r[2], "author": r[3], "period": r[4], "size": r[5], "created_at": r[6], "path": path})
+        docs.append({
+            "id": r[0], 
+            "filename": r[1], 
+            "topic": r[2], 
+            "author": r[3], 
+            "period": r[4], 
+            "size": r[5], 
+            "created_at": r[6], 
+            "path": path,
+            "century": r[8],
+            "language": r[9],
+            "summary": r[10]
+        })
     
     with open(os.path.join(export_path, "docs.json"), "w") as f:
         json.dump(docs, f, indent=2)
 
     cursor.execute("SELECT topic, COUNT(*) FROM documents GROUP BY topic")
     topic_counts = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+    
+    cursor.execute("SELECT period, COUNT(*) FROM documents WHERE period IS NOT NULL GROUP BY period")
+    period_counts = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+
     cursor.execute("SELECT DISTINCT author FROM documents WHERE author != 'Unknown' ORDER BY author")
     authors = [r[0] for r in cursor.fetchall()]
 
@@ -355,6 +371,7 @@ def export_json(conn, export_path, static=False):
     stats = { 
         "topics": topic_counts, 
         "authors": authors,
+        "periods": period_counts,
         "timeline": timeline,
         "wordcloud": wordcloud,
         "total_docs": len(docs),

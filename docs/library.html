@@ -4,112 +4,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esoteric DB - Library Lite</title>
+    <title>Esoteric DB - Scholarly Workbench</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Charter:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #334155;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Charter', serif;
+        }
+
+        /* Drawer animation */
+        #drawer {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100%);
+        }
+
+        #drawer.open {
+            transform: translateX(0);
+        }
+
+        .pill {
+            @apply px-3 py-1 rounded-full text-xs font-semibold border transition cursor-pointer whitespace-nowrap;
+        }
+
+        .pill-active {
+            @apply bg-emerald-600 text-white border-emerald-600;
+        }
+
+        .pill-inactive {
+            @apply bg-white text-slate-600 border-slate-200 hover:border-emerald-400;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
         }
     </style>
 </head>
 
-<body class="p-8">
+<body class="flex flex-col h-screen">
 
-    <div class="max-w-6xl mx-auto">
-        <div class="flex items-center justify-between mb-8">
-            <div>
-                <h1 class="text-3xl font-bold text-slate-800">Reference Library</h1>
-                <p class="text-slate-500">Safe Mode Viewer • <a href="index.html"
-                        class="text-indigo-600 hover:underline">Back to Landing</a></p>
+    <!-- Header -->
+    <header class="bg-white border-b px-8 py-4 flex items-center justify-between shadow-sm z-10">
+        <div>
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <span class="text-emerald-600">🏛</span> Scholarly Workbench
+            </h1>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest">Library V8.3.2 • <a href="index.html"
+                    class="hover:text-emerald-600 transition">Return to Hub</a></p>
+        </div>
+        <div class="flex items-center gap-4">
+            <div id="stats-summary" class="text-xs font-mono text-slate-500">Loading metrics...</div>
+        </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden">
+        <!-- Main Content (Library List) -->
+        <main class="flex-1 overflow-y-auto p-8 relative">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Filter Section -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <input type="text" id="search" placeholder="Search Title, Author, or Keyword..."
+                            class="flex-1 p-3 rounded-xl border border-slate-200 shadow-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white">
+                        <button onclick="resetFilters()"
+                            class="px-6 py-2 bg-slate-200 text-slate-600 rounded-xl text-sm font-bold hover:bg-slate-300 transition">Clear
+                            All</button>
+                    </div>
+
+                    <!-- Category Pills -->
+                    <div class="space-y-4">
+                        <div>
+                            <span
+                                class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1 block">Quick
+                                Filter: Movement / Topic</span>
+                            <div id="pills-topic" class="flex flex-wrap gap-2"></div>
+                        </div>
+                        <div>
+                            <span
+                                class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1 block">Period</span>
+                            <div id="pills-period" class="flex flex-wrap gap-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                    <table class="min-w-full divide-y divide-slate-100">
+                        <thead class="bg-slate-50">
+                            <tr>
+                                <th onclick="setSort('title')"
+                                    class="px-6 py-3 text-left text-[10px] font-bold text-slate-400 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition">
+                                    Document <span id="sort-title"></span></th>
+                                <th onclick="setSort('author')"
+                                    class="px-6 py-3 text-left text-[10px] font-bold text-slate-400 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition">
+                                    Author <span id="sort-author"></span></th>
+                                <th onclick="setSort('period')"
+                                    class="px-6 py-3 text-left text-[10px] font-bold text-slate-400 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition">
+                                    Period <span id="sort-period"></span></th>
+                                <th
+                                    class="px-6 py-3 text-right text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                                    Type</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50" id="list">
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="text-xs font-mono bg-white px-3 py-1 rounded border" id="count">Loading...</div>
-        </div>
+        </main>
 
-        <input type="text" id="search" placeholder="Filter documents..."
-            class="w-full p-4 rounded-lg border border-slate-300 shadow-sm mb-6 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+        <!-- Right Detail Drawer -->
+        <aside id="drawer"
+            class="w-[400px] bg-white border-l shadow-2xl z-20 overflow-y-auto flex flex-col p-8 fixed right-0 top-0 h-full">
+            <div class="flex justify-between items-start mb-8">
+                <button onclick="closeDrawer()"
+                    class="text-slate-400 hover:text-slate-600 transition text-2xl">×</button>
+                <span class="text-[10px] font-bold text-emerald-600 border border-emerald-200 px-2 py-1 rounded">DH
+                    ENTRY</span>
+            </div>
 
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-            <table class="min-w-full divide-y divide-slate-200">
-                <thead class="bg-slate-50">
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
-                            Title / Filename</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
-                            Author</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Year
-                        </th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
-                            Movement</th>
-                        <th class="px-6 py-3 text-right text-xs font-medium text-slate-500 uppercase tracking-wider">
-                            Action</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-slate-200" id="list">
-                    <!-- Rows injected here -->
-                </tbody>
-            </table>
-        </div>
+            <div id="drawer-content" class="space-y-8">
+                <!-- Data populated here -->
+                <div class="text-center p-12 text-slate-300">
+                    <p class="text-sm italic">Select a document to view scholarly metadata.</p>
+                </div>
+            </div>
+        </aside>
     </div>
 
     <script>
         let allDocs = [];
+        let activeFilters = { q: '', topic: null, period: null };
+        let sortConfig = { key: 'title', direction: 'asc' };
+        let activeDocId = null;
 
         async function init() {
             try {
-                const res = await fetch('docs.json');
-                if (!res.ok) throw new Error("Failed to load docs.json");
-                allDocs = await res.json();
-                render(allDocs);
+                const [docsRes, statsRes] = await Promise.all([
+                    fetch('docs.json'),
+                    fetch('stats.json')
+                ]);
+
+                if (!docsRes.ok) throw new Error("Connection lost");
+                allDocs = await docsRes.json();
+
+                if (statsRes.ok) {
+                    const stats = await statsRes.json();
+                    renderPills(stats);
+                    document.getElementById('stats-summary').innerText = `${allDocs.length} DOCS • ${stats.topics.length} TOPICS`;
+                }
+
+                applyFilters();
             } catch (e) {
-                document.getElementById('list').innerHTML = `<tr><td colspan="5" class="p-8 text-center text-red-600 font-bold">Error loading library: ${e.message}</td></tr>`;
+                document.getElementById('list').innerHTML = `<tr><td colspan="4" class="p-12 text-center text-slate-400">Database offline or loading error.</td></tr>`;
             }
+        }
+
+        function renderPills(stats) {
+            const topicContainer = document.getElementById('pills-topic');
+            stats.topics.slice(0, 15).sort((a, b) => b.value - a.value).forEach(t => {
+                const el = document.createElement('div');
+                el.className = `pill pill-inactive`;
+                el.innerText = t.label;
+                el.onclick = () => toggleFilter('topic', t.label);
+                el.dataset.type = 'topic';
+                el.dataset.val = t.label;
+                topicContainer.appendChild(el);
+            });
+
+            const periodContainer = document.getElementById('pills-period');
+            // Standard Scholarly Periods
+            const standardPeriods = ["Ancient", "Late Antiquity", "Medieval", "Renaissance", "Enlightenment", "19th Century", "Contemporary"];
+            standardPeriods.forEach(p => {
+                const el = document.createElement('div');
+                el.className = `pill pill-inactive`;
+                el.innerText = p;
+                el.onclick = () => toggleFilter('period', p);
+                el.dataset.type = 'period';
+                el.dataset.val = p;
+                periodContainer.appendChild(el);
+            });
+        }
+
+        function toggleFilter(type, val) {
+            if (activeFilters[type] === val) {
+                activeFilters[type] = null;
+            } else {
+                activeFilters[type] = val;
+            }
+            updatePillStyles();
+            applyFilters();
+        }
+
+        function updatePillStyles() {
+            document.querySelectorAll('.pill').forEach(p => {
+                const type = p.dataset.type;
+                const val = p.dataset.val;
+                if (activeFilters[type] === val) {
+                    p.className = 'pill pill-active';
+                } else {
+                    p.className = 'pill pill-inactive';
+                }
+            });
+        }
+
+        function setSort(key) {
+            if (sortConfig.key === key) {
+                sortConfig.direction = sortConfig.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortConfig.key = key;
+                sortConfig.direction = 'asc';
+            }
+            updateSortIcons();
+            applyFilters();
+        }
+
+        function updateSortIcons() {
+            ['title', 'author', 'period'].forEach(k => {
+                const el = document.getElementById(`sort-${k}`);
+                if (sortConfig.key === k) {
+                    el.innerText = sortConfig.direction === 'asc' ? '↑' : '↓';
+                } else {
+                    el.innerText = '';
+                }
+            });
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('search').value.toLowerCase();
+
+            let filtered = allDocs.filter(d => {
+                const matchesSearch = !q ||
+                    (d.title && d.title.toLowerCase().includes(q)) ||
+                    (d.filename && d.filename.toLowerCase().includes(q)) ||
+                    (d.author && d.author.toLowerCase().includes(q));
+
+                const matchesTopic = !activeFilters.topic || d.topic === activeFilters.topic;
+                const matchesPeriod = !activeFilters.period || d.period === activeFilters.period;
+
+                return matchesSearch && matchesTopic && matchesPeriod;
+            });
+
+            filtered.sort((a, b) => {
+                let valA = a[sortConfig.key] || '';
+                let valB = b[sortConfig.key] || '';
+                if (sortConfig.key === 'title') {
+                    valA = a.title || a.filename || '';
+                    valB = b.title || b.filename || '';
+                }
+                if (valA < valB) return sortConfig.direction === 'asc' ? -1 : 1;
+                if (valA > valB) return sortConfig.direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            render(filtered);
         }
 
         function render(docs) {
             const tbody = document.getElementById('list');
-            document.getElementById('count').innerText = `${docs.length} Documents`;
-
-            if (docs.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="p-8 text-center text-slate-500">No documents found.</td></tr>`;
-                return;
-            }
-
             tbody.innerHTML = docs.map(d => `
-                <tr class="hover:bg-slate-50 transition">
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <div class="font-medium text-slate-900">${d.title || d.filename}</div>
-                        ${d.title ? `<div class="text-xs text-slate-400">${d.filename}</div>` : ''}
+                <tr onclick="openDoc('${d.id}')" class="group hover:bg-emerald-50 cursor-pointer transition">
+                    <td class="px-6 py-4">
+                        <div class="font-medium text-slate-900 group-hover:text-emerald-800 truncate max-w-lg">${d.title || d.filename}</div>
+                        <div class="text-[9px] text-slate-400 font-mono">${d.id}</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${d.author || 'Unknown'}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${d.year || '-'}</td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-slate-100 text-slate-800">
-                            ${d.topic || 'Uncategorized'}
-                        </span>
+                         <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-2 py-0.5 rounded">${d.period || '-'}</span>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <a href="${d.path}" target="_blank" class="text-emerald-600 hover:text-emerald-900">Open PDF</a>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-[10px] text-slate-400 font-bold uppercase">
+                        PDF
                     </td>
                 </tr>
             `).join('');
         }
 
-        document.getElementById('search').addEventListener('input', (e) => {
-            const q = e.target.value.toLowerCase();
-            const filtered = allDocs.filter(d =>
-                (d.title && d.title.toLowerCase().includes(q)) ||
-                (d.filename && d.filename.toLowerCase().includes(q)) ||
-                (d.author && d.author.toLowerCase().includes(q)) ||
-                (d.topic && d.topic.toLowerCase().includes(q))
-            );
-            render(filtered);
-        });
+        function openDoc(id) {
+            const doc = allDocs.find(d => d.id === id);
+            if (!doc) return;
+            activeDocId = id;
+
+            const content = document.getElementById('drawer-content');
+            document.getElementById('drawer').classList.add('open');
+
+            content.innerHTML = `
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="serif text-3xl font-bold text-slate-800 leading-tight">${doc.title || doc.filename}</h2>
+                        <button onclick="window.open('${doc.path}', '_blank')" class="mt-4 w-full py-3 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 transition">View Source PDF</button>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <label class="text-[9px] font-bold text-slate-400 uppercase">Scholarly Author</label>
+                            <p class="text-sm font-semibold text-emerald-600 cursor-pointer hover:underline" onclick="toggleFilter('author', '${doc.author}')">${doc.author || 'Unknown'}</p>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <label class="text-[9px] font-bold text-slate-400 uppercase">Period</label>
+                            <p class="text-sm font-semibold text-emerald-600 cursor-pointer hover:underline" onclick="toggleFilter('period', '${doc.period}')">${doc.period || '-'}</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-4">
+                        <div>
+                            <label class="text-[9px] font-bold text-slate-400 uppercase">Topic / Movement</label>
+                            <p class="text-sm font-semibold text-emerald-600 cursor-pointer hover:underline" onclick="toggleFilter('topic', '${doc.topic}')">${doc.topic || 'General'}</p>
+                        </div>
+                        <div>
+                            <label class="text-[9px] font-bold text-slate-400 uppercase">Century</label>
+                            <p class="text-xs text-slate-700">${doc.century || 'Undetermined'}</p>
+                        </div>
+                        <div>
+                            <label class="text-[9px] font-bold text-slate-400 uppercase">Language</label>
+                            <p class="text-xs text-slate-700">${doc.language || 'English'}</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[9px] font-bold text-slate-400 uppercase">Research Summary</label>
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            ${doc.summary || 'Summary pending heuristic enrichment. This document is part of the ' + (doc.period || 'General') + ' scholarly corpus focusing on ' + (doc.topic || 'esoteric studies') + '.'}
+                        </p>
+                    </div>
+
+                    <div class="border-t pt-4">
+                        <label class="text-[9px] font-bold text-slate-400 uppercase">System Metadata</label>
+                        <ul class="text-[10px] text-slate-400 space-y-1 font-mono mt-2">
+                            <li>FILE: ${doc.filename}</li>
+                            <li>ID: ${doc.id}</li>
+                            <li>SIZE: ${(doc.size / 1024 / 1024).toFixed(2)} MB</li>
+                            <li>INDEXED: ${doc.created_at}</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').classList.remove('open');
+            activeDocId = null;
+        }
+
+        function resetFilters() {
+            document.getElementById('search').value = '';
+            activeFilters = { q: '', topic: null, period: null };
+            updatePillStyles();
+            applyFilters();
+        }
+
+        document.getElementById('search').addEventListener('input', applyFilters);
 
         init();
     </script>
+</body>
+
 </body>
 
 </html>

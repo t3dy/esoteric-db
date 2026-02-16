@@ -76,9 +76,14 @@
       "total": 5
     },
     {
-      "name": "Phase 22: Landing Screen & Modularization [COMPLETE]",
-      "completed": 6,
-      "total": 7
+      "name": "Phase 23: Deconstructing the Monolith [COMPLETE]",
+      "completed": 5,
+      "total": 5
+    },
+    {
+      "name": "Phase 24: Modular Portal Stabilization (Hotfix V8.3.1) [COMPLETE]",
+      "completed": 5,
+      "total": 5
     },
     {
       "name": "Phase 20: Deployment & Release [COMPLETE]",
@@ -86,12 +91,12 @@
       "total": 3
     },
     {
-      "name": "Phase 14: Portfolio V5 (Public Exhibition) <!-- id: 39 -->",
-      "completed": 0,
-      "total": 2
+      "name": "Phase 25: Enhanced Library Browsing [COMPLETE]",
+      "completed": 4,
+      "total": 4
     }
   ],
-  "total_tasks": 59,
-  "completed_tasks": 51,
+  "total_tasks": 64,
+  "completed_tasks": 59,
   "current_focus": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]"
 }
