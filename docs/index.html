@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Landing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="max-w-4xl w-full space-y-8">
+        <!-- Header -->
+        <div class="text-center space-y-2">
+            <h1 class="text-5xl text-indigo-400 italic">Esoteric Studies Database</h1>
+            <p class="text-slate-400 text-lg">V8.1.6 • Safe Mode Landing</p>
+        </div>
+
+        <!-- Options Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+
+            <!-- Option 1: The Dashboard -->
+            <a href="dashboard.html"
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-indigo-500 group">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-semibold text-indigo-300 group-hover:text-indigo-200">Interactive Dashboard
+                    </h2>
+                    <span class="bg-indigo-900 text-indigo-200 text-xs px-2 py-1 rounded">Experimental</span>
+                </div>
+                <p class="text-slate-400 mb-6">Full visualization suite: Knowledge Graph, Insights, Chat Explorer, and
+                    Research Tools.</p>
+                <div class="text-sm text-indigo-400 font-mono">Launch Dashboard &rarr;</div>
+            </a>
+
+            <!-- Option 2: The Library -->
+            <a href="library.html"
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-emerald-500 group">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-semibold text-emerald-300 group-hover:text-emerald-200">Document Library
+                    </h2>
+                    <span class="bg-emerald-900 text-emerald-200 text-xs px-2 py-1 rounded">Stable</span>
+                </div>
+                <p class="text-slate-400 mb-6">Direct access to the reference collection. Simple, fast, and crash-proof
+                    browsing.</p>
+                <div class="text-sm text-emerald-400 font-mono">Open Library &rarr;</div>
+            </a>
+
+        </div>
+
+        <!-- Raw Data Links -->
+        <div class="text-center pt-8">
+            <p class="text-slate-500 text-sm mb-4">Data Access</p>
+            <div class="flex justify-center gap-4 text-xs font-mono">
+                <a href="docs.json" target="_blank" class="text-slate-400 hover:text-white underline">docs.json</a>
+                <a href="project_meta.json" target="_blank"
+                    class="text-slate-400 hover:text-white underline">project_meta.json</a>
+                <a href="stats.json" target="_blank" class="text-slate-400 hover:text-white underline">stats.json</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Library Lite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+    </style>
+</head>
+
+<body class="p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-slate-800">Reference Library</h1>
+                <p class="text-slate-500">Safe Mode Viewer • <a href="index.html"
+                        class="text-indigo-600 hover:underline">Back to Landing</a></p>
+            </div>
+            <div class="text-xs font-mono bg-white px-3 py-1 rounded border" id="count">Loading...</div>
+        </div>
+
+        <input type="text" id="search" placeholder="Filter documents..."
+            class="w-full p-4 rounded-lg border border-slate-300 shadow-sm mb-6 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+            <table class="min-w-full divide-y divide-slate-200">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                            Title / Filename</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                            Author</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Year
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                            Movement</th>
+                        <th class="px-6 py-3 text-right text-xs font-medium text-slate-500 uppercase tracking-wider">
+                            Action</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-slate-200" id="list">
+                    <!-- Rows injected here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let allDocs = [];
+
+        async function init() {
+            try {
+                const res = await fetch('docs.json');
+                if (!res.ok) throw new Error("Failed to load docs.json");
+                allDocs = await res.json();
+                render(allDocs);
+            } catch (e) {
+                document.getElementById('list').innerHTML = `<tr><td colspan="5" class="p-8 text-center text-red-600 font-bold">Error loading library: ${e.message}</td></tr>`;
+            }
+        }
+
+        function render(docs) {
+            const tbody = document.getElementById('list');
+            document.getElementById('count').innerText = `${docs.length} Documents`;
+
+            if (docs.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" class="p-8 text-center text-slate-500">No documents found.</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = docs.map(d => `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="font-medium text-slate-900">${d.title || d.filename}</div>
+                        ${d.title ? `<div class="text-xs text-slate-400">${d.filename}</div>` : ''}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${d.author || 'Unknown'}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${d.year || '-'}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-slate-100 text-slate-800">
+                            ${d.topic || 'Uncategorized'}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <a href="${d.path}" target="_blank" class="text-emerald-600 hover:text-emerald-900">Open PDF</a>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        document.getElementById('search').addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase();
+            const filtered = allDocs.filter(d =>
+                (d.title && d.title.toLowerCase().includes(q)) ||
+                (d.filename && d.filename.toLowerCase().includes(q)) ||
+                (d.author && d.author.toLowerCase().includes(q)) ||
+                (d.topic && d.topic.toLowerCase().includes(q))
+            );
+            render(filtered);
+        });
+
+        init();
+    </script>
+</body>
+
+</html>
