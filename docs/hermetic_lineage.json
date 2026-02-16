@@ -1,0 +1,742 @@
+{
+  "epochs": [
+    {
+      "range": "1st - 3rd Century CE",
+      "label": "The Prisca Theologia",
+      "banner": "The foundational texts of the Corpus Hermeticum are written in Alexandria, synthesizing Greek philosophy with Egyptian theology.",
+      "themes": [
+        "Gnosis",
+        "Mind (Nous)",
+        "Regeneration"
+      ]
+    },
+    {
+      "range": "1460 - 1600 CE",
+      "label": "The Renaissance Restoration",
+      "banner": "The Corpus is brought to Florence. Ficino translates it, sparking a wildfire of magical humanism across Europe.",
+      "themes": [
+        "Natural Magic",
+        "Cabala",
+        "prisca theologia"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "886",
+      "label": "From Hermes Trismegistus",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "1160",
+      "label": "Marsilio \nFicino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "1667",
+      "label": "Marsilio Ficino",
+      "period": "Unknown Epoch",
+      "type": "Figure"
+    },
+    {
+      "id": "1977",
+      "label": "Hermes Trismegistus",
+      "period": "Unknown Epoch",
+      "type": "Figure"
+    },
+    {
+      "id": "2993",
+      "label": "Giordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Figure"
+    },
+    {
+      "id": "4867",
+      "label": "Italian Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "5048",
+      "label": "Hermes\n Trismegistus",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "5523",
+      "label": "Her Giordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "6498",
+      "label": "From Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "8495",
+      "label": "Quellen Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "8508",
+      "label": "Brunos Schriften",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "9083",
+      "label": "Giordano Bruno Teaches",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "9481",
+      "label": "Hermes Mercurius Trismegistus",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "9537",
+      "label": "Bruno Tremblay",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "13402",
+      "label": "Hermes\nTrismegistus",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "15842",
+      "label": "Hermes Trismegistus Religions",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "15849",
+      "label": "Hermes Trismegistus\nThe",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "18536",
+      "label": "Bruno Taut",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "20139",
+      "label": "Bruno Latour\nThis",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "20140",
+      "label": "Bruno Latour",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "22401",
+      "label": "Bruno Snell",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "24081",
+      "label": "Guide  Giordano  Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "24478",
+      "label": "In Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "24828",
+      "label": "For Giordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25682",
+      "label": "Rethinking \nGiordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25702",
+      "label": "Biggemann\nGiordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25703",
+      "label": "Giordano \nBruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25712",
+      "label": "Schriften \nGiordano Brunos",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25713",
+      "label": "Giordano Brunos",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25716",
+      "label": "Philosophie Giordano Brunos",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25717",
+      "label": "Rethinking Giordano Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25814",
+      "label": "Giordano Bruno\nTranslated",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25818",
+      "label": "Giordano Bruno\n  \nThe",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25826",
+      "label": "Filippo Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25858",
+      "label": "Giordano Bruno Brill",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25868",
+      "label": "Giordano Bruno\nThe",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25900",
+      "label": "In Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25942",
+      "label": "Discussing Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25972",
+      "label": "Literature\nBruno Ferraro",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25975",
+      "label": "Bruno Ferraro",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "25990",
+      "label": "Giordano\nBruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "26462",
+      "label": "But \nFicino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "26669",
+      "label": "Like Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "27346",
+      "label": "Publication Data \nFicino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "27994",
+      "label": "Whether \nFicino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28489",
+      "label": "Schon Marsilio Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28492",
+      "label": "Ficinos Brief",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28493",
+      "label": "Ficino Karl",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28536",
+      "label": "Marsilio\nFicinos",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28558",
+      "label": "For Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "28559",
+      "label": "Galilean Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "29070",
+      "label": "The Second Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "29094",
+      "label": "Second Ficino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "29543",
+      "label": "Hermes Trismegistuspresumed",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "29628",
+      "label": "From\nFicino",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "29650",
+      "label": "Werke Brunos",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "32258",
+      "label": "Eroici Furori Bruno",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "35432",
+      "label": "Bruno Schulz",
+      "period": "Unknown Epoch",
+      "type": "Entity"
+    },
+    {
+      "id": "36125",
+      "label": "Hermetic",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36128",
+      "label": "Corpus",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36130",
+      "label": "Marti",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36132",
+      "label": "Studies",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36133",
+      "label": "Iamblichus",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36134",
+      "label": "Hermeticum",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36135",
+      "label": "Aristides",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36136",
+      "label": "Hermetica",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36138",
+      "label": "Thoth",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36142",
+      "label": "Hermetism",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36143",
+      "label": "Makarius",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36147",
+      "label": "Trismegistus",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36148",
+      "label": "Hammadi",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36149",
+      "label": "Journal",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36150",
+      "label": "Religion",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36151",
+      "label": "Augustine",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36152",
+      "label": "Tradition",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36154",
+      "label": "Ptolemy",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36155",
+      "label": "Byzantine",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36156",
+      "label": "Athens",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36157",
+      "label": "Myst",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36158",
+      "label": "Leiden",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36160",
+      "label": "Ermete",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36161",
+      "label": "Western",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36162",
+      "label": "Plato",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36163",
+      "label": "Ficino",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36164",
+      "label": "Ancient",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36165",
+      "label": "Apuleio",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36167",
+      "label": "Oxford",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36168",
+      "label": "Porphyry",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36169",
+      "label": "Antiquity",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36170",
+      "label": "Athenian",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36171",
+      "label": "Late",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36172",
+      "label": "Quispel",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36173",
+      "label": "Fowden",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36174",
+      "label": "Brill",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36175",
+      "label": "Delp",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36176",
+      "label": "Rome",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36177",
+      "label": "Revue",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36178",
+      "label": "Ulrich",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36179",
+      "label": "Nock",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36180",
+      "label": "Herm",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36181",
+      "label": "Dreams",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36182",
+      "label": "Aquinas",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36183",
+      "label": "Christianity",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36185",
+      "label": "Gnosis",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36186",
+      "label": "Schriften",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36187",
+      "label": "Copenhaver",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36188",
+      "label": "What",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36189",
+      "label": "Prof",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36190",
+      "label": "Schrift",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36191",
+      "label": "Great",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36192",
+      "label": "Corp",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36193",
+      "label": "Trinity",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36194",
+      "label": "Esotericism",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36195",
+      "label": "Manetho",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36196",
+      "label": "Michael",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36197",
+      "label": "Greeks",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    },
+    {
+      "id": "36198",
+      "label": "Coptic",
+      "period": "Unknown Epoch",
+      "type": "Hermetic Topic"
+    }
+  ],
+  "edges": [
+    {
+      "source": "h1",
+      "target": "h2"
+    },
+    {
+      "source": "h2",
+      "target": "h3"
+    },
+    {
+      "source": "h4",
+      "target": "h1"
+    }
+  ]
+}

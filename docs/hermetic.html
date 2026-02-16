@@ -190,7 +190,7 @@
                 const [dRes, sRes, lRes] = await Promise.all([
                     fetch('docs.json'),
                     fetch('entities.json'),
-                    fetch('data/snapshots/hermetic_lineage.json')
+                    fetch('hermetic_lineage.json')
                 ]);
 
                 if (dRes.ok) {
