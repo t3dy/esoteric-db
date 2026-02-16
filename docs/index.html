@@ -1560,6 +1560,13 @@
 
                     } catch (e) {
                         console.error("Error loading data:", e);
+                        // Re-throw to trigger window.onerror for user visibility
+                        throw e;
+                        const el = document.getElementById('error-log');
+                        if (el) {
+                            el.style.display = 'block';
+                            el.innerHTML += `<div><strong>CAUGHT ERROR:</strong> ${e.message}</div><hr>`;
+                        }
                     }
                 },
 
