@@ -1,50 +1,48 @@
-# Esoteric Studies Database (Seed)
+# Research Workbench: Digital Humanities Knowledge Graph & Analytics Engine
 
-**[✨ LIVE DASHBOARD ✨](https://t3dy.github.io/esoteric-db/)**
+A local-first data engineering and analytics system designed to model complex, ambiguous, and multi-modal scholarly domains. It ingests thousands of PDFs and years of research logs to produce an interactive knowledge graph and reflexive inquiry dashboard.
 
-This is the "Seed" implementation of your Esoteric Studies Database. It acts as a static, serverless "file cabinet" for your PDF library, deployed via GitHub Pages.
+## Portfolio Narrative
+**The Problem**: Humanities research archives are typically unstructured "urban traffic"—PDFs, disparate notes, and sprawling chat transcripts.
+**The Solution**: I designed a system that treats this material as a structured database, modeling documents, scholars, iconographic symbols, and inquiry patterns as data frames with typed relationships. The workbench demonstrates mastery of ETL pipelines, relational schema design, inverted indexing, and multimodal data modeling.
 
-## Features Implemented
+---
 
-### 1. The Seed (Foundation)
-- **Scanner (`scan.py`)**: Indexes PDFs, calculates SHA256 hashes for identity, and extracts metadata (size, date, topic/folder).
-- **Database (`esoteric.db`)**: A SQLite database that serves as the single source of truth.
-- **Export**: Generates static JSON artifacts (`docs.json`, `stats.json`) for the frontend.
+## Data Science Skills Matrix
 
-### 2. Text & Search
-- **Extraction**: Uses `pypdf` to read the first 2 pages of every document.
-- **Search Index**: Compiles a lightweight client-side search index (`search.json`).
-- **UI**: Fuzzy search bar fully operational in the dashboard.
+### I. Data Engineering & Pipeline Design
+- **ETL Architecture**: Ingests heterogeneous sources (PDFs, HTML chat logs, JSON). Demonstrates parsing, text normalization, and handling missing metadata.
+- **Relational Modeling**: 3NF-style schema for documents, entities, images, and typed relationships. Implements stable SHA256 identifiers and many-to-many join tables.
+- **Data Integrity**: Built-in redaction layers for privacy-aware deployment and deterministic versioning for reproducibility.
 
-### 3. Knowledge Graph
-- **Entity Extraction**: Heuristic-based extraction of "Concepts" (capitalized phrases).
-- **Visualization**: Interactive node-link diagram using **Cytoscape.js**.
-- **Graph**: Connects **Topics** (Blue) -> **Documents** (Gray) -> **Entities** (Green).
+### II. Information Retrieval & Indexing
+- **Inverted Indexing**: Implemented **SQLite FTS5** for sub-second full-text search across milions of words.
+- **Analytical Aggregation**: Dashboard metrics powered by complex SQL joins and GROUP-BY operations (e.g., Scholar Prominence, Inquiry Velocity).
 
-## Quick Start
-### 1. Requirements
-```bash
-pip install -r requirements.txt
-```
+### III. Graph Modeling & Knowledge Representation
+- **Entity Resolution**: Canonical management of historical figures and concepts (e.g., entity merging and alias resolution).
+- **Ontology Construction**: Formalized taxonomies for alchemical iconography (symbol vs. substance vs. theory) and investigative "moves."
 
-### 2. Run the Scan
-Place your PDFs in a folder (or use the current folder).
-```bash
-python scan.py --dir "C:/path/to/your/pdf/library"
-```
-This updates `esoteric.db` and regenerates the `docs/` JSON files.
+### IV. Applied NLP & Hybrid ML
+- **Feature Engineering**: Computing question density, topic distribution, and longitudinal inquiry patterns.
+- **Hybrid Pipelines**: Using strict JSON-guarded LLM extraction only where deterministic rules fail, with caching and rationale tracking.
 
-### 3. Deploy
-```bash
-git add .
-git commit -m "Update content"
-git push
-```
-GitHub Pages will automatically rebuild the site from the `/docs` folder.
+### V. Reflexive Analytics (The "Desire Profile")
+- **Knowledge Gap Detection**: Detects "Desire Gaps" by cross-referencing high question density against low document availability in specific topic clusters.
+- **Trajectory Mapping**: Visualizes the evolution of research methodologies over time.
 
-## Project Structure
-- `scan.py`: The brain. Scans files, extracts text/entities, updates DB, exports JSON.
-- `esoteric.db`: The memory. SQLite file containing all metadata and text chunks.
-- `docs/`: The body. Static HTML/JS/JSON files served to the web.
-    - `index.html`: Single Page Application (Alpine.js + Tailwind).
-    - `*.json`: Data feeds for the UI.
+---
+
+## Technical Stack
+- **Languages**: Python (Core Pipeline), SQL (SQLite / FTS5), Javascript (SPA Frontend)
+- **Libraries**: `pypdf`, `beautifulsoup4`, `PyMuPDF`, `Alpine.js`, `TailwindCSS`
+- **Architecture**: Local-first SQLite source of truth with redacted JSON snapshot exports for public showcase.
+
+## Use the Workbench
+### Local Mode (Research)
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run pipeline: `python ingest_chats.py; python mine_images.py; python scan.py`
+3. Open `docs/index.html` via any local server.
+
+### Static Mode (Exhibition)
+Run `python scan.py --static` to produce a redacted, privacy-preserving snapshot in the `docs/` folder, ready for GitHub Pages deployment.

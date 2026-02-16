@@ -1,0 +1,26 @@
+[
+  {
+    "id": "src_obrist_2012",
+    "short_name": "Obrist 2012",
+    "citation": "Obrist, Barbara. 'Visualization in Medieval Alchemy'. Hylae, 2012.",
+    "source_type": "Secondary",
+    "domain": "Alchemy",
+    "year": 2012
+  },
+  {
+    "id": "src_mahe_ipm40",
+    "short_name": "Mah\u00e9 IPM 40",
+    "citation": "Mah\u00e9, Jean-Pierre. 'Herm\u00e8s en Haute-\u00c9gypte'. IPM 40, 1982.",
+    "source_type": "Secondary",
+    "domain": "Hermeticism",
+    "year": 1982
+  },
+  {
+    "id": "src_abraham_1998",
+    "short_name": "Abraham 1998",
+    "citation": "Abraham, Lyndy. 'A Dictionary of Alchemical Imagery'. Cambridge University Press, 1998.",
+    "source_type": "Secondary",
+    "domain": "Alchemy",
+    "year": 1998
+  }
+]

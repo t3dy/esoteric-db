@@ -1,46 +1,1745 @@
 [
   {
-    "id": "chat_001",
-    "title": "Welcome to Esoteric DB",
-    "date": "2026-02-15T17:06:13.728347",
-    "messages": [
-      {
-        "role": "user",
-        "content": "What is this database?",
-        "ordinal": 1
-      },
-      {
-        "role": "assistant",
-        "content": "This is the Seed of your Esoteric Studies Database. It currently indexes your local PDFs.",
-        "ordinal": 2
-      },
-      {
-        "role": "user",
-        "content": "What can I do here?",
-        "ordinal": 3
-      },
-      {
-        "role": "assistant",
-        "content": "You can search for documents, visualize connections in the Graph tab, and eventually, I will be able to answer questions based on your library!",
-        "ordinal": 4
-      }
-    ]
+    "id": "a9ad3f221491",
+    "title": "Research Session c48c43",
+    "created_at": null,
+    "topic": "Pico and Divine Being",
+    "path": "internal://redacted"
   },
   {
-    "id": "chat_002",
-    "title": "Sample Analysis: Alchemy",
-    "date": "2026-02-15T17:06:13.728359",
-    "messages": [
-      {
-        "role": "user",
-        "content": "Find documents about Alchemy.",
-        "ordinal": 1
-      },
-      {
-        "role": "assistant",
-        "content": "I found several documents. Check the Library tab and filter by 'Alchemy'.",
-        "ordinal": 2
-      }
-    ]
+    "id": "bf03e59fe724",
+    "title": "Research Session 87ca1a",
+    "created_at": null,
+    "topic": "Stoicism and Neoplatonism Influence",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2c4d45688a15",
+    "title": "Research Session d2aa9f",
+    "created_at": null,
+    "topic": "Alchemy Periodic Table Creation",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "46fd85ed98e7",
+    "title": "Research Session 01490e",
+    "created_at": null,
+    "topic": "bruno upside down",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "367776ce4b7a",
+    "title": "Research Session f810f5",
+    "created_at": null,
+    "topic": "Four Books of Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "56a5f6c3607e",
+    "title": "Research Session 8dfa6a",
+    "created_at": null,
+    "topic": "Alchemia Medica Summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a7c35921a71d",
+    "title": "Research Session 8e5590",
+    "created_at": null,
+    "topic": "Scholars in Greco Roman Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f2a1cf91b137",
+    "title": "Research Session 0fbf88",
+    "created_at": null,
+    "topic": "Ancient Alchemy Laboratory Image",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f875175726ee",
+    "title": "Research Session d7ab74",
+    "created_at": null,
+    "topic": "Incipit Liber Mysticae Theologiae",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "747ac4c833ad",
+    "title": "Research Session ae0dee",
+    "created_at": null,
+    "topic": "Alchemy in Music and Monteverdi",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "24007566320c",
+    "title": "Research Session 8abea3",
+    "created_at": null,
+    "topic": "Al Ghazali and Magic Squares",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "268b5a0589a5",
+    "title": "Research Session 4f77ec",
+    "created_at": null,
+    "topic": "Heinrich Khunrath Summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f4941e7e7805",
+    "title": "Research Session 6dc5eb",
+    "created_at": null,
+    "topic": "D\u00fcrer Hypnerotomachia Analysis",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "85c35b318982",
+    "title": "Research Session f795e6",
+    "created_at": null,
+    "topic": "Khunrath Theosophy Summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9c4ccc99a5d2",
+    "title": "Research Session 23e2e5",
+    "created_at": null,
+    "topic": "Enochian Language Rigor Myth",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9abbd4a5a3e4",
+    "title": "Research Session c59511",
+    "created_at": null,
+    "topic": "Religious Studies Visionary Theories",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8bc22790c950",
+    "title": "Research Session e9cf19",
+    "created_at": null,
+    "topic": "Hypnerotomachia Poliphili Plot Summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "552453b47d36",
+    "title": "Research Session 61492c",
+    "created_at": null,
+    "topic": "Pico 900 Conclusions Exegesis",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c3b1c7baf9c4",
+    "title": "Research Session c4c38e",
+    "created_at": null,
+    "topic": "Pico della Mirandola Summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "e796b5f81d53",
+    "title": "Research Session cbab01",
+    "created_at": null,
+    "topic": "Couliano and Yates' Theories",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d35ccd39358a",
+    "title": "Research Session 021df0",
+    "created_at": null,
+    "topic": "Iamblichus and Hermeticism",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0509233543bb",
+    "title": "Research Session 3d01ed",
+    "created_at": null,
+    "topic": "Alchemy materials list",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4f938fff87c3",
+    "title": "Research Session 3b8460",
+    "created_at": null,
+    "topic": "Alchemical text summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6e6b123e8305",
+    "title": "Research Session 48bbd8",
+    "created_at": null,
+    "topic": "Plotinus influence on Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3add111660c0",
+    "title": "Research Session 4a86fd",
+    "created_at": null,
+    "topic": "Gnosticism vs Hermeticism comparison",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a73e321169b0",
+    "title": "Research Session 1e87d7",
+    "created_at": null,
+    "topic": "New insights in Platonism",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "66cd8c573b5b",
+    "title": "Research Session dd0582",
+    "created_at": null,
+    "topic": "New picture of Abulafia",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1c77b3b59929",
+    "title": "Research Session 57c6d3",
+    "created_at": null,
+    "topic": "Pseudo Jabir Plato Rectifications",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b2bb1137a753",
+    "title": "Research Session 264d76",
+    "created_at": null,
+    "topic": "Alberti Thesis Weller",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "52df9a06315a",
+    "title": "Research Session c749d8",
+    "created_at": null,
+    "topic": "Overview of Zosimos research",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "42f88ac0c460",
+    "title": "Research Session 8a1e5d",
+    "created_at": null,
+    "topic": "Cutting edge in Pico studies",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4e19475781e0",
+    "title": "Research Session 1cccb9",
+    "created_at": null,
+    "topic": "Digital Sefer Yetzirah project",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1c6ffe61c58d",
+    "title": "Research Session 5ec770",
+    "created_at": null,
+    "topic": "Historiography of Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "98a382294430",
+    "title": "Research Session f966e5",
+    "created_at": null,
+    "topic": "Lesser known magical sources",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4723b0ba715e",
+    "title": "Research Session 93a93c",
+    "created_at": null,
+    "topic": "Alchemy book review summary",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f25613589d86",
+    "title": "Research Session 6dd2b3",
+    "created_at": null,
+    "topic": "Baltic Rosicrucianism Analysis",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b79db452b309",
+    "title": "Research Session 20dfe5",
+    "created_at": null,
+    "topic": "Emblematics in Early Modern Age",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "78ad6aff81b0",
+    "title": "Research Session f40cca",
+    "created_at": null,
+    "topic": "Hermetica II Overview",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5c36c86fdbe0",
+    "title": "Research Session f51aa6",
+    "created_at": null,
+    "topic": "Proclus Mereology Explained",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7d9b31118b1f",
+    "title": "Research Session 33de48",
+    "created_at": null,
+    "topic": "Unpacking Henads in Neoplatonism",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2a7d060c8bbb",
+    "title": "Research Session 3c41ee",
+    "created_at": null,
+    "topic": "Agrippa",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4f57b4aa2656",
+    "title": "Research Session eca0a1",
+    "created_at": null,
+    "topic": "Reuchlin",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b57fc5c69bb7",
+    "title": "Research Session 7b0dbc",
+    "created_at": null,
+    "topic": "Trithemius",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5c4a79ecbf97",
+    "title": "Research Session 0f0a1c",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "55643205967c",
+    "title": "Research Session e9022b",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "211d576950b7",
+    "title": "Research Session 6f1ca8",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a15ec355a38c",
+    "title": "Research Session 023cfb",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8dbf76fb7a18",
+    "title": "Research Session 5a0a08",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5300dd530ffa",
+    "title": "Research Session 336fcb",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6580e028a53f",
+    "title": "Research Session 6d894a",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ef524516bc7a",
+    "title": "Research Session bdeb94",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a4534b0d7b12",
+    "title": "Research Session c33fc1",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d20015d86d4a",
+    "title": "Research Session 2bff50",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5406d38001b1",
+    "title": "Research Session d5030e",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5462f8b5085f",
+    "title": "Research Session 6af4ea",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "05eb41efb6fb",
+    "title": "Research Session e9a6ba",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "744d0e62fe3c",
+    "title": "Research Session 15415a",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b9bff04e5dab",
+    "title": "Research Session 1b8622",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "cc68fa5d7977",
+    "title": "Research Session 037d9d",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "14d60857f4d5",
+    "title": "Research Session 38f97e",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2da3a3853a0f",
+    "title": "Research Session 1b7a42",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ee125984a06b",
+    "title": "Research Session 1908a8",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ac9dcf18b219",
+    "title": "Research Session 3d5889",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8a52ce48e3c2",
+    "title": "Research Session bc3700",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2f46be691932",
+    "title": "Research Session ea0db1",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2b5aaf3b5b35",
+    "title": "Research Session bc4d32",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c2d89dded961",
+    "title": "Research Session df709b",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "536b9fe97469",
+    "title": "Research Session 22953e",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b95d163c343b",
+    "title": "Research Session ae68c2",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9061f1c533ec",
+    "title": "Research Session 1ad7b4",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d56168b8e43c",
+    "title": "Research Session e102af",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "62c33c7127e7",
+    "title": "Research Session bc2d33",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2a419a08a364",
+    "title": "Research Session c01921",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "40d0525728e4",
+    "title": "Research Session 004b00",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1f53ae3526b0",
+    "title": "Research Session eb0ef1",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "78aa1a4b8a02",
+    "title": "Research Session 9f1575",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c885ae457777",
+    "title": "Research Session e8e3a4",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "dbc7f97859a0",
+    "title": "Research Session 4ba7b2",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "38673b9b0a1a",
+    "title": "Research Session 183980",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "776018291924",
+    "title": "Research Session 0c307b",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a0708bf3834b",
+    "title": "Research Session f9f901",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "fe01cba99914",
+    "title": "Research Session 3fc78b",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6425a890218e",
+    "title": "Research Session 55c572",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8722dc093e93",
+    "title": "Research Session 64bb41",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6d5c97778e39",
+    "title": "Research Session 10feab",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "692f9d5d3f43",
+    "title": "Research Session 9b07a3",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2daf5cc05261",
+    "title": "Research Session f911f4",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "905416f55914",
+    "title": "Research Session 55495a",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2c8d135e60da",
+    "title": "Research Session 21316e",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4ae5429b493f",
+    "title": "Research Session d106ed",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c0fbf5690627",
+    "title": "Research Session c6d876",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b7138679a1d4",
+    "title": "Research Session c82dbf",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7ac0b555274b",
+    "title": "Research Session a515eb",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b8a945231c79",
+    "title": "Research Session f260ad",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "33b6807c2c0b",
+    "title": "Research Session c0259f",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "872cb81a8e20",
+    "title": "Research Session 762751",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "47051e1e1ea4",
+    "title": "Research Session 425ae9",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "477d6faa95f4",
+    "title": "Research Session 4bd3b7",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2e85944ebfad",
+    "title": "Research Session 323b30",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c4c48f80c9c6",
+    "title": "Research Session 7e604e",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "546579107df2",
+    "title": "Research Session b4e765",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "40402aa60385",
+    "title": "Research Session 426925",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5b8b5cb1d8df",
+    "title": "Research Session be310a",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "39c885980077",
+    "title": "Research Session 65a172",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9f043c4f3e07",
+    "title": "Research Session 7484ea",
+    "created_at": null,
+    "topic": "General",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b2d559ee053b",
+    "title": "Research Session 2bbf68",
+    "created_at": null,
+    "topic": "Agrippa",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "30b389405a50",
+    "title": "Research Session c52719",
+    "created_at": null,
+    "topic": "Agrippa",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f073d79c7f53",
+    "title": "Research Session 420840",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b385f3457926",
+    "title": "Research Session 388d82",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a566b22b893c",
+    "title": "Research Session c89c7b",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0d57d0ff1a83",
+    "title": "Research Session 7fc7d7",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "322acdacd286",
+    "title": "Research Session 72fee4",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b7cd0225e3ca",
+    "title": "Research Session 44fb1a",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "76554cf53d30",
+    "title": "Research Session 3bcf4d",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8fca95fea790",
+    "title": "Research Session e633a6",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "794ee14ad48d",
+    "title": "Research Session bdec17",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "72453d78d543",
+    "title": "Research Session 52d1e3",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3bb914eebe84",
+    "title": "Research Session 418527",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "acd593a90245",
+    "title": "Research Session 3d03c4",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "419bb87fe301",
+    "title": "Research Session 0b90a9",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7516fe3d73c1",
+    "title": "Research Session 55ddbd",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2568aa5cbead",
+    "title": "Research Session 1bf048",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "73d3f6d7feb6",
+    "title": "Research Session 89c2f4",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a25d08a156f7",
+    "title": "Research Session 183565",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a5d0dafff1a7",
+    "title": "Research Session 5a0d67",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8487eacf30ac",
+    "title": "Research Session 7ff589",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "86e30e2cf60d",
+    "title": "Research Session 29b702",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "80778f48760c",
+    "title": "Research Session d8723c",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "87de2ec690ee",
+    "title": "Research Session b2d679",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d2a52f86097f",
+    "title": "Research Session 26fd9e",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "852fc7f5b325",
+    "title": "Research Session d6bc95",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6c9162a96d4e",
+    "title": "Research Session 7bd84e",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "38a2577e077f",
+    "title": "Research Session 5f4826",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4c5974fc0dd6",
+    "title": "Research Session 4e7172",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "25028ff48bdd",
+    "title": "Research Session 73f44e",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "25c31229ba18",
+    "title": "Research Session 69f73d",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f5a2cb29f24a",
+    "title": "Research Session e25dc7",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9677940a9da8",
+    "title": "Research Session c3e7c9",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a60cadc2b962",
+    "title": "Research Session 00dc12",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4ad1cd22fe2f",
+    "title": "Research Session e3a7a3",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0a3a32abec06",
+    "title": "Research Session 14e682",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "bacd8cebaa9d",
+    "title": "Research Session a5b576",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b2551003d086",
+    "title": "Research Session 5434db",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "fd99610a2f44",
+    "title": "Research Session fa08e5",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "05c40208cfa7",
+    "title": "Research Session 56405e",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "284dbd7e0a0f",
+    "title": "Research Session fd5e05",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9fe32c395298",
+    "title": "Research Session d451be",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "77498322de06",
+    "title": "Research Session 431594",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ab8bceace98a",
+    "title": "Research Session 32201b",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5fe7feae1842",
+    "title": "Research Session f6258a",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1dc6f7039ea8",
+    "title": "Research Session d6eaf7",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "dcc50d457b2f",
+    "title": "Research Session 59522b",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9356b577fadd",
+    "title": "Research Session 28f696",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a69e21183e94",
+    "title": "Research Session 32c133",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "bd2004f593b8",
+    "title": "Research Session 7ba27e",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "27ca6278edb9",
+    "title": "Research Session 75f042",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ad6c288343b1",
+    "title": "Research Session 25344b",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3ef5be90d7ae",
+    "title": "Research Session e4259a",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "80b3f15427ae",
+    "title": "Research Session d9aed3",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4ca8407b8898",
+    "title": "Research Session 5b7840",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d22566ecd379",
+    "title": "Research Session fa8a29",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "bf427c784b75",
+    "title": "Research Session 02d1cc",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a63c9a767cfc",
+    "title": "Research Session c635ca",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c02bbba71bda",
+    "title": "Research Session 4f530a",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "bfeeb8f252e8",
+    "title": "Research Session 7d4cdc",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2ee05464dcb4",
+    "title": "Research Session 78b012",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6e475eb67a24",
+    "title": "Research Session 4bef0f",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a1fc2d9a3155",
+    "title": "Research Session c05a39",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7001aedb39d3",
+    "title": "Research Session e5bb5b",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d7c0b5ce449f",
+    "title": "Research Session 136127",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "23c0fe2728f6",
+    "title": "Research Session 145700",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "57c074f4ed63",
+    "title": "Research Session e1e0be",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a0cd7f3c9e90",
+    "title": "Research Session 6ddf96",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f1079c260d4a",
+    "title": "Research Session 44cb80",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8e10a89e235a",
+    "title": "Research Session 8a99c1",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3802cd1f5ca7",
+    "title": "Research Session 474d20",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "397db61d9a42",
+    "title": "Research Session 6fcc1f",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6d7594cbda47",
+    "title": "Research Session a045d1",
+    "created_at": null,
+    "topic": "Alchemy",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4cf49e2c660d",
+    "title": "Research Session 1e5043",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8f7337eb2fcb",
+    "title": "Research Session 783bec",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "a54719503ea5",
+    "title": "Research Session cad447",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b50d9ef2769c",
+    "title": "Research Session 0a4b6b",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3cfcc6a4e696",
+    "title": "Research Session cf83b9",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8d5f17930397",
+    "title": "Research Session 863881",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "54a7009446cb",
+    "title": "Research Session 97a9a9",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3362d54c9c5d",
+    "title": "Research Session 692d45",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5cdc264283ce",
+    "title": "Research Session fbeaed",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "737a6c8b9c54",
+    "title": "Research Session 43819d",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0e3e2e0ebd0b",
+    "title": "Research Session 2ac8c0",
+    "created_at": null,
+    "topic": "Bruno",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "76f7a5576c7c",
+    "title": "Research Session 19d96f",
+    "created_at": null,
+    "topic": "Iamblichus",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d2fdff39904f",
+    "title": "Research Session bd6266",
+    "created_at": null,
+    "topic": "Iamblichus",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1cd7a50f5d2b",
+    "title": "Research Session 134b31",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9b81c196ae9c",
+    "title": "Research Session f05a29",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "865f79388403",
+    "title": "Research Session 985883",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "03ad971e6785",
+    "title": "Research Session eb5eed",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "53ec91313713",
+    "title": "Research Session 83fa11",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c8d9a6272c46",
+    "title": "Research Session 78e49e",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5983a4dd39b0",
+    "title": "Research Session a76294",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "e2d34204c74b",
+    "title": "Research Session e5a142",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "21d4a7b53b39",
+    "title": "Research Session 412d0f",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "072ca648286e",
+    "title": "Research Session 9462eb",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "278233de5b88",
+    "title": "Research Session c5bae4",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7e0a7ce4b70d",
+    "title": "Research Session 878998",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "2cfffd171c24",
+    "title": "Research Session 16dcc5",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "02b0d8f0ac1a",
+    "title": "Research Session ba4ed3",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b56aa0013cb4",
+    "title": "Research Session 944af2",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "14d1324931f3",
+    "title": "Research Session e43100",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6accb5c01f4e",
+    "title": "Research Session a317ff",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9f5e41095cfa",
+    "title": "Research Session 2535ad",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "f8db1945651c",
+    "title": "Research Session 219bd2",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9948cc309f2f",
+    "title": "Research Session 9575eb",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "819c52e46f89",
+    "title": "Research Session 500b56",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "36890cf34316",
+    "title": "Research Session 92d0c4",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "ff5c9305279d",
+    "title": "Research Session 3a0fec",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "465b88b3ca80",
+    "title": "Research Session d2a84a",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "32140a87f441",
+    "title": "Research Session 6683b2",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "3e76744a32be",
+    "title": "Research Session b1f257",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "db3b98192e5b",
+    "title": "Research Session 027c3b",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "10472e202f76",
+    "title": "Research Session b3ac22",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "52b6acaff362",
+    "title": "Research Session dc73ed",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "727926b45b6c",
+    "title": "Research Session fb63a7",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "09deb170a0ba",
+    "title": "Research Session 0d5f72",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "95e48fcedae7",
+    "title": "Research Session 91b9ca",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "c93a9da14120",
+    "title": "Research Session 336346",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "7090ef582e1b",
+    "title": "Research Session 936c40",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "e38aa4faf026",
+    "title": "Research Session 1632c7",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0c08b186df85",
+    "title": "Research Session c49c18",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "4951875d6c3a",
+    "title": "Research Session ab73b5",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "1ffca708ed30",
+    "title": "Research Session 60abdf",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "36fdb4a904c9",
+    "title": "Research Session c6f5d1",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "aa3765949b41",
+    "title": "Research Session a954bd",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6672db681327",
+    "title": "Research Session a95eda",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d3053145bc1e",
+    "title": "Research Session b140cc",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "0fdcd975839a",
+    "title": "Research Session bf9d2b",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "08c79aec7c9b",
+    "title": "Research Session 825614",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6745ed8c5773",
+    "title": "Research Session 6f1dc2",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "05ed7e29e41a",
+    "title": "Research Session 9552f5",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "12f6f55426ea",
+    "title": "Research Session 3d16a0",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "256f679658b2",
+    "title": "Research Session 9d1a14",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9b2ebae91259",
+    "title": "Research Session 6a58ed",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "8c79ed4d3152",
+    "title": "Research Session a920b4",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "da1bd9cabadd",
+    "title": "Research Session 45ba2b",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "9681e5ce953e",
+    "title": "Research Session 054fcb",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "b9d1579de095",
+    "title": "Research Session bcaeaa",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "85a509996fb2",
+    "title": "Research Session b672c5",
+    "created_at": null,
+    "topic": "Magic",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "14ef9ea3f2e6",
+    "title": "Research Session bc6694",
+    "created_at": null,
+    "topic": "Pico",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "d09b28ae8408",
+    "title": "Research Session e049b0",
+    "created_at": null,
+    "topic": "Pico",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "6865704a0f42",
+    "title": "Research Session f9737a",
+    "created_at": null,
+    "topic": "Pico",
+    "path": "internal://redacted"
+  },
+  {
+    "id": "5a1e7a2a86c8",
+    "title": "Research Session 15dae5",
+    "created_at": null,
+    "topic": "Pico",
+    "path": "internal://redacted"
   }
 ]

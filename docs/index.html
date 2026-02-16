@@ -31,7 +31,11 @@
 <body class="bg-gray-50 text-gray-800 font-sans" x-data="app()">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-200">
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-30">
+        <div x-show="config.mode === 'static'"
+            class="bg-indigo-600 text-white text-[10px] py-1 text-center font-black uppercase tracking-widest">
+            Public Showcase Mode • Private Data Redacted • Digital Humanities Exhibition
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
@@ -64,16 +68,68 @@
                     class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                     Insights
                 </a>
+                <a @click.prevent="activeTab = 'research'" href="#"
+                    :class="activeTab === 'research' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                    Research <span
+                        class="ml-1 bg-indigo-100 text-indigo-600 py-0.5 px-2 rounded-full text-xs">Workbench</span>
+                </a>
+                <a @click.prevent="activeTab = 'gallery'" href="#"
+                    :class="activeTab === 'gallery' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                    Gallery <span class="ml-1 bg-pink-100 text-pink-600 py-0.5 px-2 rounded-full text-xs">Images</span>
+                </a>
                 <a @click.prevent="activeTab = 'search'" href="#"
                     :class="activeTab === 'search' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                     class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                    Search <span class="ml-1 bg-gray-100 text-gray-600 py-0.5 px-2 rounded-full text-xs">Full
-                        Text</span>
+                    Search
                 </a>
                 <a @click.prevent="activeTab = 'graph'" href="#"
                     :class="activeTab === 'graph' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                     class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                    Graph <span class="ml-1 bg-gray-100 text-gray-600 py-0.5 px-2 rounded-full text-xs">Knowledge</span>
+                    Graph
+                </a>
+                <a @click.prevent="activeTab = 'popularity'" href="#"
+                    :class="activeTab === 'popularity' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Popularity Mode <span
+                        class="ml-1 bg-yellow-100 text-yellow-600 py-0.5 px-2 rounded-full text-[10px] animate-pulse">V5</span>
+                </a>
+                <a @click.prevent="activeTab = 'reference'" href="#"
+                    :class="activeTab === 'reference' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Reference <span
+                        class="ml-1 bg-emerald-100 text-emerald-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-emerald-200 transition">V8</span>
+                </a>
+                <a @click.prevent="activeTab = 'traditions'" href="#"
+                    :class="activeTab === 'traditions' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                    Traditions <span
+                        class="ml-1 bg-purple-100 text-purple-600 py-0.5 px-2 rounded-full text-[10px]">V6</span>
+                </a>
+                <a @click.prevent="activeTab = 'dictionary'" href="#"
+                    :class="activeTab === 'dictionary' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Dictionary <span
+                        class="ml-1 bg-rose-100 text-rose-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-rose-200 transition">V7</span>
+                </a>
+                <a @click.prevent="activeTab = 'reference'" href="#"
+                    :class="activeTab === 'reference' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Reference <span
+                        class="ml-1 bg-emerald-100 text-emerald-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-emerald-200 transition">V8</span>
+                </a>
+                <a @click.prevent="activeTab = 'docs'" href="#"
+                    :class="activeTab === 'docs' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Docs <span
+                        class="ml-1 bg-slate-100 text-slate-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-slate-200 transition">V8.1</span>
+                </a>
+                <a @click.prevent="activeTab = 'design'" href="#"
+                    :class="activeTab === 'design' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm group">
+                    Design Lab <span
+                        class="ml-1 bg-pink-100 text-pink-600 py-0.5 px-2 rounded-full text-[10px] group-hover:bg-pink-200 transition">Beta</span>
                 </a>
             </nav>
         </div>
@@ -222,7 +278,8 @@
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900"
                                                             x-text="doc.filename"></div>
-                                                        <div class="text-sm text-gray-500" x-text="doc.path"></div>
+                                                        <div x-show="config.mode !== 'static'"
+                                                            class="text-sm text-gray-500" x-text="doc.path"></div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -346,37 +403,182 @@
             </div>
         </div>
 
+        <!-- Tab Content: Research Workbench -->
+        <div x-show="activeTab === 'research'" x-cloak>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- Portals Sidebar -->
+                <div class="space-y-4">
+                    <h2 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Historiography Portals
+                    </h2>
+                    <template x-for="portal in portals" :key="portal.id">
+                        <button @click="activePortal = portal"
+                            :class="activePortal?.id === portal.id ? 'bg-indigo-600 text-white' : 'bg-white hover:bg-gray-50'"
+                            class="w-full text-left p-4 rounded-lg shadow-sm border transition">
+                            <h3 class="font-bold" x-text="portal.name"></h3>
+                            <p class="text-xs opacity-75" x-text="portal.desc"></p>
+                        </button>
+                    </template>
+                </div>
+
+                <!-- Main Portal/Inquiry View -->
+                <div class="lg:col-span-3 space-y-8">
+                    <!-- Portal Dashboard -->
+                    <div x-show="activePortal" class="bg-white p-6 rounded-lg shadow-md border-t-8 border-indigo-600">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h1 class="text-3xl font-black text-gray-900" x-text="activePortal?.name"></h1>
+                                <p class="text-gray-500 mt-2" x-text="activePortal?.longDesc"></p>
+                            </div>
+                            <div class="flex gap-2">
+                                <template x-for="scholar in activePortal?.keyScholars">
+                                    <span
+                                        class="px-2 py-1 bg-indigo-50 text-indigo-700 text-[10px] rounded uppercase font-bold"
+                                        x-text="scholar"></span>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Portal Stats -->
+                        <div class="grid grid-cols-3 gap-4 mb-8">
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-[10px] uppercase font-bold text-gray-400">Documents</div>
+                                <div class="text-2xl font-bold" x-text="portalDocs.length"></div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-[10px] uppercase font-bold text-gray-400">Questions</div>
+                                <div class="text-2xl font-bold" x-text="portalQuestions.length"></div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-[10px] uppercase font-bold text-gray-400">Scholars</div>
+                                <div class="text-2xl font-bold" x-text="activePortal?.keyScholars?.length"></div>
+                            </div>
+                        </div>
+
+                        <!-- Inquiry Feed -->
+                        <div>
+                            <h3 class="text-lg font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                                Research Inquiry Stream
+                            </h3>
+                            <div class="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+                                <template x-for="q in portalQuestions" :key="q.text">
+                                    <div class="p-3 bg-gray-50 rounded border-l-4 border-indigo-400 text-sm">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <span class="text-[10px] font-bold text-indigo-500 uppercase"
+                                                x-text="q.type"></span>
+                                        </div>
+                                        <p class="text-gray-800 italic" x-text="`&quot;${q.text}&quot;`"></p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Global Inquiry Metrics (If no portal selected) -->
+                    <div x-show="!activePortal" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded shadow">
+                                <h3 class="font-bold mb-4">Inquiry "Moves"</h3>
+                                <div class="h-48">
+                                    <canvas id="movesChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="bg-white p-6 rounded shadow overflow-y-auto max-h-64">
+                                <h3 class="font-bold mb-4">Recent Cross-References</h3>
+                                <div class="space-y-2">
+                                    <template
+                                        x-for="q in questions.filter(q => q.type === 'Cross-Reference').slice(0, 10)">
+                                        <div class="text-xs p-2 bg-yellow-50 rounded" x-text="q.text"></div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Gallery (Image Vault) -->
+        <div x-show="activeTab === 'gallery'" x-cloak>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Placeholder for images -->
+                <template x-for="img in images" :key="img.id">
+                    <div @click="activeImage = img"
+                        class="aspect-square bg-gray-100 rounded-lg flex items-center justify-center relative group overflow-hidden shadow cursor-pointer border-2 border-transparent hover:border-indigo-500 transition">
+                        <img :src="img.path" class="object-cover w-full h-full">
+                        <div
+                            class="absolute inset-0 bg-indigo-600 bg-opacity-75 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center p-4">
+                            <p class="text-white text-[10px] text-center font-bold uppercase" x-text="img.domain"></p>
+                            <p class="text-indigo-200 text-[8px] text-center" x-text="'Pg ' + img.page_number"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+
         <!-- Tab Content: Chat -->
-        <div x-show="activeTab === 'chat'" x-cloak>
+        <div x-show="activeTab === 'library'" x-cloak>
             <div x-show="!config.features?.chat" class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                 <p class="text-sm text-yellow-700">Chat is disabled in config.json.</p>
             </div>
 
-            <div x-show="config.features?.chat" class="flex h-[600px] border rounded bg-white shadow overflow-hidden">
+            <div x-show="config.features?.chat" class="flex h-[700px] border rounded bg-white shadow overflow-hidden">
                 <!-- Sidebar: Chat List -->
                 <div class="w-1/3 border-r bg-gray-50 overflow-y-auto">
-                    <template x-for="chat in chats" :key="chat.id">
+                    <div class="p-3 border-b bg-white sticky top-0">
+                        <input type="text" x-model="chatSearch" placeholder="Search chats..."
+                            class="w-full text-xs p-2 border rounded">
+                    </div>
+                    <template x-for="chat in filteredChats" :key="chat.id">
                         <div @click="activeChat = chat"
                             :class="activeChat?.id === chat.id ? 'bg-indigo-50 border-l-4 border-indigo-500' : 'hover:bg-gray-100 border-l-4 border-transparent'"
                             class="p-4 cursor-pointer border-b transition">
-                            <h3 class="text-sm font-medium text-gray-900" x-text="chat.title"></h3>
-                            <p class="text-xs text-gray-500 mt-1" x-text="new Date(chat.date).toLocaleDateString()"></p>
+                            <h3 class="text-sm font-medium text-gray-900 leading-tight" x-text="chat.title"></h3>
+                            <div class="flex justify-between items-center mt-2">
+                                <span class="text-[10px] font-bold text-gray-400 uppercase" x-text="chat.topic"></span>
+                                <span class="text-[9px] text-gray-400"
+                                    x-text="new Date(chat.created_at).toLocaleDateString()"></span>
+                            </div>
                         </div>
                     </template>
                 </div>
 
                 <!-- Main: Message View -->
-                <div class="w-2/3 flex flex-col">
-                    <div x-show="!activeChat" class="flex-1 flex items-center justify-center text-gray-400">
-                        Select a chat to view log.
+                <div class="w-2/3 flex flex-col bg-gray-100">
+                    <div x-show="!activeChat"
+                        class="flex-1 flex flex-col items-center justify-center text-gray-400 p-10 text-center">
+                        <svg class="w-12 h-12 mb-4 opacity-25" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                        <p>Select a research session from the 249 ingested logs to view progress.</p>
                     </div>
-                    <div x-show="activeChat" class="flex-1 overflow-y-auto p-4 space-y-4">
-                        <template x-for="msg in activeChat?.messages" :key="msg.ordinal">
-                            <div :class="msg.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
-                                <div :class="msg.role === 'user' ? 'bg-indigo-100 text-indigo-900' : 'bg-gray-100 text-gray-900'"
-                                    class="max-w-3/4 rounded-lg px-4 py-2 text-sm shadow-sm">
-                                    <span class="block text-xs font-bold mb-1 opacity-50" x-text="msg.role"></span>
-                                    <div x-text="msg.content"></div>
+                    <div x-show="activeChat" class="flex-1 overflow-y-auto p-6 space-y-6">
+                        <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-sm mb-6">
+                            <h2 class="font-black text-lg" x-text="activeChat?.title"></h2>
+                            <p class="text-xs opacity-75" x-text="activeChat?.path"></p>
+                        </div>
+                        <div x-show="config.mode === 'static'"
+                            class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                            <p class="text-xs text-yellow-700 font-bold uppercase">Work-In-Progress Exhibition</p>
+                            <p class="text-[10px] text-yellow-600">The following messages have been redacted for public
+                                display to protect repository privacy. Cognitive metrics and inquiry trajectories remain
+                                accurate.</p>
+                        </div>
+                        <template x-for="msg in chatMessages" :key="msg.id">
+                            <div :class="msg.role === 'you' ? 'flex justify-end' : 'flex justify-start'">
+                                <div :class="msg.role === 'you' ? 'bg-indigo-600 text-white shadow-indigo-100' : 'bg-white text-gray-900 shadow-sm'"
+                                    class="max-w-[85%] rounded-2xl px-5 py-3 text-sm shadow-md relative group">
+                                    <span
+                                        class="block text-[10px] font-black mb-1 uppercase tracking-tighter opacity-50"
+                                        x-text="msg.role"></span>
+                                    <div class="whitespace-pre-wrap leading-relaxed" x-text="msg.content"></div>
                                 </div>
                             </div>
                         </template>
@@ -384,6 +586,633 @@
                 </div>
             </div>
         </div>
+        </div>
+
+        <!-- Popularity Tab (V5) -->
+        <div x-show="activeTab === 'popularity'" x-cloak>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Bubble Chart / Popularity Rank -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-2xl font-black mb-2 text-indigo-900">Intellectual Weight</h2>
+                    <p class="text-xs text-gray-500 mb-6 uppercase tracking-widest font-bold">Docs Volume + Inquiry
+                        Density (x5)</p>
+                    <div class="h-[400px]">
+                        <canvas id="weightChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Desire Profile (Gap Analysis) -->
+                <div class="bg-indigo-900 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h2 class="text-2xl font-black mb-2">Desire Profile</h2>
+                        <p class="text-xs text-indigo-300 mb-6 uppercase tracking-widest font-bold">Knowledge Gaps (High
+                            Questions / Low Resources)</p>
+
+                        <div class="space-y-4">
+                            <template x-for="item in metricsData.sort((a,b) => b.gap - a.gap).slice(0, 5)"
+                                :key="item.topic">
+                                <div
+                                    class="bg-indigo-800 bg-opacity-50 p-4 rounded-xl border border-indigo-700 hover:bg-indigo-700 transition">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-bold text-lg" x-text="item.topic"></span>
+                                        <span
+                                            class="bg-yellow-400 text-indigo-900 text-[10px] px-2 py-0.5 rounded-full font-black"
+                                            x-text="'Gap: ' + item.gap"></span>
+                                    </div>
+                                    <div class="text-[10px] text-indigo-300 mt-1 uppercase">
+                                        <span x-text="item.questions + ' Questions'"></span> •
+                                        <span x-text="item.docs + ' Documents'"></span> •
+                                        <span class="text-yellow-400 font-bold"
+                                            x-text="item.structural + ' Structural Moves'"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Deep Question Browser (Phase 12) -->
+                    <div class="mt-12 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="bg-indigo-600 p-6">
+                            <h2 class="text-xl font-bold text-white mb-1">Inquiry Metadata Browser</h2>
+                            <p class="text-[10px] text-indigo-100 uppercase font-bold tracking-widest leading-tight">
+                                Faceting 1,210+ Investigative Moves across Topics & Scholars</p>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-100 flex flex-wrap gap-4 bg-gray-50">
+                            <div class="flex-1 min-w-[200px]">
+                                <input type="text" x-model="questionSearch"
+                                    placeholder="Filter questions by content or topic..."
+                                    class="w-full text-sm p-3 border rounded-xl shadow-inner focus:ring-2 focus:ring-indigo-500 outline-none">
+                            </div>
+                            <select x-model="moveFilter"
+                                class="text-sm border rounded-xl px-4 py-2 bg-white shadow-sm outline-none">
+                                <option value="">All Move Types</option>
+                                <option value="Summarize">Summarize</option>
+                                <option value="Tabulate">Tabulate</option>
+                                <option value="Cross-Reference">Cross-Reference</option>
+                                <option value="Investigate">Investigate</option>
+                            </select>
+                        </div>
+
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th
+                                            class="px-6 py-3 text-left text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none">
+                                            Question</th>
+                                        <th
+                                            class="px-6 py-3 text-left text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none">
+                                            Type</th>
+                                        <th
+                                            class="px-6 py-3 text-left text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none">
+                                            Context</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-100">
+                                    <template x-for="q in filteredQuestionsList" :key="q.text">
+                                        <tr class="hover:bg-indigo-50 transition">
+                                            <td class="px-6 py-4">
+                                                <div class="text-sm italic text-gray-800"
+                                                    x-text="'&ldquo;' + q.text + '&rdquo;'"></div>
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                <span
+                                                    class="px-2 py-1 text-[10px] font-bold rounded-full border border-gray-200"
+                                                    x-text="q.type"></span>
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                <div class="text-[10px] font-bold text-indigo-500 uppercase"
+                                                    x-text="q.topic || 'General'"></div>
+                                            </td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Table Browser (Phase 12.5) -->
+                    <div class="mt-12 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="bg-indigo-600 p-6 flex justify-between items-center">
+                            <div>
+                                <h2 class="text-xl font-bold text-white mb-1">Scholarly Table Browser</h2>
+                                <p
+                                    class="text-[10px] text-indigo-100 uppercase font-bold tracking-widest leading-tight">
+                                    Mining structural data nodes from 249 research conversations</p>
+                            </div>
+                            <div
+                                class="bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-full border border-indigo-400">
+                                Level 4: Move Tracker active
+                            </div>
+                        </div>
+
+                        <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-50">
+                            <template x-for="table in tables" :key="table.id">
+                                <div
+                                    class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                                    <div class="text-[10px] font-bold text-indigo-500 uppercase mb-2"
+                                        x-text="table.topic"></div>
+                                    <div class="max-h-48 overflow-y-auto overflow-x-auto text-[8px] font-mono leading-tight whitespace-pre bg-gray-50 p-2 rounded border"
+                                        x-text="table.content"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Reference Tab (Phase 15) -->
+                    <div x-show="activeTab === 'reference'" x-cloak class="space-y-8">
+                        <!-- Alchemical Glossary -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <div class="bg-emerald-600 p-6">
+                                <h2 class="text-xl font-bold text-white mb-1">Alchemical Glossary</h2>
+                                <p
+                                    class="text-[10px] text-emerald-100 uppercase font-bold tracking-widest leading-tight">
+                                    Key terminology from the corpus</p>
+                            </div>
+                            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <template x-for="item in glossary" :key="item.id">
+                                    <div
+                                        class="p-4 bg-emerald-50 rounded-xl border border-emerald-100 hover:bg-white transition">
+                                        <div class="text-[10px] font-black text-emerald-600 uppercase mb-1"
+                                            x-text="item.category"></div>
+                                        <div class="font-bold text-gray-900 mb-2" x-text="item.term"></div>
+                                        <div class="text-[11px] text-gray-600 leading-relaxed" x-text="item.definition">
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Scholarly Compendium -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <div class="bg-blue-600 p-6">
+                                <h2 class="text-xl font-bold text-white mb-1">Deep Textual Compendium</h2>
+                                <p class="text-[10px] text-blue-100 uppercase font-bold tracking-widest leading-tight">
+                                    High-fidelity chapter summaries & historical narratives</p>
+                            </div>
+                            <div class="divide-y divide-gray-100">
+                                <template x-for="chapter in compendium" :key="chapter.id">
+                                    <div class="p-8 hover:bg-blue-50 transition">
+                                        <div class="flex justify-between items-start mb-4">
+                                            <h3 class="font-bold text-lg text-gray-900" x-text="chapter.title"></h3>
+                                            <span
+                                                class="text-[10px] font-bold text-blue-500 uppercase px-2 py-1 border border-blue-200 rounded-full"
+                                                x-text="chapter.source"></span>
+                                        </div>
+                                        <div class="prose prose-sm max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap"
+                                            x-text="chapter.content"></div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Traditions Tab (Phase 16) -->
+                    <div x-show="activeTab === 'traditions'" x-cloak class="space-y-12">
+
+                        <!-- Hermetic Timeline -->
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">Hermetic Lineages</h2>
+                                    <p class="text-sm text-gray-500">Chronological transmission of the Prisca Theologia
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="relative border-l-2 border-purple-200 ml-4 space-y-12">
+                                <template
+                                    x-for="period in ['Late Antiquity', 'Medieval', 'Renaissance', 'Enlightenment', 'Contemporary']">
+                                    <div class="pl-8 relative">
+                                        <div
+                                            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-600 border-4 border-white shadow-sm">
+                                        </div>
+                                        <h3 class="text-lg font-bold text-purple-900 uppercase tracking-widest mb-4"
+                                            x-text="period"></h3>
+
+                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                            <template
+                                                x-for="entity in entities.filter(e => e.type === 'Hermetic Figure' && e.attributes?.period === period)">
+                                                <div
+                                                    class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm hover:shadow-md transition group">
+                                                    <div class="flex justify-between items-start">
+                                                        <div class="font-bold text-gray-800 group-hover:text-purple-600 transition"
+                                                            x-text="entity.name"></div>
+                                                        <span class="text-[10px] uppercase font-bold text-purple-300"
+                                                            x-text="entity.attributes?.category || 'Figure'"></span>
+                                                    </div>
+                                                    <div class="text-[10px] text-gray-400 mt-2 truncate"
+                                                        x-text="entity.attributes?.source"></div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Alchemy Works -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <!-- Materials -->
+                            <div class="bg-amber-50 rounded-3xl p-8 border border-amber-100">
+                                <h3 class="text-xl font-black text-amber-900 mb-6 flex items-center gap-2">
+                                    <span>The Matter</span>
+                                    <span
+                                        class="bg-amber-200 text-amber-800 text-[10px] px-2 py-1 rounded-full uppercase">Materia
+                                        Prima</span>
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <template x-for="item in entities.filter(e => e.type === 'Alchemy Material')">
+                                        <span
+                                            class="px-3 py-1.5 bg-white border border-amber-200 rounded-lg text-xs font-bold text-amber-800 shadow-sm hover:scale-105 transition cursor-help"
+                                            :title="'Found in: ' + item.attributes?.source" x-text="item.name"></span>
+                                    </template>
+                                </div>
+                            </div>
+
+                            <!-- Equipment -->
+                            <div class="bg-gray-100 rounded-3xl p-8 border border-gray-200">
+                                <h3 class="text-xl font-black text-gray-800 mb-6 flex items-center gap-2">
+                                    <span>The Laboratory</span>
+                                    <span
+                                        class="bg-gray-300 text-gray-700 text-[10px] px-2 py-1 rounded-full uppercase">Labours</span>
+                                </h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <template x-for="item in entities.filter(e => e.type === 'Alchemy Equipment')">
+                                        <div
+                                            class="flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-200">
+                                            <div
+                                                class="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-full text-xs">
+                                                ⚗️</div>
+                                            <div>
+                                                <div class="font-bold text-gray-700 text-sm" x-text="item.name"></div>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Historiography (Static for now) -->
+                        <div class="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full blur-3xl opacity-20 -mr-16 -mt-16">
+                            </div>
+                            <h2 class="text-2xl font-bold mb-4 relative z-10">The New Historiography</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                                <div>
+                                    <h4 class="font-bold text-indigo-300 mb-2">Principe & Newman</h4>
+                                    <p class="text-sm text-slate-400">Reclaiming alchemy as "chymistry" — a serious
+                                        rational pursuit practiced by Newton and Boyle, distinct from later occultist
+                                        reinterpretations.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-indigo-300 mb-2">The Decknamen</h4>
+                                    <p class="text-sm text-slate-400">Understanding allegorical names not as "spiritual
+                                        code" but as proprietary trade secrets for chemical processes.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-indigo-300 mb-2">Laboratory Practice</h4>
+                                    <p class="text-sm text-slate-400">Focus on the material reality: distinct furnaces,
+                                        temperature control, and reproducibility of results.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Dictionary Tab (Phase 17) -->
+                    <div x-show="activeTab === 'dictionary'" x-cloak class="h-[800px] flex gap-6">
+                        <!-- Sidebar List -->
+                        <div
+                            class="w-1/3 flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                            <div class="p-4 border-b border-gray-100 bg-gray-50">
+                                <input type="text" x-model="searchQuery" placeholder="Search Lexicon..."
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-rose-500">
+                            </div>
+                            <div class="flex-1 overflow-y-auto p-2 space-y-1">
+                                <template
+                                    x-for="entry in dictionary.filter(e => e.headword.toLowerCase().includes(searchQuery.toLowerCase()))"
+                                    :key="entry.id">
+                                    <button @click="activeChat = entry"
+                                        :class="activeChat?.id === entry.id ? 'bg-rose-50 text-rose-700 border-rose-200' : 'hover:bg-gray-50 text-gray-600 border-transparent'"
+                                        class="w-full text-left px-4 py-3 rounded-xl border transition flex justify-between items-center group">
+                                        <span class="font-bold text-sm" x-text="entry.headword"></span>
+                                        <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full" :class="{
+                                              'bg-gray-800 text-gray-100': entry.opus_stage === 'Nigredo',
+                                              'bg-slate-100 text-slate-600': entry.opus_stage === 'Albedo',
+                                              'bg-yellow-100 text-yellow-600': entry.opus_stage === 'Citrinitas',
+                                              'bg-red-100 text-red-600': entry.opus_stage === 'Rubedo'
+                                          }" x-text="entry.opus_stage || 'General'"></span>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Detail View -->
+                        <div class="w-2/3 bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden flex flex-col"
+                            x-show="activeChat">
+                            <!-- Header -->
+                            <div class="bg-rose-600 p-8 text-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl -mr-8 -mt-8">
+                                </div>
+                                <div class="relative z-10">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h1 class="text-3xl font-black tracking-tight" x-text="activeChat?.headword">
+                                        </h1>
+                                        <span x-show="activeChat?.ambiguity_flag"
+                                            class="bg-rose-500 text-white text-[10px] font-bold px-2 py-1 rounded border border-rose-400"
+                                            title="Term has contradictory meanings">AMBIVALENT</span>
+                                    </div>
+                                    <div class="text-rose-100 font-serif italic text-lg opacity-90"
+                                        x-text="activeChat?.short_definition"></div>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex-1 overflow-y-auto p-8 space-y-8">
+
+                                <!-- Dual Meaning Grid -->
+                                <div class="grid grid-cols-2 gap-8">
+                                    <div class="space-y-2">
+                                        <h3
+                                            class="text-xs font-black text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                                            <div class="w-2 h-2 rounded-full bg-slate-400"></div> Physical Mode
+                                        </h3>
+                                        <p class="text-sm text-gray-700 leading-relaxed border-l-2 border-slate-200 pl-4"
+                                            x-text="activeChat?.physical_meaning || 'No physical definition recorded.'">
+                                        </p>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h3
+                                            class="text-xs font-black text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                                            <div class="w-2 h-2 rounded-full bg-rose-400"></div> Spiritual Mode
+                                        </h3>
+                                        <p class="text-sm text-gray-700 leading-relaxed border-l-2 border-rose-200 pl-4"
+                                            x-text="activeChat?.spiritual_meaning || 'No spiritual definition recorded.'">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Citations (Simulated) -->
+                                <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                                    <h3 class="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Corpus
+                                        Citations</h3>
+                                    <div class="space-y-3">
+                                        <div class="text-xs text-gray-600 font-serif">"The <span
+                                                class="font-bold text-gray-800" x-text="activeChat?.headword"></span>
+                                            appears frequently in the context of <span
+                                                x-text="activeChat?.opus_stage"></span>." — <span
+                                                class="italic">Algorithmic Synthesis based on entity frequency.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="w-2/3 flex items-center justify-center text-gray-400 bg-gray-50 rounded-2xl border border-gray-200 border-dashed"
+                            x-show="!activeChat">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">📖</div>
+                                <p class="text-sm font-medium">Select a term to open the Digital Dictionary</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reference Tab (Phase 18) -->
+                    <div x-show="activeTab === 'reference'" x-cloak class="space-y-6">
+                        <!-- Header & Toggle -->
+                        <div
+                            class="flex justify-between items-center bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                            <div>
+                                <h2 class="text-2xl font-black text-slate-800">Reference Portal</h2>
+                                <p class="text-sm text-slate-500 mt-1">
+                                    <span class="font-bold" x-text="sources.length"></span> Sources •
+                                    <span class="font-bold" x-text="notes.length"></span> Reference Notes •
+                                    <span class="font-bold" x-text="metrics.length"></span> Tracked Entities
+                                </p>
+                            </div>
+                            <div class="flex gap-2 bg-slate-100 p-1 rounded-lg">
+                                <button @click="refMode = 'bookshelf'"
+                                    :class="refMode === 'bookshelf' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'"
+                                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                                    <span>📚</span> Bookshelf
+                                </button>
+                                <button @click="refMode = 'grid'"
+                                    :class="refMode === 'grid' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'"
+                                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                                    <span>📊</span> Analytic Grid
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Bookshelf Mode -->
+                        <div x-show="refMode === 'bookshelf'" class="space-y-8">
+                            <!-- Hermetic Lineage -->
+                            <div
+                                class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 text-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-64 h-64 bg-emerald-500 opacity-10 rounded-full blur-3xl -mr-16 -mt-16">
+                                </div>
+                                <h3 class="text-xl font-bold font-serif mb-6 relative z-10">The Hermetic Lineage</h3>
+                                <div class="flex gap-6 overflow-x-auto pb-4 snap-x relative z-10">
+                                    <template x-for="src in sources.filter(s => s.domain === 'Hermeticism')"
+                                        :key="src.id">
+                                        <div
+                                            class="min-w-[200px] w-[200px] bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/10 hover:bg-white/20 transition cursor-pointer snap-start flex flex-col h-48 justify-between">
+                                            <div>
+                                                <div class="text-[10px] uppercase tracking-widest text-emerald-300 mb-2"
+                                                    x-text="src.year"></div>
+                                                <div class="font-bold text-lg leading-tight" x-text="src.short_name">
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-slate-300 truncate" x-text="src.citation"></div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+
+                            <!-- Alchemy Opus -->
+                            <div
+                                class="bg-gradient-to-r from-amber-900 to-amber-800 rounded-3xl p-8 text-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-64 h-64 bg-yellow-500 opacity-10 rounded-full blur-3xl -mr-16 -mt-16">
+                                </div>
+                                <h3 class="text-xl font-bold font-serif mb-6 relative z-10">The Alchemical Opus</h3>
+                                <div class="flex gap-6 overflow-x-auto pb-4 snap-x relative z-10">
+                                    <template x-for="src in sources.filter(s => s.domain === 'Alchemy')" :key="src.id">
+                                        <div
+                                            class="min-w-[200px] w-[200px] bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/10 hover:bg-white/20 transition cursor-pointer snap-start flex flex-col h-48 justify-between">
+                                            <div>
+                                                <div class="text-[10px] uppercase tracking-widest text-amber-300 mb-2"
+                                                    x-text="src.year"></div>
+                                                <div class="font-bold text-lg leading-tight" x-text="src.short_name">
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-slate-300 truncate" x-text="src.citation"></div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid Mode -->
+                        <div x-show="refMode === 'grid'"
+                            class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left text-sm">
+                                    <thead
+                                        class="bg-gray-50 border-b border-gray-100 text-xs uppercase text-gray-500 font-bold">
+                                        <tr>
+                                            <th class="px-6 py-4">Entity / Topic</th>
+                                            <th class="px-6 py-4">Scholar Interest</th>
+                                            <th class="px-6 py-4">User Curiosity</th>
+                                            <th class="px-6 py-4">Desire Gap</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-100">
+                                        <template x-for="row in metrics.sort((a,b) => b.gap - a.gap)"
+                                            :key="row.entity_id">
+                                            <tr class="hover:bg-gray-50/50 transition cursor-pointer group">
+                                                <td class="px-6 py-4 font-medium text-slate-900" x-text="row.name"></td>
+                                                <td class="px-6 py-4">
+                                                    <div class="flex items-center gap-2">
+                                                        <div
+                                                            class="h-1.5 rounded-full bg-slate-200 w-24 overflow-hidden">
+                                                            <div class="h-full bg-slate-500"
+                                                                :style="`width: ${row.scholar_interest * 100}%`"></div>
+                                                        </div>
+                                                        <span class="text-xs text-gray-400"
+                                                            x-text="Math.round(row.scholar_interest * 100) + '%'"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="px-6 py-4">
+                                                    <div class="flex items-center gap-2">
+                                                        <div
+                                                            class="h-1.5 rounded-full bg-slate-200 w-24 overflow-hidden">
+                                                            <div class="h-full bg-indigo-500"
+                                                                :style="`width: ${row.user_curiosity * 100}%`"></div>
+                                                        </div>
+                                                        <span class="text-xs text-gray-400"
+                                                            x-text="Math.round(row.user_curiosity * 100) + '%'"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="px-6 py-4">
+                                                    <span class="px-2 py-1 rounded text-xs font-bold"
+                                                        :class="row.gap > 0.2 ? 'bg-red-100 text-red-700' : (row.gap < -0.2 ? 'bg-emerald-100 text-emerald-700' : 'bg-gray-100 text-gray-600')"
+                                                        x-text="row.gap > 0 ? '+' + row.gap : row.gap"></span>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Docs Tab (V8.1) -->
+                    <div x-show="activeTab === 'docs'" x-cloak class="flex gap-6 h-[calc(100vh-200px)]">
+                        <!-- Sidebar -->
+                        <div class="w-1/4 bg-white rounded-2xl border border-gray-200 overflow-y-auto">
+                            <div class="p-4 border-b border-gray-100 font-bold text-gray-400 text-xs uppercase">
+                                Documents</div>
+                            <nav class="p-2 space-y-1">
+                                <template x-for="doc in docs" :key="doc.id">
+                                    <button @click="activeDoc = doc"
+                                        :class="activeDoc && activeDoc.id === doc.id ? 'bg-indigo-50 text-indigo-700 font-bold' : 'text-slate-600 hover:bg-slate-50'"
+                                        class="w-full text-left px-3 py-2 rounded-lg text-sm transition">
+                                        <span x-text="doc.title"></span>
+                                    </button>
+                                </template>
+                            </nav>
+                        </div>
+                        <!-- Content -->
+                        <div class="w-3/4 bg-white rounded-2xl border border-gray-200 overflow-y-auto p-8">
+                            <template x-if="activeDoc">
+                                <div>
+                                    <h2 class="text-3xl font-black text-slate-800 mb-6" x-text="activeDoc.title"></h2>
+                                    <div class="prose prose-indigo max-w-none">
+                                        <pre class="whitespace-pre-wrap font-mono text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100"
+                                            x-text="activeDoc.content"></pre>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Design Lab Tab (V8.1) -->
+                    <div x-show="activeTab === 'design'" x-cloak class="space-y-6">
+                        <!-- Stats Row -->
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="text-xs text-gray-400 font-bold uppercase">Total Tasks</div>
+                                <div class="text-3xl font-black text-slate-800" x-text="projectMeta?.total_tasks || 0">
+                                </div>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="text-xs text-gray-400 font-bold uppercase">Completed</div>
+                                <div class="text-3xl font-black text-emerald-600"
+                                    x-text="projectMeta?.completed_tasks || 0"></div>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm col-span-2">
+                                <div class="text-xs text-gray-400 font-bold uppercase mb-2">Current Velocity</div>
+                                <div class="w-full bg-gray-100 rounded-full h-4 overflow-hidden">
+                                    <div class="bg-indigo-500 h-full transition-all duration-1000"
+                                        :style="`width: ${(projectMeta?.completed_tasks / projectMeta?.total_tasks) * 100}%`">
+                                    </div>
+                                </div>
+                                <div class="mt-2 text-right text-xs text-indigo-600 font-bold"
+                                    x-text="Math.round((projectMeta?.completed_tasks / projectMeta?.total_tasks) * 100) + '% Complete'">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phases -->
+                        <div class="bg-white rounded-2xl border border-gray-200 p-6">
+                            <h3 class="font-bold text-lg mb-4">Project Phases</h3>
+                            <div class="space-y-4">
+                                <template x-for="phase in projectMeta?.phases" :key="phase.name">
+                                    <div class="flex items-center gap-4 group">
+                                        <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold"
+                                            :class="phase.completed === phase.total ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-500'">
+                                            <span x-show="phase.completed === phase.total">✓</span>
+                                            <span x-show="phase.completed !== phase.total"
+                                                x-text="Math.round((phase.completed/phase.total)*100) + '%'"></span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-slate-800" x-text="phase.name"></div>
+                                            <div class="text-xs text-slate-400"
+                                                x-text="`${phase.completed}/${phase.total} Tasks`"></div>
+                                        </div>
+                                        <div class="w-32 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                                            <div class="h-full bg-slate-800"
+                                                :style="`width: ${(phase.completed/phase.total)*100}%`"></div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Meta Comments -->
+                        <div
+                            class="bg-slate-900 text-slate-300 p-8 rounded-2xl font-mono text-sm relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-64 h-64 bg-pink-500 opacity-10 rounded-full blur-3xl -mr-16 -mt-16">
+                            </div>
+                            <h3 class="text-white font-bold mb-4 border-b border-slate-700 pb-2">DESIGNER_NOTES.log</h3>
+                            <p class="mb-2">> <span class="text-pink-400">STATUS:</span> The Reference Layer (V8) is
+                                stable. Entity linking density is increasing.</p>
+                            <p class="mb-2">> <span class="text-yellow-400">WARNING:</span> "Desire Gap" indicates
+                                significant user interest in 'Kabbalah' with low scholar coverage. Recommend sourcing
+                                texts.</p>
+                            <p class="mb-2">> <span class="text-emerald-400">TODO:</span> Implement 'Deep Reading' mode
+                                for text spans in V9.</p>
+                        </div>
+                    </div>
 
     </main>
 
@@ -393,6 +1222,25 @@
                 activeTab: 'browse',
                 docs: [],
                 chats: [],
+                messages: [],
+                questions: [],
+                metricsData: [],
+                images: [],
+                tables: [],
+                compendium: [],
+                glossary: [],
+                entities: [],
+                dictionary: [],
+                // V8 Reference Layer
+                sources: [],
+                notes: [],
+                notes: [],
+                metrics: [],
+                // V8.1 Docs & Meta
+                docs: [],
+                projectMeta: null,
+                activeDoc: null,
+                activeImage: null,
                 listsData: null,
                 activeChat: null,
                 statsData: null,
@@ -400,13 +1248,39 @@
                 searchIndex: {},
                 searchQuery: '',
                 fullTextQuery: '',
+                chatSearch: '',
                 config: {},
+                questionSearch: '',
+                moveFilter: '',
                 cy: null,
 
-                // New State for Browsing & Dashboards
                 browsingCategory: null,
                 activeDashboard: null,
                 dashboardType: null,
+                activePortal: null,
+                portals: [
+                    {
+                        id: 'alchemy',
+                        name: 'Alchemy Portal',
+                        desc: 'Matter, Spirit, and the Lab',
+                        longDesc: 'Focusing on the transition from Chrysopoeia to early modern chemistry. Key investigative moves into the Golden Chain.',
+                        keyScholars: ['Principe', 'Newman', 'Moran', 'Linden']
+                    },
+                    {
+                        id: 'hermetic',
+                        name: 'Hermetic Corpus',
+                        desc: 'Gnosis, Mind, and Nature',
+                        longDesc: 'Research into the Hellenistic Hermetica and its Renaissance rediscovery.',
+                        keyScholars: ['Hanegraaff', 'Copenhaver', 'Fowden']
+                    },
+                    {
+                        id: 'historiography',
+                        name: 'General Historiography',
+                        desc: 'Field Definitions & Methods',
+                        longDesc: 'Methodological inquiries into what constitutes "Western Esotericism".',
+                        keyScholars: ['Faivre', 'von Stuckrad', 'Goodrick-Clarke']
+                    }
+                ],
 
                 get currentCategoryList() {
                     if (!this.browsingCategory) return [];
@@ -425,6 +1299,44 @@
                     // For figures/scholars, we'd filter by 'MENTIONS' in a real setup.
                     // For now, return a slice of the library to demo the UI.
                     return this.docs.slice(0, 10);
+                },
+
+                get filteredQuestionsList() {
+                    let qs = this.questions.map(q => {
+                        const chat = this.chats.find(c => c.id === q.chat_id);
+                        return { ...q, topic: chat?.topic };
+                    });
+                    if (this.questionSearch) {
+                        const q = this.questionSearch.toLowerCase();
+                        qs = qs.filter(item => item.text.toLowerCase().includes(q) || (item.topic && item.topic.toLowerCase().includes(q)));
+                    }
+                    if (this.moveFilter) {
+                        qs = qs.filter(item => item.type === this.moveFilter);
+                    }
+                    return qs.slice(0, 50); // Pagination/Limit
+                },
+
+                get filteredChats() {
+                    if (!this.chatSearch) return this.chats;
+                    const q = this.chatSearch.toLowerCase();
+                    return this.chats.filter(c => c.title.toLowerCase().includes(q) || c.topic.toLowerCase().includes(q));
+                },
+
+                get chatMessages() {
+                    if (!this.activeChat) return [];
+                    return this.messages.filter(m => m.chat_id === this.activeChat.id).sort((a, b) => a.index - b.index);
+                },
+
+                get portalDocs() {
+                    if (!this.activePortal) return [];
+                    const pid = this.activePortal.id;
+                    return this.docs.filter(d => d.topic.toLowerCase().includes(pid));
+                },
+
+                get portalQuestions() {
+                    if (!this.activePortal) return this.questions.slice(0, 20);
+                    const pid = this.activePortal.id;
+                    return this.questions.filter(q => q.text.toLowerCase().includes(pid) || q.type.toLowerCase().includes(pid));
                 },
 
                 browseCategory(cat) {
@@ -505,7 +1417,12 @@
                     try {
                         // Load Config
                         const configRes = await fetch('config.json');
-                        if (configRes.ok) this.config = await configRes.json();
+                        if (configRes.ok) {
+                            this.config = await configRes.json();
+                            if (this.config.mode === 'static') {
+                                this.activeTab = 'research';
+                            }
+                        }
 
                         // Load Docs
                         const docsRes = await fetch('docs.json');
@@ -529,6 +1446,12 @@
                                     this.renderCharts(this.statsData);
                                     this.renderedInsights = true;
                                 });
+                            }
+                            if (val === 'research') {
+                                this.$nextTick(() => this.renderResearchCharts());
+                            }
+                            if (val === 'popularity') {
+                                this.$nextTick(() => this.renderPopularityCharts());
                             }
                         });
 
@@ -557,7 +1480,58 @@
                                 this.chats = await chatRes.json();
                                 if (this.chats.length > 0) this.activeChat = this.chats[0];
                             }
+                            const qRes = await fetch('questions.json');
+                            if (qRes.ok) {
+                                this.questions = await qRes.json();
+                            }
+                            const mRes = await fetch('messages.json');
+                            if (mRes.ok) {
+                                this.messages = await mRes.json();
+                            }
                         }
+
+                        if (this.config.features?.metrics) {
+                            const metricsRes = await fetch('metrics.json');
+                            if (metricsRes.ok) this.metricsData = await metricsRes.json();
+                        }
+
+                        const imagesRes = await fetch('images.json');
+                        if (imagesRes.ok) this.images = await imagesRes.json();
+
+                        const tablesRes = await fetch('tables.json');
+                        if (tablesRes.ok) this.tables = await tablesRes.json();
+
+                        const compendiumRes = await fetch('compendium.json');
+                        if (compendiumRes.ok) this.compendium = await compendiumRes.json();
+
+                        const glossaryRes = await fetch('glossary.json');
+                        if (glossaryRes.ok) this.glossary = await glossaryRes.json();
+
+                        const entitiesRes = await fetch('entities.json');
+                        if (entitiesRes.ok) this.entities = await entitiesRes.json();
+
+                        const dictRes = await fetch('dictionary.json');
+                        if (dictRes.ok) this.dictionary = await dictRes.json();
+
+                        // V8 Data
+                        const srcRes = await fetch('sources.json');
+                        if (srcRes.ok) this.sources = await srcRes.json();
+
+                        const notesRes = await fetch('reference_notes.json');
+                        if (notesRes.ok) this.notes = await notesRes.json();
+
+                        const metRes = await fetch('metrics.json');
+                        if (metRes.ok) this.metrics = await metRes.json();
+
+                        // V8.1 Docs & Meta
+                        const docsRes = await fetch('docs.json');
+                        if (docsRes.ok) {
+                            this.docs = await docsRes.json();
+                            if (this.docs.length > 0) this.activeDoc = this.docs[0];
+                        }
+
+                        const metaRes = await fetch('project_meta.json');
+                        if (metaRes.ok) this.projectMeta = await metaRes.json();
 
                     } catch (e) {
                         console.error("Error loading data:", e);
@@ -622,6 +1596,66 @@
                         color: 'random-dark',
                         rotateRatio: 0.5,
                         backgroundColor: 'transparent'
+                    });
+                },
+
+                renderResearchCharts() {
+                    const ctxMoves = document.getElementById('movesChart').getContext('2d');
+                    const moves = {};
+                    this.questions.forEach(q => {
+                        moves[q.type] = (moves[q.type] || 0) + 1;
+                    });
+                    new Chart(ctxMoves, {
+                        type: 'bar',
+                        data: {
+                            labels: Object.keys(moves),
+                            datasets: [{
+                                data: Object.values(moves),
+                                backgroundColor: '#4F46E5',
+                                borderRadius: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: false } },
+                            scales: { y: { beginAtZero: true } }
+                        }
+                    });
+                },
+
+                renderPopularityCharts() {
+                    const ctx = document.getElementById('weightChart').getContext('2d');
+                    const sorted = this.metricsData.sort((a, b) => b.weight - a.weight).slice(0, 10);
+
+                    new Chart(ctx, {
+                        type: 'bubble',
+                        data: {
+                            datasets: sorted.map((m, i) => ({
+                                label: m.topic,
+                                data: [{
+                                    x: m.docs,
+                                    y: m.questions,
+                                    r: Math.sqrt(m.weight) * 3
+                                }],
+                                backgroundColor: `hsla(${230 + (i * 20)}, 70%, 50%, 0.6)`
+                            }))
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                x: { title: { display: true, text: 'Documents Volume' } },
+                                y: { title: { display: true, text: 'Inquiry Density (Questions)' } }
+                            },
+                            plugins: {
+                                tooltip: {
+                                    callbacks: {
+                                        label: (ctx) => `${ctx.dataset.label}: ${ctx.raw.r} Rank`
+                                    }
+                                }
+                            }
+                        }
                     });
                 },
 

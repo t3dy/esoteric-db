@@ -1,0 +1,517 @@
+[
+  {
+    "id": 1,
+    "name": "Mercury",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Salt",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gold",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Silver",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Lead",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cinnabar",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Athanor",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Retort",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Adam McLean A Commentary on the Mutus Liber.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Serpent",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Adam McLean A Threefold Alchemical Journey Through the Book of Lambspring.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Crucible",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Alchemy Jung and Remedios Varo_ Cultural Complexes and the Redemptive Power of the Abjected F.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Antimony",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "A_Dictionary_of_Alchemical_Imagery.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Iron",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "A_Dictionary_of_Alchemical_Imagery.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Red King",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "A_Dictionary_of_Alchemical_Imagery.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 14,
+    "name": "White Queen",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "A_Dictionary_of_Alchemical_Imagery.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Sulfur",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Defining_Greco_Egyptian_Alchemy.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Copper",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Depicting_the_Medieval_Alchemical_Cosmos.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Tin",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Depicting_the_Medieval_Alchemical_Cosmos.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Quicksilver",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Depicting_the_Medieval_Alchemical_Cosmos.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Pelican",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Lyndy Abraham A Dictionary of Alchemical Imagery Cambridge University Press.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Bain-Marie",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Lyndy Abraham A Dictionary of Alchemical Imagery Cambridge University Press.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Green Lion",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Lyndy Abraham A Dictionary of Alchemical Imagery Cambridge University Press.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Toad",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Lyndy Abraham A Dictionary of Alchemical Imagery Cambridge University Press.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Philosophical Child",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Lyndy Abraham A Dictionary of Alchemical Imagery Cambridge University Press.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Alembic",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Min_al_Kimiya_ad_Alchimiam_The_Transmiss.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Cucurbit",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Min_al_Kimiya_ad_Alchimiam_The_Transmiss.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Bellows",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Min_al_Kimiya_ad_Alchimiam_The_Transmiss.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Vitriol",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Paracelsus Arthur Edward Waite The Hermetic and Alchemical Writings of Paracelsus Two Volumes in One libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Rebis",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Peter J Forshaw The Mage s Images_ Heinrich Khunrath in His Oratory and Laboratory Volume 1_ Prologue_ Bio Bibliography Introduction to Khunrath s Images Brill.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Vinegar",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "[Ambix 1937-may vol. 1 iss. 1] Partington, J. R. - Albertus Magnus on Alchemy (1937) [10.1179_amb.1937.1.1.3] - libgen.li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Tartar",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "[Ambix 1937-may vol. 1 iss. 1] Partington, J. R. - Albertus Magnus on Alchemy (1937) [10.1179_amb.1937.1.1.3] - libgen.li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Mortar",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "[Ambix 1937-may vol. 1 iss. 1] Partington, J. R. - Albertus Magnus on Alchemy (1937) [10.1179_amb.1937.1.1.3] - libgen.li.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Alkahest",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Isis 1994 sep vol 85 iss 3 Review by_ Michela Pereira La rationalite de l alchimie au XVIIe siecleby Bernard Joly 10 2307_235495 libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Ouroboros",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Isis 1994 sep vol 85 iss 3 Review by_ Michela Pereira La rationalite de l alchimie au XVIIe siecleby Bernard Joly 10 2307_235495 libgen li.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Flask",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Israel Journal of Chemistry 2018 jan 05 vol 58 iss 1 2 Marek Ilan Rosarium Philosophorum on Organic Synthesis 10 1002_ijch 201700135 libgen li.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Beaker",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "jbayron AthanorX_ C Morris Wescott Atalanta Fugiens.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Aqua Fortis",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Netherlands Yearbook for History of Art _ Nederlands Kunsthistorisch Jaarboek vol 15 iss 1 De Jong Heleen M E Michael Maier s Atalanta Fugiens 10 1163_22145966 90000368 libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Azoth",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Essential Readings Paracelsus_ Nicholas Goodrick Clarke Paracelsus libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Saltpeter",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Isis 1964 mar vol 55 iss 1 Allen G Debus The Paracelsian Aerial Niter 10 2307_227754 libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Receiver",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Isis 1987 dec vol 78 iss 4 William Newman and Issac Newton Newton s Clavis as Starkey s Key 10 2307_231919 libgen li.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Sal Ammoniac",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Princeton scholarship online William R Newman Newton the Alchemist_ Science Enigma and the Quest for Nature s _Secret Fire_ libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Doves Of Diana",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Princeton scholarship online William R Newman Newton the Alchemist_ Science Enigma and the Quest for Nature s _Secret Fire_ libgen li.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Condenser",
+    "type": "Alchemy Equipment",
+    "attributes": {
+      "source": "Bruce T Moran A Cultural History of Chemistry in the Early Modern Age Bloomsbury Academic.pdf",
+      "category": "equipment"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Cauda Pavonis",
+    "type": "Alchemy Symbol",
+    "attributes": {
+      "source": "Darke Hierogliphicks_ Alchemy in English Literature from Chaucer to the Restoration University Press of Kentucky.pdf",
+      "category": "symbol"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Spirit Of Wine",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Arnld de Villanova_ Rosarium Philosophorum libgen li.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Philosophical Mercury",
+    "type": "Alchemy Material",
+    "attributes": {
+      "source": "Acacia_the_philosophical_mercury_of_Zosi.pdf",
+      "category": "material"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Hermes Trismegistus",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Brian P Copenhaver Hermetica_ The Greek Corpus Hermeticum and the Latin Asclepius in a New English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 47,
+    "name": "Corpus Hermeticum",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Brian P Copenhaver Hermetica_ The Greek Corpus Hermeticum and the Latin Asclepius in a New English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Asclepius",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Brian P Copenhaver Hermetica_ The Greek Corpus Hermeticum and the Latin Asclepius in a New English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Poimandres",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Christian H Bull The Tradition of Hermes Trismegistus_ The Egyptian Priestly Figure as a Teacher of Hellenized Wisdom Brill.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Marsilio Ficino",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Claudio Moreschini Hermes Christianus_ The Intermingling of Hermetic Piety and Christian Thought Brepols Publishers.pdf",
+      "period": "Renaissance",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Zosimos",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "Hermetism_and_Hieratic_Tradition_in_the.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 52,
+    "name": "Albertus Magnus",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "La cor\u00f3nica A Journal of Medieval Hispanic Languages Literatures and Cultures vol 36 iss 1 Porreca David Hermes Philosophus_ Ramon Mart\u00ed s Singular Use of a Mythical Authority 10 1353_cor 2007 0021 l.pdf",
+      "period": "Medieval",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 53,
+    "name": "Stobaeus",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "M David Litwa Hermetica II_ The Excerpts of Stobaeus Papyrus Fragments and Ancient Testimonies in an English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 54,
+    "name": "Lactantius",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "M David Litwa Hermetica II_ The Excerpts of Stobaeus Papyrus Fragments and Ancient Testimonies in an English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Late Antiquity",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 55,
+    "name": "Emerald Tablet",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "M David Litwa Hermetica II_ The Excerpts of Stobaeus Papyrus Fragments and Ancient Testimonies in an English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Medieval",
+      "category": "figure"
+    }
+  },
+  {
+    "id": 56,
+    "name": "Picatrix",
+    "type": "Hermetic Figure",
+    "attributes": {
+      "source": "M David Litwa Hermetica II_ The Excerpts of Stobaeus Papyrus Fragments and Ancient Testimonies in an English Translation with Notes and Introduction Cambridge University Press.pdf",
+      "period": "Medieval",
+      "category": "figure"
+    }
+  }
+]

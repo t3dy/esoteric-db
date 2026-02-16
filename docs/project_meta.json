@@ -1,0 +1,77 @@
+{
+  "phases": [
+    {
+      "name": "Phase 2: Visualizations & Polish <!-- id: 4 -->",
+      "completed": 1,
+      "total": 1
+    },
+    {
+      "name": "Phase 3: Chat Ingestion & Q&A Indexing <!-- id: 6 -->",
+      "completed": 2,
+      "total": 3
+    },
+    {
+      "name": "Phase 4: Deep Metadata & Topic Dashboards [DONE] <!-- id: 10 -->",
+      "completed": 3,
+      "total": 3
+    },
+    {
+      "name": "Phase 5: Silent Enrichment & Entity Mining [DONE] <!-- id: 14 -->",
+      "completed": 3,
+      "total": 3
+    },
+    {
+      "name": "Phase 6: Deep Search & Graph [DONE] <!-- id: 18 -->",
+      "completed": 2,
+      "total": 2
+    },
+    {
+      "name": "Phase 7: Chat Ingestion [DONE] <!-- id: 21 -->",
+      "completed": 3,
+      "total": 3
+    },
+    {
+      "name": "Phase 8: Historiography Dashboards [DONE] <!-- id: 25 -->",
+      "completed": 3,
+      "total": 3
+    },
+    {
+      "name": "Phase 9: Inquiry Metrics [DONE] <!-- id: 29 -->",
+      "completed": 2,
+      "total": 2
+    },
+    {
+      "name": "Phase 14: Portfolio Narratives (Data Science) [DONE]",
+      "completed": 2,
+      "total": 2
+    },
+    {
+      "name": "Phase 15: Deep Textual Compendium & Glossary [IN PROGRESS]",
+      "completed": 4,
+      "total": 4
+    },
+    {
+      "name": "Phase 16: Alchemy & Hermetic Specialized Expansion (V6) [PLANNING]",
+      "completed": 2,
+      "total": 5
+    },
+    {
+      "name": "Phase 17: Digital Interactive Dictionary (V7) [DEPRECATED / ABSORBED INTO V8]",
+      "completed": 2,
+      "total": 2
+    },
+    {
+      "name": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]",
+      "completed": 4,
+      "total": 5
+    },
+    {
+      "name": "Phase 14: Portfolio V5 (Public Exhibition) <!-- id: 39 -->",
+      "completed": 0,
+      "total": 2
+    }
+  ],
+  "total_tasks": 40,
+  "completed_tasks": 33,
+  "current_focus": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]"
+}

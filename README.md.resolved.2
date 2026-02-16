@@ -1,0 +1,39 @@
+# Esoteric Research Workbench (V4)
+
+**[✨ LIVE EXHIBIT ✨](https://t3dy.github.io/esoteric-db/)**
+
+This project has evolved from a simple document catalog into a comprehensive **Digital Humanities Research Workbench**. It serves as a dual-mode system: a high-fidelity local research environment and a privacy-preserving public showcase.
+
+## New Features (V4)
+
+### 🧪 Historiography Dashboards
+- **Research Portals**: Specialized lenses for Alchemy and Hermeticism that isolate domain-specific scholars and documents.
+- **Inquiry Metrics**: Visualizes the research logical trajectory (e.g., "Cross-Reference" vs "Evidence Retrieval").
+
+### 🗨️ Chat Ingestion Pipeline
+- **archived_chats/**: Automatic parsing of 249 research sessions (HTML logs).
+- **Question Extraction**: 1,210 investigative moves automatically extracted and categorized.
+
+### 🛡️ Portfolio & Static Mode
+- **Redaction Layer**: The scanner extracts "Public" vs "Private" views.
+- **Showcase UI**: A refined EXHIBITION mode for GitHub Pages that hides absolute paths and redacts private message content while preserving analytical counts.
+
+## Quick Start (Local vs Public)
+
+### 1. Local Mode (Full Access)
+Process your library and private chats with full visibility:
+```bash
+python scan.py --dir "C:/path/to/library"
+```
+
+### 2. Static Mode (Public Exhibit)
+Generate the redacted data for GitHub Pages:
+```bash
+python scan.py --static
+```
+
+## Project Structure
+- [scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py): The brain. Now handles redaction logic and chat-to-graph linking.
+- [ingest_chats.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/ingest_chats.py): The ingestion pipeline for HTML chat logs.
+- [esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db): SQLite database containing 1,705 documents and 1,210 questions.
+- `docs/`: The frontend exhibition (Alpine.js + Tailwind + Chart.js + Cytoscape).
