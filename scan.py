@@ -248,10 +248,17 @@ def extract_text_silent(filepath, max_pages=3):
         return ""
 
 def mine_names_heuristic(text):
-    pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2}\b'
+    # Filter out common starting words and short/junk phrases
+    blacklist = {"The", "In", "Of", "And", "To", "A", "An", "This", "That", "It", "Is", "For", "By", "With"}
+    pattern = r'\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b'
     matches = re.findall(pattern, text)
     denylist = {"The Table", "Table Of", "Contents", "Chapter", "Index", "Introduction", "Preface", "Bibliography", "Appendix"}
-    return [m for m in matches if m not in denylist and len(m) > 5]
+    entities = []
+    for a, b in matches:
+        full = f"{a} {b}"
+        if a not in blacklist and full not in denylist and len(full) > 5:
+            entities.append(full)
+    return entities
 
 def scan_and_ingest(conn, root_dir, enrich=False):
     cursor = conn.cursor()
@@ -428,8 +435,8 @@ def export_json(conn, export_path, static=False):
     with open(os.path.join(export_path, "questions.json"), "w") as f:
         json.dump(questions, f, indent=2)
 
-    cursor.execute("SELECT t.content, t.topic, c.title FROM tables t JOIN chats c ON t.chat_id = c.id")
-    tables = [{"content": r[0], "topic": r[1], "chat": r[2]} for r in cursor.fetchall()]
+    cursor.execute("SELECT t.content, t.prompt, t.title, t.topic, c.title FROM tables t JOIN chats c ON t.chat_id = c.id")
+    tables = [{"content": r[0], "prompt": r[1], "title": r[2], "topic": r[3], "chat": r[4]} for r in cursor.fetchall()]
     with open(os.path.join(export_path, "tables.json"), "w") as f:
         json.dump(tables, f, indent=2)
 
@@ -446,7 +453,7 @@ def export_json(conn, export_path, static=False):
     cursor.execute("SELECT topic, COUNT(*) FROM documents GROUP BY topic")
     topics = cursor.fetchall()
     for t_name, count in topics:
-        nodes.append({"data": {"id": t_name, "label": t_name, "type": "topic", "size": 30 + (count/5)}})
+        nodes.append({"data": {"id": t_name, "label": t_name, "type": "topic", "size": min(60, 30 + (count/10))}})
 
     # Entities (Top 100)
     cursor.execute('''
@@ -459,7 +466,7 @@ def export_json(conn, export_path, static=False):
     ''')
     top_entities = cursor.fetchall()
     for e_name, freq in top_entities:
-        nodes.append({"data": {"id": e_name, "label": e_name, "type": "entity", "size": 20 + freq}})
+        nodes.append({"data": {"id": e_name, "label": e_name, "type": "entity", "size": min(45, 20 + (freq/5))}})
 
     # Chats (Top 50)
     cursor.execute("SELECT id, title, topic FROM chats LIMIT 50")
@@ -469,7 +476,7 @@ def export_json(conn, export_path, static=False):
         nodes.append({"data": {"id": c_id, "label": label, "type": "chat", "size": 25}})
         # Edge to topic
         if c_topic and c_topic != "General":
-            edges.append({"data": {"id": f"chat_topic_{c_id}", "source": c_id, "target": c_topic, "weight": 1}})
+            edges.append({"data": {"id": f"chat_topic_{c_id}", "source": c_id, "target": c_topic, "weight": 2}})
 
     # Edges: Document -> Topic
     cursor.execute('''

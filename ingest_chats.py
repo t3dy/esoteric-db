@@ -10,9 +10,7 @@ def init_chats_db(conn):
     """Adds chat-related tables to the schema."""
     cursor = conn.cursor()
     # For development/refinement, we drop to ensure schema matches
-    cursor.execute("DROP TABLE IF EXISTS chats")
-    cursor.execute("DROP TABLE IF EXISTS chat_messages")
-    cursor.execute("DROP TABLE IF EXISTS questions")
+    cursor.execute("DROP TABLE IF EXISTS prompts")
     cursor.execute("DROP TABLE IF EXISTS tables")
     
     cursor.execute('''
@@ -36,12 +34,16 @@ def init_chats_db(conn):
     )
     ''')
     cursor.execute('''
-    CREATE TABLE IF NOT EXISTS questions (
+    CREATE TABLE IF NOT EXISTS prompts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         chat_id TEXT,
         text TEXT,
         move_type TEXT,
         opus_stage TEXT,
+        mentions_topic TEXT,
+        mentions_figure TEXT,
+        mentions_text TEXT,
+        mentions_scholar TEXT,
         order_index INTEGER,
         FOREIGN KEY(chat_id) REFERENCES chats(id)
     )
@@ -51,6 +53,8 @@ def init_chats_db(conn):
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         chat_id TEXT,
         content TEXT,
+        prompt TEXT,
+        title TEXT,
         topic TEXT,
         FOREIGN KEY(chat_id) REFERENCES chats(id)
     )
@@ -98,36 +102,63 @@ def parse_chat_html(filepath):
         "messages": messages
     }
 
-def extract_questions(messages):
-    """Extracts questions and categorizes 'move types'."""
-    questions = []
+def extract_prompts(messages, scholars, current_topic):
+    """Extracts user prompts and categorizes them with nuanced metadata."""
+    prompts = []
+    # Key figures/texts markers
+    text_keywords = ["ms", "manuscript", "text", "book", "codex", "treatise"]
+    
     for msg in messages:
-        if msg['role'] == 'you' or msg['role'] == 'user':
-            lines = msg['content'].split('\n')
-            for line in lines:
-                if '?' in line:
-                    q_text = line.strip()
-                    # Basic move type heuristic
-                    move = "Investigate"
-                    l_lower = q_text.lower()
-                    if "summarize" in l_lower: move = "Summarize"
-                    elif "table" in l_lower: move = "Tabulate"
-                    elif "link" in l_lower or "compare" in l_lower or "relationship" in l_lower: move = "Cross-Reference"
-                    elif "critique" in l_lower or "evaluate" in l_lower or "bias" in l_lower: move = "Critique"
-                    
-                    # Opus Stage Heuristic (V8)
-                    stage = "Nigredo" # Default starting point
-                    if any(w in l_lower for w in ["white", "purif", "clean", "silver", "moon"]): stage = "Albedo"
-                    elif any(w in l_lower for w in ["yellow", "gold", "sun", "solar", "citrin"]): stage = "Citrinitas"
-                    elif any(w in l_lower for w in ["red", "blood", "stone", "fire", "king", "rubedo"]): stage = "Rubedo"
-                    
-                    questions.append({
-                        "text": q_text,
-                        "move": move,
-                        "opus_stage": stage,
-                        "index": msg['index']
-                    })
-    return questions
+        # Foolproof user input detection: only 'you' or 'user'
+        if msg['role'] in ['you', 'user']:
+            content = msg['content']
+            # We treat the entire user message as a potential prompt if it's substantial
+            # or extract sentence-level if multiple disparate inquiries exist.
+            # For this master-list, we'll use the whole message block to preserve nuance.
+            
+            p_text = content.strip()
+            if len(p_text) < 5: continue
+
+            l_lower = p_text.lower()
+            
+            # --- Move Type Categorization ---
+            move = "Investigate"
+            if "summarize" in l_lower: move = "Summarize"
+            elif "table" in l_lower: move = "Tabulate"
+            elif any(w in l_lower for w in ["link", "compare", "relationship", "connect"]): move = "Cross-Reference"
+            elif any(w in l_lower for w in ["critique", "evaluate", "bias", "accuracy"]): move = "Critique"
+            
+            # --- Opus Stage Heuristic ---
+            stage = "Nigredo"
+            if any(w in l_lower for w in ["white", "purif", "clean", "silver", "moon"]): stage = "Albedo"
+            elif any(w in l_lower for w in ["yellow", "gold", "sun", "solar", "citrin"]): stage = "Citrinitas"
+            elif any(w in l_lower for w in ["red", "blood", "stone", "fire", "king", "rubedo"]): stage = "Rubedo"
+            
+            # --- Nuanced Mentions Mining ---
+            mentions_topic = current_topic if current_topic in l_lower or "this topic" in l_lower else None
+            
+            # Mentioned figures (from corpus entities)
+            found_figures = [s for s in scholars if s.lower() in l_lower]
+            mentions_figure = ", ".join(found_figures) if found_figures else None
+            
+            # Mentions scholarship/scholars specifically
+            is_scholarly = any(w in l_lower for w in ["scholar", "researcher", "historian", "academic", "literature"])
+            mentions_scholar = "Yes" if is_scholarly or found_figures else "No"
+            
+            # Mentions texts
+            mentions_text = "Yes" if any(w in l_lower for w in text_keywords) else "No"
+
+            prompts.append({
+                "text": p_text,
+                "move": move,
+                "opus_stage": stage,
+                "mentions_topic": mentions_topic,
+                "mentions_figure": mentions_figure,
+                "mentions_text": mentions_text,
+                "mentions_scholar": mentions_scholar,
+                "index": msg['index']
+            })
+    return prompts
 
 def ingest_all_chats(db_path, chats_dir):
     conn = sqlite3.connect(db_path)
@@ -189,10 +220,27 @@ def ingest_all_chats(db_path, chats_dir):
                     # More permissive regex for typical markdown tables
                     table_matches = re.findall(r'(\|.*\|.*\n\|[\s|:-]+\n(?:\|.*\|.*\n)+)', msg['content'])
                     for full_table in table_matches:
+                        # Capture prompt from previous message if it exists
+                        prompt = ""
+                        if msg['index'] > 0:
+                            prev_msg = next((m for m in chat_data['messages'] if m['index'] == msg['index']-1), None)
+                            if prev_msg: prompt = prev_msg['content']
+                        
+                        # Fallback: if table is in the middle of a message, the first part is the "prompt"
+                        if not prompt and len(msg['content'].split(full_table)[0]) > 5:
+                            prompt = msg['content'].split(full_table)[0].strip()
+
+                        # Heuristic Title: First line of prompt or a generic title
+                        title = "Scholarly Data Table"
+                        if prompt:
+                            title_line = prompt.split("\n")[0].strip()
+                            if len(title_line) > 50: title_line = title_line[:47] + "..."
+                            title = title_line
+
                         cursor.execute('''
-                            INSERT INTO tables (chat_id, content, topic)
-                            VALUES (?, ?, ?)
-                        ''', (chat_id, full_table, topic))
+                            INSERT INTO tables (chat_id, content, prompt, title, topic)
+                            VALUES (?, ?, ?, ?, ?)
+                        ''', (chat_id, full_table, prompt, title, topic))
 
                 # Scholar Linking (Optimized)
                 if scholar_regex:
@@ -207,13 +255,13 @@ def ingest_all_chats(db_path, chats_dir):
                         if ent_id:
                             cursor.execute("INSERT OR IGNORE INTO relationships (source_id, target_id, type) VALUES (?, ?, ?)", (chat_id, ent_id, "DISCUSSED"))
 
-            cursor.execute("DELETE FROM questions WHERE chat_id = ?", (chat_id,))
-            questions = extract_questions(chat_data['messages'])
-            for q in questions:
+            cursor.execute("DELETE FROM prompts WHERE chat_id = ?")
+            prompts = extract_prompts(chat_data['messages'], scholars, topic)
+            for p in prompts:
                 cursor.execute('''
-                INSERT INTO questions (chat_id, text, move_type, opus_stage, order_index)
-                VALUES (?, ?, ?, ?, ?)
-                ''', (chat_id, q['text'], q['move'], q['opus_stage'], q['index']))
+                INSERT INTO prompts (chat_id, text, move_type, opus_stage, mentions_topic, mentions_figure, mentions_text, mentions_scholar, order_index)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (chat_id, p['text'], p['move'], p['opus_stage'], p['mentions_topic'], p['mentions_figure'], p['mentions_text'], p['mentions_scholar'], p['index']))
                 q_count += 1
 
             chat_count += 1
@@ -227,7 +275,7 @@ def ingest_all_chats(db_path, chats_dir):
 
     conn.commit()
     conn.close()
-    print(f"Ingestion complete. Chats: {chat_count}. Questions: {q_count}.")
+    print(f"Ingestion complete. Chats: {chat_count}. Prompts: {q_count}.")
 
 if __name__ == "__main__":
     DB_PATH = "esoteric.db"

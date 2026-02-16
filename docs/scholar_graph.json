@@ -41,11 +41,6 @@
       "type": "Entity"
     },
     {
-      "id": "1005",
-      "label": "Alchemical Texts",
-      "type": "Entity"
-    },
-    {
       "id": "36066",
       "label": "Alchemy",
       "type": "Entity"
@@ -346,11 +341,6 @@
       "type": "Entity"
     },
     {
-      "id": "873",
-      "label": "Early Modern",
-      "type": "Entity"
-    },
-    {
       "id": "5771",
       "label": "Early Modern Alchemy",
       "type": "Entity"
@@ -606,11 +596,6 @@
       "type": "Entity"
     },
     {
-      "id": "27871",
-      "label": "His Work",
-      "type": "Entity"
-    },
-    {
       "id": "8269",
       "label": "His World",
       "type": "Entity"
@@ -693,11 +678,6 @@
     {
       "id": "25172",
       "label": "In Shakespeare",
-      "type": "Entity"
-    },
-    {
-      "id": "16366",
-      "label": "In The",
       "type": "Entity"
     },
     {
@@ -911,11 +891,6 @@
       "type": "Entity"
     },
     {
-      "id": "1128",
-      "label": "Natural Philosophy",
-      "type": "Entity"
-    },
-    {
       "id": "36085",
       "label": "Nature",
       "type": "Entity"
@@ -943,11 +918,6 @@
     {
       "id": "18852",
       "label": "Occult Sciences",
-      "type": "Entity"
-    },
-    {
-      "id": "24956",
-      "label": "Of God",
       "type": "Entity"
     },
     {
@@ -1281,11 +1251,6 @@
       "type": "Entity"
     },
     {
-      "id": "1016",
-      "label": "The Alchemist",
-      "type": "Entity"
-    },
-    {
       "id": "4079",
       "label": "The Alchemy Website",
       "type": "Entity"
@@ -1301,11 +1266,6 @@
       "type": "Entity"
     },
     {
-      "id": "1",
-      "label": "The Art",
-      "type": "Entity"
-    },
-    {
       "id": "25319",
       "label": "The Ass",
       "type": "Entity"
@@ -1313,11 +1273,6 @@
     {
       "id": "2024",
       "label": "The Atalanta",
-      "type": "Entity"
-    },
-    {
-      "id": "3966",
-      "label": "The Author",
       "type": "Entity"
     },
     {
@@ -1353,16 +1308,6 @@
     {
       "id": "27113",
       "label": "The Bo",
-      "type": "Entity"
-    },
-    {
-      "id": "3605",
-      "label": "The Body",
-      "type": "Entity"
-    },
-    {
-      "id": "168",
-      "label": "The Book",
       "type": "Entity"
     },
     {
@@ -1406,11 +1351,6 @@
       "type": "Entity"
     },
     {
-      "id": "3084",
-      "label": "The Concept",
-      "type": "Entity"
-    },
-    {
       "id": "25326",
       "label": "The Conclusion",
       "type": "Entity"
@@ -1451,11 +1391,6 @@
       "type": "Entity"
     },
     {
-      "id": "8112",
-      "label": "The Development",
-      "type": "Entity"
-    },
-    {
       "id": "10690",
       "label": "The Devil",
       "type": "Entity"
@@ -1476,11 +1411,6 @@
       "type": "Entity"
     },
     {
-      "id": "32527",
-      "label": "The Earth",
-      "type": "Entity"
-    },
-    {
       "id": "18562",
       "label": "The Education",
       "type": "Entity"
@@ -1498,11 +1428,6 @@
     {
       "id": "5074",
       "label": "The Elements",
-      "type": "Entity"
-    },
-    {
-      "id": "7361",
-      "label": "The End",
       "type": "Entity"
     },
     {
@@ -1541,11 +1466,6 @@
       "type": "Entity"
     },
     {
-      "id": "17818",
-      "label": "The First",
-      "type": "Entity"
-    },
-    {
       "id": "16185",
       "label": "The Five",
       "type": "Entity"
@@ -1563,11 +1483,6 @@
     {
       "id": "15415",
       "label": "The Functions",
-      "type": "Entity"
-    },
-    {
-      "id": "9688",
-      "label": "The Game",
       "type": "Entity"
     },
     {
@@ -1616,23 +1531,8 @@
       "type": "Entity"
     },
     {
-      "id": "12485",
-      "label": "The Hermetic",
-      "type": "Entity"
-    },
-    {
-      "id": "1372",
-      "label": "The History",
-      "type": "Entity"
-    },
-    {
       "id": "5424",
       "label": "The House",
-      "type": "Entity"
-    },
-    {
-      "id": "8750",
-      "label": "The Idea",
       "type": "Entity"
     },
     {
@@ -1643,11 +1543,6 @@
     {
       "id": "15894",
       "label": "The Image",
-      "type": "Entity"
-    },
-    {
-      "id": "34168",
-      "label": "The Importance",
       "type": "Entity"
     },
     {
@@ -1678,11 +1573,6 @@
     {
       "id": "2094",
       "label": "The Kabbalah",
-      "type": "Entity"
-    },
-    {
-      "id": "13602",
-      "label": "The Key",
       "type": "Entity"
     },
     {
@@ -1791,11 +1681,6 @@
       "type": "Entity"
     },
     {
-      "id": "10647",
-      "label": "The Nature",
-      "type": "Entity"
-    },
-    {
       "id": "11074",
       "label": "The Need",
       "type": "Entity"
@@ -1818,11 +1703,6 @@
     {
       "id": "5506",
       "label": "The Occult Philosophy",
-      "type": "Entity"
-    },
-    {
-      "id": "6776",
-      "label": "The One",
       "type": "Entity"
     },
     {
@@ -1853,11 +1733,6 @@
     {
       "id": "24917",
       "label": "The Patriarch",
-      "type": "Entity"
-    },
-    {
-      "id": "26261",
-      "label": "The Philosopher",
       "type": "Entity"
     },
     {
@@ -1893,11 +1768,6 @@
     {
       "id": "19110",
       "label": "The Pow",
-      "type": "Entity"
-    },
-    {
-      "id": "5563",
-      "label": "The Power",
       "type": "Entity"
     },
     {
@@ -2041,11 +1911,6 @@
       "type": "Entity"
     },
     {
-      "id": "11385",
-      "label": "The Soul",
-      "type": "Entity"
-    },
-    {
       "id": "10749",
       "label": "The Sphinx",
       "type": "Entity"
@@ -2053,11 +1918,6 @@
     {
       "id": "19485",
       "label": "The Spirit",
-      "type": "Entity"
-    },
-    {
-      "id": "16205",
-      "label": "The Spiritual",
       "type": "Entity"
     },
     {
@@ -2101,11 +1961,6 @@
       "type": "Entity"
     },
     {
-      "id": "10694",
-      "label": "The Sun",
-      "type": "Entity"
-    },
-    {
       "id": "2136",
       "label": "The Temple",
       "type": "Entity"
@@ -2113,11 +1968,6 @@
     {
       "id": "10634",
       "label": "The Ten",
-      "type": "Entity"
-    },
-    {
-      "id": "9095",
-      "label": "The Text",
       "type": "Entity"
     },
     {
@@ -2156,21 +2006,6 @@
       "type": "Entity"
     },
     {
-      "id": "10696",
-      "label": "The Universe",
-      "type": "Entity"
-    },
-    {
-      "id": "6564",
-      "label": "The Use",
-      "type": "Entity"
-    },
-    {
-      "id": "23031",
-      "label": "The Way",
-      "type": "Entity"
-    },
-    {
       "id": "12529",
       "label": "The Wisdom",
       "type": "Entity"
@@ -2186,18 +2021,8 @@
       "type": "Entity"
     },
     {
-      "id": "6692",
-      "label": "The Work",
-      "type": "Entity"
-    },
-    {
       "id": "706",
       "label": "The Works",
-      "type": "Entity"
-    },
-    {
-      "id": "9202",
-      "label": "The World",
       "type": "Entity"
     },
     {

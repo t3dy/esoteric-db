@@ -56,13 +56,6 @@
     "gap": 0.0
   },
   {
-    "entity_id": 1005,
-    "name": "Alchemical Texts",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
-  },
-  {
     "entity_id": 36066,
     "name": "Alchemy",
     "scholar_interest": 0.0,
@@ -483,13 +476,6 @@
     "gap": 0.1
   },
   {
-    "entity_id": 873,
-    "name": "Early Modern",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
-  },
-  {
     "entity_id": 5771,
     "name": "Early Modern Alchemy",
     "scholar_interest": 0.0,
@@ -847,13 +833,6 @@
     "gap": 0.01
   },
   {
-    "entity_id": 27871,
-    "name": "His Work",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
-  },
-  {
     "entity_id": 8269,
     "name": "His World",
     "scholar_interest": 0.0,
@@ -971,13 +950,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 16366,
-    "name": "In The",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.89,
-    "gap": 0.89
   },
   {
     "entity_id": 10908,
@@ -1274,13 +1246,6 @@
     "gap": 0.01
   },
   {
-    "entity_id": 1128,
-    "name": "Natural Philosophy",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
-  },
-  {
     "entity_id": 36085,
     "name": "Nature",
     "scholar_interest": 0.0,
@@ -1321,13 +1286,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 24956,
-    "name": "Of God",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.04,
-    "gap": 0.04
   },
   {
     "entity_id": 931,
@@ -1792,13 +1750,6 @@
     "gap": 0.0
   },
   {
-    "entity_id": 1016,
-    "name": "The Alchemist",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
-  },
-  {
     "entity_id": 4079,
     "name": "The Alchemy Website",
     "scholar_interest": 0.0,
@@ -1820,13 +1771,6 @@
     "gap": 0.11
   },
   {
-    "entity_id": 1,
-    "name": "The Art",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.07,
-    "gap": 0.07
-  },
-  {
     "entity_id": 25319,
     "name": "The Ass",
     "scholar_interest": 0.0,
@@ -1839,13 +1783,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.01,
     "gap": 0.01
-  },
-  {
-    "entity_id": 3966,
-    "name": "The Author",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
   },
   {
     "entity_id": 16243,
@@ -1895,20 +1832,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.22,
     "gap": 0.22
-  },
-  {
-    "entity_id": 3605,
-    "name": "The Body",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.05,
-    "gap": 0.05
-  },
-  {
-    "entity_id": 168,
-    "name": "The Book",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.08,
-    "gap": 0.08
   },
   {
     "entity_id": 10806,
@@ -1967,13 +1890,6 @@
     "gap": 0.01
   },
   {
-    "entity_id": 3084,
-    "name": "The Concept",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.05,
-    "gap": 0.05
-  },
-  {
     "entity_id": 25326,
     "name": "The Conclusion",
     "scholar_interest": 0.0,
@@ -2030,13 +1946,6 @@
     "gap": 0.03
   },
   {
-    "entity_id": 8112,
-    "name": "The Development",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
-  },
-  {
     "entity_id": 10690,
     "name": "The Devil",
     "scholar_interest": 0.0,
@@ -2065,13 +1974,6 @@
     "gap": 0.0
   },
   {
-    "entity_id": 32527,
-    "name": "The Earth",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.11,
-    "gap": 0.11
-  },
-  {
     "entity_id": 18562,
     "name": "The Education",
     "scholar_interest": 0.0,
@@ -2098,13 +2000,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.02,
     "gap": 0.02
-  },
-  {
-    "entity_id": 7361,
-    "name": "The End",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.07,
-    "gap": 0.07
   },
   {
     "entity_id": 9076,
@@ -2156,13 +2051,6 @@
     "gap": 0.03
   },
   {
-    "entity_id": 17818,
-    "name": "The First",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.15,
-    "gap": 0.15
-  },
-  {
     "entity_id": 16185,
     "name": "The Five",
     "scholar_interest": 0.0,
@@ -2189,13 +2077,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 9688,
-    "name": "The Game",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.25,
-    "gap": 0.25
   },
   {
     "entity_id": 14090,
@@ -2261,32 +2142,11 @@
     "gap": 0.01
   },
   {
-    "entity_id": 12485,
-    "name": "The Hermetic",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
-  },
-  {
-    "entity_id": 1372,
-    "name": "The History",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
-  },
-  {
     "entity_id": 5424,
     "name": "The House",
     "scholar_interest": 0.0,
     "user_curiosity": 0.01,
     "gap": 0.01
-  },
-  {
-    "entity_id": 8750,
-    "name": "The Idea",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.05,
-    "gap": 0.05
   },
   {
     "entity_id": 2647,
@@ -2301,13 +2161,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.02,
     "gap": 0.02
-  },
-  {
-    "entity_id": 34168,
-    "name": "The Importance",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.01,
-    "gap": 0.01
   },
   {
     "entity_id": 9505,
@@ -2350,13 +2203,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.01,
     "gap": 0.01
-  },
-  {
-    "entity_id": 13602,
-    "name": "The Key",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.03,
-    "gap": 0.03
   },
   {
     "entity_id": 1847,
@@ -2506,13 +2352,6 @@
     "gap": 0.02
   },
   {
-    "entity_id": 10647,
-    "name": "The Nature",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.07,
-    "gap": 0.07
-  },
-  {
     "entity_id": 11074,
     "name": "The Need",
     "scholar_interest": 0.0,
@@ -2546,13 +2385,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 6776,
-    "name": "The One",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.06,
-    "gap": 0.06
   },
   {
     "entity_id": 27138,
@@ -2595,13 +2427,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 26261,
-    "name": "The Philosopher",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.21,
-    "gap": 0.21
   },
   {
     "entity_id": 22138,
@@ -2648,13 +2473,6 @@
   {
     "entity_id": 19110,
     "name": "The Pow",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.05,
-    "gap": 0.05
-  },
-  {
-    "entity_id": 5563,
-    "name": "The Power",
     "scholar_interest": 0.0,
     "user_curiosity": 0.05,
     "gap": 0.05
@@ -2856,13 +2674,6 @@
     "gap": 0.01
   },
   {
-    "entity_id": 11385,
-    "name": "The Soul",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.06,
-    "gap": 0.06
-  },
-  {
     "entity_id": 10749,
     "name": "The Sphinx",
     "scholar_interest": 0.0,
@@ -2875,13 +2686,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.03,
     "gap": 0.03
-  },
-  {
-    "entity_id": 16205,
-    "name": "The Spiritual",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.0,
-    "gap": 0.0
   },
   {
     "entity_id": 5562,
@@ -2940,13 +2744,6 @@
     "gap": 0.01
   },
   {
-    "entity_id": 10694,
-    "name": "The Sun",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
-  },
-  {
     "entity_id": 2136,
     "name": "The Temple",
     "scholar_interest": 0.0,
@@ -2959,13 +2756,6 @@
     "scholar_interest": 0.0,
     "user_curiosity": 0.01,
     "gap": 0.01
-  },
-  {
-    "entity_id": 9095,
-    "name": "The Text",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.07,
-    "gap": 0.07
   },
   {
     "entity_id": 29208,
@@ -3017,27 +2807,6 @@
     "gap": 0.0
   },
   {
-    "entity_id": 10696,
-    "name": "The Universe",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.02,
-    "gap": 0.02
-  },
-  {
-    "entity_id": 6564,
-    "name": "The Use",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.05,
-    "gap": 0.05
-  },
-  {
-    "entity_id": 23031,
-    "name": "The Way",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.09,
-    "gap": 0.09
-  },
-  {
     "entity_id": 12529,
     "name": "The Wisdom",
     "scholar_interest": 0.0,
@@ -3059,25 +2828,11 @@
     "gap": 0.04
   },
   {
-    "entity_id": 6692,
-    "name": "The Work",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.09,
-    "gap": 0.09
-  },
-  {
     "entity_id": 706,
     "name": "The Works",
     "scholar_interest": 0.0,
     "user_curiosity": 0.0,
     "gap": 0.0
-  },
-  {
-    "entity_id": 9202,
-    "name": "The World",
-    "scholar_interest": 0.0,
-    "user_curiosity": 0.07,
-    "gap": 0.07
   },
   {
     "entity_id": 36110,

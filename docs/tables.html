@@ -128,12 +128,23 @@
             container.innerHTML = filtered.map((item, idx) => `
                 <div class="glass p-8 rounded-[2.5rem] space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500" style="animation-delay: ${idx * 50}ms">
                     <div class="flex justify-between items-center border-b border-white/5 pb-4">
-                        <div class="flex items-center gap-3">
-                            <span class="text-[10px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full border border-emerald-500/20 font-black uppercase">${item.topic}</span>
-                            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">${item.chat}</h2>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-xl font-black text-emerald-400 serif italic">${item.title || 'Scholarly Data Table'}</h2>
+                            <div class="flex items-center gap-3">
+                                <span class="text-[9px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full border border-emerald-500/20 font-black uppercase">${item.topic}</span>
+                                <span class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">${item.chat}</span>
+                            </div>
                         </div>
                         <button onclick="copyTable(${idx})" class="text-[10px] font-black text-slate-600 hover:text-emerald-400 uppercase transition">Copy Markdown</button>
                     </div>
+                    
+                    ${item.prompt ? `
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5 space-y-2">
+                        <h4 class="text-[9px] font-black text-slate-500 uppercase tracking-[0.2em]">Contextual Prompt</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed italic">"${item.prompt}"</p>
+                    </div>
+                    ` : ''}
+
                     <div class="markdown-table overflow-x-auto">
                         ${marked.parse(item.content)}
                     </div>

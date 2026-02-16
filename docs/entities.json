@@ -1,10 +1,5 @@
 [
   {
-    "name": "The Art",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Ramon Llull",
     "type": "Entity",
     "attributes": null
@@ -796,11 +791,6 @@
   },
   {
     "name": "Lambspring \nAdam",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Book",
     "type": "Entity",
     "attributes": null
   },
@@ -3385,11 +3375,6 @@
     "attributes": null
   },
   {
-    "name": "Early Modern",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "De Lubac",
     "type": "Entity",
     "attributes": null
@@ -3890,11 +3875,6 @@
     "attributes": null
   },
   {
-    "name": "Alchemical Texts",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Century England\nIn",
     "type": "Entity",
     "attributes": null
@@ -3941,11 +3921,6 @@
   },
   {
     "name": "Sutton Publishing",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Alchemist",
     "type": "Entity",
     "attributes": null
   },
@@ -4136,11 +4111,6 @@
   },
   {
     "name": "Italo Ronca",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "Natural Philosophy",
     "type": "Entity",
     "attributes": null
   },
@@ -4841,11 +4811,6 @@
   },
   {
     "name": "Chicago Press",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The History",
     "type": "Entity",
     "attributes": null
   },
@@ -10415,11 +10380,6 @@
     "attributes": null
   },
   {
-    "name": "The Concept",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Aerial Niter",
     "type": "Entity",
     "attributes": null
@@ -11170,11 +11130,6 @@
     "attributes": null
   },
   {
-    "name": "The Role",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Righini Bon",
     "type": "Entity",
     "attributes": null
@@ -11621,11 +11576,6 @@
   },
   {
     "name": "Wilhelm Kuhlmann",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Body",
     "type": "Entity",
     "attributes": null
   },
@@ -12641,11 +12591,6 @@
   },
   {
     "name": "Request Permissions",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Author",
     "type": "Entity",
     "attributes": null
   },
@@ -15900,11 +15845,6 @@
     "attributes": null
   },
   {
-    "name": "The Renaissance",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Review\nAuthor",
     "type": "Entity",
     "attributes": null
@@ -17531,11 +17471,6 @@
   },
   {
     "name": "The Splendor",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Power",
     "type": "Entity",
     "attributes": null
   },
@@ -20895,11 +20830,6 @@
     "attributes": null
   },
   {
-    "name": "The Use",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Early Masonic",
     "type": "Entity",
     "attributes": null
@@ -21190,11 +21120,6 @@
     "attributes": null
   },
   {
-    "name": "The Work",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Seventy Letters",
     "type": "Entity",
     "attributes": null
@@ -21470,11 +21395,6 @@
     "attributes": null
   },
   {
-    "name": "The One",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Cornell University Press",
     "type": "Entity",
     "attributes": null
@@ -21506,11 +21426,6 @@
   },
   {
     "name": "Cult \nStatues",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Creation",
     "type": "Entity",
     "attributes": null
   },
@@ -23566,11 +23481,6 @@
   },
   {
     "name": "Tenth\nCentury",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The End",
     "type": "Entity",
     "attributes": null
   },
@@ -26020,11 +25930,6 @@
     "attributes": null
   },
   {
-    "name": "The Development",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "English Studies Today",
     "type": "Entity",
     "attributes": null
@@ -28085,11 +27990,6 @@
     "attributes": null
   },
   {
-    "name": "The Idea",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "See Fanger",
     "type": "Entity",
     "attributes": null
@@ -29165,11 +29065,6 @@
     "attributes": null
   },
   {
-    "name": "The Text",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Grayson\nTo",
     "type": "Entity",
     "attributes": null
@@ -29451,11 +29346,6 @@
   },
   {
     "name": "Henri Hubert",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The World",
     "type": "Entity",
     "attributes": null
   },
@@ -30801,11 +30691,6 @@
   },
   {
     "name": "Bibliotheque Rouge",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Game",
     "type": "Entity",
     "attributes": null
   },
@@ -34005,11 +33890,6 @@
     "attributes": null
   },
   {
-    "name": "The Nature",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Questions Hitherto Discussed",
     "type": "Entity",
     "attributes": null
@@ -34180,17 +34060,7 @@
     "attributes": null
   },
   {
-    "name": "The Sun",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "The Aeon",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Universe",
     "type": "Entity",
     "attributes": null
   },
@@ -36540,11 +36410,6 @@
     "attributes": null
   },
   {
-    "name": "The Soul",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Remarkabke People",
     "type": "Entity",
     "attributes": null
@@ -38491,11 +38356,6 @@
   },
   {
     "name": "Egyptian House",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Hermetic",
     "type": "Entity",
     "attributes": null
   },
@@ -41501,11 +41361,6 @@
   },
   {
     "name": "Ibn \nArabi",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Key",
     "type": "Entity",
     "attributes": null
   },
@@ -50425,11 +50280,6 @@
     "attributes": null
   },
   {
-    "name": "The Spiritual",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Abstract Painting",
     "type": "Entity",
     "attributes": null
@@ -50921,11 +50771,6 @@
   },
   {
     "name": "Old Age",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "In The",
     "type": "Entity",
     "attributes": null
   },
@@ -55836,11 +55681,6 @@
   },
   {
     "name": "John Shute",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The First",
     "type": "Entity",
     "attributes": null
   },
@@ -71355,11 +71195,6 @@
     "attributes": null
   },
   {
-    "name": "The Way",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Content Causation",
     "type": "Entity",
     "attributes": null
@@ -78660,11 +78495,6 @@
     "attributes": null
   },
   {
-    "name": "Of God",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Aeda Lanyer",
     "type": "Entity",
     "attributes": null
@@ -82715,11 +82545,6 @@
     "attributes": null
   },
   {
-    "name": "The Philosopher",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "The Renaissance Philosophy",
     "type": "Entity",
     "attributes": null
@@ -86716,11 +86541,6 @@
   },
   {
     "name": "Filippo Fantoni",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "His Work",
     "type": "Entity",
     "attributes": null
   },
@@ -99275,11 +99095,6 @@
     "attributes": null
   },
   {
-    "name": "The Earth",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
     "name": "Prince Henries Barriers",
     "type": "Entity",
     "attributes": null
@@ -102966,11 +102781,6 @@
   },
   {
     "name": "Montarese\nLucretius",
-    "type": "Entity",
-    "attributes": null
-  },
-  {
-    "name": "The Importance",
     "type": "Entity",
     "attributes": null
   },

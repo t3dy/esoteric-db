@@ -500,158 +500,6 @@
   ],
   "wordcloud": [
     {
-      "word": "In The",
-      "weight": 18247
-    },
-    {
-      "word": "The First",
-      "weight": 4131
-    },
-    {
-      "word": "The Soul",
-      "weight": 3960
-    },
-    {
-      "word": "The Alchemist",
-      "weight": 3213
-    },
-    {
-      "word": "The Role",
-      "weight": 3136
-    },
-    {
-      "word": "Early Modern",
-      "weight": 3130
-    },
-    {
-      "word": "The Philosopher",
-      "weight": 2898
-    },
-    {
-      "word": "The Idea",
-      "weight": 2829
-    },
-    {
-      "word": "The World",
-      "weight": 2815
-    },
-    {
-      "word": "The Book",
-      "weight": 2718
-    },
-    {
-      "word": "The Text",
-      "weight": 2644
-    },
-    {
-      "word": "The Use",
-      "weight": 2587
-    },
-    {
-      "word": "The Work",
-      "weight": 2541
-    },
-    {
-      "word": "The One",
-      "weight": 2409
-    },
-    {
-      "word": "The Sun",
-      "weight": 2380
-    },
-    {
-      "word": "Natural Philosophy",
-      "weight": 2247
-    },
-    {
-      "word": "The Concept",
-      "weight": 2233
-    },
-    {
-      "word": "The Importance",
-      "weight": 2193
-    },
-    {
-      "word": "Alchemical Texts",
-      "weight": 2103
-    },
-    {
-      "word": "His Work",
-      "weight": 2030
-    },
-    {
-      "word": "The Nature",
-      "weight": 2022
-    },
-    {
-      "word": "Of God",
-      "weight": 2018
-    },
-    {
-      "word": "The Game",
-      "weight": 1981
-    },
-    {
-      "word": "The Body",
-      "weight": 1952
-    },
-    {
-      "word": "The Universe",
-      "weight": 1871
-    },
-    {
-      "word": "The History",
-      "weight": 1864
-    },
-    {
-      "word": "The Power",
-      "weight": 1778
-    },
-    {
-      "word": "The Art",
-      "weight": 1753
-    },
-    {
-      "word": "The Renaissance",
-      "weight": 1732
-    },
-    {
-      "word": "The Key",
-      "weight": 1710
-    },
-    {
-      "word": "The Spiritual",
-      "weight": 1669
-    },
-    {
-      "word": "The Development",
-      "weight": 1625
-    },
-    {
-      "word": "The End",
-      "weight": 1574
-    },
-    {
-      "word": "The Hermetic",
-      "weight": 1518
-    },
-    {
-      "word": "The Earth",
-      "weight": 1517
-    },
-    {
-      "word": "The Way",
-      "weight": 1495
-    },
-    {
-      "word": "The Author",
-      "weight": 1482
-    },
-    {
-      "word": "The Creation",
-      "weight": 1459
-    },
-    {
       "word": "What Is",
       "weight": 1435
     },
@@ -898,6 +746,158 @@
     {
       "word": "Cambridge University Press",
       "weight": 696
+    },
+    {
+      "word": "The Form",
+      "weight": 692
+    },
+    {
+      "word": "Medieval Magic",
+      "weight": 685
+    },
+    {
+      "word": "The Self",
+      "weight": 673
+    },
+    {
+      "word": "The Problem",
+      "weight": 672
+    },
+    {
+      "word": "In Latin",
+      "weight": 668
+    },
+    {
+      "word": "The Principles",
+      "weight": 664
+    },
+    {
+      "word": "His Writings",
+      "weight": 661
+    },
+    {
+      "word": "In Magic",
+      "weight": 644
+    },
+    {
+      "word": "The Neoplatonic",
+      "weight": 641
+    },
+    {
+      "word": "The Man",
+      "weight": 634
+    },
+    {
+      "word": "Alchemical Tradition",
+      "weight": 631
+    },
+    {
+      "word": "Albertus Magnus",
+      "weight": 626
+    },
+    {
+      "word": "Intellectual History",
+      "weight": 624
+    },
+    {
+      "word": "The Pursuit",
+      "weight": 615
+    },
+    {
+      "word": "The Order",
+      "weight": 612
+    },
+    {
+      "word": "In Pico",
+      "weight": 612
+    },
+    {
+      "word": "Roger Bacon",
+      "weight": 602
+    },
+    {
+      "word": "The English",
+      "weight": 600
+    },
+    {
+      "word": "The Sixteenth Century",
+      "weight": 598
+    },
+    {
+      "word": "The Hebrew",
+      "weight": 594
+    },
+    {
+      "word": "Late Medieval",
+      "weight": 592
+    },
+    {
+      "word": "Western Esotericism",
+      "weight": 584
+    },
+    {
+      "word": "The Life",
+      "weight": 583
+    },
+    {
+      "word": "Modern Science",
+      "weight": 582
+    },
+    {
+      "word": "Renaissance Magic",
+      "weight": 579
+    },
+    {
+      "word": "The Transmission",
+      "weight": 578
+    },
+    {
+      "word": "The Language",
+      "weight": 570
+    },
+    {
+      "word": "The Secret",
+      "weight": 566
+    },
+    {
+      "word": "The Father",
+      "weight": 564
+    },
+    {
+      "word": "The Story",
+      "weight": 559
+    },
+    {
+      "word": "The Goal",
+      "weight": 558
+    },
+    {
+      "word": "Thomas Aquinas",
+      "weight": 556
+    },
+    {
+      "word": "Heinrich Khunrath",
+      "weight": 556
+    },
+    {
+      "word": "The Matter",
+      "weight": 553
+    },
+    {
+      "word": "The Rise",
+      "weight": 552
+    },
+    {
+      "word": "The Quest",
+      "weight": 550
+    },
+    {
+      "word": "The State",
+      "weight": 547
+    },
+    {
+      "word": "In The Book",
+      "weight": 546
     }
   ],
   "metrics": [
@@ -963,8 +963,8 @@
     }
   ],
   "total_docs": 1692,
-  "total_entities": 21730,
+  "total_entities": 21692,
   "total_chats": 249,
   "total_questions": 1210,
-  "generated_at": "2026-02-16T09:19:05.755689"
+  "generated_at": "2026-02-16T09:27:43.578860"
 }
