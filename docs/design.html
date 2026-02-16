@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Design Lab</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Crimson Pro', serif;
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8" x-data="designApp()">
+
+    <div class="max-w-5xl mx-auto space-y-12">
+        <!-- Header -->
+        <div class="space-y-2">
+            <h1 class="text-5xl font-black text-indigo-400 italic">Design Lab</h1>
+            <p class="text-slate-400">Project Meta-Data & Task Velocity • <a href="index.html"
+                    class="text-indigo-400 hover:underline">Back to Landing</a></p>
+        </div>
+
+        <template x-if="meta">
+            <div class="space-y-12 animate-in fade-in duration-700">
+                <!-- Stats Row -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-slate-800 border border-slate-700 p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
+                        <div class="text-xs font-black text-indigo-400 uppercase tracking-widest mb-1">Total Tasks</div>
+                        <div class="text-5xl font-black" x-text="meta.total_tasks"></div>
+                    </div>
+                    <div
+                        class="bg-slate-800 border border-slate-700 p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
+                        <div class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-1">Completed</div>
+                        <div class="text-5xl font-black text-emerald-400" x-text="meta.completed_tasks"></div>
+                    </div>
+                    <div
+                        class="bg-slate-800 border border-slate-700 p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
+                        <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Current Focus
+                        </div>
+                        <div class="text-lg font-bold leading-tight" x-text="meta.current_focus"></div>
+                    </div>
+                </div>
+
+                <!-- Velocity -->
+                <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-3xl">
+                    <div class="flex justify-between items-end mb-4">
+                        <h3 class="text-xs font-black text-indigo-400 uppercase tracking-widest">Project Velocity</h3>
+                        <div class="text-2xl font-black"
+                            x-text="Math.round((meta.completed_tasks / meta.total_tasks) * 100) + '%'"></div>
+                    </div>
+                    <div class="w-full h-4 bg-slate-900 rounded-full overflow-hidden border border-slate-700">
+                        <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-400 transition-all duration-1000"
+                            :style="`width: ${(meta.completed_tasks / meta.total_tasks) * 100}%`"></div>
+                    </div>
+                </div>
+
+                <!-- Phases -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <template x-for="phase in meta.phases" :key="phase.name">
+                        <div
+                            class="bg-slate-800 border border-slate-700 p-6 rounded-2xl hover:border-indigo-500 transition group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center text-xs font-black"
+                                    :class="phase.completed === phase.total ? 'bg-emerald-900/50 text-emerald-400 border border-emerald-500/30' : 'bg-slate-700 text-slate-400 border border-slate-600'">
+                                    <span x-show="phase.completed === phase.total">✓</span>
+                                    <span x-show="phase.completed !== phase.total"
+                                        x-text="Math.round((phase.completed/phase.total)*100) + '%'"></span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm font-bold" x-text="phase.name"></div>
+                                    <div class="text-[10px] text-slate-500 font-mono"
+                                        x-text="`${phase.completed}/${phase.total} Tasks`"></div>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 bg-slate-900 rounded-full overflow-hidden">
+                                <div class="h-full bg-slate-400 group-hover:bg-indigo-400 transition-colors"
+                                    :style="`width: ${(phase.completed/phase.total)*100}%`"></div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Designer Notes -->
+                <div
+                    class="bg-indigo-950 border border-indigo-900 p-10 rounded-3xl shadow-inner font-mono text-sm space-y-4 relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-indigo-500 opacity-5 rounded-full blur-3xl -mr-20 -mt-20">
+                    </div>
+                    <h3 class="text-indigo-400 font-black border-b border-indigo-900 pb-2">DESIGNER_NOTES.log</h3>
+                    <p class="text-indigo-200">/ <span class="text-indigo-400">status</span>: Architecture pivot to
+                        modular portals (V8.2) complete.</p>
+                    <p class="text-indigo-200">/ <span class="text-indigo-400">warning</span>: Heavy Alpine.js
+                        components isolated to prevent session hangs.</p>
+                    <p class="text-indigo-200">/ <span class="text-indigo-400">next</span>: Implement "Theatrum
+                        Chemicum" visual gallery in V9.</p>
+                </div>
+            </div>
+        </template>
+
+        <div id="loader" class="text-center py-24" x-show="loading">
+            <div class="inline-block animate-pulse text-4xl mb-4 text-indigo-500">⚙️</div>
+            <p class="text-slate-500 font-mono text-xs uppercase tracking-widest">Compiling Simulation Metrics...</p>
+        </div>
+
+    </div>
+
+    <script>
+        function designApp() {
+            return {
+                meta: null,
+                loading: true,
+                async init() {
+                    try {
+                        const res = await fetch('project_meta.json');
+                        if (res.ok) this.meta = await res.json();
+                        this.loading = false;
+                    } catch (e) {
+                        console.error(e);
+                        this.loading = false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

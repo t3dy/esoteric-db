@@ -43,66 +43,87 @@
         </div>
 
         <!-- Options Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
 
-            <!-- Option 1: The Library -->
+            <!-- 1. The Library -->
             <a href="library.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-emerald-500 group">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-semibold text-emerald-300 group-hover:text-emerald-200">Document Library
-                    </h2>
-                    <span class="bg-emerald-900 text-emerald-200 text-xs px-2 py-1 rounded">Stable</span>
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-emerald-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-emerald-300">Document Library</h2>
+                    <span
+                        class="bg-emerald-900 text-emerald-200 text-[10px] px-2 py-0.5 rounded uppercase">Stable</span>
                 </div>
-                <p class="text-slate-400 mb-6">Direct access to the reference collection. Simple, fast, and crash-proof
-                    browsing.</p>
-                <div class="text-sm text-emerald-400 font-mono">Open Library &rarr;</div>
+                <p class="text-slate-400 text-xs mb-4">Direct PDF access & reference collection browsing.</p>
+                <div class="text-xs text-emerald-400 font-mono">Open &rarr;</div>
             </a>
 
-            <!-- Option 2: Insights -->
+            <!-- 2. Reference Portal -->
+            <a href="reference.html"
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-indigo-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-indigo-300">Scholarship Portal</h2>
+                    <span class="bg-indigo-900 text-indigo-200 text-[10px] px-2 py-0.5 rounded uppercase">Modular</span>
+                </div>
+                <p class="text-slate-400 text-xs mb-4">Bookshelves, citations, and analytic metrics grid.</p>
+                <div class="text-xs text-indigo-400 font-mono">Enter &rarr;</div>
+            </a>
+
+            <!-- 3. Digital Dictionary -->
+            <a href="dictionary.html"
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-amber-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-amber-300">Digital Dictionary</h2>
+                    <span class="bg-amber-900 text-amber-200 text-[10px] px-2 py-0.5 rounded uppercase">Modular</span>
+                </div>
+                <p class="text-slate-400 text-xs mb-4">Headwords, synthesis logs, and semantic meanings.</p>
+                <div class="text-xs text-amber-400 font-mono">Browse &rarr;</div>
+            </a>
+
+            <!-- 4. Project Insights -->
             <a href="insights.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-blue-500 group">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-semibold text-blue-300 group-hover:text-blue-200">Project Insights</h2>
-                    <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">v8.1</span>
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-blue-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-blue-300">Project Insights</h2>
+                    <span class="bg-blue-900 text-blue-200 text-[10px] px-2 py-0.5 rounded uppercase">Visual</span>
                 </div>
-                <p class="text-slate-400 mb-6">Visual analytics: Topic distribution, ingestion timeline, and semantic
-                    word clouds.</p>
-                <div class="text-sm text-blue-400 font-mono">View Charts &rarr;</div>
+                <p class="text-slate-400 text-xs mb-4">Topic distribution, timeline, and semantic clouds.</p>
+                <div class="text-xs text-blue-400 font-mono">Analyze &rarr;</div>
             </a>
 
-            <!-- Option 3: Knowledge Graph -->
+            <!-- 5. Knowledge Graph -->
             <a href="graph.html"
-                class="card block bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-violet-500 group">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-semibold text-violet-300 group-hover:text-violet-200">Knowledge Graph</h2>
-                    <span class="bg-violet-900 text-violet-200 text-xs px-2 py-1 rounded">Beta</span>
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-violet-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-violet-300">Knowledge Graph</h2>
+                    <span class="bg-violet-900 text-violet-200 text-[10px] px-2 py-0.5 rounded uppercase">Beta</span>
                 </div>
-                <p class="text-slate-400 mb-6">Interactive force-directed graph of all connected entities and topics.
-                </p>
-                <div class="text-sm text-violet-400 font-mono">Explore Graph &rarr;</div>
+                <p class="text-slate-400 text-xs mb-4">Interactive connections between all entities.</p>
+                <div class="text-xs text-violet-400 font-mono">Explore &rarr;</div>
             </a>
 
-            <!-- Option 4: Full Dashboard -->
-            <a href="dashboard.html"
-                class="card block bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-indigo-500 group opacity-75 hover:opacity-100">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-semibold text-indigo-400 group-hover:text-indigo-300">Legacy App</h2>
-                    <span class="bg-indigo-900 text-indigo-200 text-xs px-2 py-1 rounded">Unstable</span>
+            <!-- 6. Design Lab -->
+            <a href="design.html"
+                class="card block bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-rose-500 group">
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl font-bold text-rose-300">Design Lab</h2>
+                    <span class="bg-rose-900 text-rose-200 text-[10px] px-2 py-0.5 rounded uppercase">Meta</span>
                 </div>
-                <p class="text-slate-500 mb-6">The original monolithic dashboard. May experience stability issues.</p>
-                <div class="text-sm text-indigo-500 font-mono">Launch Legacy App &rarr;</div>
+                <p class="text-slate-400 text-xs mb-4">Task tracking, project phases, and designer notes.</p>
+                <div class="text-xs text-rose-400 font-mono">Verify &rarr;</div>
             </a>
 
         </div>
 
-        <!-- Raw Data Links -->
-        <div class="text-center pt-8">
-            <p class="text-slate-500 text-sm mb-4">Data Access</p>
-            <div class="flex justify-center gap-4 text-xs font-mono">
-                <a href="docs.json" target="_blank" class="text-slate-400 hover:text-white underline">docs.json</a>
+        <!-- Legacy / Footer -->
+        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="dashboard.html"
+                class="text-slate-500 hover:text-indigo-400 text-xs font-mono uppercase tracking-widest transition">
+                &gt; UNSTABLE: Launch Legacy Monolith
+            </a>
+            <div class="flex gap-4 text-xs font-mono">
+                <a href="docs.json" target="_blank" class="text-slate-600 hover:text-white underline">docs.json</a>
                 <a href="project_meta.json" target="_blank"
-                    class="text-slate-400 hover:text-white underline">project_meta.json</a>
-                <a href="stats.json" target="_blank" class="text-slate-400 hover:text-white underline">stats.json</a>
+                    class="text-slate-600 hover:text-white underline">project_meta.json</a>
             </div>
         </div>
 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Reference Portal</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Crimson Pro', serif;
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8" x-data="refApp()">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h1 class="text-4xl font-black text-slate-800">Reference Portal</h1>
+                <p class="text-slate-500">Scholarship Sources & Analytic Metrics • <a href="index.html"
+                        class="text-indigo-600 hover:underline">Back to Landing</a></p>
+            </div>
+            <div class="flex gap-2 bg-slate-200 p-1 rounded-lg self-start">
+                <button @click="mode = 'bookshelf'"
+                    :class="mode === 'bookshelf' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
+                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                    <span>📚</span> Bookshelf
+                </button>
+                <button @click="mode = 'metrics'"
+                    :class="mode === 'metrics' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600 hover:text-slate-800'"
+                    class="px-4 py-2 text-sm font-bold rounded-md transition flex items-center gap-2">
+                    <span>📊</span> Metrics Grid
+                </button>
+            </div>
+        </div>
+
+        <!-- Bookshelf Mode -->
+        <div x-show="mode === 'bookshelf'" x-cloak class="space-y-8 animate-in fade-in duration-500">
+            <!-- Hermetic -->
+            <div class="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl">
+                <h3 class="text-2xl font-bold mb-6">The Hermetic Lineage</h3>
+                <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
+                    <template x-for="src in sources.filter(s => s.domain === 'Hermeticism')" :key="src.id">
+                        <div
+                            class="min-w-[220px] bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/10 hover:bg-white/20 transition cursor-default snap-start flex flex-col h-48 justify-between">
+                            <div>
+                                <div class="text-[10px] uppercase tracking-widest text-emerald-300 mb-2"
+                                    x-text="src.year"></div>
+                                <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
+                            </div>
+                            <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Alchemy -->
+            <div class="bg-amber-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl">
+                <h3 class="text-2xl font-bold mb-6">The Alchemical Opus</h3>
+                <div class="flex gap-6 overflow-x-auto pb-4 snap-x">
+                    <template x-for="src in sources.filter(s => s.domain === 'Alchemy')" :key="src.id">
+                        <div
+                            class="min-w-[220px] bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/10 hover:bg-white/20 transition cursor-default snap-start flex flex-col h-48 justify-between">
+                            <div>
+                                <div class="text-[10px] uppercase tracking-widest text-amber-300 mb-2"
+                                    x-text="src.year"></div>
+                                <div class="font-bold text-lg leading-tight" x-text="src.short_name"></div>
+                            </div>
+                            <div class="text-xs text-slate-400 font-serif italic" x-text="src.citation"></div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics Mode -->
+        <div x-show="mode === 'metrics'" x-cloak
+            class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden animate-in fade-in duration-500">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-50 border-b border-slate-100 text-xs uppercase text-slate-500 font-bold">
+                        <tr>
+                            <th class="px-6 py-4">Topic / Entity</th>
+                            <th class="px-6 py-4">Scholar Interest</th>
+                            <th class="px-6 py-4">User Curiosity</th>
+                            <th class="px-6 py-4">Desire Gap</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <template x-for="row in metrics.sort((a,b) => b.gap - a.gap)" :key="row.entity_id">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-900" x-text="row.name"></td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-1.5 rounded-full bg-slate-100 w-24 overflow-hidden">
+                                            <div class="h-full bg-slate-400"
+                                                :style="`width: ${row.scholar_interest * 100}%`"></div>
+                                        </div>
+                                        <span class="text-[10px] text-slate-400"
+                                            x-text="Math.round(row.scholar_interest * 100) + '%'"></span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-1.5 rounded-full bg-slate-100 w-24 overflow-hidden">
+                                            <div class="h-full bg-indigo-500"
+                                                :style="`width: ${row.user_curiosity * 100}%`"></div>
+                                        </div>
+                                        <span class="text-[10px] text-slate-400"
+                                            x-text="Math.round(row.user_curiosity * 100) + '%'"></span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-2 py-1 rounded text-[10px] font-black uppercase tracking-tighter"
+                                        :class="row.gap > 0.2 ? 'bg-rose-100 text-rose-700' : (row.gap < -0.2 ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-600')"
+                                        x-text="row.gap > 0 ? '+' + row.gap : row.gap"></span>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="loader" class="text-center py-12" x-show="loading">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-indigo-500 border-t-transparent">
+            </div>
+            <p class="mt-4 text-slate-400 font-mono text-xs">Loading Scholarly Datasets...</p>
+        </div>
+
+    </div>
+
+    <script>
+        function refApp() {
+            return {
+                mode: 'bookshelf',
+                sources: [],
+                metrics: [],
+                loading: true,
+                async init() {
+                    try {
+                        const sRes = await fetch('sources.json');
+                        if (sRes.ok) this.sources = await sRes.ok ? await sRes.json() : [];
+
+                        const mRes = await fetch('metrics.json');
+                        if (mRes.ok) this.metrics = await mRes.ok ? await mRes.json() : [];
+
+                        this.loading = false;
+                    } catch (e) {
+                        console.error(e);
+                        this.loading = false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
