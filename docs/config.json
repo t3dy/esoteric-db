@@ -1,1 +1,1 @@
-{"features": {"search": true, "graph": false, "chat": false}, "status": "Enriched Ready"}
+{"features": {"search": true, "graph": true, "chat": false}, "status": "Graph Ready"}

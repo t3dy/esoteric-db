@@ -19,16 +19,10 @@ EXPORT_DIR = "docs"
 ROOT_DOCS_DIR = "."
 
 def init_db(conn):
-    """Initializes the database schema. Destructive for migration."""
+    """Initializes the database schema if not exists."""
     cursor = conn.cursor()
-    # Migration: Drop if schema changed significantly
-    cursor.execute("DROP TABLE IF EXISTS documents")
-    cursor.execute("DROP TABLE IF EXISTS chunks") 
-    cursor.execute("DROP TABLE IF EXISTS relationships")
-    cursor.execute("DROP TABLE IF EXISTS entities")
-    
     cursor.execute('''
-    CREATE TABLE documents (
+    CREATE TABLE IF NOT EXISTS documents (
         id TEXT PRIMARY KEY,
         hash TEXT,
         filename TEXT,
@@ -42,7 +36,7 @@ def init_db(conn):
     )
     ''') 
     cursor.execute('''
-    CREATE TABLE chunks (
+    CREATE TABLE IF NOT EXISTS chunks (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         doc_id TEXT,
         text_content TEXT,
@@ -50,14 +44,14 @@ def init_db(conn):
     )
     ''')
     cursor.execute('''
-    CREATE TABLE entities (
+    CREATE TABLE IF NOT EXISTS entities (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT UNIQUE,
         type TEXT
     )
     ''')
     cursor.execute('''
-    CREATE TABLE relationships (
+    CREATE TABLE IF NOT EXISTS relationships (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         source_id TEXT,
         target_id INTEGER,
@@ -198,6 +192,50 @@ def export_json(conn, export_path):
     with open(os.path.join(export_path, "lists.json"), "w") as f:
         json.dump(lists, f, indent=2)
 
+    # 4. Knowledge Graph (graph.json)
+    nodes = []
+    edges = []
+    
+    cursor.execute("SELECT topic, COUNT(*) FROM documents GROUP BY topic")
+    topics = cursor.fetchall()
+    for t_name, count in topics:
+        nodes.append({"data": {"id": t_name, "label": t_name, "type": "topic", "size": 30 + (count/5)}})
+
+    # Entities (Top 100)
+    cursor.execute('''
+        SELECT e.name, COUNT(r.id) as freq 
+        FROM entities e 
+        JOIN relationships r ON e.id = r.target_id 
+        GROUP BY e.name 
+        ORDER BY freq DESC 
+        LIMIT 100
+    ''')
+    top_entities = cursor.fetchall()
+    for e_name, freq in top_entities:
+        nodes.append({"data": {"id": e_name, "label": e_name, "type": "entity", "size": 20 + freq}})
+
+    cursor.execute('''
+        SELECT d.topic, e.name, COUNT(*) as weight
+        FROM documents d
+        JOIN relationships r ON d.id = r.source_id
+        JOIN entities e ON r.target_id = e.id
+        WHERE e.name IN ({})
+        GROUP BY d.topic, e.name
+        HAVING weight > 1
+    '''.format(','.join(['?'] * len(top_entities))), [x[0] for x in top_entities])
+    
+    for t_name, e_name, weight in cursor.fetchall():
+        edges.append({"data": {
+            "id": f"rel_{t_name}_{e_name}",
+            "source": e_name,
+            "target": t_name,
+            "weight": weight
+        }})
+
+    with open(os.path.join(export_path, "graph.json"), "w") as f:
+        json.dump({"elements": {"nodes": nodes, "edges": edges}}, f, indent=2)
+
+    # 5. Search Snippets
     search_index = {}
     cursor.execute("SELECT doc_id, text_content FROM chunks")
     for row in cursor.fetchall():
@@ -206,7 +244,7 @@ def export_json(conn, export_path):
         json.dump(search_index, f)
 
     with open(os.path.join(export_path, "config.json"), "w") as f:
-        json.dump({"features": {"search": len(search_index) > 0, "graph": False, "chat": False}, "status": "Enriched Ready"}, f)
+        json.dump({"features": {"search": len(search_index) > 0, "graph": True, "chat": False}, "status": "Graph Ready"}, f)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

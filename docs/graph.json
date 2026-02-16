@@ -1,1 +1,4544 @@
-{"nodes": [{"id": "topic_0", "label": "pdf", "type": "topic", "val": 10}, {"id": "topic_1", "label": "albertus magnus", "type": "topic", "val": 10}, {"id": "topic_2", "label": "alchemy", "type": "topic", "val": 10}, {"id": "topic_3", "label": "religion", "type": "topic", "val": 10}, {"id": "topic_4", "label": "databaseINBOX", "type": "topic", "val": 10}, {"id": "topic_5", "label": "Arabic alchemy", "type": "topic", "val": 10}, {"id": "topic_6", "label": "zosimos", "type": "topic", "val": 10}, {"id": "topic_7", "label": "book review", "type": "topic", "val": 10}, {"id": "topic_8", "label": "articles", "type": "topic", "val": 10}, {"id": "topic_9", "label": "atalanta fugiens", "type": "topic", "val": 10}, {"id": "topic_10", "label": "hermetic", "type": "topic", "val": 10}, {"id": "topic_11", "label": "chemistry", "type": "topic", "val": 10}, {"id": "topic_12", "label": "illustrations", "type": "topic", "val": 10}, {"id": "topic_13", "label": "Paracelsus", "type": "topic", "val": 10}, {"id": "topic_14", "label": "poetry lit", "type": "topic", "val": 10}, {"id": "topic_15", "label": "Shakespeare", "type": "topic", "val": 10}, {"id": "topic_16", "label": "roger bacon", "type": "topic", "val": 10}, {"id": "topic_17", "label": "Rosarium Philosophorum", "type": "topic", "val": 10}, {"id": "topic_18", "label": "spiritual alchemy", "type": "topic", "val": 10}, {"id": "topic_19", "label": "altered states", "type": "topic", "val": 10}, {"id": "topic_20", "label": "ancient magic gnostic pgm etc", "type": "topic", "val": 10}, {"id": "topic_21", "label": "David Litwa", "type": "topic", "val": 10}, {"id": "topic_22", "label": "Apuleis", "type": "topic", "val": 10}, {"id": "topic_23", "label": "art of memory", "type": "topic", "val": 10}, {"id": "topic_24", "label": "Arthurian", "type": "topic", "val": 10}, {"id": "topic_25", "label": "Bataille", "type": "topic", "val": 10}, {"id": "topic_26", "label": "blake", "type": "topic", "val": 10}, {"id": "topic_27", "label": "bohme", "type": "topic", "val": 10}, {"id": "topic_28", "label": "book reviews unsorted", "type": "topic", "val": 10}, {"id": "topic_29", "label": "emblem studies", "type": "topic", "val": 10}, {"id": "topic_30", "label": "Cavendish", "type": "topic", "val": 10}, {"id": "topic_31", "label": "code social media content creation", "type": "topic", "val": 10}, {"id": "topic_32", "label": "cog sci", "type": "topic", "val": 10}, {"id": "topic_33", "label": "crowley", "type": "topic", "val": 10}, {"id": "topic_34", "label": "data sci", "type": "topic", "val": 10}, {"id": "topic_35", "label": "Dee", "type": "topic", "val": 10}, {"id": "topic_36", "label": "design", "type": "topic", "val": 10}, {"id": "topic_37", "label": "Devil", "type": "topic", "val": 10}, {"id": "topic_38", "label": "Digital Humanities", "type": "topic", "val": 10}, {"id": "topic_39", "label": "early modern", "type": "topic", "val": 10}, {"id": "topic_40", "label": "economics marxism", "type": "topic", "val": 10}, {"id": "topic_41", "label": "hp emblems", "type": "topic", "val": 10}, {"id": "topic_42", "label": "Eranos", "type": "topic", "val": 10}, {"id": "topic_43", "label": "hermetica", "type": "topic", "val": 10}, {"id": "topic_44", "label": "Copenhaver", "type": "topic", "val": 10}, {"id": "topic_45", "label": "kabbalah", "type": "topic", "val": 10}, {"id": "topic_46", "label": "occult", "type": "topic", "val": 10}, {"id": "topic_47", "label": "medieval magic", "type": "topic", "val": 10}, {"id": "topic_48", "label": "Pico", "type": "topic", "val": 10}, {"id": "topic_49", "label": "philosophy", "type": "topic", "val": 10}, {"id": "topic_50", "label": "Game Design", "type": "topic", "val": 10}, {"id": "topic_51", "label": "game studies", "type": "topic", "val": 10}, {"id": "topic_52", "label": "narrative and instructional design", "type": "topic", "val": 10}, {"id": "topic_53", "label": "games", "type": "topic", "val": 10}, {"id": "topic_54", "label": "Grimoire", "type": "topic", "val": 10}, {"id": "topic_55", "label": "haunt", "type": "topic", "val": 10}, {"id": "topic_56", "label": "Hilma af Klint", "type": "topic", "val": 10}, {"id": "topic_57", "label": "history of science", "type": "topic", "val": 10}, {"id": "topic_58", "label": "history philosophy", "type": "topic", "val": 10}, {"id": "topic_59", "label": "Idriesh Shah", "type": "topic", "val": 10}, {"id": "topic_60", "label": "Islamicate Chill Pills", "type": "topic", "val": 10}, {"id": "topic_61", "label": "learning", "type": "topic", "val": 10}, {"id": "topic_62", "label": "magic", "type": "topic", "val": 10}, {"id": "topic_63", "label": "western esotericism religious studies", "type": "topic", "val": 10}, {"id": "topic_64", "label": "trithemius", "type": "topic", "val": 10}, {"id": "topic_65", "label": "magic squares", "type": "topic", "val": 10}, {"id": "topic_66", "label": "Margaret Jacob", "type": "topic", "val": 10}, {"id": "topic_67", "label": "media studies", "type": "topic", "val": 10}, {"id": "topic_68", "label": "medieval studies medieval philosophy", "type": "topic", "val": 10}, {"id": "topic_69", "label": "music", "type": "topic", "val": 10}, {"id": "topic_70", "label": "neoplatonism", "type": "topic", "val": 10}, {"id": "topic_71", "label": "O-Meara", "type": "topic", "val": 10}, {"id": "topic_72", "label": "intentionality", "type": "topic", "val": 10}, {"id": "topic_73", "label": "pkd", "type": "topic", "val": 10}, {"id": "topic_74", "label": "RAW HPL PKD WSB etc misc SF", "type": "topic", "val": 10}, {"id": "topic_75", "label": "psychedelic", "type": "topic", "val": 10}, {"id": "topic_76", "label": "renaissance magic", "type": "topic", "val": 10}, {"id": "topic_77", "label": "Agrippa", "type": "topic", "val": 10}, {"id": "topic_78", "label": "Bruno", "type": "topic", "val": 10}, {"id": "topic_79", "label": "Christian Cabalah", "type": "topic", "val": 10}, {"id": "topic_80", "label": "Ficino", "type": "topic", "val": 10}, {"id": "topic_81", "label": "Fludd", "type": "topic", "val": 10}, {"id": "topic_82", "label": "FM Van Helmont", "type": "topic", "val": 10}, {"id": "topic_83", "label": "Kircher", "type": "topic", "val": 10}, {"id": "topic_84", "label": "Reuchlin", "type": "topic", "val": 10}, {"id": "topic_85", "label": "Zika", "type": "topic", "val": 10}, {"id": "topic_86", "label": "renaissance studies", "type": "topic", "val": 10}, {"id": "topic_87", "label": "Robin Hood", "type": "topic", "val": 10}, {"id": "topic_88", "label": "Rosicrucian", "type": "topic", "val": 10}, {"id": "topic_89", "label": "social science", "type": "topic", "val": 10}, {"id": "topic_90", "label": "Tarot", "type": "topic", "val": 10}, {"id": "topic_91", "label": "witchcraft studies Hutton", "type": "topic", "val": 10}, {"id": "doc_cc68ebfc", "label": "Anthony Bonner The A...", "type": "document", "val": 5}, {"id": "doc_fd50a0cd", "label": "Firesign Theatre The...", "type": "document", "val": 5}, {"id": "doc_f53befe0", "label": "Igor Dorfmann Lazare...", "type": "document", "val": 5}, {"id": "doc_822b5e77", "label": "Jonathan F S Post He...", "type": "document", "val": 5}, {"id": "doc_c812de2e", "label": "Melancholy Experienc...", "type": "document", "val": 5}, {"id": "doc_3d0fcbba", "label": "Mondo 2000 History P...", "type": "document", "val": 5}, {"id": "doc_50c48056", "label": "Nikolsky_The_Provena...", "type": "document", "val": 5}, {"id": "doc_fdff12fc", "label": "Paul E Kerry Nils Iv...", "type": "document", "val": 5}, {"id": "doc_e2e05a0b", "label": "R A Durr On the Myst...", "type": "document", "val": 5}, {"id": "doc_a8cd7871", "label": "Ramo n Lull_ Anthony...", "type": "document", "val": 5}, {"id": "doc_4703af5f", "label": "Sebastian Normandin ...", "type": "document", "val": 5}, {"id": "doc_c5dd4830", "label": "Test File.pdf...", "type": "document", "val": 5}, {"id": "doc_d91727e5", "label": "TMNT Ongoing _01.pdf...", "type": "document", "val": 5}, {"id": "doc_fed62fb8", "label": "TMNT The Last Ronin ...", "type": "document", "val": 5}, {"id": "doc_6a5bdb6d", "label": "Yevgeny Zamyatin We....", "type": "document", "val": 5}, {"id": "doc_81843068", "label": "Albertus Magnus St A...", "type": "document", "val": 5}, {"id": "doc_61fd23cc", "label": "Albertus Magnus St R...", "type": "document", "val": 5}, {"id": "doc_10d7bdee", "label": "James A Weisheipl Al...", "type": "document", "val": 5}, {"id": "doc_ac4906a3", "label": "Paola Zambelli The S...", "type": "document", "val": 5}, {"id": "doc_960ca8d8", "label": "Adam McLean A Commen...", "type": "document", "val": 5}, {"id": "doc_b9cd3737", "label": "Adam McLean A Threef...", "type": "document", "val": 5}, {"id": "doc_7e5c97ad", "label": "Adam McLean The Seco...", "type": "document", "val": 5}, {"id": "doc_87556a34", "label": "Alchemy Jung and Rem...", "type": "document", "val": 5}, {"id": "doc_8b408a5e", "label": "Alexander Jones Camb...", "type": "document", "val": 5}, {"id": "doc_26908d2f", "label": "Allen G Debus_ Micha...", "type": "document", "val": 5}, {"id": "doc_851e9354", "label": "A_Dictionary_of_Alch...", "type": "document", "val": 5}, {"id": "doc_d63d3889", "label": "Barbara Obrist Les d...", "type": "document", "val": 5}, {"id": "doc_ea770617", "label": "Brill s Companions t...", "type": "document", "val": 5}, {"id": "doc_b848d57f", "label": "Christian Rosencreut...", "type": "document", "val": 5}, {"id": "doc_616f1815", "label": "Classics of Western ...", "type": "document", "val": 5}, {"id": "doc_41226ebf", "label": "Defining_Greco_Egypt...", "type": "document", "val": 5}, {"id": "doc_4c72b57d", "label": "Depicting_the_Mediev...", "type": "document", "val": 5}, {"id": "doc_8bc6064a", "label": "Eggert Katherine Dis...", "type": "document", "val": 5}, {"id": "doc_f59fb06b", "label": "Eighteenth Century V...", "type": "document", "val": 5}, {"id": "doc_9d067d38", "label": "Heidelberger Studien...", "type": "document", "val": 5}, {"id": "doc_357f5a41", "label": "Israel Regardie_ Chi...", "type": "document", "val": 5}, {"id": "doc_ec0f0a94", "label": "Jutta Schickore Will...", "type": "document", "val": 5}, {"id": "doc_250114c6", "label": "K Park L Daston Camb...", "type": "document", "val": 5}, {"id": "doc_c29c3a03", "label": "Leah DeVun Prophecy ...", "type": "document", "val": 5}, {"id": "doc_04d33554", "label": "Lyndy Abraham A Dict...", "type": "document", "val": 5}, {"id": "doc_3c7afbb2", "label": "Min_al_Kimiya_ad_Alc...", "type": "document", "val": 5}, {"id": "doc_be2d2a65", "label": "Mitchell Robert Expe...", "type": "document", "val": 5}, {"id": "doc_5f5c4c7f", "label": "Muhammad Ibn Umail_ ...", "type": "document", "val": 5}, {"id": "doc_39cb9a8b", "label": "Natural_Methods_Exam...", "type": "document", "val": 5}, {"id": "doc_d502c787", "label": "Obrist Barbara Visua...", "type": "document", "val": 5}, {"id": "doc_7930e06b", "label": "Obrist, Barbara (aut...", "type": "document", "val": 5}, {"id": "doc_9872b058", "label": "Paracelsus Arthur Ed...", "type": "document", "val": 5}, {"id": "doc_6bcdb792", "label": "Paracelsus Dr Franz ...", "type": "document", "val": 5}, {"id": "doc_b90b09c3", "label": "Peter J Forshaw The ...", "type": "document", "val": 5}, {"id": "doc_67e40e81", "label": "Peter J Forshaw The ...", "type": "document", "val": 5}, {"id": "doc_f4dc6b39", "label": "Philip Wheeler Twelv...", "type": "document", "val": 5}, {"id": "doc_1a7c4a48", "label": "Pseudo Geber Philip ...", "type": "document", "val": 5}, {"id": "doc_2e8d83de", "label": "Psychology and alche...", "type": "document", "val": 5}, {"id": "doc_737a6871", "label": "Secrets_of_the_God_M...", "type": "document", "val": 5}, {"id": "doc_8606a711", "label": "Self Knowledge_Illum...", "type": "document", "val": 5}, {"id": "doc_78ea48fb", "label": "Stanton J Linden The...", "type": "document", "val": 5}, {"id": "doc_d951ff20", "label": "Szulakowska ai summa...", "type": "document", "val": 5}, {"id": "doc_9c4f0cf3", "label": "The_Memetic_Evolutio...", "type": "document", "val": 5}, {"id": "doc_ad689c3b", "label": "[Ambix 1937-may vol....", "type": "document", "val": 5}, {"id": "doc_58c5d7f5", "label": "[Anglia - Zeitschrif...", "type": "document", "val": 5}, {"id": "doc_2a12e0d5", "label": "[Anglia - Zeitschrif...", "type": "document", "val": 5}, {"id": "doc_75cc4cf1", "label": "[Archives d'Histoire...", "type": "document", "val": 5}, {"id": "doc_f9ac2876", "label": "[Archives d'Histoire...", "type": "document", "val": 5}, {"id": "doc_6a4ccbde", "label": "[Early Science and M...", "type": "document", "val": 5}, {"id": "doc_a83b880d", "label": "[Early Science and M...", "type": "document", "val": 5}, {"id": "doc_ae23496e", "label": "[Speculum 1985-jan v...", "type": "document", "val": 5}, {"id": "doc_64dda8ee", "label": "[Traditio vol. 67] O...", "type": "document", "val": 5}, {"id": "doc_b25e1d73", "label": "An Alchemical Compil...", "type": "document", "val": 5}, {"id": "doc_1c582a4a", "label": "Gail Marlow Taylor P...", "type": "document", "val": 5}, {"id": "doc_1c022bdc", "label": "Seyyed Hossein Nasr_...", "type": "document", "val": 5}, {"id": "doc_44746658", "label": "Syed Nomanul Haq Nam...", "type": "document", "val": 5}, {"id": "doc_2428f19d", "label": "Theodor Abt Wilferd ...", "type": "document", "val": 5}, {"id": "doc_42ced90c", "label": "Three Alchemical Tre...", "type": "document", "val": 5}, {"id": "doc_90aa7d7c", "label": "Aleph iss 3 Document...", "type": "document", "val": 5}, {"id": "doc_41a64e33", "label": "Aspects_of_the_Relat...", "type": "document", "val": 5}, {"id": "doc_6654f349", "label": "French Forum vol 30 ...", "type": "document", "val": 5}, {"id": "doc_b3a67920", "label": "Isis 1992 mar vol 83...", "type": "document", "val": 5}, {"id": "doc_eae9ff10", "label": "Isis 1994 sep vol 85...", "type": "document", "val": 5}, {"id": "doc_d2733e7c", "label": "Isis 2008 sep vol 99...", "type": "document", "val": 5}, {"id": "doc_c0ae644d", "label": "Israel Journal of Ch...", "type": "document", "val": 5}, {"id": "doc_00a17dc2", "label": "Israel Journal of Ch...", "type": "document", "val": 5}, {"id": "doc_e098b101", "label": "Israel Journal of Ch...", "type": "document", "val": 5}, {"id": "doc_e981b104", "label": "New_Big_Pictures_of_...", "type": "document", "val": 5}, {"id": "doc_7e09e8e1", "label": "Nuncius vol 26 iss 2...", "type": "document", "val": 5}, {"id": "doc_ee76ae8b", "label": "Revue philosophique ...", "type": "document", "val": 5}, {"id": "doc_d26406da", "label": "Sixteenth Century Jo...", "type": "document", "val": 5}, {"id": "doc_2fce6c43", "label": "Transactional Analys...", "type": "document", "val": 5}, {"id": "doc_f17c2f7c", "label": "Basilius Valentinus ...", "type": "document", "val": 5}, {"id": "doc_811ed026", "label": "Helena Maria Elisabe...", "type": "document", "val": 5}, {"id": "doc_e8fe36f3", "label": "Hereward Tilton The ...", "type": "document", "val": 5}, {"id": "doc_95aa7ed6", "label": "J B Craven Count Mic...", "type": "document", "val": 5}, {"id": "doc_80c789a9", "label": "jbayron AthanorX_ C ...", "type": "document", "val": 5}, {"id": "doc_86c960cd", "label": "Medical History 1973...", "type": "document", "val": 5}, {"id": "doc_647c3772", "label": "Medical History 2009...", "type": "document", "val": 5}, {"id": "doc_0365fe46", "label": "Michael Maier Atalan...", "type": "document", "val": 5}, {"id": "doc_078d4be3", "label": "Michael Maier Magist...", "type": "document", "val": 5}, {"id": "doc_3cfdf820", "label": "Netherlands Yearbook...", "type": "document", "val": 5}, {"id": "doc_af8f598a", "label": "Notes 1991 mar vol 4...", "type": "document", "val": 5}, {"id": "doc_9f2fbf86", "label": "Notes and Queries 20...", "type": "document", "val": 5}, {"id": "doc_63067164", "label": "The Art Bulletin 196...", "type": "document", "val": 5}, {"id": "doc_cd66efec", "label": "Ambix 1968 feb vol 1...", "type": "document", "val": 5}, {"id": "doc_041381bd", "label": "Ambix 1976 jul vol 2...", "type": "document", "val": 5}, {"id": "doc_ae643993", "label": "Ambix 1994 nov vol 4...", "type": "document", "val": 5}, {"id": "doc_26c8e648", "label": "Ambix 2007 mar vol 5...", "type": "document", "val": 5}, {"id": "doc_747ab9f5", "label": "Ambix 2009 mar vol 5...", "type": "document", "val": 5}, {"id": "doc_2779624c", "label": "Ambix 2018 apr 03 vo...", "type": "document", "val": 5}, {"id": "doc_0a9c9536", "label": "Ambix 2018 apr 03 vo...", "type": "document", "val": 5}, {"id": "doc_155eb5c7", "label": "Ambix 2020 dec 01 Zu...", "type": "document", "val": 5}, {"id": "doc_f102d164", "label": "American Scientist 1...", "type": "document", "val": 5}, {"id": "doc_773b2256", "label": "Angewandte Chemie 19...", "type": "document", "val": 5}, {"id": "doc_0018de45", "label": "Angewandte Chemie 19...", "type": "document", "val": 5}, {"id": "doc_5ab6bfde", "label": "Archiv der Pharmazie...", "type": "document", "val": 5}, {"id": "doc_1935ba6f", "label": "Berichte zur Wissens...", "type": "document", "val": 5}, {"id": "doc_cff3aa8a", "label": "Cambridge History of...", "type": "document", "val": 5}, {"id": "doc_f3b4d9f0", "label": "ChemInform 2010 dec ...", "type": "document", "val": 5}, {"id": "doc_043621c2", "label": "Classiker der Medici...", "type": "document", "val": 5}, {"id": "doc_c5b90e5f", "label": "Daphnis 2006 may 01 ...", "type": "document", "val": 5}, {"id": "doc_8c06ce57", "label": "Early Science and Me...", "type": "document", "val": 5}, {"id": "doc_aeb8750b", "label": "ELH 2005 spr vol 72 ...", "type": "document", "val": 5}, {"id": "doc_2f9d61b1", "label": "Essential Readings P...", "type": "document", "val": 5}, {"id": "doc_770806e4", "label": "Folger Institute sym...", "type": "document", "val": 5}, {"id": "doc_51f25722", "label": "Glasgow Emblem Studi...", "type": "document", "val": 5}, {"id": "doc_9dce747e", "label": "Isis 1938 nov vol 29...", "type": "document", "val": 5}, {"id": "doc_45f6f9d1", "label": "Isis 1962 dec vol 53...", "type": "document", "val": 5}, {"id": "doc_f6098a7b", "label": "Isis 1962 dec vol 53...", "type": "document", "val": 5}, {"id": "doc_4ce76b91", "label": "Isis 1962 jun vol 53...", "type": "document", "val": 5}, {"id": "doc_616d610a", "label": "Isis 1964 mar vol 55...", "type": "document", "val": 5}, {"id": "doc_1eb8a1f4", "label": "Isis 1964 sep vol 55...", "type": "document", "val": 5}, {"id": "doc_82149a77", "label": "Isis 1966 spr vol 57...", "type": "document", "val": 5}, {"id": "doc_d588075d", "label": "Isis 1973 mar vol 64...", "type": "document", "val": 5}, {"id": "doc_05f9b772", "label": "Isis 1977 sep vol 68...", "type": "document", "val": 5}, {"id": "doc_68aae61f", "label": "Isis 1983 dec vol 74...", "type": "document", "val": 5}, {"id": "doc_bff4f8fc", "label": "Isis 1983 mar vol 74...", "type": "document", "val": 5}, {"id": "doc_26f18371", "label": "Isis 1984 dec vol 75...", "type": "document", "val": 5}, {"id": "doc_9d0d78a4", "label": "Isis 1987 dec vol 78...", "type": "document", "val": 5}, {"id": "doc_8b58870c", "label": "Isis 1988 mar vol 79...", "type": "document", "val": 5}, {"id": "doc_b57226ee", "label": "Isis 1992 dec vol 83...", "type": "document", "val": 5}, {"id": "doc_25033ff3", "label": "Isis 1994 jun vol 85...", "type": "document", "val": 5}, {"id": "doc_2f329a81", "label": "Isis 2006 mar vol 97...", "type": "document", "val": 5}, {"id": "doc_c2e94646", "label": "Isis 2007 mar vol 98...", "type": "document", "val": 5}, {"id": "doc_4001ed33", "label": "Isis 2008 sep vol 99...", "type": "document", "val": 5}, {"id": "doc_fa1fd7e2", "label": "Isis 2011 jun vol 10...", "type": "document", "val": 5}, {"id": "doc_43b7d97c", "label": "Journal of Illustrat...", "type": "document", "val": 5}, {"id": "doc_bdc58bc0", "label": "Kritikon Litterarum ...", "type": "document", "val": 5}, {"id": "doc_0defc012", "label": "Kritikon Litterarum ...", "type": "document", "val": 5}, {"id": "doc_38aa721d", "label": "Les \u00e9tudes philosoph...", "type": "document", "val": 5}, {"id": "doc_55e66683", "label": "Medical History 1969...", "type": "document", "val": 5}, {"id": "doc_c7e8554c", "label": "Medical History 2014...", "type": "document", "val": 5}, {"id": "doc_dfd17e3a", "label": "Nature 1937 jan vol ...", "type": "document", "val": 5}, {"id": "doc_6ea47529", "label": "Notes and Queries 20...", "type": "document", "val": 5}, {"id": "doc_c23e6171", "label": "Nuncius 2018 nov 26 ...", "type": "document", "val": 5}, {"id": "doc_302a4152", "label": "Nuncius vol 9 iss 2 ...", "type": "document", "val": 5}, {"id": "doc_2fdaf8d9", "label": "Oxford Studies in We...", "type": "document", "val": 5}, {"id": "doc_b56f5b78", "label": "pamela smith reviews...", "type": "document", "val": 5}, {"id": "doc_b0598b03", "label": "Parergon vol 13 iss ...", "type": "document", "val": 5}, {"id": "doc_23f71888", "label": "Parergon vol 14 iss ...", "type": "document", "val": 5}, {"id": "doc_55b884aa", "label": "Parergon vol 14 iss ...", "type": "document", "val": 5}, {"id": "doc_81c9e21c", "label": "Pharmacy in History ...", "type": "document", "val": 5}, {"id": "doc_d0082b80", "label": "Pharmacy in History ...", "type": "document", "val": 5}, {"id": "doc_54480d08", "label": "Pharmacy in History ...", "type": "document", "val": 5}, {"id": "doc_2e7b54e2", "label": "Princeton scholarshi...", "type": "document", "val": 5}, {"id": "doc_a3b00bc2", "label": "Renaissance Quarterl...", "type": "document", "val": 5}, {"id": "doc_92a4690c", "label": "Renaissance Studies ...", "type": "document", "val": 5}, {"id": "doc_b71b4170", "label": "Renaissance Studies ...", "type": "document", "val": 5}, {"id": "doc_c8ed4b5f", "label": "Review_of_O_Dufault_...", "type": "document", "val": 5}, {"id": "doc_50ab28d5", "label": "Revue des \u00c9tudes Jui...", "type": "document", "val": 5}, {"id": "doc_8075cc47", "label": "Shakespeare Quarterl...", "type": "document", "val": 5}, {"id": "doc_dcde1274", "label": "Shakespeare Quarterl...", "type": "document", "val": 5}, {"id": "doc_deb05c10", "label": "Shakespeare Quarterl...", "type": "document", "val": 5}, {"id": "doc_2e7072c1", "label": "Shakespeare Quarterl...", "type": "document", "val": 5}, {"id": "doc_5397e1ae", "label": "Sixteenth Century Jo...", "type": "document", "val": 5}, {"id": "doc_0277dec3", "label": "Sixteenth Century Jo...", "type": "document", "val": 5}, {"id": "doc_db806a0f", "label": "Speculum 2020 jan vo...", "type": "document", "val": 5}, {"id": "doc_418ce594", "label": "Studies in Philology...", "type": "document", "val": 5}, {"id": "doc_782a30ac", "label": "Sudhoffs Archiv vol ...", "type": "document", "val": 5}, {"id": "doc_568b0bf7", "label": "Synthesis Principe L...", "type": "document", "val": 5}, {"id": "doc_1803d388", "label": "The American Histori...", "type": "document", "val": 5}, {"id": "doc_d748d4d8", "label": "The Art Bulletin 198...", "type": "document", "val": 5}, {"id": "doc_7cfd4795", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_db4d3f15", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_7c2682ef", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_968e595b", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_349eeaf4", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_374009e1", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_ae987817", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_f8a60e9e", "label": "The British Journal ...", "type": "document", "val": 5}, {"id": "doc_85dbda22", "label": "The British Museum Q...", "type": "document", "val": 5}, {"id": "doc_c00bdabf", "label": "The Journal of Engli...", "type": "document", "val": 5}, {"id": "doc_fb59dced", "label": "The Journal of Engli...", "type": "document", "val": 5}, {"id": "doc_4bf1bb7e", "label": "The Journal of Moder...", "type": "document", "val": 5}, {"id": "doc_b5ff6c05", "label": "The Library 2019 jun...", "type": "document", "val": 5}, {"id": "doc_8692f88b", "label": "The Review of Englis...", "type": "document", "val": 5}, {"id": "doc_2006b5c1", "label": "The Yearbook of Engl...", "type": "document", "val": 5}, {"id": "doc_21f57e04", "label": "Theophrastus Paracel...", "type": "document", "val": 5}, {"id": "doc_7f819e05", "label": "8_X Paracelsus Cente...", "type": "document", "val": 5}, {"id": "doc_0d483c6a", "label": "Bruce T Moran A Cult...", "type": "document", "val": 5}, {"id": "doc_294387b8", "label": "Bruce T Moran Distil...", "type": "document", "val": 5}, {"id": "doc_6cea4d98", "label": "Bruce T Moran Parace...", "type": "document", "val": 5}, {"id": "doc_025f9957", "label": "Claudia Kren Alchemy...", "type": "document", "val": 5}, {"id": "doc_c825df9a", "label": "Creations of Fire_ C...", "type": "document", "val": 5}], "links": [{"source": "topic_0", "target": "doc_cc68ebfc"}, {"source": "topic_0", "target": "doc_fd50a0cd"}, {"source": "topic_0", "target": "doc_f53befe0"}, {"source": "topic_0", "target": "doc_822b5e77"}, {"source": "topic_0", "target": "doc_c812de2e"}, {"source": "topic_0", "target": "doc_3d0fcbba"}, {"source": "topic_0", "target": "doc_50c48056"}, {"source": "topic_0", "target": "doc_fdff12fc"}, {"source": "topic_0", "target": "doc_e2e05a0b"}, {"source": "topic_0", "target": "doc_a8cd7871"}, {"source": "topic_0", "target": "doc_4703af5f"}, {"source": "topic_0", "target": "doc_c5dd4830"}, {"source": "topic_0", "target": "doc_d91727e5"}, {"source": "topic_0", "target": "doc_fed62fb8"}, {"source": "topic_0", "target": "doc_6a5bdb6d"}, {"source": "topic_1", "target": "doc_81843068"}, {"source": "topic_1", "target": "doc_61fd23cc"}, {"source": "topic_1", "target": "doc_10d7bdee"}, {"source": "topic_1", "target": "doc_ac4906a3"}, {"source": "topic_2", "target": "doc_960ca8d8"}, {"source": "topic_2", "target": "doc_b9cd3737"}, {"source": "topic_2", "target": "doc_7e5c97ad"}, {"source": "topic_2", "target": "doc_87556a34"}, {"source": "topic_2", "target": "doc_8b408a5e"}, {"source": "topic_2", "target": "doc_26908d2f"}, {"source": "topic_2", "target": "doc_851e9354"}, {"source": "topic_2", "target": "doc_d63d3889"}, {"source": "topic_3", "target": "doc_ea770617"}, {"source": "topic_2", "target": "doc_b848d57f"}, {"source": "topic_2", "target": "doc_616f1815"}, {"source": "topic_2", "target": "doc_41226ebf"}, {"source": "topic_2", "target": "doc_4c72b57d"}, {"source": "topic_2", "target": "doc_8bc6064a"}, {"source": "topic_2", "target": "doc_f59fb06b"}, {"source": "topic_2", "target": "doc_9d067d38"}, {"source": "topic_2", "target": "doc_357f5a41"}, {"source": "topic_2", "target": "doc_ec0f0a94"}, {"source": "topic_2", "target": "doc_250114c6"}, {"source": "topic_2", "target": "doc_c29c3a03"}, {"source": "topic_2", "target": "doc_04d33554"}, {"source": "topic_2", "target": "doc_3c7afbb2"}, {"source": "topic_2", "target": "doc_be2d2a65"}, {"source": "topic_2", "target": "doc_5f5c4c7f"}, {"source": "topic_2", "target": "doc_39cb9a8b"}, {"source": "topic_2", "target": "doc_d502c787"}, {"source": "topic_2", "target": "doc_7930e06b"}, {"source": "topic_2", "target": "doc_9872b058"}, {"source": "topic_2", "target": "doc_6bcdb792"}, {"source": "topic_2", "target": "doc_b90b09c3"}, {"source": "topic_2", "target": "doc_67e40e81"}, {"source": "topic_2", "target": "doc_f4dc6b39"}, {"source": "topic_2", "target": "doc_1a7c4a48"}, {"source": "topic_2", "target": "doc_2e8d83de"}, {"source": "topic_2", "target": "doc_737a6871"}, {"source": "topic_4", "target": "doc_8606a711"}, {"source": "topic_2", "target": "doc_78ea48fb"}, {"source": "topic_2", "target": "doc_d951ff20"}, {"source": "topic_2", "target": "doc_9c4f0cf3"}, {"source": "topic_2", "target": "doc_ad689c3b"}, {"source": "topic_2", "target": "doc_58c5d7f5"}, {"source": "topic_2", "target": "doc_2a12e0d5"}, {"source": "topic_2", "target": "doc_75cc4cf1"}, {"source": "topic_2", "target": "doc_f9ac2876"}, {"source": "topic_2", "target": "doc_6a4ccbde"}, {"source": "topic_2", "target": "doc_a83b880d"}, {"source": "topic_2", "target": "doc_ae23496e"}, {"source": "topic_2", "target": "doc_64dda8ee"}, {"source": "topic_5", "target": "doc_b25e1d73"}, {"source": "topic_5", "target": "doc_1c582a4a"}, {"source": "topic_5", "target": "doc_1c022bdc"}, {"source": "topic_5", "target": "doc_44746658"}, {"source": "topic_6", "target": "doc_2428f19d"}, {"source": "topic_5", "target": "doc_42ced90c"}, {"source": "topic_7", "target": "doc_90aa7d7c"}, {"source": "topic_8", "target": "doc_41a64e33"}, {"source": "topic_8", "target": "doc_6654f349"}, {"source": "topic_8", "target": "doc_b3a67920"}, {"source": "topic_8", "target": "doc_eae9ff10"}, {"source": "topic_8", "target": "doc_d2733e7c"}, {"source": "topic_8", "target": "doc_c0ae644d"}, {"source": "topic_8", "target": "doc_00a17dc2"}, {"source": "topic_8", "target": "doc_e098b101"}, {"source": "topic_8", "target": "doc_e981b104"}, {"source": "topic_8", "target": "doc_7e09e8e1"}, {"source": "topic_8", "target": "doc_ee76ae8b"}, {"source": "topic_8", "target": "doc_d26406da"}, {"source": "topic_8", "target": "doc_2fce6c43"}, {"source": "topic_9", "target": "doc_f17c2f7c"}, {"source": "topic_9", "target": "doc_811ed026"}, {"source": "topic_9", "target": "doc_e8fe36f3"}, {"source": "topic_9", "target": "doc_95aa7ed6"}, {"source": "topic_9", "target": "doc_80c789a9"}, {"source": "topic_9", "target": "doc_86c960cd"}, {"source": "topic_9", "target": "doc_647c3772"}, {"source": "topic_9", "target": "doc_0365fe46"}, {"source": "topic_9", "target": "doc_078d4be3"}, {"source": "topic_9", "target": "doc_3cfdf820"}, {"source": "topic_9", "target": "doc_af8f598a"}, {"source": "topic_9", "target": "doc_9f2fbf86"}, {"source": "topic_9", "target": "doc_63067164"}, {"source": "topic_7", "target": "doc_cd66efec"}, {"source": "topic_7", "target": "doc_041381bd"}, {"source": "topic_7", "target": "doc_ae643993"}, {"source": "topic_7", "target": "doc_26c8e648"}, {"source": "topic_6", "target": "doc_747ab9f5"}, {"source": "topic_7", "target": "doc_2779624c"}, {"source": "topic_7", "target": "doc_0a9c9536"}, {"source": "topic_7", "target": "doc_155eb5c7"}, {"source": "topic_7", "target": "doc_f102d164"}, {"source": "topic_7", "target": "doc_773b2256"}, {"source": "topic_7", "target": "doc_0018de45"}, {"source": "topic_7", "target": "doc_5ab6bfde"}, {"source": "topic_7", "target": "doc_1935ba6f"}, {"source": "topic_7", "target": "doc_cff3aa8a"}, {"source": "topic_7", "target": "doc_f3b4d9f0"}, {"source": "topic_7", "target": "doc_043621c2"}, {"source": "topic_7", "target": "doc_c5b90e5f"}, {"source": "topic_7", "target": "doc_8c06ce57"}, {"source": "topic_7", "target": "doc_aeb8750b"}, {"source": "topic_7", "target": "doc_2f9d61b1"}, {"source": "topic_10", "target": "doc_770806e4"}, {"source": "topic_7", "target": "doc_51f25722"}, {"source": "topic_7", "target": "doc_9dce747e"}, {"source": "topic_7", "target": "doc_45f6f9d1"}, {"source": "topic_7", "target": "doc_f6098a7b"}, {"source": "topic_7", "target": "doc_4ce76b91"}, {"source": "topic_7", "target": "doc_616d610a"}, {"source": "topic_7", "target": "doc_1eb8a1f4"}, {"source": "topic_7", "target": "doc_82149a77"}, {"source": "topic_7", "target": "doc_d588075d"}, {"source": "topic_7", "target": "doc_05f9b772"}, {"source": "topic_7", "target": "doc_68aae61f"}, {"source": "topic_7", "target": "doc_bff4f8fc"}, {"source": "topic_7", "target": "doc_26f18371"}, {"source": "topic_7", "target": "doc_9d0d78a4"}, {"source": "topic_7", "target": "doc_8b58870c"}, {"source": "topic_7", "target": "doc_b57226ee"}, {"source": "topic_7", "target": "doc_25033ff3"}, {"source": "topic_7", "target": "doc_2f329a81"}, {"source": "topic_7", "target": "doc_c2e94646"}, {"source": "topic_7", "target": "doc_4001ed33"}, {"source": "topic_7", "target": "doc_fa1fd7e2"}, {"source": "topic_7", "target": "doc_43b7d97c"}, {"source": "topic_7", "target": "doc_bdc58bc0"}, {"source": "topic_7", "target": "doc_0defc012"}, {"source": "topic_7", "target": "doc_38aa721d"}, {"source": "topic_7", "target": "doc_55e66683"}, {"source": "topic_7", "target": "doc_c7e8554c"}, {"source": "topic_7", "target": "doc_dfd17e3a"}, {"source": "topic_7", "target": "doc_6ea47529"}, {"source": "topic_7", "target": "doc_c23e6171"}, {"source": "topic_7", "target": "doc_302a4152"}, {"source": "topic_7", "target": "doc_2fdaf8d9"}, {"source": "topic_7", "target": "doc_b56f5b78"}, {"source": "topic_7", "target": "doc_b0598b03"}, {"source": "topic_7", "target": "doc_23f71888"}, {"source": "topic_7", "target": "doc_55b884aa"}, {"source": "topic_7", "target": "doc_81c9e21c"}, {"source": "topic_7", "target": "doc_d0082b80"}, {"source": "topic_7", "target": "doc_54480d08"}, {"source": "topic_7", "target": "doc_2e7b54e2"}, {"source": "topic_7", "target": "doc_a3b00bc2"}, {"source": "topic_7", "target": "doc_92a4690c"}, {"source": "topic_7", "target": "doc_b71b4170"}, {"source": "topic_7", "target": "doc_c8ed4b5f"}, {"source": "topic_7", "target": "doc_50ab28d5"}, {"source": "topic_7", "target": "doc_8075cc47"}, {"source": "topic_7", "target": "doc_dcde1274"}, {"source": "topic_7", "target": "doc_deb05c10"}, {"source": "topic_7", "target": "doc_2e7072c1"}, {"source": "topic_7", "target": "doc_5397e1ae"}, {"source": "topic_7", "target": "doc_0277dec3"}, {"source": "topic_7", "target": "doc_db806a0f"}, {"source": "topic_7", "target": "doc_418ce594"}, {"source": "topic_7", "target": "doc_782a30ac"}, {"source": "topic_7", "target": "doc_568b0bf7"}, {"source": "topic_7", "target": "doc_1803d388"}, {"source": "topic_7", "target": "doc_d748d4d8"}, {"source": "topic_7", "target": "doc_7cfd4795"}, {"source": "topic_7", "target": "doc_db4d3f15"}, {"source": "topic_7", "target": "doc_7c2682ef"}, {"source": "topic_7", "target": "doc_968e595b"}, {"source": "topic_7", "target": "doc_349eeaf4"}, {"source": "topic_7", "target": "doc_374009e1"}, {"source": "topic_7", "target": "doc_ae987817"}, {"source": "topic_7", "target": "doc_f8a60e9e"}, {"source": "topic_7", "target": "doc_85dbda22"}, {"source": "topic_7", "target": "doc_c00bdabf"}, {"source": "topic_7", "target": "doc_fb59dced"}, {"source": "topic_7", "target": "doc_4bf1bb7e"}, {"source": "topic_7", "target": "doc_b5ff6c05"}, {"source": "topic_7", "target": "doc_8692f88b"}, {"source": "topic_7", "target": "doc_2006b5c1"}, {"source": "topic_7", "target": "doc_21f57e04"}, {"source": "topic_11", "target": "doc_7f819e05"}, {"source": "topic_11", "target": "doc_0d483c6a"}, {"source": "topic_11", "target": "doc_294387b8"}, {"source": "topic_11", "target": "doc_6cea4d98"}, {"source": "topic_11", "target": "doc_025f9957"}, {"source": "topic_11", "target": "doc_c825df9a"}]}
+{
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "Apuleis",
+          "label": "Apuleis",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "Arthurian",
+          "label": "Arthurian",
+          "type": "topic",
+          "size": 35.4
+        }
+      },
+      {
+        "data": {
+          "id": "Bataille",
+          "label": "Bataille",
+          "type": "topic",
+          "size": 30.8
+        }
+      },
+      {
+        "data": {
+          "id": "Cavendish",
+          "label": "Cavendish",
+          "type": "topic",
+          "size": 31.4
+        }
+      },
+      {
+        "data": {
+          "id": "Devil",
+          "label": "Devil",
+          "type": "topic",
+          "size": 32.0
+        }
+      },
+      {
+        "data": {
+          "id": "Digital Humanities",
+          "label": "Digital Humanities",
+          "type": "topic",
+          "size": 31.6
+        }
+      },
+      {
+        "data": {
+          "id": "Eranos",
+          "label": "Eranos",
+          "type": "topic",
+          "size": 31.2
+        }
+      },
+      {
+        "data": {
+          "id": "Game Design",
+          "label": "Game Design",
+          "type": "topic",
+          "size": 35.2
+        }
+      },
+      {
+        "data": {
+          "id": "General",
+          "label": "General",
+          "type": "topic",
+          "size": 33.0
+        }
+      },
+      {
+        "data": {
+          "id": "Grimoire",
+          "label": "Grimoire",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "Hilma af Klint",
+          "label": "Hilma af Klint",
+          "type": "topic",
+          "size": 35.8
+        }
+      },
+      {
+        "data": {
+          "id": "Idriesh Shah",
+          "label": "Idriesh Shah",
+          "type": "topic",
+          "size": 31.2
+        }
+      },
+      {
+        "data": {
+          "id": "Islamicate Chill Pills",
+          "label": "Islamicate Chill Pills",
+          "type": "topic",
+          "size": 32.8
+        }
+      },
+      {
+        "data": {
+          "id": "Margaret Jacob",
+          "label": "Margaret Jacob",
+          "type": "topic",
+          "size": 32.0
+        }
+      },
+      {
+        "data": {
+          "id": "RAW HPL PKD WSB etc misc SF",
+          "label": "RAW HPL PKD WSB etc misc SF",
+          "type": "topic",
+          "size": 32.6
+        }
+      },
+      {
+        "data": {
+          "id": "Robin Hood",
+          "label": "Robin Hood",
+          "type": "topic",
+          "size": 31.8
+        }
+      },
+      {
+        "data": {
+          "id": "Rosicrucian",
+          "label": "Rosicrucian",
+          "type": "topic",
+          "size": 31.2
+        }
+      },
+      {
+        "data": {
+          "id": "Shakespeare",
+          "label": "Shakespeare",
+          "type": "topic",
+          "size": 53.6
+        }
+      },
+      {
+        "data": {
+          "id": "Tarot",
+          "label": "Tarot",
+          "type": "topic",
+          "size": 34.4
+        }
+      },
+      {
+        "data": {
+          "id": "albertus magnus",
+          "label": "albertus magnus",
+          "type": "topic",
+          "size": 30.8
+        }
+      },
+      {
+        "data": {
+          "id": "alchemy",
+          "label": "alchemy",
+          "type": "topic",
+          "size": 79.4
+        }
+      },
+      {
+        "data": {
+          "id": "altered states",
+          "label": "altered states",
+          "type": "topic",
+          "size": 31.0
+        }
+      },
+      {
+        "data": {
+          "id": "ancient magic gnostic pgm etc",
+          "label": "ancient magic gnostic pgm etc",
+          "type": "topic",
+          "size": 38.6
+        }
+      },
+      {
+        "data": {
+          "id": "art of memory",
+          "label": "art of memory",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "blake",
+          "label": "blake",
+          "type": "topic",
+          "size": 30.6
+        }
+      },
+      {
+        "data": {
+          "id": "bohme",
+          "label": "bohme",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "book reviews unsorted",
+          "label": "book reviews unsorted",
+          "type": "topic",
+          "size": 40.8
+        }
+      },
+      {
+        "data": {
+          "id": "code social media content creation",
+          "label": "code social media content creation",
+          "type": "topic",
+          "size": 34.2
+        }
+      },
+      {
+        "data": {
+          "id": "cog sci",
+          "label": "cog sci",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "crowley",
+          "label": "crowley",
+          "type": "topic",
+          "size": 33.4
+        }
+      },
+      {
+        "data": {
+          "id": "data sci",
+          "label": "data sci",
+          "type": "topic",
+          "size": 32.4
+        }
+      },
+      {
+        "data": {
+          "id": "databaseINBOX",
+          "label": "databaseINBOX",
+          "type": "topic",
+          "size": 37.2
+        }
+      },
+      {
+        "data": {
+          "id": "design",
+          "label": "design",
+          "type": "topic",
+          "size": 30.6
+        }
+      },
+      {
+        "data": {
+          "id": "early modern",
+          "label": "early modern",
+          "type": "topic",
+          "size": 30.4
+        }
+      },
+      {
+        "data": {
+          "id": "economics marxism",
+          "label": "economics marxism",
+          "type": "topic",
+          "size": 31.2
+        }
+      },
+      {
+        "data": {
+          "id": "emblem studies",
+          "label": "emblem studies",
+          "type": "topic",
+          "size": 31.0
+        }
+      },
+      {
+        "data": {
+          "id": "esoteric studies",
+          "label": "esoteric studies",
+          "type": "topic",
+          "size": 37.8
+        }
+      },
+      {
+        "data": {
+          "id": "game studies",
+          "label": "game studies",
+          "type": "topic",
+          "size": 45.8
+        }
+      },
+      {
+        "data": {
+          "id": "games",
+          "label": "games",
+          "type": "topic",
+          "size": 30.6
+        }
+      },
+      {
+        "data": {
+          "id": "haunt",
+          "label": "haunt",
+          "type": "topic",
+          "size": 30.6
+        }
+      },
+      {
+        "data": {
+          "id": "hermetic",
+          "label": "hermetic",
+          "type": "topic",
+          "size": 34.8
+        }
+      },
+      {
+        "data": {
+          "id": "history of science",
+          "label": "history of science",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "history philosophy",
+          "label": "history philosophy",
+          "type": "topic",
+          "size": 38.4
+        }
+      },
+      {
+        "data": {
+          "id": "hp emblems",
+          "label": "hp emblems",
+          "type": "topic",
+          "size": 36.8
+        }
+      },
+      {
+        "data": {
+          "id": "kabbalah",
+          "label": "kabbalah",
+          "type": "topic",
+          "size": 31.6
+        }
+      },
+      {
+        "data": {
+          "id": "learning",
+          "label": "learning",
+          "type": "topic",
+          "size": 33.4
+        }
+      },
+      {
+        "data": {
+          "id": "magic",
+          "label": "magic",
+          "type": "topic",
+          "size": 39.0
+        }
+      },
+      {
+        "data": {
+          "id": "magic squares",
+          "label": "magic squares",
+          "type": "topic",
+          "size": 30.8
+        }
+      },
+      {
+        "data": {
+          "id": "media studies",
+          "label": "media studies",
+          "type": "topic",
+          "size": 30.6
+        }
+      },
+      {
+        "data": {
+          "id": "medieval magic",
+          "label": "medieval magic",
+          "type": "topic",
+          "size": 32.4
+        }
+      },
+      {
+        "data": {
+          "id": "medieval studies medieval philosophy",
+          "label": "medieval studies medieval philosophy",
+          "type": "topic",
+          "size": 32.2
+        }
+      },
+      {
+        "data": {
+          "id": "music",
+          "label": "music",
+          "type": "topic",
+          "size": 34.2
+        }
+      },
+      {
+        "data": {
+          "id": "narrative and instructional design",
+          "label": "narrative and instructional design",
+          "type": "topic",
+          "size": 32.8
+        }
+      },
+      {
+        "data": {
+          "id": "neoplatonism",
+          "label": "neoplatonism",
+          "type": "topic",
+          "size": 50.6
+        }
+      },
+      {
+        "data": {
+          "id": "philosophy",
+          "label": "philosophy",
+          "type": "topic",
+          "size": 35.0
+        }
+      },
+      {
+        "data": {
+          "id": "pkd",
+          "label": "pkd",
+          "type": "topic",
+          "size": 37.0
+        }
+      },
+      {
+        "data": {
+          "id": "psychedelic",
+          "label": "psychedelic",
+          "type": "topic",
+          "size": 31.8
+        }
+      },
+      {
+        "data": {
+          "id": "renaissance magic",
+          "label": "renaissance magic",
+          "type": "topic",
+          "size": 82.6
+        }
+      },
+      {
+        "data": {
+          "id": "renaissance studies",
+          "label": "renaissance studies",
+          "type": "topic",
+          "size": 33.2
+        }
+      },
+      {
+        "data": {
+          "id": "social science",
+          "label": "social science",
+          "type": "topic",
+          "size": 30.2
+        }
+      },
+      {
+        "data": {
+          "id": "western esotericism religious studies",
+          "label": "western esotericism religious studies",
+          "type": "topic",
+          "size": 44.2
+        }
+      },
+      {
+        "data": {
+          "id": "witchcraft studies Hutton",
+          "label": "witchcraft studies Hutton",
+          "type": "topic",
+          "size": 33.2
+        }
+      },
+      {
+        "data": {
+          "id": "New York",
+          "label": "New York",
+          "type": "entity",
+          "size": 245
+        }
+      },
+      {
+        "data": {
+          "id": "Middle Ages",
+          "label": "Middle Ages",
+          "type": "entity",
+          "size": 151
+        }
+      },
+      {
+        "data": {
+          "id": "The University",
+          "label": "The University",
+          "type": "entity",
+          "size": 149
+        }
+      },
+      {
+        "data": {
+          "id": "Chicago Press",
+          "label": "Chicago Press",
+          "type": "entity",
+          "size": 144
+        }
+      },
+      {
+        "data": {
+          "id": "Giovanni Pico",
+          "label": "Giovanni Pico",
+          "type": "entity",
+          "size": 114
+        }
+      },
+      {
+        "data": {
+          "id": "Cambridge University Press",
+          "label": "Cambridge University Press",
+          "type": "entity",
+          "size": 114
+        }
+      },
+      {
+        "data": {
+          "id": "John Dee",
+          "label": "John Dee",
+          "type": "entity",
+          "size": 112
+        }
+      },
+      {
+        "data": {
+          "id": "George Washington University",
+          "label": "George Washington University",
+          "type": "entity",
+          "size": 101
+        }
+      },
+      {
+        "data": {
+          "id": "Sefer Yetzirah",
+          "label": "Sefer Yetzirah",
+          "type": "entity",
+          "size": 88
+        }
+      },
+      {
+        "data": {
+          "id": "The History",
+          "label": "The History",
+          "type": "entity",
+          "size": 85
+        }
+      },
+      {
+        "data": {
+          "id": "Shakespeare Quarterly",
+          "label": "Shakespeare Quarterly",
+          "type": "entity",
+          "size": 85
+        }
+      },
+      {
+        "data": {
+          "id": "Folger Shakespeare Library",
+          "label": "Folger Shakespeare Library",
+          "type": "entity",
+          "size": 80
+        }
+      },
+      {
+        "data": {
+          "id": "Giordano Bruno",
+          "label": "Giordano Bruno",
+          "type": "entity",
+          "size": 76
+        }
+      },
+      {
+        "data": {
+          "id": "United States",
+          "label": "United States",
+          "type": "entity",
+          "size": 74
+        }
+      },
+      {
+        "data": {
+          "id": "Marsilio Ficino",
+          "label": "Marsilio Ficino",
+          "type": "entity",
+          "size": 73
+        }
+      },
+      {
+        "data": {
+          "id": "Sefer Yetsirah",
+          "label": "Sefer Yetsirah",
+          "type": "entity",
+          "size": 69
+        }
+      },
+      {
+        "data": {
+          "id": "The Book",
+          "label": "The Book",
+          "type": "entity",
+          "size": 67
+        }
+      },
+      {
+        "data": {
+          "id": "Hypnerotomachia Poliphili",
+          "label": "Hypnerotomachia Poliphili",
+          "type": "entity",
+          "size": 66
+        }
+      },
+      {
+        "data": {
+          "id": "Hermes Trismegistus",
+          "label": "Hermes Trismegistus",
+          "type": "entity",
+          "size": 62
+        }
+      },
+      {
+        "data": {
+          "id": "Pennsylvania Press",
+          "label": "Pennsylvania Press",
+          "type": "entity",
+          "size": 61
+        }
+      },
+      {
+        "data": {
+          "id": "Robin Hood",
+          "label": "Robin Hood",
+          "type": "entity",
+          "size": 58
+        }
+      },
+      {
+        "data": {
+          "id": "Oxford University Press",
+          "label": "Oxford University Press",
+          "type": "entity",
+          "size": 58
+        }
+      },
+      {
+        "data": {
+          "id": "British Library",
+          "label": "British Library",
+          "type": "entity",
+          "size": 58
+        }
+      },
+      {
+        "data": {
+          "id": "New York University",
+          "label": "New York University",
+          "type": "entity",
+          "size": 57
+        }
+      },
+      {
+        "data": {
+          "id": "Renaissance Society",
+          "label": "Renaissance Society",
+          "type": "entity",
+          "size": 56
+        }
+      },
+      {
+        "data": {
+          "id": "Los Angeles",
+          "label": "Los Angeles",
+          "type": "entity",
+          "size": 56
+        }
+      },
+      {
+        "data": {
+          "id": "Cambridge Core",
+          "label": "Cambridge Core",
+          "type": "entity",
+          "size": 56
+        }
+      },
+      {
+        "data": {
+          "id": "University Press",
+          "label": "University Press",
+          "type": "entity",
+          "size": 55
+        }
+      },
+      {
+        "data": {
+          "id": "Science Society",
+          "label": "Science Society",
+          "type": "entity",
+          "size": 55
+        }
+      },
+      {
+        "data": {
+          "id": "The Tempest",
+          "label": "The Tempest",
+          "type": "entity",
+          "size": 54
+        }
+      },
+      {
+        "data": {
+          "id": "Congress Cataloging",
+          "label": "Congress Cataloging",
+          "type": "entity",
+          "size": 54
+        }
+      },
+      {
+        "data": {
+          "id": "The Alchemist",
+          "label": "The Alchemist",
+          "type": "entity",
+          "size": 53
+        }
+      },
+      {
+        "data": {
+          "id": "Monas Hieroglyphica",
+          "label": "Monas Hieroglyphica",
+          "type": "entity",
+          "size": 53
+        }
+      },
+      {
+        "data": {
+          "id": "Johannes Trithemius",
+          "label": "Johannes Trithemius",
+          "type": "entity",
+          "size": 53
+        }
+      },
+      {
+        "data": {
+          "id": "Book Reviews",
+          "label": "Book Reviews",
+          "type": "entity",
+          "size": 53
+        }
+      },
+      {
+        "data": {
+          "id": "Ben Jonson",
+          "label": "Ben Jonson",
+          "type": "entity",
+          "size": 53
+        }
+      },
+      {
+        "data": {
+          "id": "Cornelius Agrippa",
+          "label": "Cornelius Agrippa",
+          "type": "entity",
+          "size": 52
+        }
+      },
+      {
+        "data": {
+          "id": "Full Terms",
+          "label": "Full Terms",
+          "type": "entity",
+          "size": 51
+        }
+      },
+      {
+        "data": {
+          "id": "Computer Science",
+          "label": "Computer Science",
+          "type": "entity",
+          "size": 51
+        }
+      },
+      {
+        "data": {
+          "id": "Warburg Institute",
+          "label": "Warburg Institute",
+          "type": "entity",
+          "size": 50
+        }
+      },
+      {
+        "data": {
+          "id": "Koninklijke Brill",
+          "label": "Koninklijke Brill",
+          "type": "entity",
+          "size": 50
+        }
+      },
+      {
+        "data": {
+          "id": "Nag Hammadi",
+          "label": "Nag Hammadi",
+          "type": "entity",
+          "size": 49
+        }
+      },
+      {
+        "data": {
+          "id": "United Kingdom",
+          "label": "United Kingdom",
+          "type": "entity",
+          "size": 48
+        }
+      },
+      {
+        "data": {
+          "id": "The Sixteenth Century",
+          "label": "The Sixteenth Century",
+          "type": "entity",
+          "size": 48
+        }
+      },
+      {
+        "data": {
+          "id": "Science Society\nStable",
+          "label": "Science Society\nStable",
+          "type": "entity",
+          "size": 48
+        }
+      },
+      {
+        "data": {
+          "id": "Review \nAuthor",
+          "label": "Review \nAuthor",
+          "type": "entity",
+          "size": 48
+        }
+      },
+      {
+        "data": {
+          "id": "Associate Professor",
+          "label": "Associate Professor",
+          "type": "entity",
+          "size": 48
+        }
+      },
+      {
+        "data": {
+          "id": "Renaissance Quarterly",
+          "label": "Renaissance Quarterly",
+          "type": "entity",
+          "size": 47
+        }
+      },
+      {
+        "data": {
+          "id": "Late Antiquity",
+          "label": "Late Antiquity",
+          "type": "entity",
+          "size": 47
+        }
+      },
+      {
+        "data": {
+          "id": "Johns Hopkins University",
+          "label": "Johns Hopkins University",
+          "type": "entity",
+          "size": 47
+        }
+      },
+      {
+        "data": {
+          "id": "Natural Philosophy",
+          "label": "Natural Philosophy",
+          "type": "entity",
+          "size": 46
+        }
+      },
+      {
+        "data": {
+          "id": "Frances Yates",
+          "label": "Frances Yates",
+          "type": "entity",
+          "size": 46
+        }
+      },
+      {
+        "data": {
+          "id": "Early Modern Europe",
+          "label": "Early Modern Europe",
+          "type": "entity",
+          "size": 46
+        }
+      },
+      {
+        "data": {
+          "id": "Claire Fanger",
+          "label": "Claire Fanger",
+          "type": "entity",
+          "size": 46
+        }
+      },
+      {
+        "data": {
+          "id": "Thomas Aquinas",
+          "label": "Thomas Aquinas",
+          "type": "entity",
+          "size": 45
+        }
+      },
+      {
+        "data": {
+          "id": "Sefer Yezirah",
+          "label": "Sefer Yezirah",
+          "type": "entity",
+          "size": 45
+        }
+      },
+      {
+        "data": {
+          "id": "Robert Boyle",
+          "label": "Robert Boyle",
+          "type": "entity",
+          "size": 45
+        }
+      },
+      {
+        "data": {
+          "id": "The Johns Hopkins",
+          "label": "The Johns Hopkins",
+          "type": "entity",
+          "size": 44
+        }
+      },
+      {
+        "data": {
+          "id": "New Haven",
+          "label": "New Haven",
+          "type": "entity",
+          "size": 44
+        }
+      },
+      {
+        "data": {
+          "id": "Albertus Magnus",
+          "label": "Albertus Magnus",
+          "type": "entity",
+          "size": 44
+        }
+      },
+      {
+        "data": {
+          "id": "The Hypnerotomachia Poliphili",
+          "label": "The Hypnerotomachia Poliphili",
+          "type": "entity",
+          "size": 43
+        }
+      },
+      {
+        "data": {
+          "id": "Roger Bacon",
+          "label": "Roger Bacon",
+          "type": "entity",
+          "size": 43
+        }
+      },
+      {
+        "data": {
+          "id": "English Renaissance",
+          "label": "English Renaissance",
+          "type": "entity",
+          "size": 43
+        }
+      },
+      {
+        "data": {
+          "id": "Antoine Faivre",
+          "label": "Antoine Faivre",
+          "type": "entity",
+          "size": 43
+        }
+      },
+      {
+        "data": {
+          "id": "Af Klint",
+          "label": "Af Klint",
+          "type": "entity",
+          "size": 43
+        }
+      },
+      {
+        "data": {
+          "id": "Trinity College",
+          "label": "Trinity College",
+          "type": "entity",
+          "size": 42
+        }
+      },
+      {
+        "data": {
+          "id": "Golden Age",
+          "label": "Golden Age",
+          "type": "entity",
+          "size": 42
+        }
+      },
+      {
+        "data": {
+          "id": "Garry Trompf",
+          "label": "Garry Trompf",
+          "type": "entity",
+          "size": 42
+        }
+      },
+      {
+        "data": {
+          "id": "Francesco Colonna",
+          "label": "Francesco Colonna",
+          "type": "entity",
+          "size": 42
+        }
+      },
+      {
+        "data": {
+          "id": "Corpus Hermeticum",
+          "label": "Corpus Hermeticum",
+          "type": "entity",
+          "size": 42
+        }
+      },
+      {
+        "data": {
+          "id": "Wild Hunt",
+          "label": "Wild Hunt",
+          "type": "entity",
+          "size": 41
+        }
+      },
+      {
+        "data": {
+          "id": "Isaac Newton",
+          "label": "Isaac Newton",
+          "type": "entity",
+          "size": 41
+        }
+      },
+      {
+        "data": {
+          "id": "Great Britain",
+          "label": "Great Britain",
+          "type": "entity",
+          "size": 41
+        }
+      },
+      {
+        "data": {
+          "id": "Franz Steiner Verlag",
+          "label": "Franz Steiner Verlag",
+          "type": "entity",
+          "size": 41
+        }
+      },
+      {
+        "data": {
+          "id": "Robert Fludd",
+          "label": "Robert Fludd",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "Publication Data",
+          "label": "Publication Data",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "Michael Maier",
+          "label": "Michael Maier",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "Johannes Reuchlin",
+          "label": "Johannes Reuchlin",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "Francis Bacon",
+          "label": "Francis Bacon",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "America\nStable",
+          "label": "America\nStable",
+          "type": "entity",
+          "size": 40
+        }
+      },
+      {
+        "data": {
+          "id": "Wouter Hanegraaff",
+          "label": "Wouter Hanegraaff",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Wales Registered Number",
+          "label": "Wales Registered Number",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Mortimer Street",
+          "label": "Mortimer Street",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Mortimer House",
+          "label": "Mortimer House",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Ibn Arabi",
+          "label": "Ibn Arabi",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Courtauld Institutes",
+          "label": "Courtauld Institutes",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Clarendon Press",
+          "label": "Clarendon Press",
+          "type": "entity",
+          "size": 39
+        }
+      },
+      {
+        "data": {
+          "id": "Western Esotericism",
+          "label": "Western Esotericism",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "The Art",
+          "label": "The Art",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "State University",
+          "label": "State University",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Science Fiction",
+          "label": "Science Fiction",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Renaissance Magic",
+          "label": "Renaissance Magic",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Middle English",
+          "label": "Middle English",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Mark Sedgwick",
+          "label": "Mark Sedgwick",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Chaldean Oracles",
+          "label": "Chaldean Oracles",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Cambridge Companions Online",
+          "label": "Cambridge Companions Online",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Authenticated\nDownload Date",
+          "label": "Authenticated\nDownload Date",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "An Introduction",
+          "label": "An Introduction",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Aleister Crowley",
+          "label": "Aleister Crowley",
+          "type": "entity",
+          "size": 38
+        }
+      },
+      {
+        "data": {
+          "id": "Van Helmont",
+          "label": "Van Helmont",
+          "type": "entity",
+          "size": 37
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "rel_Arthurian_Book Reviews",
+          "source": "Book Reviews",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_Chicago Press",
+          "source": "Chicago Press",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_Middle Ages",
+          "source": "Middle Ages",
+          "target": "Arthurian",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_Middle English",
+          "source": "Middle English",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_New York",
+          "source": "New York",
+          "target": "Arthurian",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_The Johns Hopkins",
+          "source": "The Johns Hopkins",
+          "target": "Arthurian",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_The University",
+          "source": "The University",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Arthurian_University Press",
+          "source": "University Press",
+          "target": "Arthurian",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Bataille_New York",
+          "source": "New York",
+          "target": "Bataille",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Digital Humanities_Computer Science",
+          "source": "Computer Science",
+          "target": "Digital Humanities",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Eranos_The University",
+          "source": "The University",
+          "target": "Eranos",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Game Design_New York",
+          "source": "New York",
+          "target": "Game Design",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_Af Klint",
+          "source": "Af Klint",
+          "target": "Hilma af Klint",
+          "weight": 23
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_Chicago Press",
+          "source": "Chicago Press",
+          "target": "Hilma af Klint",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_Los Angeles",
+          "source": "Los Angeles",
+          "target": "Hilma af Klint",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_New York",
+          "source": "New York",
+          "target": "Hilma af Klint",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_The Art",
+          "source": "The Art",
+          "target": "Hilma af Klint",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Hilma af Klint_The University",
+          "source": "The University",
+          "target": "Hilma af Klint",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Idriesh Shah_The Book",
+          "source": "The Book",
+          "target": "Idriesh Shah",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Islamicate Chill Pills_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "Islamicate Chill Pills",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Margaret Jacob_Great Britain",
+          "source": "Great Britain",
+          "target": "Margaret Jacob",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Margaret Jacob_New York",
+          "source": "New York",
+          "target": "Margaret Jacob",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Margaret Jacob_United States",
+          "source": "United States",
+          "target": "Margaret Jacob",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Robin Hood_Full Terms",
+          "source": "Full Terms",
+          "target": "Robin Hood",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Robin Hood_Middle Ages",
+          "source": "Middle Ages",
+          "target": "Robin Hood",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Robin Hood_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "Robin Hood",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Robin Hood_Robin Hood",
+          "source": "Robin Hood",
+          "target": "Robin Hood",
+          "weight": 38
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_America\nStable",
+          "source": "America\nStable",
+          "target": "Shakespeare",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_An Introduction",
+          "source": "An Introduction",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Ben Jonson",
+          "source": "Ben Jonson",
+          "target": "Shakespeare",
+          "weight": 24
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "Shakespeare",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "Shakespeare",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Chicago Press",
+          "source": "Chicago Press",
+          "target": "Shakespeare",
+          "weight": 14
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Clarendon Press",
+          "source": "Clarendon Press",
+          "target": "Shakespeare",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Cornelius Agrippa",
+          "source": "Cornelius Agrippa",
+          "target": "Shakespeare",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_English Renaissance",
+          "source": "English Renaissance",
+          "target": "Shakespeare",
+          "weight": 14
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Folger Shakespeare Library",
+          "source": "Folger Shakespeare Library",
+          "target": "Shakespeare",
+          "weight": 57
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Frances Yates",
+          "source": "Frances Yates",
+          "target": "Shakespeare",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Francis Bacon",
+          "source": "Francis Bacon",
+          "target": "Shakespeare",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Full Terms",
+          "source": "Full Terms",
+          "target": "Shakespeare",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_George Washington University",
+          "source": "George Washington University",
+          "target": "Shakespeare",
+          "weight": 79
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Giordano Bruno",
+          "source": "Giordano Bruno",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Golden Age",
+          "source": "Golden Age",
+          "target": "Shakespeare",
+          "weight": 13
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_John Dee",
+          "source": "John Dee",
+          "target": "Shakespeare",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Johns Hopkins University",
+          "source": "Johns Hopkins University",
+          "target": "Shakespeare",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Los Angeles",
+          "source": "Los Angeles",
+          "target": "Shakespeare",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "Shakespeare",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Middle Ages",
+          "source": "Middle Ages",
+          "target": "Shakespeare",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Mortimer House",
+          "source": "Mortimer House",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Mortimer Street",
+          "source": "Mortimer Street",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_New Haven",
+          "source": "New Haven",
+          "target": "Shakespeare",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_New York",
+          "source": "New York",
+          "target": "Shakespeare",
+          "weight": 29
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_New York University",
+          "source": "New York University",
+          "target": "Shakespeare",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Renaissance Magic",
+          "source": "Renaissance Magic",
+          "target": "Shakespeare",
+          "weight": 11
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Renaissance Quarterly",
+          "source": "Renaissance Quarterly",
+          "target": "Shakespeare",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Renaissance Society",
+          "source": "Renaissance Society",
+          "target": "Shakespeare",
+          "weight": 11
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Review \nAuthor",
+          "source": "Review \nAuthor",
+          "target": "Shakespeare",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Shakespeare Quarterly",
+          "source": "Shakespeare Quarterly",
+          "target": "Shakespeare",
+          "weight": 60
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The Alchemist",
+          "source": "The Alchemist",
+          "target": "Shakespeare",
+          "weight": 26
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The Book",
+          "source": "The Book",
+          "target": "Shakespeare",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The Johns Hopkins",
+          "source": "The Johns Hopkins",
+          "target": "Shakespeare",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The Sixteenth Century",
+          "source": "The Sixteenth Century",
+          "target": "Shakespeare",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The Tempest",
+          "source": "The Tempest",
+          "target": "Shakespeare",
+          "weight": 24
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_The University",
+          "source": "The University",
+          "target": "Shakespeare",
+          "weight": 21
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_University Press",
+          "source": "University Press",
+          "target": "Shakespeare",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_Shakespeare_Wales Registered Number",
+          "source": "Wales Registered Number",
+          "target": "Shakespeare",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Albertus Magnus",
+          "source": "Albertus Magnus",
+          "target": "alchemy",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_An Introduction",
+          "source": "An Introduction",
+          "target": "alchemy",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Antoine Faivre",
+          "source": "Antoine Faivre",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Associate Professor",
+          "source": "Associate Professor",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Ben Jonson",
+          "source": "Ben Jonson",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Book Reviews",
+          "source": "Book Reviews",
+          "target": "alchemy",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_British Library",
+          "source": "British Library",
+          "target": "alchemy",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "alchemy",
+          "weight": 26
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Chicago Press",
+          "source": "Chicago Press",
+          "target": "alchemy",
+          "weight": 61
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Cornelius Agrippa",
+          "source": "Cornelius Agrippa",
+          "target": "alchemy",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Corpus Hermeticum",
+          "source": "Corpus Hermeticum",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Early Modern Europe",
+          "source": "Early Modern Europe",
+          "target": "alchemy",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Folger Shakespeare Library",
+          "source": "Folger Shakespeare Library",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Frances Yates",
+          "source": "Frances Yates",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Francis Bacon",
+          "source": "Francis Bacon",
+          "target": "alchemy",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Franz Steiner Verlag",
+          "source": "Franz Steiner Verlag",
+          "target": "alchemy",
+          "weight": 13
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Full Terms",
+          "source": "Full Terms",
+          "target": "alchemy",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Garry Trompf",
+          "source": "Garry Trompf",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_George Washington University",
+          "source": "George Washington University",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Giordano Bruno",
+          "source": "Giordano Bruno",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Giovanni Pico",
+          "source": "Giovanni Pico",
+          "target": "alchemy",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Great Britain",
+          "source": "Great Britain",
+          "target": "alchemy",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Isaac Newton",
+          "source": "Isaac Newton",
+          "target": "alchemy",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Johannes Trithemius",
+          "source": "Johannes Trithemius",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_John Dee",
+          "source": "John Dee",
+          "target": "alchemy",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Johns Hopkins University",
+          "source": "Johns Hopkins University",
+          "target": "alchemy",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Los Angeles",
+          "source": "Los Angeles",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Mark Sedgwick",
+          "source": "Mark Sedgwick",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Michael Maier",
+          "source": "Michael Maier",
+          "target": "alchemy",
+          "weight": 20
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Middle Ages",
+          "source": "Middle Ages",
+          "target": "alchemy",
+          "weight": 23
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Middle English",
+          "source": "Middle English",
+          "target": "alchemy",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Monas Hieroglyphica",
+          "source": "Monas Hieroglyphica",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Natural Philosophy",
+          "source": "Natural Philosophy",
+          "target": "alchemy",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_New Haven",
+          "source": "New Haven",
+          "target": "alchemy",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_New York",
+          "source": "New York",
+          "target": "alchemy",
+          "weight": 53
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_New York University",
+          "source": "New York University",
+          "target": "alchemy",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "alchemy",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Review \nAuthor",
+          "source": "Review \nAuthor",
+          "target": "alchemy",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Robert Boyle",
+          "source": "Robert Boyle",
+          "target": "alchemy",
+          "weight": 22
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Robert Fludd",
+          "source": "Robert Fludd",
+          "target": "alchemy",
+          "weight": 18
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Roger Bacon",
+          "source": "Roger Bacon",
+          "target": "alchemy",
+          "weight": 19
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Science Society",
+          "source": "Science Society",
+          "target": "alchemy",
+          "weight": 26
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Science Society\nStable",
+          "source": "Science Society\nStable",
+          "target": "alchemy",
+          "weight": 22
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Shakespeare Quarterly",
+          "source": "Shakespeare Quarterly",
+          "target": "alchemy",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Alchemist",
+          "source": "The Alchemist",
+          "target": "alchemy",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Art",
+          "source": "The Art",
+          "target": "alchemy",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Book",
+          "source": "The Book",
+          "target": "alchemy",
+          "weight": 20
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The History",
+          "source": "The History",
+          "target": "alchemy",
+          "weight": 45
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Johns Hopkins",
+          "source": "The Johns Hopkins",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Sixteenth Century",
+          "source": "The Sixteenth Century",
+          "target": "alchemy",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The Tempest",
+          "source": "The Tempest",
+          "target": "alchemy",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_The University",
+          "source": "The University",
+          "target": "alchemy",
+          "weight": 45
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Thomas Aquinas",
+          "source": "Thomas Aquinas",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Trinity College",
+          "source": "Trinity College",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_United Kingdom",
+          "source": "United Kingdom",
+          "target": "alchemy",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_United States",
+          "source": "United States",
+          "target": "alchemy",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_University Press",
+          "source": "University Press",
+          "target": "alchemy",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Van Helmont",
+          "source": "Van Helmont",
+          "target": "alchemy",
+          "weight": 17
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "alchemy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_alchemy_Western Esotericism",
+          "source": "Western Esotericism",
+          "target": "alchemy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_An Introduction",
+          "source": "An Introduction",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Antoine Faivre",
+          "source": "Antoine Faivre",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Associate Professor",
+          "source": "Associate Professor",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_British Library",
+          "source": "British Library",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Garry Trompf",
+          "source": "Garry Trompf",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Nag Hammadi",
+          "source": "Nag Hammadi",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 13
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_New York",
+          "source": "New York",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Trinity College",
+          "source": "Trinity College",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Western Esotericism",
+          "source": "Western Esotericism",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_ancient magic gnostic pgm etc_Wouter Hanegraaff",
+          "source": "Wouter Hanegraaff",
+          "target": "ancient magic gnostic pgm etc",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Albertus Magnus",
+          "source": "Albertus Magnus",
+          "target": "book reviews unsorted",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Book Reviews",
+          "source": "Book Reviews",
+          "target": "book reviews unsorted",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Chicago Press",
+          "source": "Chicago Press",
+          "target": "book reviews unsorted",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Claire Fanger",
+          "source": "Claire Fanger",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Franz Steiner Verlag",
+          "source": "Franz Steiner Verlag",
+          "target": "book reviews unsorted",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Full Terms",
+          "source": "Full Terms",
+          "target": "book reviews unsorted",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Giordano Bruno",
+          "source": "Giordano Bruno",
+          "target": "book reviews unsorted",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Golden Age",
+          "source": "Golden Age",
+          "target": "book reviews unsorted",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "book reviews unsorted",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Isaac Newton",
+          "source": "Isaac Newton",
+          "target": "book reviews unsorted",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Johannes Reuchlin",
+          "source": "Johannes Reuchlin",
+          "target": "book reviews unsorted",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_John Dee",
+          "source": "John Dee",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Middle Ages",
+          "source": "Middle Ages",
+          "target": "book reviews unsorted",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Mortimer House",
+          "source": "Mortimer House",
+          "target": "book reviews unsorted",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Mortimer Street",
+          "source": "Mortimer Street",
+          "target": "book reviews unsorted",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Nag Hammadi",
+          "source": "Nag Hammadi",
+          "target": "book reviews unsorted",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_New York",
+          "source": "New York",
+          "target": "book reviews unsorted",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "book reviews unsorted",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "book reviews unsorted",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Renaissance Magic",
+          "source": "Renaissance Magic",
+          "target": "book reviews unsorted",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Review \nAuthor",
+          "source": "Review \nAuthor",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Robert Boyle",
+          "source": "Robert Boyle",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Roger Bacon",
+          "source": "Roger Bacon",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Science Society",
+          "source": "Science Society",
+          "target": "book reviews unsorted",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Science Society\nStable",
+          "source": "Science Society\nStable",
+          "target": "book reviews unsorted",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_The Alchemist",
+          "source": "The Alchemist",
+          "target": "book reviews unsorted",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_The History",
+          "source": "The History",
+          "target": "book reviews unsorted",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_The University",
+          "source": "The University",
+          "target": "book reviews unsorted",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Wales Registered Number",
+          "source": "Wales Registered Number",
+          "target": "book reviews unsorted",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_book reviews unsorted_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "book reviews unsorted",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_code social media content creation_Computer Science",
+          "source": "Computer Science",
+          "target": "code social media content creation",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_code social media content creation_Early Modern Europe",
+          "source": "Early Modern Europe",
+          "target": "code social media content creation",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_code social media content creation_Los Angeles",
+          "source": "Los Angeles",
+          "target": "code social media content creation",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_code social media content creation_New York",
+          "source": "New York",
+          "target": "code social media content creation",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_code social media content creation_United States",
+          "source": "United States",
+          "target": "code social media content creation",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_crowley_Aleister Crowley",
+          "source": "Aleister Crowley",
+          "target": "crowley",
+          "weight": 18
+        }
+      },
+      {
+        "data": {
+          "id": "rel_crowley_New York",
+          "source": "New York",
+          "target": "crowley",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_crowley_The Book",
+          "source": "The Book",
+          "target": "crowley",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_crowley_United States",
+          "source": "United States",
+          "target": "crowley",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_data sci_Computer Science",
+          "source": "Computer Science",
+          "target": "data sci",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Book Reviews",
+          "source": "Book Reviews",
+          "target": "databaseINBOX",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "databaseINBOX",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Chicago Press",
+          "source": "Chicago Press",
+          "target": "databaseINBOX",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Claire Fanger",
+          "source": "Claire Fanger",
+          "target": "databaseINBOX",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Corpus Hermeticum",
+          "source": "Corpus Hermeticum",
+          "target": "databaseINBOX",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Early Modern Europe",
+          "source": "Early Modern Europe",
+          "target": "databaseINBOX",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Frances Yates",
+          "source": "Frances Yates",
+          "target": "databaseINBOX",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Giovanni Pico",
+          "source": "Giovanni Pico",
+          "target": "databaseINBOX",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "databaseINBOX",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_John Dee",
+          "source": "John Dee",
+          "target": "databaseINBOX",
+          "weight": 18
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "databaseINBOX",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "databaseINBOX",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "databaseINBOX",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Middle Ages",
+          "source": "Middle Ages",
+          "target": "databaseINBOX",
+          "weight": 21
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Monas Hieroglyphica",
+          "source": "Monas Hieroglyphica",
+          "target": "databaseINBOX",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Nag Hammadi",
+          "source": "Nag Hammadi",
+          "target": "databaseINBOX",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Natural Philosophy",
+          "source": "Natural Philosophy",
+          "target": "databaseINBOX",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_New York",
+          "source": "New York",
+          "target": "databaseINBOX",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "databaseINBOX",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "databaseINBOX",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Sefer Yetsirah",
+          "source": "Sefer Yetsirah",
+          "target": "databaseINBOX",
+          "weight": 49
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Sefer Yetzirah",
+          "source": "Sefer Yetzirah",
+          "target": "databaseINBOX",
+          "weight": 36
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Sefer Yezirah",
+          "source": "Sefer Yezirah",
+          "target": "databaseINBOX",
+          "weight": 23
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_The Book",
+          "source": "The Book",
+          "target": "databaseINBOX",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_databaseINBOX_Thomas Aquinas",
+          "source": "Thomas Aquinas",
+          "target": "databaseINBOX",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_economics marxism_New York",
+          "source": "New York",
+          "target": "economics marxism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Antoine Faivre",
+          "source": "Antoine Faivre",
+          "target": "esoteric studies",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "esoteric studies",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Clarendon Press",
+          "source": "Clarendon Press",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Corpus Hermeticum",
+          "source": "Corpus Hermeticum",
+          "target": "esoteric studies",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Frances Yates",
+          "source": "Frances Yates",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Giordano Bruno",
+          "source": "Giordano Bruno",
+          "target": "esoteric studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Giovanni Pico",
+          "source": "Giovanni Pico",
+          "target": "esoteric studies",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "esoteric studies",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Ibn Arabi",
+          "source": "Ibn Arabi",
+          "target": "esoteric studies",
+          "weight": 19
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "esoteric studies",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Middle Ages",
+          "source": "Middle Ages",
+          "target": "esoteric studies",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "esoteric studies",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Sefer Yetzirah",
+          "source": "Sefer Yetzirah",
+          "target": "esoteric studies",
+          "weight": 32
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Sefer Yezirah",
+          "source": "Sefer Yezirah",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_The Book",
+          "source": "The Book",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Thomas Aquinas",
+          "source": "Thomas Aquinas",
+          "target": "esoteric studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Western Esotericism",
+          "source": "Western Esotericism",
+          "target": "esoteric studies",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_esoteric studies_Wouter Hanegraaff",
+          "source": "Wouter Hanegraaff",
+          "target": "esoteric studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_Associate Professor",
+          "source": "Associate Professor",
+          "target": "game studies",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_British Library",
+          "source": "British Library",
+          "target": "game studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_Congress Cataloging",
+          "source": "Congress Cataloging",
+          "target": "game studies",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_Los Angeles",
+          "source": "Los Angeles",
+          "target": "game studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_Publication Data",
+          "source": "Publication Data",
+          "target": "game studies",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_Science Fiction",
+          "source": "Science Fiction",
+          "target": "game studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_The Art",
+          "source": "The Art",
+          "target": "game studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_United Kingdom",
+          "source": "United Kingdom",
+          "target": "game studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_game studies_United States",
+          "source": "United States",
+          "target": "game studies",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hermetic_America\nStable",
+          "source": "America\nStable",
+          "target": "hermetic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hermetic_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "hermetic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hermetic_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "hermetic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hermetic_Los Angeles",
+          "source": "Los Angeles",
+          "target": "hermetic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_history of science_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "history of science",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_history philosophy_Cambridge Companions Online",
+          "source": "Cambridge Companions Online",
+          "target": "history philosophy",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_history philosophy_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "history philosophy",
+          "weight": 22
+        }
+      },
+      {
+        "data": {
+          "id": "rel_history philosophy_Middle Ages",
+          "source": "Middle Ages",
+          "target": "history philosophy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_history philosophy_New York",
+          "source": "New York",
+          "target": "history philosophy",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Chicago Press",
+          "source": "Chicago Press",
+          "target": "hp emblems",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Courtauld Institutes",
+          "source": "Courtauld Institutes",
+          "target": "hp emblems",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Francesco Colonna",
+          "source": "Francesco Colonna",
+          "target": "hp emblems",
+          "weight": 20
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Full Terms",
+          "source": "Full Terms",
+          "target": "hp emblems",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Hypnerotomachia Poliphili",
+          "source": "Hypnerotomachia Poliphili",
+          "target": "hp emblems",
+          "weight": 45
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Middle Ages",
+          "source": "Middle Ages",
+          "target": "hp emblems",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Mortimer House",
+          "source": "Mortimer House",
+          "target": "hp emblems",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Mortimer Street",
+          "source": "Mortimer Street",
+          "target": "hp emblems",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_New Haven",
+          "source": "New Haven",
+          "target": "hp emblems",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_New York",
+          "source": "New York",
+          "target": "hp emblems",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_New York University",
+          "source": "New York University",
+          "target": "hp emblems",
+          "weight": 21
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Renaissance Quarterly",
+          "source": "Renaissance Quarterly",
+          "target": "hp emblems",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Renaissance Society",
+          "source": "Renaissance Society",
+          "target": "hp emblems",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_The Book",
+          "source": "The Book",
+          "target": "hp emblems",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_The Hypnerotomachia Poliphili",
+          "source": "The Hypnerotomachia Poliphili",
+          "target": "hp emblems",
+          "weight": 23
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_The University",
+          "source": "The University",
+          "target": "hp emblems",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Wales Registered Number",
+          "source": "Wales Registered Number",
+          "target": "hp emblems",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_hp emblems_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "hp emblems",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_British Library",
+          "source": "British Library",
+          "target": "learning",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_Congress Cataloging",
+          "source": "Congress Cataloging",
+          "target": "learning",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_New York",
+          "source": "New York",
+          "target": "learning",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_Publication Data",
+          "source": "Publication Data",
+          "target": "learning",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_State University",
+          "source": "State University",
+          "target": "learning",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_United Kingdom",
+          "source": "United Kingdom",
+          "target": "learning",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_learning_United States",
+          "source": "United States",
+          "target": "learning",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Associate Professor",
+          "source": "Associate Professor",
+          "target": "magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Claire Fanger",
+          "source": "Claire Fanger",
+          "target": "magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Middle Ages",
+          "source": "Middle Ages",
+          "target": "magic",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_magic_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_medieval magic_Claire Fanger",
+          "source": "Claire Fanger",
+          "target": "medieval magic",
+          "weight": 11
+        }
+      },
+      {
+        "data": {
+          "id": "rel_medieval studies medieval philosophy_Middle Ages",
+          "source": "Middle Ages",
+          "target": "medieval studies medieval philosophy",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_music_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "music",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_music_New York",
+          "source": "New York",
+          "target": "music",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_music_United Kingdom",
+          "source": "United Kingdom",
+          "target": "music",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_British Library",
+          "source": "British Library",
+          "target": "narrative and instructional design",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_Congress Cataloging",
+          "source": "Congress Cataloging",
+          "target": "narrative and instructional design",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_New York",
+          "source": "New York",
+          "target": "narrative and instructional design",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_Publication Data",
+          "source": "Publication Data",
+          "target": "narrative and instructional design",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_United Kingdom",
+          "source": "United Kingdom",
+          "target": "narrative and instructional design",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_narrative and instructional design_United States",
+          "source": "United States",
+          "target": "narrative and instructional design",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Associate Professor",
+          "source": "Associate Professor",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Cambridge Companions Online",
+          "source": "Cambridge Companions Online",
+          "target": "neoplatonism",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "neoplatonism",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "neoplatonism",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Chaldean Oracles",
+          "source": "Chaldean Oracles",
+          "target": "neoplatonism",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Chicago Press",
+          "source": "Chicago Press",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Clarendon Press",
+          "source": "Clarendon Press",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Franz Steiner Verlag",
+          "source": "Franz Steiner Verlag",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "neoplatonism",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Late Antiquity",
+          "source": "Late Antiquity",
+          "target": "neoplatonism",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Middle Ages",
+          "source": "Middle Ages",
+          "target": "neoplatonism",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_New York",
+          "source": "New York",
+          "target": "neoplatonism",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Review \nAuthor",
+          "source": "Review \nAuthor",
+          "target": "neoplatonism",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_State University",
+          "source": "State University",
+          "target": "neoplatonism",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_The History",
+          "source": "The History",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_The University",
+          "source": "The University",
+          "target": "neoplatonism",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_Trinity College",
+          "source": "Trinity College",
+          "target": "neoplatonism",
+          "weight": 13
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_United Kingdom",
+          "source": "United Kingdom",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_neoplatonism_University Press",
+          "source": "University Press",
+          "target": "neoplatonism",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_philosophy_New York",
+          "source": "New York",
+          "target": "philosophy",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_philosophy_New York University",
+          "source": "New York University",
+          "target": "philosophy",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_pkd_Science Fiction",
+          "source": "Science Fiction",
+          "target": "pkd",
+          "weight": 14
+        }
+      },
+      {
+        "data": {
+          "id": "rel_pkd_The Book",
+          "source": "The Book",
+          "target": "pkd",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Albertus Magnus",
+          "source": "Albertus Magnus",
+          "target": "renaissance magic",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_America\nStable",
+          "source": "America\nStable",
+          "target": "renaissance magic",
+          "weight": 11
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_An Introduction",
+          "source": "An Introduction",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Antoine Faivre",
+          "source": "Antoine Faivre",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Authenticated\nDownload Date",
+          "source": "Authenticated\nDownload Date",
+          "target": "renaissance magic",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Book Reviews",
+          "source": "Book Reviews",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_British Library",
+          "source": "British Library",
+          "target": "renaissance magic",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Cambridge Core",
+          "source": "Cambridge Core",
+          "target": "renaissance magic",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Cambridge University Press",
+          "source": "Cambridge University Press",
+          "target": "renaissance magic",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Chaldean Oracles",
+          "source": "Chaldean Oracles",
+          "target": "renaissance magic",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Chicago Press",
+          "source": "Chicago Press",
+          "target": "renaissance magic",
+          "weight": 29
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Congress Cataloging",
+          "source": "Congress Cataloging",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Cornelius Agrippa",
+          "source": "Cornelius Agrippa",
+          "target": "renaissance magic",
+          "weight": 20
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Corpus Hermeticum",
+          "source": "Corpus Hermeticum",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Courtauld Institutes",
+          "source": "Courtauld Institutes",
+          "target": "renaissance magic",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Early Modern Europe",
+          "source": "Early Modern Europe",
+          "target": "renaissance magic",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_English Renaissance",
+          "source": "English Renaissance",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Frances Yates",
+          "source": "Frances Yates",
+          "target": "renaissance magic",
+          "weight": 12
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Francis Bacon",
+          "source": "Francis Bacon",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Full Terms",
+          "source": "Full Terms",
+          "target": "renaissance magic",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Garry Trompf",
+          "source": "Garry Trompf",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Giordano Bruno",
+          "source": "Giordano Bruno",
+          "target": "renaissance magic",
+          "weight": 32
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Giovanni Pico",
+          "source": "Giovanni Pico",
+          "target": "renaissance magic",
+          "weight": 74
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Great Britain",
+          "source": "Great Britain",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Hermes Trismegistus",
+          "source": "Hermes Trismegistus",
+          "target": "renaissance magic",
+          "weight": 15
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Johannes Reuchlin",
+          "source": "Johannes Reuchlin",
+          "target": "renaissance magic",
+          "weight": 16
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Johannes Trithemius",
+          "source": "Johannes Trithemius",
+          "target": "renaissance magic",
+          "weight": 31
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_John Dee",
+          "source": "John Dee",
+          "target": "renaissance magic",
+          "weight": 55
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Johns Hopkins University",
+          "source": "Johns Hopkins University",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "renaissance magic",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Los Angeles",
+          "source": "Los Angeles",
+          "target": "renaissance magic",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Mark Sedgwick",
+          "source": "Mark Sedgwick",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Marsilio Ficino",
+          "source": "Marsilio Ficino",
+          "target": "renaissance magic",
+          "weight": 36
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Middle Ages",
+          "source": "Middle Ages",
+          "target": "renaissance magic",
+          "weight": 16
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Monas Hieroglyphica",
+          "source": "Monas Hieroglyphica",
+          "target": "renaissance magic",
+          "weight": 16
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Mortimer House",
+          "source": "Mortimer House",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Mortimer Street",
+          "source": "Mortimer Street",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Natural Philosophy",
+          "source": "Natural Philosophy",
+          "target": "renaissance magic",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_New Haven",
+          "source": "New Haven",
+          "target": "renaissance magic",
+          "weight": 7
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_New York",
+          "source": "New York",
+          "target": "renaissance magic",
+          "weight": 46
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Oxford University Press",
+          "source": "Oxford University Press",
+          "target": "renaissance magic",
+          "weight": 13
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Pennsylvania Press",
+          "source": "Pennsylvania Press",
+          "target": "renaissance magic",
+          "weight": 11
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Publication Data",
+          "source": "Publication Data",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Renaissance Magic",
+          "source": "Renaissance Magic",
+          "target": "renaissance magic",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Renaissance Quarterly",
+          "source": "Renaissance Quarterly",
+          "target": "renaissance magic",
+          "weight": 19
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Renaissance Society",
+          "source": "Renaissance Society",
+          "target": "renaissance magic",
+          "weight": 21
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Review \nAuthor",
+          "source": "Review \nAuthor",
+          "target": "renaissance magic",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Robert Fludd",
+          "source": "Robert Fludd",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Roger Bacon",
+          "source": "Roger Bacon",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Science Society",
+          "source": "Science Society",
+          "target": "renaissance magic",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Science Society\nStable",
+          "source": "Science Society\nStable",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_State University",
+          "source": "State University",
+          "target": "renaissance magic",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The Art",
+          "source": "The Art",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The History",
+          "source": "The History",
+          "target": "renaissance magic",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The Johns Hopkins",
+          "source": "The Johns Hopkins",
+          "target": "renaissance magic",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The Sixteenth Century",
+          "source": "The Sixteenth Century",
+          "target": "renaissance magic",
+          "weight": 18
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The Tempest",
+          "source": "The Tempest",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_The University",
+          "source": "The University",
+          "target": "renaissance magic",
+          "weight": 34
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Thomas Aquinas",
+          "source": "Thomas Aquinas",
+          "target": "renaissance magic",
+          "weight": 8
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_United States",
+          "source": "United States",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_University Press",
+          "source": "University Press",
+          "target": "renaissance magic",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Wales Registered Number",
+          "source": "Wales Registered Number",
+          "target": "renaissance magic",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "renaissance magic",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Western Esotericism",
+          "source": "Western Esotericism",
+          "target": "renaissance magic",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance magic_Wild Hunt",
+          "source": "Wild Hunt",
+          "target": "renaissance magic",
+          "weight": 20
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance studies_Congress Cataloging",
+          "source": "Congress Cataloging",
+          "target": "renaissance studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance studies_United States",
+          "source": "United States",
+          "target": "renaissance studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_renaissance studies_Warburg Institute",
+          "source": "Warburg Institute",
+          "target": "renaissance studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Antoine Faivre",
+          "source": "Antoine Faivre",
+          "target": "western esotericism religious studies",
+          "weight": 9
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Associate Professor",
+          "source": "Associate Professor",
+          "target": "western esotericism religious studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Book Reviews",
+          "source": "Book Reviews",
+          "target": "western esotericism religious studies",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_British Library",
+          "source": "British Library",
+          "target": "western esotericism religious studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Corpus Hermeticum",
+          "source": "Corpus Hermeticum",
+          "target": "western esotericism religious studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Early Modern Europe",
+          "source": "Early Modern Europe",
+          "target": "western esotericism religious studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Garry Trompf",
+          "source": "Garry Trompf",
+          "target": "western esotericism religious studies",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Great Britain",
+          "source": "Great Britain",
+          "target": "western esotericism religious studies",
+          "weight": 5
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Koninklijke Brill",
+          "source": "Koninklijke Brill",
+          "target": "western esotericism religious studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Mark Sedgwick",
+          "source": "Mark Sedgwick",
+          "target": "western esotericism religious studies",
+          "weight": 10
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Mortimer House",
+          "source": "Mortimer House",
+          "target": "western esotericism religious studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Mortimer Street",
+          "source": "Mortimer Street",
+          "target": "western esotericism religious studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_The University",
+          "source": "The University",
+          "target": "western esotericism religious studies",
+          "weight": 6
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Thomas Aquinas",
+          "source": "Thomas Aquinas",
+          "target": "western esotericism religious studies",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Wales Registered Number",
+          "source": "Wales Registered Number",
+          "target": "western esotericism religious studies",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Western Esotericism",
+          "source": "Western Esotericism",
+          "target": "western esotericism religious studies",
+          "weight": 4
+        }
+      },
+      {
+        "data": {
+          "id": "rel_western esotericism religious studies_Wouter Hanegraaff",
+          "source": "Wouter Hanegraaff",
+          "target": "western esotericism religious studies",
+          "weight": 14
+        }
+      },
+      {
+        "data": {
+          "id": "rel_witchcraft studies Hutton_Authenticated\nDownload Date",
+          "source": "Authenticated\nDownload Date",
+          "target": "witchcraft studies Hutton",
+          "weight": 3
+        }
+      },
+      {
+        "data": {
+          "id": "rel_witchcraft studies Hutton_Middle Ages",
+          "source": "Middle Ages",
+          "target": "witchcraft studies Hutton",
+          "weight": 2
+        }
+      },
+      {
+        "data": {
+          "id": "rel_witchcraft studies Hutton_New York University",
+          "source": "New York University",
+          "target": "witchcraft studies Hutton",
+          "weight": 3
+        }
+      }
+    ]
+  }
+}

@@ -330,11 +330,18 @@
             </div>
 
             <div x-show="config.features?.graph">
-                <div class="bg-white shadow sm:rounded-lg p-4">
-                    <div id="cy" class="border rounded bg-gray-50"></div>
-                    <p class="text-xs text-gray-500 mt-2 text-center">
-                        Showing connections between Topics (Blue), Documents (Gray), and Top Concepts (Green).
-                    </p>
+                <div class="bg-white shadow sm:rounded-lg overflow-hidden">
+                    <div id="cy" class="w-full h-[700px] bg-gray-50"></div>
+                </div>
+                <div
+                    class="mt-4 flex justify-between items-center text-xs text-gray-500 bg-white p-3 rounded border shadow-sm">
+                    <div class="flex gap-4">
+                        <span class="flex items-center"><span class="w-3 h-3 bg-indigo-500 rounded-full mr-2"></span>
+                            Movement (Topic)</span>
+                        <span class="flex items-center"><span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                            Entity (Figure/Scholar)</span>
+                    </div>
+                    <p>Zoom to explore connections. Scroll to zoom, drag nodes to organize.</p>
                 </div>
             </div>
         </div>
@@ -619,51 +626,57 @@
                 },
 
                 renderGraph(data) {
-                    console.log("Rendering Graph with", data.nodes.length, "nodes");
+                    const elements = data.elements || data;
+                    console.log("Rendering Graph with", elements.nodes?.length, "nodes");
+
                     this.cy = cytoscape({
                         container: document.getElementById('cy'),
-                        elements: [
-                            ...data.nodes.map(n => ({ data: n })),
-                            ...data.links.map(l => ({ data: l }))
-                        ],
+                        elements: elements,
                         style: [
                             {
                                 selector: 'node',
                                 style: {
                                     'label': 'data(label)',
-                                    'font-size': 10,
+                                    'font-size': '10px',
+                                    'color': '#374151', // gray-700
                                     'text-valign': 'center',
-                                    'text-halign': 'right'
+                                    'text-halign': 'right',
+                                    'background-color': '#9CA3AF', // gray-400
+                                    'width': 'data(size)',
+                                    'height': 'data(size)',
+                                    'text-margin-x': 5
                                 }
                             },
                             {
                                 selector: 'node[type="topic"]',
-                                style: { 'background-color': '#0074D9', 'width': 30, 'height': 30 }
-                            },
-                            {
-                                selector: 'node[type="document"]',
-                                style: { 'background-color': '#AAAAAA', 'width': 10, 'height': 10, 'label': '' }
+                                style: {
+                                    'background-color': '#6366F1', // indigo-500
+                                    'font-weight': 'bold',
+                                    'text-halign': 'center'
+                                }
                             },
                             {
                                 selector: 'node[type="entity"]',
-                                style: { 'background-color': '#2ECC40', 'width': 15, 'height': 15 }
-                            },
-                            {
-                                selector: 'node[type="exchange"]',
-                                style: { 'background-color': '#FF851B', 'width': 20, 'height': 20, 'shape': 'diamond' }
+                                style: {
+                                    'background-color': '#10B981', // green-500
+                                }
                             },
                             {
                                 selector: 'edge',
                                 style: {
-                                    'width': 1,
-                                    'line-color': '#ccc',
-                                    'curve-style': 'bezier'
+                                    'width': 'data(weight) || 1',
+                                    'line-color': '#E5E7EB', // gray-200
+                                    'curve-style': 'bezier',
+                                    'opacity': 0.6
                                 }
                             }
                         ],
                         layout: {
                             name: 'cose',
-                            animate: false
+                            animate: true,
+                            randomize: true,
+                            padding: 30,
+                            nodeRepulsion: 4000
                         }
                     });
                 }
