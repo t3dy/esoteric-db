@@ -1,0 +1,275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "name": "Alexandria",
+        "era": "Antiquity",
+        "score": 10,
+        "mentions": 0,
+        "region": "Egypt",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "name": "Athens",
+        "era": "Antiquity",
+        "score": 10,
+        "mentions": 0,
+        "region": "Greece",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "name": "Rome",
+        "era": "Antiquity",
+        "score": 10,
+        "mentions": 0,
+        "region": "Italy",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2558,
+          43.7696
+        ]
+      },
+      "properties": {
+        "name": "Florence",
+        "era": "Renaissance",
+        "score": 10,
+        "mentions": 0,
+        "region": "Italy",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3155,
+          45.4408
+        ]
+      },
+      "properties": {
+        "name": "Venice",
+        "era": "Renaissance",
+        "score": 10,
+        "mentions": 0,
+        "region": "Italy",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      },
+      "properties": {
+        "name": "Prague",
+        "era": "Renaissance",
+        "score": 10,
+        "mentions": 0,
+        "region": "Bohemia",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6724,
+          49.3988
+        ]
+      },
+      "properties": {
+        "name": "Heidelberg",
+        "era": "Renaissance",
+        "score": 10,
+        "mentions": 0,
+        "region": "Germany",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      },
+      "properties": {
+        "name": "Amsterdam",
+        "era": "Enlightenment",
+        "score": 10,
+        "mentions": 0,
+        "region": "Netherlands",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1278,
+          51.5074
+        ]
+      },
+      "properties": {
+        "name": "London",
+        "era": "Enlightenment",
+        "score": 10,
+        "mentions": 0,
+        "region": "UK",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522,
+          48.8566
+        ]
+      },
+      "properties": {
+        "name": "Paris",
+        "era": "Enlightenment",
+        "score": 10,
+        "mentions": 0,
+        "region": "France",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9784,
+          41.0082
+        ]
+      },
+      "properties": {
+        "name": "Constantinople",
+        "era": "Medieval",
+        "score": 10,
+        "mentions": 0,
+        "region": "Turkey",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.3661,
+          33.3152
+        ]
+      },
+      "properties": {
+        "name": "Baghdad",
+        "era": "Medieval",
+        "score": 10,
+        "mentions": 0,
+        "region": "Iraq",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0273,
+          39.8628
+        ]
+      },
+      "properties": {
+        "name": "Toledo",
+        "era": "Medieval",
+        "score": 10,
+        "mentions": 0,
+        "region": "Spain",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2577,
+          51.752
+        ]
+      },
+      "properties": {
+        "name": "Oxford",
+        "era": "Enlightenment",
+        "score": 10,
+        "mentions": 0,
+        "region": "UK",
+        "docs": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5886,
+          47.5596
+        ]
+      },
+      "properties": {
+        "name": "Basel",
+        "era": "Renaissance",
+        "score": 10,
+        "mentions": 0,
+        "region": "Switzerland",
+        "docs": []
+      }
+    }
+  ]
+}

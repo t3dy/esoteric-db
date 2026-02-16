@@ -128,9 +128,24 @@
         if (!item) return;
 
         let url = item.route.page;
-        if (item.route.params) {
-            const params = new URLSearchParams(item.route.params).toString();
-            url += '?' + params;
+        let params = new URLSearchParams(item.route.params || {});
+
+        // V10 "Wormhole" Shared State Logic
+        // We preserve specific "Context Keys" if they exist in the current URL 
+        // AND the target page is likely to support them.
+        const contextKeys = ['topic', 'period', 'era', 'focus'];
+        const currentParams = new URLSearchParams(window.location.search);
+
+        contextKeys.forEach(key => {
+            if (currentParams.has(key) && !params.has(key)) {
+                // Heuristic: Only carry over if not explicitly overridden
+                params.set(key, currentParams.get(key));
+            }
+        });
+
+        // Construct final URL
+        if ([...params].length > 0) {
+            url += '?' + params.toString();
         }
 
         // Correct path for pages in /docs

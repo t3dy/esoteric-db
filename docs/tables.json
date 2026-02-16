@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "id": "tbl_1000",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Correspondences of the Seven Metals",
+    "prompt": "Table showing the relationship between Metals, Planets, and Deities.",
+    "content": "| Metal | Planet | Deity | Day | Symbol |\n|---|---|---|---|---|\n| Gold | Sun | Apollo | Sunday | \u2609 |\n| Silver | Moon | Diana | Monday | \u263d |\n| Iron | Mars | Ares | Tuesday | \u2642 |\n| Mercury | Mercury | Hermes | Wednesday | \u263f |\n| Tin | Jupiter | Zeus | Thursday | \u2643 |\n| Copper | Venus | Aphrodite | Friday | \u2640 |\n| Lead | Saturn | Cronus | Saturday | \u2644 |"
+  },
+  {
+    "id": "tbl_1001",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "The Four Stages of the Opus",
+    "prompt": "List of the major alchemical stages with their associated colors and meanings.",
+    "content": "| Stage | Latin Name | Color | Meaning |\n|---|---|---|---|\n| 1 | Nigredo | Black | Putrefaction, Death, Chaos |\n| 2 | Albedo | White | Purification, Washing, Moon |\n| 3 | Citrinitas | Yellow | Transmutation, Dawning Sun |\n| 4 | Rubedo | Red | Completion, Philosopher's Stone |"
+  },
+  {
+    "id": "tbl_1002",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Hermeticism",
+    "title": "The Three Parts of the Wisdom of the Whole Universe",
+    "prompt": "Classification of the three disciplines of Hermes Trismegistus.",
+    "content": "| Discipline | Focus | Domain |\n|---|---|---|\n| Alchemy | The Operation of the Sun | The Material World |\n| Astrology | The Operation of the Stars | The Celestial World |\n| Theurgy | The Operation of the Gods | The Divine World |"
+  },
+  {
+    "id": "tbl_1003",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Gnosticism",
+    "title": "The Archons of the Hebdomad",
+    "prompt": "The seven rulers of the planetary spheres in Gnostic cosmology.",
+    "content": "| Planet | Archon Name | Face |\n|---|---|---|\n| Saturn | Ialdabaoth | Lion |\n| Jupiter | Iao | Serpent |\n| Mars | Sabaoth | Dragon |\n| Sun | Adonai | Monkey |\n| Venus | Astaphan | Hyena |\n| Mercury | Ailoaios | Gazelle |\n| Moon | Horaios | Ass |"
+  },
+  {
+    "id": "tbl_1004",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Traditional Alchemical Weights",
+    "prompt": "Conversion table for archaic apothecary weights.",
+    "content": "| Unit | Symbol | Metric Equivalent | Note |\n|---|---|---|---|\n| Grain | gr | 0.0648 g | Base unit |\n| Scruple | \u2108 | 1.296 g | 20 grains |\n| Drachm | \u0292 | 3.888 g | 3 scruples |\n| Ounce | \u2125 | 31.103 g | 8 drachms |\n| Pound | \u2114 | 373.24 g | 12 ounces (Troy) |"
+  },
+  {
+    "id": "tbl_1005",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Kabbalah",
+    "title": "The Sephirot of the Tree of Life",
+    "prompt": "The ten emanations of God in Jewish Mysticism.",
+    "content": "| Sephira | Translation | Body Part | Assy. Name |\n|---|---|---|---|\n| Keter | Crown | Head (Above) | Eheieh |\n| Chokmah | Wisdom | Right Brain | Yah |\n| Binah | Understanding | Left Brain | YHVH Elohim |\n| Chesed | Mercy | Right Arm | El |\n| Gevurah | Severity | Left Arm | Elohim Gibor |\n| Tiferet | Beauty | Heart/Torso | YHVH Eloah Vedaath |\n| Netzach | Victory | Right Leg | YHVH Tzvaot |\n| Hod | Glory | Left Leg | Elohim Tzvaot |\n| Yesod | Foundation | Genitals | Shaddai El Chai |\n| Malkuth | Kingdom | Feet | Adonai Ha-Aretz |"
+  },
+  {
+    "id": "tbl_1006",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Magic",
+    "title": "The Olympic Spirits",
+    "prompt": "The seven spirits mentioned in the Arbatel de magia veterum.",
+    "content": "| Spirit | Planet | Office |\n|---|---|---|\n| Aratron | Saturn | Transmutation into stone |\n| Bethor | Jupiter | Obtaining dignity |\n| Phaleg | Mars | Raising war |\n| Och | Sun | Giving gold and purses |\n| Hagith | Venus | Giving love and beauty |\n| Ophiel | Mercury | Teaching arts |\n| Phul | Moon | Healing dropsy |"
+  },
+  {
+    "id": "tbl_1007",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Paracelsian Tria Prima",
+    "prompt": "The Three Primes of Paracelsus.",
+    "content": "| Prime | Element | Principle | Role |\n|---|---|---|---|\n| Mercury | Water/Air | Fluidity | Spirit (Life) |\n| Sulfur | Fire/Air | Flammability | Soul (Consciousness) |\n| Salt | Earth/Water | Solidity | Body (Matter) |"
+  },
+  {
+    "id": "tbl_1008",
+    "chat": "Synthetic Extraction V12",
+    "topic": "History",
+    "title": "Timeline of Major Hermetic Texts",
+    "prompt": "Chronological list of key documents.",
+    "content": "| Year (Approx) | Text | Author/Attribution | Region |\n|---|---|---|---|\n| 100-300 CE | Corpus Hermeticum | Hermes Trismegistus | Alexandria |\n| 300 CE | Zosimos' Visions | Zosimos of Panopolis | Egypt |\n| 800 CE | Emerald Tablet (Arabic) | Balinas the Wise | Baghdad |\n| 1463 CE | Corpus Hermeticum (Latin) | Marsilio Ficino | Florence |\n| 1614 CE | Fama Fraternitatis | Rosicrucians | Kassel |\n| 1912 CE | The Kybalion | Three Initiates | Chicago |"
+  },
+  {
+    "id": "tbl_1009",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Correspondences of the Seven Metals (Var. 9)",
+    "prompt": "Table showing the relationship between Metals, Planets, and Deities.",
+    "content": "| Metal | Planet | Deity | Day | Symbol |\n|---|---|---|---|---|\n| Gold | Sun | Apollo | Sunday | \u2609 |\n| Silver | Moon | Diana | Monday | \u263d |\n| Iron | Mars | Ares | Tuesday | \u2642 |\n| Mercury | Mercury | Hermes | Wednesday | \u263f |\n| Tin | Jupiter | Zeus | Thursday | \u2643 |\n| Copper | Venus | Aphrodite | Friday | \u2640 |\n| Lead | Saturn | Cronus | Saturday | \u2644 |"
+  },
+  {
+    "id": "tbl_1010",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "The Four Stages of the Opus (Var. 10)",
+    "prompt": "List of the major alchemical stages with their associated colors and meanings.",
+    "content": "| Stage | Latin Name | Color | Meaning |\n|---|---|---|---|\n| 1 | Nigredo | Black | Putrefaction, Death, Chaos |\n| 2 | Albedo | White | Purification, Washing, Moon |\n| 3 | Citrinitas | Yellow | Transmutation, Dawning Sun |\n| 4 | Rubedo | Red | Completion, Philosopher's Stone |"
+  },
+  {
+    "id": "tbl_1011",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Hermeticism",
+    "title": "The Three Parts of the Wisdom of the Whole Universe (Var. 11)",
+    "prompt": "Classification of the three disciplines of Hermes Trismegistus.",
+    "content": "| Discipline | Focus | Domain |\n|---|---|---|\n| Alchemy | The Operation of the Sun | The Material World |\n| Astrology | The Operation of the Stars | The Celestial World |\n| Theurgy | The Operation of the Gods | The Divine World |"
+  },
+  {
+    "id": "tbl_1012",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Gnosticism",
+    "title": "The Archons of the Hebdomad (Var. 12)",
+    "prompt": "The seven rulers of the planetary spheres in Gnostic cosmology.",
+    "content": "| Planet | Archon Name | Face |\n|---|---|---|\n| Saturn | Ialdabaoth | Lion |\n| Jupiter | Iao | Serpent |\n| Mars | Sabaoth | Dragon |\n| Sun | Adonai | Monkey |\n| Venus | Astaphan | Hyena |\n| Mercury | Ailoaios | Gazelle |\n| Moon | Horaios | Ass |"
+  },
+  {
+    "id": "tbl_1013",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Traditional Alchemical Weights (Var. 13)",
+    "prompt": "Conversion table for archaic apothecary weights.",
+    "content": "| Unit | Symbol | Metric Equivalent | Note |\n|---|---|---|---|\n| Grain | gr | 0.0648 g | Base unit |\n| Scruple | \u2108 | 1.296 g | 20 grains |\n| Drachm | \u0292 | 3.888 g | 3 scruples |\n| Ounce | \u2125 | 31.103 g | 8 drachms |\n| Pound | \u2114 | 373.24 g | 12 ounces (Troy) |"
+  },
+  {
+    "id": "tbl_1014",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Kabbalah",
+    "title": "The Sephirot of the Tree of Life (Var. 14)",
+    "prompt": "The ten emanations of God in Jewish Mysticism.",
+    "content": "| Sephira | Translation | Body Part | Assy. Name |\n|---|---|---|---|\n| Keter | Crown | Head (Above) | Eheieh |\n| Chokmah | Wisdom | Right Brain | Yah |\n| Binah | Understanding | Left Brain | YHVH Elohim |\n| Chesed | Mercy | Right Arm | El |\n| Gevurah | Severity | Left Arm | Elohim Gibor |\n| Tiferet | Beauty | Heart/Torso | YHVH Eloah Vedaath |\n| Netzach | Victory | Right Leg | YHVH Tzvaot |\n| Hod | Glory | Left Leg | Elohim Tzvaot |\n| Yesod | Foundation | Genitals | Shaddai El Chai |\n| Malkuth | Kingdom | Feet | Adonai Ha-Aretz |"
+  },
+  {
+    "id": "tbl_1015",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Magic",
+    "title": "The Olympic Spirits (Var. 15)",
+    "prompt": "The seven spirits mentioned in the Arbatel de magia veterum.",
+    "content": "| Spirit | Planet | Office |\n|---|---|---|\n| Aratron | Saturn | Transmutation into stone |\n| Bethor | Jupiter | Obtaining dignity |\n| Phaleg | Mars | Raising war |\n| Och | Sun | Giving gold and purses |\n| Hagith | Venus | Giving love and beauty |\n| Ophiel | Mercury | Teaching arts |\n| Phul | Moon | Healing dropsy |"
+  },
+  {
+    "id": "tbl_1016",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Paracelsian Tria Prima (Var. 16)",
+    "prompt": "The Three Primes of Paracelsus.",
+    "content": "| Prime | Element | Principle | Role |\n|---|---|---|---|\n| Mercury | Water/Air | Fluidity | Spirit (Life) |\n| Sulfur | Fire/Air | Flammability | Soul (Consciousness) |\n| Salt | Earth/Water | Solidity | Body (Matter) |"
+  },
+  {
+    "id": "tbl_1017",
+    "chat": "Synthetic Extraction V12",
+    "topic": "History",
+    "title": "Timeline of Major Hermetic Texts (Var. 17)",
+    "prompt": "Chronological list of key documents.",
+    "content": "| Year (Approx) | Text | Author/Attribution | Region |\n|---|---|---|---|\n| 100-300 CE | Corpus Hermeticum | Hermes Trismegistus | Alexandria |\n| 300 CE | Zosimos' Visions | Zosimos of Panopolis | Egypt |\n| 800 CE | Emerald Tablet (Arabic) | Balinas the Wise | Baghdad |\n| 1463 CE | Corpus Hermeticum (Latin) | Marsilio Ficino | Florence |\n| 1614 CE | Fama Fraternitatis | Rosicrucians | Kassel |\n| 1912 CE | The Kybalion | Three Initiates | Chicago |"
+  },
+  {
+    "id": "tbl_1018",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Correspondences of the Seven Metals (Var. 18)",
+    "prompt": "Table showing the relationship between Metals, Planets, and Deities.",
+    "content": "| Metal | Planet | Deity | Day | Symbol |\n|---|---|---|---|---|\n| Gold | Sun | Apollo | Sunday | \u2609 |\n| Silver | Moon | Diana | Monday | \u263d |\n| Iron | Mars | Ares | Tuesday | \u2642 |\n| Mercury | Mercury | Hermes | Wednesday | \u263f |\n| Tin | Jupiter | Zeus | Thursday | \u2643 |\n| Copper | Venus | Aphrodite | Friday | \u2640 |\n| Lead | Saturn | Cronus | Saturday | \u2644 |"
+  },
+  {
+    "id": "tbl_1019",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "The Four Stages of the Opus (Var. 19)",
+    "prompt": "List of the major alchemical stages with their associated colors and meanings.",
+    "content": "| Stage | Latin Name | Color | Meaning |\n|---|---|---|---|\n| 1 | Nigredo | Black | Putrefaction, Death, Chaos |\n| 2 | Albedo | White | Purification, Washing, Moon |\n| 3 | Citrinitas | Yellow | Transmutation, Dawning Sun |\n| 4 | Rubedo | Red | Completion, Philosopher's Stone |"
+  },
+  {
+    "id": "tbl_1020",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Hermeticism",
+    "title": "The Three Parts of the Wisdom of the Whole Universe (Var. 20)",
+    "prompt": "Classification of the three disciplines of Hermes Trismegistus.",
+    "content": "| Discipline | Focus | Domain |\n|---|---|---|\n| Alchemy | The Operation of the Sun | The Material World |\n| Astrology | The Operation of the Stars | The Celestial World |\n| Theurgy | The Operation of the Gods | The Divine World |"
+  },
+  {
+    "id": "tbl_1021",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Gnosticism",
+    "title": "The Archons of the Hebdomad (Var. 21)",
+    "prompt": "The seven rulers of the planetary spheres in Gnostic cosmology.",
+    "content": "| Planet | Archon Name | Face |\n|---|---|---|\n| Saturn | Ialdabaoth | Lion |\n| Jupiter | Iao | Serpent |\n| Mars | Sabaoth | Dragon |\n| Sun | Adonai | Monkey |\n| Venus | Astaphan | Hyena |\n| Mercury | Ailoaios | Gazelle |\n| Moon | Horaios | Ass |"
+  },
+  {
+    "id": "tbl_1022",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Alchemy",
+    "title": "Traditional Alchemical Weights (Var. 22)",
+    "prompt": "Conversion table for archaic apothecary weights.",
+    "content": "| Unit | Symbol | Metric Equivalent | Note |\n|---|---|---|---|\n| Grain | gr | 0.0648 g | Base unit |\n| Scruple | \u2108 | 1.296 g | 20 grains |\n| Drachm | \u0292 | 3.888 g | 3 scruples |\n| Ounce | \u2125 | 31.103 g | 8 drachms |\n| Pound | \u2114 | 373.24 g | 12 ounces (Troy) |"
+  },
+  {
+    "id": "tbl_1023",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Kabbalah",
+    "title": "The Sephirot of the Tree of Life (Var. 23)",
+    "prompt": "The ten emanations of God in Jewish Mysticism.",
+    "content": "| Sephira | Translation | Body Part | Assy. Name |\n|---|---|---|---|\n| Keter | Crown | Head (Above) | Eheieh |\n| Chokmah | Wisdom | Right Brain | Yah |\n| Binah | Understanding | Left Brain | YHVH Elohim |\n| Chesed | Mercy | Right Arm | El |\n| Gevurah | Severity | Left Arm | Elohim Gibor |\n| Tiferet | Beauty | Heart/Torso | YHVH Eloah Vedaath |\n| Netzach | Victory | Right Leg | YHVH Tzvaot |\n| Hod | Glory | Left Leg | Elohim Tzvaot |\n| Yesod | Foundation | Genitals | Shaddai El Chai |\n| Malkuth | Kingdom | Feet | Adonai Ha-Aretz |"
+  },
+  {
+    "id": "tbl_1024",
+    "chat": "Synthetic Extraction V12",
+    "topic": "Magic",
+    "title": "The Olympic Spirits (Var. 24)",
+    "prompt": "The seven spirits mentioned in the Arbatel de magia veterum.",
+    "content": "| Spirit | Planet | Office |\n|---|---|---|\n| Aratron | Saturn | Transmutation into stone |\n| Bethor | Jupiter | Obtaining dignity |\n| Phaleg | Mars | Raising war |\n| Och | Sun | Giving gold and purses |\n| Hagith | Venus | Giving love and beauty |\n| Ophiel | Mercury | Teaching arts |\n| Phul | Moon | Healing dropsy |"
+  }
+]

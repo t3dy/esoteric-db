@@ -1,742 +1,326 @@
 {
+  "metadata": {
+    "version": "V11",
+    "generator": "mine_lineage.py"
+  },
   "epochs": [
     {
-      "range": "1st - 3rd Century CE",
-      "label": "The Prisca Theologia",
-      "banner": "The foundational texts of the Corpus Hermeticum are written in Alexandria, synthesizing Greek philosophy with Egyptian theology.",
+      "label": "Prisca Theologia",
+      "range": "-3000 to 0",
       "themes": [
-        "Gnosis",
-        "Mind (Nous)",
-        "Regeneration"
-      ]
+        "Wisdom",
+        "Egypt",
+        "Origins"
+      ],
+      "banner": "The era of Prisca Theologia saw the rise of Wisdom and the preservation of the Tradition through Origins."
     },
     {
-      "range": "1460 - 1600 CE",
-      "label": "The Renaissance Restoration",
-      "banner": "The Corpus is brought to Florence. Ficino translates it, sparking a wildfire of magical humanism across Europe.",
+      "label": "Late Antiquity",
+      "range": "100 to 500",
       "themes": [
-        "Natural Magic",
-        "Cabala",
-        "prisca theologia"
-      ]
+        "Gnosis",
+        "Alexandria",
+        "Theurgy"
+      ],
+      "banner": "The era of Late Antiquity saw the rise of Gnosis and the preservation of the Tradition through Theurgy."
+    },
+    {
+      "label": "Medieval",
+      "range": "500 to 1400",
+      "themes": [
+        "Alchemy",
+        "Arabia",
+        "Preservation"
+      ],
+      "banner": "The era of Medieval saw the rise of Alchemy and the preservation of the Tradition through Preservation."
+    },
+    {
+      "label": "Renaissance",
+      "range": "1400 to 1600",
+      "themes": [
+        "Rebirth",
+        "Florence",
+        "Magic"
+      ],
+      "banner": "The era of Renaissance saw the rise of Rebirth and the preservation of the Tradition through Magic."
+    },
+    {
+      "label": "Enlightenment",
+      "range": "1600 to 1800",
+      "themes": [
+        "Rosicrucian",
+        "Science",
+        "Masonry"
+      ],
+      "banner": "The era of Enlightenment saw the rise of Rosicrucian and the preservation of the Tradition through Masonry."
+    },
+    {
+      "label": "Modern",
+      "range": "1800 to Present",
+      "themes": [
+        "Occult Revival",
+        "Psychology",
+        "Technology"
+      ],
+      "banner": "The era of Modern saw the rise of Occult Revival and the preservation of the Tradition through Technology."
     }
   ],
   "nodes": [
     {
-      "id": "886",
-      "label": "From Hermes Trismegistus",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "1160",
-      "label": "Marsilio \nFicino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "1667",
-      "label": "Marsilio Ficino",
-      "period": "Unknown Epoch",
-      "type": "Figure"
-    },
-    {
-      "id": "1977",
-      "label": "Hermes Trismegistus",
-      "period": "Unknown Epoch",
-      "type": "Figure"
-    },
-    {
-      "id": "2993",
-      "label": "Giordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Figure"
-    },
-    {
-      "id": "4867",
-      "label": "Italian Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "5048",
-      "label": "Hermes\n Trismegistus",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "5523",
-      "label": "Her Giordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "6498",
-      "label": "From Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "8495",
-      "label": "Quellen Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "8508",
-      "label": "Brunos Schriften",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "9083",
-      "label": "Giordano Bruno Teaches",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "9481",
-      "label": "Hermes Mercurius Trismegistus",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "9537",
-      "label": "Bruno Tremblay",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "13402",
-      "label": "Hermes\nTrismegistus",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "15842",
-      "label": "Hermes Trismegistus Religions",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "15849",
-      "label": "Hermes Trismegistus\nThe",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "18536",
-      "label": "Bruno Taut",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "20139",
-      "label": "Bruno Latour\nThis",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "20140",
-      "label": "Bruno Latour",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "22401",
-      "label": "Bruno Snell",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "24081",
-      "label": "Guide  Giordano  Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "24478",
-      "label": "In Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "24828",
-      "label": "For Giordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25682",
-      "label": "Rethinking \nGiordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25702",
-      "label": "Biggemann\nGiordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25703",
-      "label": "Giordano \nBruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25712",
-      "label": "Schriften \nGiordano Brunos",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25713",
-      "label": "Giordano Brunos",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25716",
-      "label": "Philosophie Giordano Brunos",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25717",
-      "label": "Rethinking Giordano Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25814",
-      "label": "Giordano Bruno\nTranslated",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25818",
-      "label": "Giordano Bruno\n  \nThe",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25826",
-      "label": "Filippo Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25858",
-      "label": "Giordano Bruno Brill",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25868",
-      "label": "Giordano Bruno\nThe",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25900",
-      "label": "In Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25942",
-      "label": "Discussing Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25972",
-      "label": "Literature\nBruno Ferraro",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25975",
-      "label": "Bruno Ferraro",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "25990",
-      "label": "Giordano\nBruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "26462",
-      "label": "But \nFicino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "26669",
-      "label": "Like Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "27346",
-      "label": "Publication Data \nFicino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "27994",
-      "label": "Whether \nFicino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28489",
-      "label": "Schon Marsilio Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28492",
-      "label": "Ficinos Brief",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28493",
-      "label": "Ficino Karl",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28536",
-      "label": "Marsilio\nFicinos",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28558",
-      "label": "For Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "28559",
-      "label": "Galilean Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "29070",
-      "label": "The Second Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "29094",
-      "label": "Second Ficino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "29543",
-      "label": "Hermes Trismegistuspresumed",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "29628",
-      "label": "From\nFicino",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "29650",
-      "label": "Werke Brunos",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "32258",
-      "label": "Eroici Furori Bruno",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "35432",
-      "label": "Bruno Schulz",
-      "period": "Unknown Epoch",
-      "type": "Entity"
-    },
-    {
-      "id": "36125",
-      "label": "Hermetic",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36128",
-      "label": "Corpus",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36130",
-      "label": "Marti",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36132",
-      "label": "Studies",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36133",
-      "label": "Iamblichus",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36134",
-      "label": "Hermeticum",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36135",
-      "label": "Aristides",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36136",
-      "label": "Hermetica",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36138",
+      "id": "Thoth",
       "label": "Thoth",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "period": "Prisca Theologia",
+      "attributes": "{\"quote\": \"The lips of wisdom are closed, except to the ears of Understanding.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36142",
-      "label": "Hermetism",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Hermes",
+      "label": "Hermes Trismegistus",
+      "period": "Late Antiquity",
+      "attributes": "{\"quote\": \"As above, so below.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36143",
-      "label": "Makarius",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36147",
-      "label": "Trismegistus",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36148",
-      "label": "Hammadi",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36149",
-      "label": "Journal",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36150",
-      "label": "Religion",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36151",
-      "label": "Augustine",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36152",
-      "label": "Tradition",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36154",
-      "label": "Ptolemy",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36155",
-      "label": "Byzantine",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36156",
-      "label": "Athens",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36157",
-      "label": "Myst",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36158",
-      "label": "Leiden",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36160",
-      "label": "Ermete",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36161",
-      "label": "Western",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36162",
+      "id": "Plato",
       "label": "Plato",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "period": "Antiquity",
+      "attributes": "{\"quote\": \"Time is the moving image of eternity.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36163",
-      "label": "Ficino",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Plotinus",
+      "label": "Plotinus",
+      "period": "Late Antiquity",
+      "attributes": "{\"quote\": \"Withdraw into yourself and look.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36164",
-      "label": "Ancient",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Iamblichus",
+      "label": "Iamblichus",
+      "period": "Late Antiquity",
+      "attributes": "{\"quote\": \"Theurgy is the signature of the gods.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36165",
-      "label": "Apuleio",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Zosimos",
+      "label": "Zosimos of Panopolis",
+      "period": "Late Antiquity",
+      "attributes": "{\"quote\": \"The composition of waters.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36167",
-      "label": "Oxford",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Jabir",
+      "label": "Jabir ibn Hayyan",
+      "period": "Medieval",
+      "attributes": "{\"quote\": \"He who has not studied has not reached the goal.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36168",
-      "label": "Porphyry",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Avicenna",
+      "label": "Ibn Sina",
+      "period": "Medieval",
+      "attributes": "{\"quote\": \"The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36169",
-      "label": "Antiquity",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Albertus",
+      "label": "Albertus Magnus",
+      "period": "Medieval",
+      "attributes": "{\"quote\": \"Experiment is the only safe guide in such investigations.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36170",
-      "label": "Athenian",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "RogerBacon",
+      "label": "Roger Bacon",
+      "period": "Medieval",
+      "attributes": "{\"quote\": \"For the things of this world cannot be made known without a knowledge of mathematics.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36171",
-      "label": "Late",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Ficino",
+      "label": "Marsilio Ficino",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"Love is the knot and link of the world.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36172",
-      "label": "Quispel",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Pico",
+      "label": "Giovanni Pico della Mirandola",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"I have read in the records of the Arabians...\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36173",
-      "label": "Fowden",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Agrippa",
+      "label": "Heinrich Cornelius Agrippa",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"All things in the world are connected.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36174",
-      "label": "Brill",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Paracelsus",
+      "label": "Paracelsus",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"The dose makes the poison.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36175",
-      "label": "Delp",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Bruno",
+      "label": "Giordano Bruno",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"The universe is infinite.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36176",
-      "label": "Rome",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Dee",
+      "label": "John Dee",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"The visible world is created by the invisible.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36177",
-      "label": "Revue",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Khunrath",
+      "label": "Heinrich Khunrath",
+      "period": "Renaissance",
+      "attributes": "{\"quote\": \"What good is a torch specifically for the blind?\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36178",
-      "label": "Ulrich",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Maier",
+      "label": "Michael Maier",
+      "period": "Enlightenment",
+      "attributes": "{\"quote\": \"Like a Phoenix from the ashes.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36179",
-      "label": "Nock",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Fludd",
+      "label": "Robert Fludd",
+      "period": "Enlightenment",
+      "attributes": "{\"quote\": \"The macrocosm and the microcosm are one.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36180",
-      "label": "Herm",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Boehme",
+      "label": "Jakob Boehme",
+      "period": "Enlightenment",
+      "attributes": "{\"quote\": \"In the water lives the fish, in the fire the salamander.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36181",
-      "label": "Dreams",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Newton",
+      "label": "Isaac Newton",
+      "period": "Enlightenment",
+      "attributes": "{\"quote\": \"Truth is the offspring of silence and meditation.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36182",
-      "label": "Aquinas",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Vaughan",
+      "label": "Thomas Vaughan",
+      "period": "Enlightenment",
+      "attributes": "{\"quote\": \"Magic is nothing but the wisdom of the Creator revealed and planted in the creature.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36183",
-      "label": "Christianity",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Levi",
+      "label": "Eliphas Levi",
+      "period": "Modern",
+      "attributes": "{\"quote\": \"To know, to dare, to will, to keep silent.\", \"role\": \"Magus\"}"
     },
     {
-      "id": "36185",
-      "label": "Gnosis",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36186",
-      "label": "Schriften",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36187",
-      "label": "Copenhaver",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36188",
-      "label": "What",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36189",
-      "label": "Prof",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36190",
-      "label": "Schrift",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36191",
-      "label": "Great",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36192",
-      "label": "Corp",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36193",
-      "label": "Trinity",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36194",
-      "label": "Esotericism",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36195",
-      "label": "Manetho",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36196",
-      "label": "Michael",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36197",
-      "label": "Greeks",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
-    },
-    {
-      "id": "36198",
-      "label": "Coptic",
-      "period": "Unknown Epoch",
-      "type": "Hermetic Topic"
+      "id": "Jung",
+      "label": "Carl Jung",
+      "period": "Modern",
+      "attributes": "{\"quote\": \"Who looks outside, dreams; who looks inside, awakes.\", \"role\": \"Magus\"}"
     }
   ],
   "edges": [
     {
-      "source": "h1",
-      "target": "h2"
+      "source": "Thoth",
+      "target": "Hermes",
+      "label": "Mythic Origin"
     },
     {
-      "source": "h2",
-      "target": "h3"
+      "source": "Hermes",
+      "target": "Plato",
+      "label": "Inspiration"
     },
     {
-      "source": "h4",
-      "target": "h1"
+      "source": "Plato",
+      "target": "Plotinus",
+      "label": "Neoplatonism"
+    },
+    {
+      "source": "Plotinus",
+      "target": "Iamblichus",
+      "label": "Theurgy"
+    },
+    {
+      "source": "Hermes",
+      "target": "Zosimos",
+      "label": "Alchemy"
+    },
+    {
+      "source": "Zosimos",
+      "target": "Jabir",
+      "label": "Transmission"
+    },
+    {
+      "source": "Jabir",
+      "target": "Avicenna",
+      "label": "Science"
+    },
+    {
+      "source": "Avicenna",
+      "target": "Albertus",
+      "label": "Translation"
+    },
+    {
+      "source": "Plato",
+      "target": "Ficino",
+      "label": "Translation"
+    },
+    {
+      "source": "Hermes",
+      "target": "Ficino",
+      "label": "Corpus Hermeticum"
+    },
+    {
+      "source": "Ficino",
+      "target": "Pico",
+      "label": "Teaching"
+    },
+    {
+      "source": "Ficino",
+      "target": "Agrippa",
+      "label": "Influence"
+    },
+    {
+      "source": "Ficino",
+      "target": "Paracelsus",
+      "label": "Reaction"
+    },
+    {
+      "source": "Agrippa",
+      "target": "Dee",
+      "label": "Occult Philosophy"
+    },
+    {
+      "source": "Paracelsus",
+      "target": "Khunrath",
+      "label": "Spagyrics"
+    },
+    {
+      "source": "Dee",
+      "target": "Fludd",
+      "label": "Mathematics"
+    },
+    {
+      "source": "Paracelsus",
+      "target": "Boehme",
+      "label": "Mysticism"
+    },
+    {
+      "source": "Khunrath",
+      "target": "Maier",
+      "label": "Rosicrucianism"
+    },
+    {
+      "source": "Maier",
+      "target": "Newton",
+      "label": "Alchemy"
+    },
+    {
+      "source": "Boehme",
+      "target": "Newton",
+      "label": "Theology"
+    },
+    {
+      "source": "Agrippa",
+      "target": "Levi",
+      "label": "Revival"
+    },
+    {
+      "source": "Paracelsus",
+      "target": "Jung",
+      "label": "Psychology"
     }
   ]
 }

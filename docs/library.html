@@ -69,10 +69,25 @@
             <h1 class="text-xl font-bold flex items-center gap-2">
                 <span class="text-emerald-600">🏛</span> Scholarly Workbench
             </h1>
-            <p class="text-[10px] text-slate-400 uppercase tracking-widest">Library V8.3.2 • <a href="index.html"
-                    class="hover:text-emerald-600 transition">Return to Hub</a> • <button
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest">Library V12.0 • <button
                     @click="showInstructions = true" class="text-emerald-600 font-bold hover:underline">Help</button>
             </p>
+
+            <!-- Global Nav -->
+            <div class="hidden md:flex items-center gap-1 mt-2 border-l border-slate-200 pl-4">
+                <a href="index.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-600 hover:text-emerald-900 transition">Hub</a>
+                <a href="alchemy.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-slate-900 transition">Alchemy</a>
+                <a href="hermetic.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-slate-900 transition">Hermetic</a>
+                <a href="map.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-slate-900 transition">Atlas</a>
+                <a href="tables.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-slate-900 transition">Tables</a>
+                <a href="entities.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-slate-900 transition">Entities</a>
+            </div>
         </div>
         <div class="flex items-center gap-4">
             <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
@@ -211,6 +226,7 @@
         let activeFilters = { q: '', topic: null, period: null };
         let sortConfig = { key: 'title', direction: 'asc' };
         let activeDocId = null;
+        let activeRecs = null;
 
         async function init() {
             try {
@@ -227,6 +243,13 @@
                     renderPills(stats);
                     document.getElementById('stats-summary').innerText = `${allDocs.length} DOCS • ${stats.topics.length} TOPICS`;
                 }
+
+                try {
+                    const recRes = await fetch('recommendations.json');
+                    if (recRes.ok) {
+                        activeRecs = await recRes.json();
+                    }
+                } catch (e) { console.log('Recommendation engine offline'); }
 
                 // Handle Shared Routing Contract (V9.1)
                 if (window.omniParams) {
@@ -350,8 +373,20 @@
 
         function render(docs) {
             const tbody = document.getElementById('list');
-            tbody.innerHTML = docs.map(d => `
-                <tr onclick="openDoc('${d.id}')" class="group hover:bg-emerald-50 cursor-pointer transition">
+            const periodColors = {
+                'Ancient': 'border-l-amber-500',
+                'Late Antiquity': 'border-l-indigo-600',
+                'Medieval': 'border-l-slate-700',
+                'Renaissance': 'border-l-rose-600',
+                'Enlightenment': 'border-l-cyan-600',
+                '19th Century': 'border-l-emerald-600',
+                'Contemporary': 'border-l-violet-500'
+            };
+
+            tbody.innerHTML = docs.map(d => {
+                const borderColor = periodColors[d.period] || 'border-l-slate-300';
+                return `
+                <tr onclick="openDoc('${d.id}')" class="group hover:bg-emerald-50 cursor-pointer transition border-l-4 ${borderColor}">
                     <td class="px-6 py-4" colspan="4">
                         <div class="flex items-center justify-between">
                             <div class="font-bold text-slate-800 group-hover:text-emerald-700 text-lg serif">${d.title || d.filename}</div>
@@ -362,7 +397,7 @@
                         </div>
                     </td>
                 </tr>
-            `).join('');
+            `}).join('');
         }
 
         function openDoc(id) {
@@ -424,11 +459,12 @@
                                 <span>Check Dictionary Terms</span>
                                 <span class="text-amber-500 opacity-0 group-hover:opacity-100">📖 →</span>
                             </button>
-                            <div class="p-3 bg-slate-100 border border-slate-200 rounded-xl text-[10px] text-slate-400 font-bold flex justify-between">
-                                <span>Related Chats</span>
-                                <span class="uppercase">Private Only</span>
-                            </div>
                         </div>
+                    </div>
+
+                    <div id="recommendations-container" class="space-y-3 pt-6 border-t border-slate-100" style="display:none">
+                        <label class="text-[9px] font-black text-slate-400 uppercase tracking-widest block">Similar Texts</label>
+                        <div id="rec-list" class="space-y-2"></div>
                     </div>
 
                     <div class="border-t pt-4">
@@ -442,6 +478,65 @@
                     </div>
                 </div>
             `;
+
+            // Render Recommendations if available
+            // Note: recommendations.json is keyed by HEADWORD slug, but here we have doc.
+            // We need a reverse lookup or a doc-centric recommendation file.
+            // Build_recommendations.py built recs for DICTIONARY ENTRIES, not DOCS directly?
+            // Let's check the script again.
+            // The script output: recs[slug] = { recommended_docs: [...] }
+            // So it recommends DOCS for a TERM.
+            // To recommend DOCS for a DOC, we need to find RECS that contain THIS doc, or build a Doc-Doc graph.
+            // OR we can just show "Related Dictionary Entries" which implies related topics.
+
+            // Wait, the script logic:
+            // for entry in entries:
+            //    related_docs = find docs with headword
+            //    recs[slug] = { recommended_docs: [...] }
+
+            // So we have Term -> Docs.
+            // We want Doc -> Similar Docs.
+            // We can do this client side: Find all terms related to this doc (topic, title words), 
+            // then find other docs related to those terms.
+            // OR simpler: Just link to the Dictionary Entry for the topic.
+
+            // Let's try to find if this doc appears in any recommendation lists.
+            if (activeRecs) {
+                // Simple Heuristic: Check if doc title matches any key in recommendations? No, keys are terms.
+                // Check if doc topic has a recommendation entry
+                const topicSlug = doc.topic.toLowerCase().replace(/\s+/g, '-');
+                let relevantRecs = [];
+
+                // 1. Check direct topic match
+                if (activeRecs[topicSlug]) {
+                    relevantRecs = activeRecs[topicSlug].recommended_docs.filter(d => d.doc_id !== doc.id);
+                }
+
+                // 2. Check title words
+                if (relevantRecs.length < 3) {
+                    const words = doc.title.split(' ').filter(w => w.length > 5);
+                    for (const w of words) {
+                        const s = w.toLowerCase();
+                        if (activeRecs[s]) {
+                            relevantRecs.push(...activeRecs[s].recommended_docs.filter(d => d.doc_id !== doc.id));
+                        }
+                    }
+                }
+
+                // Dedupe
+                relevantRecs = [...new Map(relevantRecs.map(item => [item.doc_id, item])).values()].slice(0, 3);
+
+                if (relevantRecs.length > 0) {
+                    document.getElementById('recommendations-container').style.display = 'block';
+                    document.getElementById('rec-list').innerHTML = relevantRecs.map(r => `
+                        <div onclick="openDoc('${r.doc_id}')" class="p-3 bg-indigo-50 border border-indigo-100 rounded-lg cursor-pointer hover:bg-indigo-100 transition">
+                            <div class="text-xs font-bold text-indigo-900 leading-tight">${r.title}</div>
+                            <div class="text-[9px] text-indigo-400 mt-1 uppercase tracking-wide">High Relevance</div>
+                        </div>
+                     `).join('');
+                }
+            }
+
         }
 
         function closeDrawer() {

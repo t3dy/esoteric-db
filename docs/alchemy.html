@@ -4,51 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esoteric DB - Alchemy Workbench</title>
+    <title>The Alchemical Opus | Esoteric Seed</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <script src="assets/omni_search.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                        display: ['Cinzel', 'serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
             background-color: #0f172a;
-            color: #f8fafc;
-            overflow-x: hidden;
-        }
-
-        .serif {
-            font-family: 'Crimson Pro', serif;
-        }
-
-        #drawer {
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateX(100%);
-        }
-
-        #drawer.open {
-            transform: translateX(0);
-        }
-
-        .pill {
-            @apply px-3 py-1 rounded-full text-[10px] font-bold border transition cursor-pointer whitespace-nowrap uppercase tracking-tighter;
-        }
-
-        .pill-active {
-            @apply bg-amber-600 text-white border-amber-600 shadow-lg shadow-amber-900/40;
-        }
-
-        .pill-inactive {
-            @apply bg-slate-800 text-slate-400 border-slate-700 hover:border-amber-500 hover:text-amber-400;
         }
 
         .glass {
-            background: rgba(30, 41, 59, 0.7);
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
+        .glow-amber {
+            box-shadow: 0 0 40px -10px rgba(245, 158, 11, 0.1);
+        }
+
+        /* Custom Scrollbar for Drawer */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -59,214 +50,247 @@
 
         ::-webkit-scrollbar-thumb {
             background: #334155;
-            border-radius: 10px;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .drawer {
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .drawer.open {
+            transform: translateX(0);
         }
     </style>
 </head>
 
-<body class="flex flex-col h-screen overflow-hidden">
+<body class="text-slate-300 min-h-screen bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]">
 
-    <!-- Header -->
-    <header class="glass px-8 py-5 flex items-center justify-between z-10" x-data="{ showInstructions: false }">
-        <div>
-            <h1 class="text-2xl font-black flex items-center gap-3">
-                <span class="text-amber-500">🧪</span> Alchemy Workbench
-            </h1>
-            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Alchemical Opus • <a
-                    href="index.html" class="hover:text-amber-500 transition">Return to Hub</a> • <button
-                    @click="showInstructions = true" class="text-amber-500 hover:underline">Help</button></p>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-2xl hover:scale-110 transition" title="Return to Hub">💠</a>
+                <div>
+                    <h1 class="font-display text-xl tracking-widest text-amber-500">ALCHEMIA</h1>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-slate-500">The Great Work</div>
+                </div>
+                <!-- Global Nav -->
+                <div class="hidden md:flex items-center gap-1 ml-4 border-l border-white/10 pl-4">
+                    <a href="library.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Library</a>
+                    <a href="hermetic.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Hermetic</a>
+                    <a href="map.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Atlas</a>
+                    <a href="tables.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Tables</a>
+                    <a href="entities.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Entities</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex gap-1 bg-black/20 p-1 rounded-lg">
+                    <button onclick="setMode('docs')" id="btn-docs"
+                        class="px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition bg-slate-800 text-white shadow-lg">Manuscripts</button>
+                    <button onclick="setMode('entities')" id="btn-entities"
+                        class="px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition text-slate-500 hover:text-white hover:bg-white/5">Entities</button>
+                </div>
+                <div id="stats-pill"
+                    class="text-xs font-mono text-amber-500/60 border border-amber-500/20 px-3 py-1 rounded-full">
+                    Loading Data...
+                </div>
+            </div>
         </div>
-        <div class="flex bg-slate-900/50 p-1 rounded-xl border border-white/5">
-            <button id="btn-docs" onclick="setMode('docs')"
-                class="px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20">Documents</button>
-            <button id="btn-dict" onclick="setMode('dict')"
-                class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Dictionary</button>
-        </div>
+    </nav>
 
-        <!-- Onscreen Instructions (Tour Guide) -->
-        <div x-show="showInstructions" x-cloak
-            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+    <!-- Main Layout -->
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+
+        <!-- Header Section -->
+        <header class="mb-16 text-center">
+            <div class="inline-block p-4 rounded-full bg-amber-500/5 mb-6 border border-amber-500/10">
+                <span class="text-4xl">🧪</span>
+            </div>
+            <h2
+                class="text-5xl md:text-7xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-amber-100 to-amber-600 mb-6">
+                The Workbench
+            </h2>
+            <p
+                class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed border-l-2 border-amber-500/30 pl-6 italic">
+                "Separate the earth from the fire, the subtle from the gross, acting prudently and with great judgment."
+            </p>
+        </header>
+
+        <!-- Search & Filter -->
+        <div class="sticky top-24 z-40 mb-12">
             <div
-                class="bg-slate-900 rounded-[2.5rem] shadow-2xl max-w-lg w-full p-10 border border-amber-900/30 space-y-6 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-
-                <div class="flex items-center gap-4 relative">
-                    <div class="text-4xl bg-amber-900/20 p-4 rounded-2xl border border-amber-500/20">🧪</div>
-                    <div>
-                        <h2 class="text-2xl font-black serif italic text-amber-400">Alchemist's Guide</h2>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-amber-600/60">Narrative
-                            Designer's Brief</p>
-                    </div>
+                class="max-w-xl mx-auto glass rounded-2xl p-2 flex gap-2 shadow-2xl shadow-black/50 ring-1 ring-white/10">
+                <input type="text" id="search-input" placeholder="Search the Opus..."
+                    class="w-full bg-transparent border-none text-white px-4 focus:ring-0 placeholder-slate-600 font-serif text-lg">
+                <div class="flex items-center gap-2 pr-2">
+                    <kbd
+                        class="hidden md:block px-2 py-1 bg-white/5 rounded text-[10px] font-mono text-slate-500">CTRL+K</kbd>
                 </div>
-
-                <div class="space-y-4 text-slate-300 leading-relaxed text-sm font-medium">
-                    <p>Behold the <strong>Alchemy Workbench</strong>. Here, the "Silent Work" of the manuscript is
-                        cross-referenced with the "Spoken Definition" of the dictionary.</p>
-                    <ul class="space-y-3">
-                        <li class="flex gap-3">
-                            <span class="text-amber-500 font-bold">1.</span>
-                            <span><strong>Dual Mode:</strong> Toggle between <em>Documents</em> (primary sources) and
-                                <em>Dictionary</em> (lexicon of terms).</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-amber-500 font-bold">2.</span>
-                            <span><strong>Refining Filters:</strong> Use the specialized pills to filter by Material,
-                                Operation, or Scholarly Topic.</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-amber-500 font-bold">3.</span>
-                            <span><strong>The Opus:</strong> Click an entry to reveal its context drawer. From here, you
-                                can launch the associated PDF or pivot to related entities.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pt-6 border-t border-white/5 flex justify-end">
-                    <button @click="showInstructions = false"
-                        class="bg-amber-600 hover:bg-amber-500 text-white px-10 py-3 rounded-xl font-black uppercase tracking-widest transition shadow-lg shadow-amber-900/40">
-                        Begin the Work
-                    </button>
-                </div>
+            </div>
+            <!-- Dynamic Badges -->
+            <div id="filter-container" class="max-w-xl mx-auto mt-4 flex flex-wrap justify-center gap-2">
+                <!-- Populated by JS -->
             </div>
         </div>
-    </header>
 
-    <div class="flex flex-1 overflow-hidden relative">
-        <!-- Explorer (Left) -->
-        <main class="flex-1 overflow-y-auto p-10">
-            <div class="max-w-5xl mx-auto space-y-8">
+        <!-- Grid Results -->
+        <div class="flex justify-between items-end mb-6 border-b border-white/5 pb-4">
+            <h3 class="font-display text-xl text-white">Results</h3>
+            <span id="counter" class="font-mono text-xs text-amber-500">0 Items</span>
+        </div>
 
-                <!-- Filters -->
-                <div class="glass p-6 rounded-3xl space-y-6">
-                    <div class="flex gap-4">
-                        <input type="text" id="search" placeholder="Search Materials, Alchemists, or Texts..."
-                            class="flex-1 bg-slate-950/50 text-white p-4 rounded-2xl border border-white/5 focus:ring-2 focus:ring-amber-500 focus:outline-none placeholder:text-slate-600 font-medium">
-                    </div>
-
-                    <div id="filter-container">
-                        <span
-                            class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3 block">Specialized
-                            Categories</span>
-                        <div id="pills" class="flex flex-wrap gap-2">
-                            <!-- Pills injected here -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Result Counter -->
-                <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
-                    Loading esoteric data...
-                </div>
-
-                <!-- Content Grid/List -->
-                <div id="content" class="grid grid-cols-1 gap-4">
-                    <!-- Cards injected here -->
-                </div>
+        <div id="grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards go here -->
+            <div class="col-span-full text-center py-20 text-slate-600 animate-pulse">
+                Igniting Athanor...
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- Detail Drawer (Right) -->
-        <aside id="drawer"
-            class="w-[450px] glass border-l shadow-2xl z-20 overflow-y-auto flex flex-col p-10 fixed right-0 top-0 h-full">
-            <div class="flex justify-between items-start mb-10">
-                <button onclick="closeDrawer()" class="text-slate-500 hover:text-white transition text-3xl">×</button>
-                <span
-                    class="text-[10px] font-black text-amber-500 border border-amber-500/30 px-3 py-1 rounded-full uppercase tracking-tighter">Scholarly
-                    Data</span>
+    <!-- Right Drawer -->
+    <div id="drawer"
+        class="fixed inset-y-0 right-0 w-full md:w-[600px] glass border-l border-white/10 z-[60] drawer p-8 overflow-y-auto shadow-2xl shadow-black">
+        <button onclick="document.getElementById('drawer').classList.remove('open')"
+            class="absolute top-6 right-6 p-2 hover:bg-white/10 rounded-full transition text-slate-400 hover:text-white">✕</button>
+        <div id="drawer-content" class="mt-12">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+
+    <!-- Backdrop -->
+    <div onclick="document.getElementById('drawer').classList.remove('open')" id="backdrop"
+        class="fixed inset-0 bg-black/60 z-[55] hidden backdrop-blur-sm transition-opacity"></div>
+
+    <!-- Onboarding Modal -->
+    <div id="modal"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-6 hidden">
+        <div
+            class="max-w-lg w-full glass border border-amber-500/20 rounded-3xl p-10 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-900 via-amber-500 to-amber-900">
             </div>
-            <div id="drawer-content" class="space-y-10">
-                <!-- Data populated here -->
-                <div class="text-center p-20 text-slate-600">
-                    <p class="text-sm italic">Select an entry to begin research.</p>
-                </div>
-            </div>
-        </aside>
+            <div class="text-6xl mb-6">⚗️</div>
+            <h3 class="font-display text-3xl text-white mb-4">Welcome, Adept.</h3>
+            <p class="text-slate-400 leading-relaxed mb-8">
+                You have entered the <strong class="text-amber-500">Alchemy Workbench</strong>. Here you may inspect the
+                raw <em class="text-white">Manuscripts</em> or explore the extracted <em
+                    class="text-white">Entities</em> (Materials, Operations, Symbols).
+            </p>
+            <button onclick="closeModal()"
+                class="px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white font-bold uppercase tracking-widest text-xs rounded-xl shadow-lg shadow-amber-900/50 transition transform hover:scale-105">Begin
+                the Work</button>
+        </div>
     </div>
 
     <script>
-        let mode = 'docs';
         let docs = [];
         let entities = [];
-        let activeFilters = { q: '', category: null };
+        let currentMode = 'docs'; // 'docs' or 'entities'
 
+        // Init
         async function init() {
+            // Check first visit
+            if (!localStorage.getItem('visited_alchemy')) {
+                document.getElementById('modal').classList.remove('hidden');
+            }
+
             try {
-                const [dRes, sRes] = await Promise.all([
+                const [dRes, eRes] = await Promise.all([
                     fetch('docs.json'),
-                    fetch('entities.json')
+                    fetch('entities.json').catch(e => ({ json: () => [] })) // Fail gracefully if entities missing
                 ]);
 
-                if (dRes.ok) docs = (await dRes.json()).filter(d => d.topic === 'alchemy' || d.period === 'Renaissance' || (d.path && d.path.includes('alchemy')));
-                if (sRes.ok) entities = (await sRes.json()).filter(e => e.type.includes('Alchemy'));
+                docs = await dRes.json();
+                // If entities.json fails or returns HTML (404 page), fallback empty
+                try {
+                    entities = await eRes.json();
+                    if (!Array.isArray(entities)) entities = [];
+                } catch (e) { entities = []; }
 
-                renderPills();
-                applyFilters();
+                // Initial Render
+                updateStats();
+                renderAll();
+
             } catch (e) {
-                console.error(e);
+                console.error("Failed to load data:", e);
+                document.getElementById('grid-container').innerHTML = `<div class="text-red-500 col-span-full text-center">Failed to load Corpus. Is docs.json present?</div>`;
             }
         }
 
-        function setMode(newMode) {
-            mode = newMode;
-            document.getElementById('btn-docs').className = mode === 'docs' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
-            document.getElementById('btn-dict').className = mode === 'dict' ? 'px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20' : 'px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white';
-
-            activeFilters.category = null;
-            renderPills();
-            applyFilters();
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            localStorage.setItem('visited_alchemy', 'true');
         }
 
-        function renderPills() {
-            const container = document.getElementById('pills');
-            container.innerHTML = '';
+        function setMode(mode) {
+            currentMode = mode;
+            // Toggle Buttons
+            const btnDocs = document.getElementById('btn-docs');
+            const btnEnt = document.getElementById('btn-entities');
 
-            let cats = mode === 'docs'
-                ? [...new Set(docs.map(d => d.topic))]
-                : [...new Set(entities.map(e => e.type.replace('Alchemy ', '')))];
-
-            cats.forEach(cat => {
-                if (!cat) return;
-                const el = document.createElement('div');
-                el.className = `pill pill-inactive`;
-                el.innerText = cat;
-                el.onclick = () => toggleFilter(cat);
-                el.dataset.val = cat;
-                container.appendChild(el);
-            });
+            if (mode === 'docs') {
+                btnDocs.className = "px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition bg-slate-800 text-white shadow-lg";
+                btnEnt.className = "px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition text-slate-500 hover:text-white hover:bg-white/5";
+            } else {
+                btnEnt.className = "px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition bg-slate-800 text-white shadow-lg";
+                btnDocs.className = "px-4 py-1.5 rounded text-xs uppercase tracking-widest font-bold transition text-slate-500 hover:text-white hover:bg-white/5";
+            }
+            renderAll();
         }
 
-        function toggleFilter(val) {
-            activeFilters.category = activeFilters.category === val ? null : val;
-            document.querySelectorAll('.pill').forEach(p => {
-                p.className = p.dataset.val === activeFilters.category ? 'pill pill-active' : 'pill pill-inactive';
-            });
-            applyFilters();
+        function updateStats() {
+            const count = currentMode === 'docs' ? docs.length : entities.length;
+            document.getElementById('stats-pill').innerText = `Indexed: ${count}`;
         }
 
-        function applyFilters() {
-            const q = document.getElementById('search').value.toLowerCase();
-            const container = document.getElementById('content');
+        /* --- SEARCH & RENDER --- */
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', renderAll);
 
-            let data = mode === 'docs' ? docs : entities;
+        function renderAll() {
+            const query = searchInput.value.toLowerCase();
+            const data = currentMode === 'docs' ? docs : entities;
+            const container = document.getElementById('grid-container');
 
-            let filtered = data.filter(item => {
-                const nameMatch = (item.title || item.filename || item.name || '').toLowerCase().includes(q);
-                const catMatch = !activeFilters.category || (mode === 'docs' ? item.topic === activeFilters.category : item.type.includes(activeFilters.category));
-                return nameMatch && catMatch;
-            });
+            // Filter
+            const filtered = data.filter(item => {
+                const text = JSON.stringify(item).toLowerCase();
+                return text.includes(query);
+            }).slice(0, 100); // Limit render for perf
 
-            document.getElementById('counter').innerText = `${filtered.length} ${mode === 'docs' ? 'Manuscripts' : 'Entities'} Found`;
+            updateStats();
+            document.getElementById('counter').innerText = `${filtered.length} ${currentMode === 'docs' ? 'Manuscripts' : 'Entities'} Found`;
 
             container.innerHTML = filtered.map(item => `
-                <div onclick="openItem('${mode}', '${item.id || item.name}')" class="glass p-6 rounded-2xl hover:bg-slate-800/80 cursor-pointer transition flex justify-between items-center group">
-                    <div>
-                        <div class="text-xl font-bold group-hover:text-amber-400 transition serif italic">${item.title || item.filename || item.name}</div>
-                        <div class="flex items-center gap-3 mt-1">
-                            <span class="text-[9px] font-black uppercase tracking-widest text-amber-500/60">${mode === 'docs' ? (item.period || 'Renaissance') : (item.type || 'Entity')}</span>
-                            ${mode === 'docs' ? `<span class="text-[9px] text-slate-600 uppercase font-bold tracking-tighter opacity-0 group-hover:opacity-100 transition">View Manuscript Details →</span>` : ''}
+                <div onclick="openItem('${currentMode}', '${item.id || item.name}')" class="glass p-6 rounded-2xl hover:bg-slate-800/80 cursor-pointer transition flex justify-between items-start group">
+                    <div class="w-full">
+                        <div class="flex justify-between items-start">
+                            <div class="text-xl font-bold group-hover:text-amber-400 transition serif italic">
+                                <span class="text-amber-600/50 mr-2 not-italic font-mono" x-html="getSymbol(item.name || item.title)"></span>
+                                ${item.title || item.filename || item.name}
+                            </div>
+                            <div class="text-2xl opacity-50 ml-4">
+                                ${currentMode === 'entities' ? getEntityIcon(item.type) : '📄'}
+                            </div>
+                        </div>
+                        
+                        <!-- Rich Attribute Badges (Entities Only) -->
+                        ${currentMode === 'entities' && item.attributes ? renderAttributeBadges(item.attributes) : ''}
+
+                        <div class="flex items-center gap-3 mt-3">
+                            <span class="text-[9px] font-black uppercase tracking-widest text-amber-500/60">${currentMode === 'docs' ? (item.period || 'Renaissance') : (item.type || 'Entity')}</span>
+                            ${currentMode === 'docs' ? `<span class="text-[9px] text-slate-600 uppercase font-bold tracking-tighter opacity-0 group-hover:opacity-100 transition">View Manuscript Details →</span>` : ''}
                         </div>
                     </div>
-                    <div class="text-slate-600 group-hover:text-amber-500 transition text-2xl">→</div>
                 </div>
             `).join('');
         }
@@ -278,6 +302,7 @@
 
             const content = document.getElementById('drawer-content');
             document.getElementById('drawer').classList.add('open');
+            document.getElementById('backdrop').classList.remove('hidden');
 
             if (mode === 'docs') {
                 content.innerHTML = `
@@ -296,51 +321,88 @@
                                 <div class="text-sm font-bold text-slate-300">${item.period || 'Renaissance'}</div>
                             </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Scholarly Summary</label>
-                            <p class="text-sm text-slate-400 leading-relaxed italic">
-                                ${item.summary || 'This Alchemical manuscript is a vital component of the ' + item.topic + ' tradition. It details significant chemical and spiritual operations consistent with its era.'}
-                            </p>
-                        </div>
-                        <div class="border-t border-white/5 pt-8">
-                            <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-4">Relational Context</label>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="pill pill-active">${item.topic}</span>
-                                <span class="pill pill-active">${item.period}</span>
-                            </div>
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5 font-mono text-xs leading-relaxed text-slate-400">
+                            ${item.summary || 'No detailed summary available.'}
                         </div>
                     </div>
                 `;
             } else {
-                const attrs = item.attributes ? JSON.parse(item.attributes) : {};
                 content.innerHTML = `
                     <div class="space-y-8 animate-in slide-in-from-right duration-300">
                         <div class="space-y-4">
-                            <h2 class="serif text-4xl font-bold text-white leading-tight">${item.name}</h2>
-                            <div class="text-[10px] font-black text-amber-500 uppercase tracking-widest">${item.type}</div>
-                        </div>
-                        <div class="bg-amber-900/10 border border-amber-900/30 p-6 rounded-3xl space-y-4">
-                            <label class="text-[9px] font-black text-amber-500 uppercase tracking-widest block">Dictionary Definition</label>
-                            <p class="text-lg text-slate-200 leading-relaxed">
-                                ${item.name} is a fundamental concept in the alchemical corpus, often associated with ${attrs.category || 'Alchemical operations'}.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="bg-slate-900/50 p-4 rounded-2xl border border-white/5">
-                                <label class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-1">Source Record</label>
-                                <div class="text-xs font-mono text-slate-400 truncate">${attrs.source || 'Historical Compendium'}</div>
+                            <div class="flex justify-between items-start">
+                                <h2 class="serif text-4xl font-bold text-white leading-tight">${item.name}</h2>
+                                <div class="text-4xl opacity-50">${getEntityIcon(item.type)}</div>
                             </div>
+                            
+                            <!-- Rich Attributes Block -->
+                            ${item.attributes ? renderAttributeBadges(item.attributes) : ''}
+                            
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5 font-mono text-sm leading-relaxed text-slate-300">
+                                <div class="mb-4 text-xs font-bold text-amber-500 uppercase tracking-widest">Definition / Context</div>
+                                ${item.content || (item.attributes ? (JSON.parse(item.attributes).meaning || JSON.parse(item.attributes).description || 'No definition available.') : 'No detailed definition available.')}
+                            </div>
+                             ${item.attributes && JSON.parse(item.attributes).source ? `
+                            <div class="bg-slate-900/50 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                                <span class="text-[10px] uppercase tracking-widest text-slate-500">Source Text</span>
+                                <span class="text-xs font-bold text-amber-500/80 truncate max-w-[200px]">${JSON.parse(item.attributes).source}</span>
+                            </div>` : ''}
                         </div>
                     </div>
                 `;
             }
         }
 
-        function closeDrawer() {
+        // Close drawer on backdrop click
+        document.getElementById('backdrop').addEventListener('click', () => {
             document.getElementById('drawer').classList.remove('open');
+            document.getElementById('backdrop').classList.add('hidden');
+        });
+
+        // Helpers
+        function getSymbol(text) {
+            if (!text) return '✧';
+            if (text.includes('Gold')) return '☉';
+            if (text.includes('Silver')) return '☽';
+            if (text.includes('Mercur')) return '☿';
+            return '✧';
         }
 
-        document.getElementById('search').addEventListener('input', applyFilters);
+        function getEntityIcon(type) {
+            if (!type) return '✨';
+            if (type.includes('Material')) return '⚗️';
+            if (type.includes('Operation')) return '🔥';
+            if (type.includes('Symbol')) return '🐉';
+            if (type.includes('Vessel')) return '🏺';
+            return '✨';
+        }
+
+        function renderAttributeBadges(attributesJson) {
+            if (!attributesJson) return '';
+            try {
+                const attr = JSON.parse(attributesJson);
+                let html = '<div class="flex flex-wrap gap-2 mt-2">';
+
+                if (attr.phase) {
+                    html += `<span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">Phase: ${attr.phase}</span>`;
+                }
+                if (attr.danger && !attr.danger.includes('None')) {
+                    html += `<span class="text-xs font-mono text-red-400 bg-red-500/10 px-2 py-0.5 rounded border border-red-500/20">⚠ ${attr.danger}</span>`;
+                }
+                if (attr.color) {
+                    html += `<span class="text-xs font-mono text-slate-300 bg-slate-500/10 px-2 py-0.5 rounded border border-slate-500/20">Color: ${attr.color}</span>`;
+                }
+                if (attr.latin_name) {
+                    html += `<span class="text-xs font-mono text-amber-200/60 italic">${attr.latin_name}</span>`;
+                }
+
+                html += '</div>';
+                return html;
+            } catch (e) {
+                console.error("JSON Parse Error", e);
+                return '';
+            }
+        }
 
         init();
     </script>

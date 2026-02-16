@@ -154,6 +154,27 @@
                 init() {
                     this.initAtoms();
                     this.initChain();
+                    this.loadStats();
+                },
+                async loadStats() {
+                    try {
+                        const res = await fetch('stats.json');
+                        if (res.ok) {
+                            const data = await res.json();
+                            const metrics = data.metrics || [];
+
+                            const hermetic = metrics.find(m => m.name === 'Hermeticism') || { scholar_interest: 30 };
+                            const alchemy = metrics.find(m => m.name === 'Alchemy') || { scholar_interest: 85 };
+
+                            // Animate via Alpine transitions
+                            this.hermesHeight = hermetic.scholar_interest;
+                            this.paraHeight = alchemy.scholar_interest;
+
+                            this.$refs.log.innerHTML += `\n> Live Data: Hermeticism (${this.hermesHeight}%) vs Alchemy (${this.paraHeight}%) loaded.`;
+                        }
+                    } catch (e) {
+                        console.error("Stats load failed", e);
+                    }
                 },
                 spawnAtoms() {
                     const canvas = document.getElementById('atomic-canvas');
@@ -173,12 +194,13 @@
                 },
                 shiftEra(era) {
                     if (era === 'antiquity') {
-                        this.hermesHeight = 90;
-                        this.paraHeight = 40;
+                        this.hermesHeight = Math.min(100, this.hermesHeight * 1.5);
+                        this.paraHeight = Math.max(10, this.paraHeight * 0.5);
                         this.$refs.log.innerHTML += `\n> Era Shift: PRISCA THEOLOGIA restored.`;
                     } else {
-                        this.hermesHeight = 30;
-                        this.paraHeight = 85;
+                        // Reset to probable defaults if we drifted too far, or just inverse the scaling
+                        this.hermesHeight = Math.max(10, this.hermesHeight * 0.5);
+                        this.paraHeight = Math.min(100, this.paraHeight * 1.5);
                         this.$refs.log.innerHTML += `\n> Era Shift: IATROCHEMISTRY dominant.`;
                     }
                 },

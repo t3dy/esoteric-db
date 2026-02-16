@@ -68,13 +68,30 @@
 
     <!-- Header -->
     <header class="glass px-8 py-5 flex items-center justify-between z-10" x-data="{ showInstructions: true }">
-        <div>
-            <h1 class="text-2xl font-black flex items-center gap-3">
-                <span class="text-emerald-500">🏛</span> Hermetic Workbench
-            </h1>
-            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Hermetic Tradition • <a
-                    href="index.html" class="hover:text-emerald-500 transition">Return to Hub</a> • <button
-                    @click="showInstructions = true" class="text-emerald-600 hover:underline">Help</button></p>
+        <div class="flex items-center gap-6">
+            <div>
+                <h1 class="text-2xl font-black flex items-center gap-3">
+                    <span class="text-emerald-500">🏛</span> Hermetic Workbench
+                </h1>
+                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Hermetic Tradition •
+                    <button @click="showInstructions = true" class="text-emerald-600 hover:underline">Help</button>
+                </p>
+            </div>
+            <!-- Global Nav -->
+            <div class="hidden md:flex items-center gap-1 ml-4 border-l border-white/10 pl-4">
+                <a href="index.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-500 hover:text-white transition">Hub</a>
+                <a href="alchemy.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Alchemy</a>
+                <a href="library.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Library</a>
+                <a href="map.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Atlas</a>
+                <a href="tables.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Tables</a>
+                <a href="entities.html"
+                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Entities</a>
+            </div>
         </div>
         <div class="flex items-center gap-4">
             <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
@@ -266,14 +283,43 @@
             `;
 
             // Simple Node Rendering
-            nodesContainer.innerHTML = (lineageData.nodes || []).map((n, i) => `
-                <div class="absolute bg-slate-900 border border-emerald-500/40 p-4 rounded-2xl cursor-pointer hover:border-emerald-500 transition-all group" 
+            nodesContainer.innerHTML = (lineageData.nodes || []).map((n, i) => {
+                let quote = '';
+                // Try dynamic attributes first (V11)
+                try {
+                    if (n.attributes) {
+                        const attrs = JSON.parse(n.attributes);
+                        if (attrs.quote) quote = `"${attrs.quote}"`;
+                    }
+                } catch (e) { }
+
+                // Fallback to hardcoded aphorisms
+                if (!quote) {
+                    const aphorisms = {
+                        'Hermes Trismegistus': '"As above, so below."',
+                        'Thoth': '"The lips of wisdom are closed, except to the ears of Understanding."',
+                        'Marsilio Ficino': '"Love is the knot and link of the world."',
+                        'Giordano Bruno': '"The universe is infinite."',
+                        'Paracelsus': '"The dose makes the poison."',
+                        'Cornelius Agrippa': '"All things in the world are connected."',
+                        'Plato': '"Time is the moving image of eternity."'
+                    };
+                    quote = aphorisms[n.label] || '';
+                }
+
+                return `
+                <div class="absolute bg-slate-900 border border-emerald-500/40 p-4 rounded-2xl cursor-pointer hover:border-emerald-500 transition-all group z-10 hover:z-20 hover:scale-110" 
                      style="left: ${20 + (i % 3) * 30}%; top: ${20 + Math.floor(i / 3) * 30}%; transform: translate(-50%, -50%)"
                      onclick="openItem('figures', '${n.id}')">
                     <div class="text-xs font-black text-emerald-500 uppercase tracking-tighter mb-1">${n.period || 'Unknown Epoch'}</div>
                     <div class="text-sm font-bold text-white group-hover:text-emerald-400 serif italic">${n.label || 'Untitled Node'}</div>
+                    ${quote ? `<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                        <span class="bg-black/80 text-emerald-300 text-[10px] font-serif italic px-3 py-2 rounded-lg border border-emerald-500/30 block shadow-xl">
+                            ${quote}
+                        </span>
+                    </div>` : ''}
                 </div>
-            `).join('');
+            `}).join('');
 
             // Draw Edges (Simple SVG)
             svg.innerHTML = (lineageData.edges || []).map(e => `

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoteric DB - Entity Browser</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400&display=swap"
+        rel="stylesheet">
+    <script src="assets/omni_search.js"></script>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Table Styles */
+        th {
+            @apply px-4 py-3 text-left text-xs font-bold text-slate-400 uppercase tracking-wider border-b border-white/10 cursor-pointer hover:text-white transition select-none;
+        }
+
+        td {
+            @apply px-4 py-3 text-sm border-b border-white/5 text-slate-300;
+        }
+
+        tr:hover td {
+            @apply bg-white/5;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col" x-data="entityBrowser()">
+
+    <!-- Header -->
+    <header class="glass sticky top-0 z-20 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🧬</span>
+                    <div>
+                        <h1 class="font-bold text-lg leading-none">Entity Browser</h1>
+                        <p class="text-[10px] text-slate-500 uppercase tracking-widest">Master Data Index</p>
+                    </div>
+                </div>
+
+                <!-- Global Nav -->
+                <div class="hidden md:flex items-center gap-1 border-l border-white/10 pl-4">
+                    <a href="index.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Hub</a>
+                    <a href="alchemy.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Alchemy</a>
+                    <a href="hermetic.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Hermetic</a>
+                    <a href="library.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Library</a>
+                    <a href="tables.html"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Tables</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="hidden md:block text-xs text-slate-500">
+                    <span x-text="filteredEntities.length"></span> Records Found
+                </div>
+                <button @click="downloadCSV()"
+                    class="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase tracking-widest rounded-lg transition shadow-lg shadow-emerald-900/20">
+                    <span>⬇ CSV</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="max-w-7xl mx-auto px-6 py-6 w-full gap-4 flex flex-col md:flex-row">
+        <div class="relative flex-1">
+            <input type="text" x-model="search" placeholder="Search entities..."
+                class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition">
+        </div>
+        <div class="flex gap-2">
+            <select x-model="filterType"
+                class="bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 cursor-pointer">
+                <option value="">All Types</option>
+                <template x-for="t in uniqueTypes">
+                    <option :value="t" x-text="t"></option>
+                </template>
+            </select>
+            <select x-model="filterDanger"
+                class="bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 cursor-pointer">
+                <option value="">All Danger Levels</option>
+                <option value="High">High Danger</option>
+                <option value="Medium">Medium Danger</option>
+                <option value="Low">Low Danger</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Data Grid -->
+    <main class="max-w-7xl mx-auto px-6 pb-20 w-full overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr>
+                    <th @click="sortBy('name')">Name <span x-show="sortCol === 'name'"
+                            x-text="sortAsc ? '↑' : '↓'"></span></th>
+                    <th @click="sortBy('type')">Type <span x-show="sortCol === 'type'"
+                            x-text="sortAsc ? '↑' : '↓'"></span></th>
+                    <th @click="sortBy('latin')">Latin Name <span x-show="sortCol === 'latin'"
+                            x-text="sortAsc ? '↑' : '↓'"></span></th>
+                    <th @click="sortBy('phase')">Phase <span x-show="sortCol === 'phase'"
+                            x-text="sortAsc ? '↑' : '↓'"></span></th>
+                    <th @click="sortBy('danger')">Danger <span x-show="sortCol === 'danger'"
+                            x-text="sortAsc ? '↑' : '↓'"></span></th>
+                    <th class="w-1/3">Raw Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="entity in filteredEntities" :key="entity.name">
+                    <tr class="group">
+                        <td class="font-bold text-emerald-400" x-text="entity.name"></td>
+                        <td>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-white/5 border border-white/5 text-[10px] uppercase font-bold text-slate-400"
+                                x-text="entity.type"></span>
+                        </td>
+                        <td class="italic text-slate-400" x-text="entity.parsed.latin_name || '-'"></td>
+                        <td>
+                            <span class="text-xs" :class="{
+                                'text-black': entity.parsed.color === 'Black',
+                                'text-white': entity.parsed.color === 'White',
+                                'text-red-500': entity.parsed.color === 'Red',
+                                'text-amber-400': entity.parsed.color === 'Yellow'
+                             }" x-text="entity.parsed.color || '-'"></span>
+                        </td>
+                        <td>
+                            <span x-show="entity.parsed.danger && entity.parsed.danger !== 'None'"
+                                class="px-2 py-0.5 rounded font-mono text-[10px] font-bold" :class="{
+                                    'bg-red-500/20 text-red-500 border border-red-500/30': entity.parsed.danger && entity.parsed.danger.includes('High'),
+                                    'bg-amber-500/20 text-amber-500 border border-amber-500/30': entity.parsed.danger && entity.parsed.danger.includes('Medium'),
+                                    'bg-emerald-500/20 text-emerald-500 border border-emerald-500/30': entity.parsed.danger && entity.parsed.danger.includes('Low')
+                                }" x-text="entity.parsed.danger"></span>
+                            <span x-show="!entity.parsed.danger || entity.parsed.danger === 'None'"
+                                class="text-slate-600 text-xs">-</span>
+                        </td>
+                        <td>
+                            <div class="text-[10px] font-mono text-slate-500 opacity-50 group-hover:opacity-100 truncate max-w-xs"
+                                x-text="JSON.stringify(entity.parsed)"></div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div x-show="filteredEntities.length === 0" class="p-12 text-center text-slate-500">
+            No entities match your criteria.
+        </div>
+    </main>
+
+    <script>
+        function entityBrowser() {
+            return {
+                entities: [],
+                search: '',
+                filterType: '',
+                filterDanger: '',
+                sortCol: 'name',
+                sortAsc: true,
+
+                init() {
+                    fetch('entities.json')
+                        .then(res => res.json())
+                        .then(data => {
+                            // Parse the nested JSON string in 'attributes'
+                            this.entities = data.map(e => {
+                                let parsed = {};
+                                try {
+                                    parsed = typeof e.attributes === 'string' ? JSON.parse(e.attributes) : e.attributes;
+                                } catch (err) { console.error("Parse Error", err); }
+                                return { ...e, parsed };
+                            });
+                        });
+                },
+
+                get uniqueTypes() {
+                    return [...new Set(this.entities.map(e => e.type))].sort();
+                },
+
+                get filteredEntities() {
+                    return this.entities.filter(e => {
+                        const s = this.search.toLowerCase();
+                        const matchesSearch = e.name.toLowerCase().includes(s) ||
+                            (e.parsed.latin_name || '').toLowerCase().includes(s);
+                        const matchesType = this.filterType === '' || e.type === this.filterType;
+                        const matchesDanger = this.filterDanger === '' || (e.parsed.danger || '').includes(this.filterDanger);
+
+                        return matchesSearch && matchesType && matchesDanger;
+                    }).sort((a, b) => {
+                        let valA = this.getSortValue(a);
+                        let valB = this.getSortValue(b);
+
+                        if (valA < valB) return this.sortAsc ? -1 : 1;
+                        if (valA > valB) return this.sortAsc ? 1 : -1;
+                        return 0;
+                    });
+                },
+
+                getSortValue(item) {
+                    if (this.sortCol === 'name') return item.name;
+                    if (this.sortCol === 'type') return item.type;
+                    if (this.sortCol === 'latin') return item.parsed.latin_name || '';
+                    if (this.sortCol === 'phase') return item.parsed.color || '';
+                    if (this.sortCol === 'danger') return item.parsed.danger || '';
+                    return '';
+                },
+
+                sortBy(col) {
+                    if (this.sortCol === col) {
+                        this.sortAsc = !this.sortAsc;
+                    } else {
+                        this.sortCol = col;
+                        this.sortAsc = true;
+                    }
+                },
+
+                downloadCSV() {
+                    if (this.entities.length === 0) return;
+
+                    // Define CSV Headers
+                    const headers = ['Name', 'Type', 'Latin Name', 'Phase/Color', 'Danger', 'Category', 'Source'];
+
+                    // Map data to rows
+                    const rows = this.filteredEntities.map(e => [
+                        e.name,
+                        e.type,
+                        e.parsed.latin_name || '',
+                        e.parsed.color || '',
+                        e.parsed.danger || '',
+                        e.parsed.category || '',
+                        e.parsed.source || ''
+                    ]);
+
+                    // Construct CSV String
+                    const csvContent = [
+                        headers.join(','),
+                        ...rows.map(row => row.map(cell => `"${(cell || '').replace(/"/g, '""')}"`).join(','))
+                    ].join('\n');
+
+                    // Create Download Link
+                    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.setAttribute('href', url);
+                    link.setAttribute('download', 'esoteric_entities_export.csv');
+                    link.style.visibility = 'hidden';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
