@@ -1,57 +1,3742 @@
 {
   "nodes": [
     {
-      "id": "src_obrist_2012",
-      "label": "Obrist 2012",
-      "type": "Source"
+      "data": {
+        "id": "Apuleis",
+        "label": "Apuleis",
+        "type": "topic",
+        "size": 30.2
+      }
     },
     {
-      "id": "src_mahe_ipm40",
-      "label": "Mah\u00e9 IPM 40",
-      "type": "Source"
+      "data": {
+        "id": "Arthurian",
+        "label": "Arthurian",
+        "type": "topic",
+        "size": 35.4
+      }
     },
     {
-      "id": "src_abraham_1998",
-      "label": "Abraham 1998",
-      "type": "Source"
+      "data": {
+        "id": "Bataille",
+        "label": "Bataille",
+        "type": "topic",
+        "size": 30.8
+      }
+    },
+    {
+      "data": {
+        "id": "Cavendish",
+        "label": "Cavendish",
+        "type": "topic",
+        "size": 31.4
+      }
+    },
+    {
+      "data": {
+        "id": "Devil",
+        "label": "Devil",
+        "type": "topic",
+        "size": 32.0
+      }
+    },
+    {
+      "data": {
+        "id": "Digital Humanities",
+        "label": "Digital Humanities",
+        "type": "topic",
+        "size": 31.6
+      }
+    },
+    {
+      "data": {
+        "id": "Eranos",
+        "label": "Eranos",
+        "type": "topic",
+        "size": 31.2
+      }
+    },
+    {
+      "data": {
+        "id": "Game Design",
+        "label": "Game Design",
+        "type": "topic",
+        "size": 35.2
+      }
+    },
+    {
+      "data": {
+        "id": "General",
+        "label": "General",
+        "type": "topic",
+        "size": 33.0
+      }
+    },
+    {
+      "data": {
+        "id": "Grimoire",
+        "label": "Grimoire",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "Hilma af Klint",
+        "label": "Hilma af Klint",
+        "type": "topic",
+        "size": 35.8
+      }
+    },
+    {
+      "data": {
+        "id": "Idriesh Shah",
+        "label": "Idriesh Shah",
+        "type": "topic",
+        "size": 31.2
+      }
+    },
+    {
+      "data": {
+        "id": "Islamicate Chill Pills",
+        "label": "Islamicate Chill Pills",
+        "type": "topic",
+        "size": 32.8
+      }
+    },
+    {
+      "data": {
+        "id": "Margaret Jacob",
+        "label": "Margaret Jacob",
+        "type": "topic",
+        "size": 32.0
+      }
+    },
+    {
+      "data": {
+        "id": "RAW HPL PKD WSB etc misc SF",
+        "label": "RAW HPL PKD WSB etc misc SF",
+        "type": "topic",
+        "size": 32.6
+      }
+    },
+    {
+      "data": {
+        "id": "Robin Hood",
+        "label": "Robin Hood",
+        "type": "topic",
+        "size": 31.8
+      }
+    },
+    {
+      "data": {
+        "id": "Rosicrucian",
+        "label": "Rosicrucian",
+        "type": "topic",
+        "size": 31.2
+      }
+    },
+    {
+      "data": {
+        "id": "Shakespeare",
+        "label": "Shakespeare",
+        "type": "topic",
+        "size": 53.6
+      }
+    },
+    {
+      "data": {
+        "id": "Tarot",
+        "label": "Tarot",
+        "type": "topic",
+        "size": 34.4
+      }
+    },
+    {
+      "data": {
+        "id": "albertus magnus",
+        "label": "albertus magnus",
+        "type": "topic",
+        "size": 30.8
+      }
+    },
+    {
+      "data": {
+        "id": "alchemy",
+        "label": "alchemy",
+        "type": "topic",
+        "size": 79.4
+      }
+    },
+    {
+      "data": {
+        "id": "altered states",
+        "label": "altered states",
+        "type": "topic",
+        "size": 31.0
+      }
+    },
+    {
+      "data": {
+        "id": "ancient magic gnostic pgm etc",
+        "label": "ancient magic gnostic pgm etc",
+        "type": "topic",
+        "size": 38.6
+      }
+    },
+    {
+      "data": {
+        "id": "art of memory",
+        "label": "art of memory",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "blake",
+        "label": "blake",
+        "type": "topic",
+        "size": 30.6
+      }
+    },
+    {
+      "data": {
+        "id": "bohme",
+        "label": "bohme",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "book reviews unsorted",
+        "label": "book reviews unsorted",
+        "type": "topic",
+        "size": 40.8
+      }
+    },
+    {
+      "data": {
+        "id": "code social media content creation",
+        "label": "code social media content creation",
+        "type": "topic",
+        "size": 34.2
+      }
+    },
+    {
+      "data": {
+        "id": "cog sci",
+        "label": "cog sci",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "crowley",
+        "label": "crowley",
+        "type": "topic",
+        "size": 33.4
+      }
+    },
+    {
+      "data": {
+        "id": "data sci",
+        "label": "data sci",
+        "type": "topic",
+        "size": 32.4
+      }
+    },
+    {
+      "data": {
+        "id": "databaseINBOX",
+        "label": "databaseINBOX",
+        "type": "topic",
+        "size": 37.2
+      }
+    },
+    {
+      "data": {
+        "id": "design",
+        "label": "design",
+        "type": "topic",
+        "size": 30.6
+      }
+    },
+    {
+      "data": {
+        "id": "early modern",
+        "label": "early modern",
+        "type": "topic",
+        "size": 30.4
+      }
+    },
+    {
+      "data": {
+        "id": "economics marxism",
+        "label": "economics marxism",
+        "type": "topic",
+        "size": 31.2
+      }
+    },
+    {
+      "data": {
+        "id": "emblem studies",
+        "label": "emblem studies",
+        "type": "topic",
+        "size": 31.0
+      }
+    },
+    {
+      "data": {
+        "id": "esoteric studies",
+        "label": "esoteric studies",
+        "type": "topic",
+        "size": 37.8
+      }
+    },
+    {
+      "data": {
+        "id": "game studies",
+        "label": "game studies",
+        "type": "topic",
+        "size": 45.8
+      }
+    },
+    {
+      "data": {
+        "id": "games",
+        "label": "games",
+        "type": "topic",
+        "size": 30.6
+      }
+    },
+    {
+      "data": {
+        "id": "haunt",
+        "label": "haunt",
+        "type": "topic",
+        "size": 30.6
+      }
+    },
+    {
+      "data": {
+        "id": "hermetic",
+        "label": "hermetic",
+        "type": "topic",
+        "size": 34.8
+      }
+    },
+    {
+      "data": {
+        "id": "history of science",
+        "label": "history of science",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "history philosophy",
+        "label": "history philosophy",
+        "type": "topic",
+        "size": 38.4
+      }
+    },
+    {
+      "data": {
+        "id": "hp emblems",
+        "label": "hp emblems",
+        "type": "topic",
+        "size": 36.8
+      }
+    },
+    {
+      "data": {
+        "id": "kabbalah",
+        "label": "kabbalah",
+        "type": "topic",
+        "size": 31.6
+      }
+    },
+    {
+      "data": {
+        "id": "learning",
+        "label": "learning",
+        "type": "topic",
+        "size": 33.4
+      }
+    },
+    {
+      "data": {
+        "id": "magic",
+        "label": "magic",
+        "type": "topic",
+        "size": 39.0
+      }
+    },
+    {
+      "data": {
+        "id": "magic squares",
+        "label": "magic squares",
+        "type": "topic",
+        "size": 30.8
+      }
+    },
+    {
+      "data": {
+        "id": "media studies",
+        "label": "media studies",
+        "type": "topic",
+        "size": 30.6
+      }
+    },
+    {
+      "data": {
+        "id": "medieval magic",
+        "label": "medieval magic",
+        "type": "topic",
+        "size": 32.4
+      }
+    },
+    {
+      "data": {
+        "id": "medieval studies medieval philosophy",
+        "label": "medieval studies medieval philosophy",
+        "type": "topic",
+        "size": 32.2
+      }
+    },
+    {
+      "data": {
+        "id": "music",
+        "label": "music",
+        "type": "topic",
+        "size": 34.2
+      }
+    },
+    {
+      "data": {
+        "id": "narrative and instructional design",
+        "label": "narrative and instructional design",
+        "type": "topic",
+        "size": 32.8
+      }
+    },
+    {
+      "data": {
+        "id": "neoplatonism",
+        "label": "neoplatonism",
+        "type": "topic",
+        "size": 50.6
+      }
+    },
+    {
+      "data": {
+        "id": "philosophy",
+        "label": "philosophy",
+        "type": "topic",
+        "size": 35.0
+      }
+    },
+    {
+      "data": {
+        "id": "pkd",
+        "label": "pkd",
+        "type": "topic",
+        "size": 37.0
+      }
+    },
+    {
+      "data": {
+        "id": "psychedelic",
+        "label": "psychedelic",
+        "type": "topic",
+        "size": 31.8
+      }
+    },
+    {
+      "data": {
+        "id": "renaissance magic",
+        "label": "renaissance magic",
+        "type": "topic",
+        "size": 82.6
+      }
+    },
+    {
+      "data": {
+        "id": "renaissance studies",
+        "label": "renaissance studies",
+        "type": "topic",
+        "size": 33.2
+      }
+    },
+    {
+      "data": {
+        "id": "social science",
+        "label": "social science",
+        "type": "topic",
+        "size": 30.2
+      }
+    },
+    {
+      "data": {
+        "id": "western esotericism religious studies",
+        "label": "western esotericism religious studies",
+        "type": "topic",
+        "size": 44.2
+      }
+    },
+    {
+      "data": {
+        "id": "witchcraft studies Hutton",
+        "label": "witchcraft studies Hutton",
+        "type": "topic",
+        "size": 33.2
+      }
+    },
+    {
+      "data": {
+        "id": "In The",
+        "label": "In The",
+        "type": "entity",
+        "size": 12557
+      }
+    },
+    {
+      "data": {
+        "id": "The First",
+        "label": "The First",
+        "type": "entity",
+        "size": 2896
+      }
+    },
+    {
+      "data": {
+        "id": "The Soul",
+        "label": "The Soul",
+        "type": "entity",
+        "size": 2752
+      }
+    },
+    {
+      "data": {
+        "id": "The Alchemist",
+        "label": "The Alchemist",
+        "type": "entity",
+        "size": 2204
+      }
+    },
+    {
+      "data": {
+        "id": "Early Modern",
+        "label": "Early Modern",
+        "type": "entity",
+        "size": 2165
+      }
+    },
+    {
+      "data": {
+        "id": "The Role",
+        "label": "The Role",
+        "type": "entity",
+        "size": 2152
+      }
+    },
+    {
+      "data": {
+        "id": "The Philosopher",
+        "label": "The Philosopher",
+        "type": "entity",
+        "size": 1999
+      }
+    },
+    {
+      "data": {
+        "id": "The World",
+        "label": "The World",
+        "type": "entity",
+        "size": 1976
+      }
+    },
+    {
+      "data": {
+        "id": "The Idea",
+        "label": "The Idea",
+        "type": "entity",
+        "size": 1961
+      }
+    },
+    {
+      "data": {
+        "id": "The Book",
+        "label": "The Book",
+        "type": "entity",
+        "size": 1923
+      }
+    },
+    {
+      "data": {
+        "id": "The Text",
+        "label": "The Text",
+        "type": "entity",
+        "size": 1863
+      }
+    },
+    {
+      "data": {
+        "id": "The Use",
+        "label": "The Use",
+        "type": "entity",
+        "size": 1787
+      }
+    },
+    {
+      "data": {
+        "id": "The Work",
+        "label": "The Work",
+        "type": "entity",
+        "size": 1773
+      }
+    },
+    {
+      "data": {
+        "id": "The One",
+        "label": "The One",
+        "type": "entity",
+        "size": 1722
+      }
+    },
+    {
+      "data": {
+        "id": "The Sun",
+        "label": "The Sun",
+        "type": "entity",
+        "size": 1637
+      }
+    },
+    {
+      "data": {
+        "id": "Natural Philosophy",
+        "label": "Natural Philosophy",
+        "type": "entity",
+        "size": 1563
+      }
+    },
+    {
+      "data": {
+        "id": "The Concept",
+        "label": "The Concept",
+        "type": "entity",
+        "size": 1544
+      }
+    },
+    {
+      "data": {
+        "id": "The Importance",
+        "label": "The Importance",
+        "type": "entity",
+        "size": 1511
+      }
+    },
+    {
+      "data": {
+        "id": "Alchemical Texts",
+        "label": "Alchemical Texts",
+        "type": "entity",
+        "size": 1445
+      }
+    },
+    {
+      "data": {
+        "id": "Of God",
+        "label": "Of God",
+        "type": "entity",
+        "size": 1433
+      }
+    },
+    {
+      "data": {
+        "id": "His Work",
+        "label": "His Work",
+        "type": "entity",
+        "size": 1412
+      }
+    },
+    {
+      "data": {
+        "id": "The Nature",
+        "label": "The Nature",
+        "type": "entity",
+        "size": 1399
+      }
+    },
+    {
+      "data": {
+        "id": "The Body",
+        "label": "The Body",
+        "type": "entity",
+        "size": 1351
+      }
+    },
+    {
+      "data": {
+        "id": "The Game",
+        "label": "The Game",
+        "type": "entity",
+        "size": 1350
+      }
+    },
+    {
+      "data": {
+        "id": "The History",
+        "label": "The History",
+        "type": "entity",
+        "size": 1321
+      }
+    },
+    {
+      "data": {
+        "id": "The Universe",
+        "label": "The Universe",
+        "type": "entity",
+        "size": 1309
+      }
+    },
+    {
+      "data": {
+        "id": "The Art",
+        "label": "The Art",
+        "type": "entity",
+        "size": 1241
+      }
+    },
+    {
+      "data": {
+        "id": "The Power",
+        "label": "The Power",
+        "type": "entity",
+        "size": 1238
+      }
+    },
+    {
+      "data": {
+        "id": "The Renaissance",
+        "label": "The Renaissance",
+        "type": "entity",
+        "size": 1216
+      }
+    },
+    {
+      "data": {
+        "id": "The Key",
+        "label": "The Key",
+        "type": "entity",
+        "size": 1193
+      }
+    },
+    {
+      "data": {
+        "id": "The Spiritual",
+        "label": "The Spiritual",
+        "type": "entity",
+        "size": 1159
+      }
+    },
+    {
+      "data": {
+        "id": "The Development",
+        "label": "The Development",
+        "type": "entity",
+        "size": 1126
+      }
+    },
+    {
+      "data": {
+        "id": "The End",
+        "label": "The End",
+        "type": "entity",
+        "size": 1115
+      }
+    },
+    {
+      "data": {
+        "id": "The Hermetic",
+        "label": "The Hermetic",
+        "type": "entity",
+        "size": 1077
+      }
+    },
+    {
+      "data": {
+        "id": "The Way",
+        "label": "The Way",
+        "type": "entity",
+        "size": 1065
+      }
+    },
+    {
+      "data": {
+        "id": "The Author",
+        "label": "The Author",
+        "type": "entity",
+        "size": 1063
+      }
+    },
+    {
+      "data": {
+        "id": "The Earth",
+        "label": "The Earth",
+        "type": "entity",
+        "size": 1054
+      }
+    },
+    {
+      "data": {
+        "id": "What Is",
+        "label": "What Is",
+        "type": "entity",
+        "size": 1028
+      }
+    },
+    {
+      "data": {
+        "id": "The Creation",
+        "label": "The Creation",
+        "type": "entity",
+        "size": 1019
+      }
+    },
+    {
+      "data": {
+        "id": "The Transformation",
+        "label": "The Transformation",
+        "type": "entity",
+        "size": 964
+      }
+    },
+    {
+      "data": {
+        "id": "The Influence",
+        "label": "The Influence",
+        "type": "entity",
+        "size": 953
+      }
+    },
+    {
+      "data": {
+        "id": "The Elements",
+        "label": "The Elements",
+        "type": "entity",
+        "size": 930
+      }
+    },
+    {
+      "data": {
+        "id": "New York",
+        "label": "New York",
+        "type": "entity",
+        "size": 915
+      }
+    },
+    {
+      "data": {
+        "id": "The Spirit",
+        "label": "The Spirit",
+        "type": "entity",
+        "size": 857
+      }
+    },
+    {
+      "data": {
+        "id": "Hermes Trismegistus",
+        "label": "Hermes Trismegistus",
+        "type": "entity",
+        "size": 834
+      }
+    },
+    {
+      "data": {
+        "id": "The Beginning",
+        "label": "The Beginning",
+        "type": "entity",
+        "size": 818
+      }
+    },
+    {
+      "data": {
+        "id": "The Latin",
+        "label": "The Latin",
+        "type": "entity",
+        "size": 813
+      }
+    },
+    {
+      "data": {
+        "id": "The Moon",
+        "label": "The Moon",
+        "type": "entity",
+        "size": 807
+      }
+    },
+    {
+      "data": {
+        "id": "The Greek",
+        "label": "The Greek",
+        "type": "entity",
+        "size": 760
+      }
+    },
+    {
+      "data": {
+        "id": "This Book",
+        "label": "This Book",
+        "type": "entity",
+        "size": 756
+      }
+    },
+    {
+      "data": {
+        "id": "Atalanta Fugiens",
+        "label": "Atalanta Fugiens",
+        "type": "entity",
+        "size": 738
+      }
+    },
+    {
+      "data": {
+        "id": "Alchemical Traditions",
+        "label": "Alchemical Traditions",
+        "type": "entity",
+        "size": 738
+      }
+    },
+    {
+      "data": {
+        "id": "Divine Names",
+        "label": "Divine Names",
+        "type": "entity",
+        "size": 735
+      }
+    },
+    {
+      "data": {
+        "id": "The Stone",
+        "label": "The Stone",
+        "type": "entity",
+        "size": 733
+      }
+    },
+    {
+      "data": {
+        "id": "Middle Ages",
+        "label": "Middle Ages",
+        "type": "entity",
+        "size": 727
+      }
+    },
+    {
+      "data": {
+        "id": "Spiritual Alchemy",
+        "label": "Spiritual Alchemy",
+        "type": "entity",
+        "size": 724
+      }
+    },
+    {
+      "data": {
+        "id": "The Structure",
+        "label": "The Structure",
+        "type": "entity",
+        "size": 719
+      }
+    },
+    {
+      "data": {
+        "id": "Giordano Bruno",
+        "label": "Giordano Bruno",
+        "type": "entity",
+        "size": 716
+      }
+    },
+    {
+      "data": {
+        "id": "The Word",
+        "label": "The Word",
+        "type": "entity",
+        "size": 702
+      }
+    },
+    {
+      "data": {
+        "id": "Pico Della Mirandola",
+        "label": "Pico Della Mirandola",
+        "type": "entity",
+        "size": 698
+      }
+    },
+    {
+      "data": {
+        "id": "John Dee",
+        "label": "John Dee",
+        "type": "entity",
+        "size": 686
+      }
+    },
+    {
+      "data": {
+        "id": "His Works",
+        "label": "His Works",
+        "type": "entity",
+        "size": 677
+      }
+    },
+    {
+      "data": {
+        "id": "The University",
+        "label": "The University",
+        "type": "entity",
+        "size": 676
+      }
+    },
+    {
+      "data": {
+        "id": "On Alchemy",
+        "label": "On Alchemy",
+        "type": "entity",
+        "size": 670
+      }
+    },
+    {
+      "data": {
+        "id": "The Secrets",
+        "label": "The Secrets",
+        "type": "entity",
+        "size": 668
+      }
+    },
+    {
+      "data": {
+        "id": "The Need",
+        "label": "The Need",
+        "type": "entity",
+        "size": 653
+      }
+    },
+    {
+      "data": {
+        "id": "Modern Chemistry",
+        "label": "Modern Chemistry",
+        "type": "entity",
+        "size": 653
+      }
+    },
+    {
+      "data": {
+        "id": "The Image",
+        "label": "The Image",
+        "type": "entity",
+        "size": 652
+      }
+    },
+    {
+      "data": {
+        "id": "The Works",
+        "label": "The Works",
+        "type": "entity",
+        "size": 651
+      }
+    },
+    {
+      "data": {
+        "id": "The Essence",
+        "label": "The Essence",
+        "type": "entity",
+        "size": 637
+      }
+    },
+    {
+      "data": {
+        "id": "The Act",
+        "label": "The Act",
+        "type": "entity",
+        "size": 619
+      }
+    },
+    {
+      "data": {
+        "id": "The Notion",
+        "label": "The Notion",
+        "type": "entity",
+        "size": 613
+      }
+    },
+    {
+      "data": {
+        "id": "The Foundation",
+        "label": "The Foundation",
+        "type": "entity",
+        "size": 613
+      }
+    },
+    {
+      "data": {
+        "id": "Who Is",
+        "label": "Who Is",
+        "type": "entity",
+        "size": 611
+      }
+    },
+    {
+      "data": {
+        "id": "The Practice",
+        "label": "The Practice",
+        "type": "entity",
+        "size": 607
+      }
+    },
+    {
+      "data": {
+        "id": "The Union",
+        "label": "The Union",
+        "type": "entity",
+        "size": 605
+      }
+    },
+    {
+      "data": {
+        "id": "Della Mirandola",
+        "label": "Della Mirandola",
+        "type": "entity",
+        "size": 602
+      }
+    },
+    {
+      "data": {
+        "id": "The Intellect",
+        "label": "The Intellect",
+        "type": "entity",
+        "size": 598
+      }
+    },
+    {
+      "data": {
+        "id": "The Reader",
+        "label": "The Reader",
+        "type": "entity",
+        "size": 597
+      }
+    },
+    {
+      "data": {
+        "id": "Giovanni Pico",
+        "label": "Giovanni Pico",
+        "type": "entity",
+        "size": 595
+      }
+    },
+    {
+      "data": {
+        "id": "That We",
+        "label": "That We",
+        "type": "entity",
+        "size": 587
+      }
+    },
+    {
+      "data": {
+        "id": "Michael Maier",
+        "label": "Michael Maier",
+        "type": "entity",
+        "size": 580
+      }
+    },
+    {
+      "data": {
+        "id": "The Case",
+        "label": "The Case",
+        "type": "entity",
+        "size": 576
+      }
+    },
+    {
+      "data": {
+        "id": "The Light",
+        "label": "The Light",
+        "type": "entity",
+        "size": 575
+      }
+    },
+    {
+      "data": {
+        "id": "The Evolution",
+        "label": "The Evolution",
+        "type": "entity",
+        "size": 573
+      }
+    },
+    {
+      "data": {
+        "id": "Natural Magic",
+        "label": "Natural Magic",
+        "type": "entity",
+        "size": 565
+      }
+    },
+    {
+      "data": {
+        "id": "Divine Knowledge",
+        "label": "Divine Knowledge",
+        "type": "entity",
+        "size": 561
+      }
+    },
+    {
+      "data": {
+        "id": "The Mysteries",
+        "label": "The Mysteries",
+        "type": "entity",
+        "size": 558
+      }
+    },
+    {
+      "data": {
+        "id": "The Magician",
+        "label": "The Magician",
+        "type": "entity",
+        "size": 539
+      }
+    },
+    {
+      "data": {
+        "id": "Seventeenth Century",
+        "label": "Seventeenth Century",
+        "type": "entity",
+        "size": 538
+      }
+    },
+    {
+      "data": {
+        "id": "The Sacred",
+        "label": "The Sacred",
+        "type": "entity",
+        "size": 537
+      }
+    },
+    {
+      "data": {
+        "id": "Marsilio Ficino",
+        "label": "Marsilio Ficino",
+        "type": "entity",
+        "size": 535
+      }
+    },
+    {
+      "data": {
+        "id": "Cambridge University Press",
+        "label": "Cambridge University Press",
+        "type": "entity",
+        "size": 535
+      }
+    },
+    {
+      "data": {
+        "id": "The Occult",
+        "label": "The Occult",
+        "type": "entity",
+        "size": 530
+      }
+    },
+    {
+      "data": {
+        "id": "The Origins",
+        "label": "The Origins",
+        "type": "entity",
+        "size": 526
+      }
+    },
+    {
+      "data": {
+        "id": "For Pico",
+        "label": "For Pico",
+        "type": "entity",
+        "size": 524
+      }
+    },
+    {
+      "data": {
+        "id": "The King",
+        "label": "The King",
+        "type": "entity",
+        "size": 511
+      }
+    },
+    {
+      "data": {
+        "id": "The Texts",
+        "label": "The Texts",
+        "type": "entity",
+        "size": 510
+      }
+    },
+    {
+      "data": {
+        "id": "The Church",
+        "label": "The Church",
+        "type": "entity",
+        "size": 505
+      }
+    },
+    {
+      "data": {
+        "id": "His Ideas",
+        "label": "His Ideas",
+        "type": "entity",
+        "size": 504
+      }
     }
   ],
   "edges": [
     {
-      "source": "src_mahe_ipm40",
-      "target": "448",
-      "label": "### Th\u00e9orie et pratique dans l...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "Arthurian",
+        "weight": 2
+      }
     },
     {
-      "source": "src_mahe_ipm40",
-      "target": "30",
-      "label": "### Th\u00e9orie et pratique dans l...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_Middle Ages",
+        "source": "Middle Ages",
+        "target": "Arthurian",
+        "weight": 12
+      }
     },
     {
-      "source": "src_mahe_ipm40",
-      "target": "448",
-      "label": "Praxis**: The text balances ri...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_New York",
+        "source": "New York",
+        "target": "Arthurian",
+        "weight": 3
+      }
     },
     {
-      "source": "src_mahe_ipm40",
-      "target": "30",
-      "label": "Praxis**: The text balances ri...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_The Development",
+        "source": "The Development",
+        "target": "Arthurian",
+        "weight": 1
+      }
     },
     {
-      "source": "src_abraham_1998",
-      "target": "22",
-      "label": "The \"Father,\" the hot, dry, ac...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_The Evolution",
+        "source": "The Evolution",
+        "target": "Arthurian",
+        "weight": 1
+      }
     },
     {
-      "source": "src_abraham_1998",
-      "target": "1",
-      "label": "The \"Mother,\" the cold, moist,...",
-      "type": "analyzes"
+      "data": {
+        "id": "rel_Arthurian_The History",
+        "source": "The History",
+        "target": "Arthurian",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Arthurian_The King",
+        "source": "The King",
+        "target": "Arthurian",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Arthurian_The University",
+        "source": "The University",
+        "target": "Arthurian",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Bataille_New York",
+        "source": "New York",
+        "target": "Bataille",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Cavendish_Natural Philosophy",
+        "source": "Natural Philosophy",
+        "target": "Cavendish",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Devil_New York",
+        "source": "New York",
+        "target": "Devil",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Eranos_The Structure",
+        "source": "The Structure",
+        "target": "Eranos",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Eranos_The University",
+        "source": "The University",
+        "target": "Eranos",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Game Design_New York",
+        "source": "New York",
+        "target": "Game Design",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_General_The Art",
+        "source": "The Art",
+        "target": "General",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_In The",
+        "source": "In The",
+        "target": "Hilma af Klint",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_New York",
+        "source": "New York",
+        "target": "Hilma af Klint",
+        "weight": 10
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_The Art",
+        "source": "The Art",
+        "target": "Hilma af Klint",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_The Foundation",
+        "source": "The Foundation",
+        "target": "Hilma af Klint",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_The Occult",
+        "source": "The Occult",
+        "target": "Hilma af Klint",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_The Spiritual",
+        "source": "The Spiritual",
+        "target": "Hilma af Klint",
+        "weight": 8
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Hilma af Klint_The University",
+        "source": "The University",
+        "target": "Hilma af Klint",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Idriesh Shah_The Book",
+        "source": "The Book",
+        "target": "Idriesh Shah",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Idriesh Shah_The Word",
+        "source": "The Word",
+        "target": "Idriesh Shah",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Idriesh Shah_The World",
+        "source": "The World",
+        "target": "Idriesh Shah",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Islamicate Chill Pills_The Art",
+        "source": "The Art",
+        "target": "Islamicate Chill Pills",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Margaret Jacob_New York",
+        "source": "New York",
+        "target": "Margaret Jacob",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Margaret Jacob_The History",
+        "source": "The History",
+        "target": "Margaret Jacob",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Margaret Jacob_The Origins",
+        "source": "The Origins",
+        "target": "Margaret Jacob",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_Middle Ages",
+        "source": "Middle Ages",
+        "target": "Robin Hood",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_New York",
+        "source": "New York",
+        "target": "Robin Hood",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_The King",
+        "source": "The King",
+        "target": "Robin Hood",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_The Power",
+        "source": "The Power",
+        "target": "Robin Hood",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_The Practice",
+        "source": "The Practice",
+        "target": "Robin Hood",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Robin Hood_The Transformation",
+        "source": "The Transformation",
+        "target": "Robin Hood",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "Shakespeare",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "Shakespeare",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_John Dee",
+        "source": "John Dee",
+        "target": "Shakespeare",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "Shakespeare",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_Middle Ages",
+        "source": "Middle Ages",
+        "target": "Shakespeare",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_New York",
+        "source": "New York",
+        "target": "Shakespeare",
+        "weight": 29
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_That We",
+        "source": "That We",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Alchemist",
+        "source": "The Alchemist",
+        "target": "Shakespeare",
+        "weight": 26
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Art",
+        "source": "The Art",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Book",
+        "source": "The Book",
+        "target": "Shakespeare",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Case",
+        "source": "The Case",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Earth",
+        "source": "The Earth",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Greek",
+        "source": "The Greek",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Idea",
+        "source": "The Idea",
+        "target": "Shakespeare",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Importance",
+        "source": "The Importance",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Key",
+        "source": "The Key",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The King",
+        "source": "The King",
+        "target": "Shakespeare",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Power",
+        "source": "The Power",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Reader",
+        "source": "The Reader",
+        "target": "Shakespeare",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The University",
+        "source": "The University",
+        "target": "Shakespeare",
+        "weight": 21
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Way",
+        "source": "The Way",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Word",
+        "source": "The Word",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_The Works",
+        "source": "The Works",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Shakespeare_This Book",
+        "source": "This Book",
+        "target": "Shakespeare",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Tarot_The Game",
+        "source": "The Game",
+        "target": "Tarot",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_Tarot_The Magician",
+        "source": "The Magician",
+        "target": "Tarot",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_albertus magnus_New York",
+        "source": "New York",
+        "target": "albertus magnus",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Alchemical Texts",
+        "source": "Alchemical Texts",
+        "target": "alchemy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Alchemical Traditions",
+        "source": "Alchemical Traditions",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Atalanta Fugiens",
+        "source": "Atalanta Fugiens",
+        "target": "alchemy",
+        "weight": 17
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "alchemy",
+        "weight": 26
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Early Modern",
+        "source": "Early Modern",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "alchemy",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "alchemy",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_John Dee",
+        "source": "John Dee",
+        "target": "alchemy",
+        "weight": 9
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "alchemy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Michael Maier",
+        "source": "Michael Maier",
+        "target": "alchemy",
+        "weight": 20
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Middle Ages",
+        "source": "Middle Ages",
+        "target": "alchemy",
+        "weight": 23
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Natural Magic",
+        "source": "Natural Magic",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Natural Philosophy",
+        "source": "Natural Philosophy",
+        "target": "alchemy",
+        "weight": 10
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_New York",
+        "source": "New York",
+        "target": "alchemy",
+        "weight": 53
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Seventeenth Century",
+        "source": "Seventeenth Century",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_Spiritual Alchemy",
+        "source": "Spiritual Alchemy",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Act",
+        "source": "The Act",
+        "target": "alchemy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Alchemist",
+        "source": "The Alchemist",
+        "target": "alchemy",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Art",
+        "source": "The Art",
+        "target": "alchemy",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Author",
+        "source": "The Author",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Body",
+        "source": "The Body",
+        "target": "alchemy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Book",
+        "source": "The Book",
+        "target": "alchemy",
+        "weight": 20
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Case",
+        "source": "The Case",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Concept",
+        "source": "The Concept",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Creation",
+        "source": "The Creation",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Elements",
+        "source": "The Elements",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Foundation",
+        "source": "The Foundation",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Greek",
+        "source": "The Greek",
+        "target": "alchemy",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The History",
+        "source": "The History",
+        "target": "alchemy",
+        "weight": 45
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The King",
+        "source": "The King",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Occult",
+        "source": "The Occult",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The One",
+        "source": "The One",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Origins",
+        "source": "The Origins",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Power",
+        "source": "The Power",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Practice",
+        "source": "The Practice",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Renaissance",
+        "source": "The Renaissance",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Role",
+        "source": "The Role",
+        "target": "alchemy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Secrets",
+        "source": "The Secrets",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Stone",
+        "source": "The Stone",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The University",
+        "source": "The University",
+        "target": "alchemy",
+        "weight": 45
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Use",
+        "source": "The Use",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Work",
+        "source": "The Work",
+        "target": "alchemy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_alchemy_The Works",
+        "source": "The Works",
+        "target": "alchemy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_ancient magic gnostic pgm etc_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "ancient magic gnostic pgm etc",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_ancient magic gnostic pgm etc_New York",
+        "source": "New York",
+        "target": "ancient magic gnostic pgm etc",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_ancient magic gnostic pgm etc_The Author",
+        "source": "The Author",
+        "target": "ancient magic gnostic pgm etc",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_ancient magic gnostic pgm etc_The End",
+        "source": "The End",
+        "target": "ancient magic gnostic pgm etc",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_blake_The History",
+        "source": "The History",
+        "target": "blake",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "book reviews unsorted",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Divine Names",
+        "source": "Divine Names",
+        "target": "book reviews unsorted",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "book reviews unsorted",
+        "weight": 12
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "book reviews unsorted",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "book reviews unsorted",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_John Dee",
+        "source": "John Dee",
+        "target": "book reviews unsorted",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "book reviews unsorted",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_Middle Ages",
+        "source": "Middle Ages",
+        "target": "book reviews unsorted",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_New York",
+        "source": "New York",
+        "target": "book reviews unsorted",
+        "weight": 15
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The Alchemist",
+        "source": "The Alchemist",
+        "target": "book reviews unsorted",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The Game",
+        "source": "The Game",
+        "target": "book reviews unsorted",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The History",
+        "source": "The History",
+        "target": "book reviews unsorted",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The Influence",
+        "source": "The Influence",
+        "target": "book reviews unsorted",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The Text",
+        "source": "The Text",
+        "target": "book reviews unsorted",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The University",
+        "source": "The University",
+        "target": "book reviews unsorted",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_book reviews unsorted_The World",
+        "source": "The World",
+        "target": "book reviews unsorted",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_code social media content creation_New York",
+        "source": "New York",
+        "target": "code social media content creation",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_New York",
+        "source": "New York",
+        "target": "crowley",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Book",
+        "source": "The Book",
+        "target": "crowley",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Elements",
+        "source": "The Elements",
+        "target": "crowley",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The History",
+        "source": "The History",
+        "target": "crowley",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Light",
+        "source": "The Light",
+        "target": "crowley",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Magician",
+        "source": "The Magician",
+        "target": "crowley",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Moon",
+        "source": "The Moon",
+        "target": "crowley",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Nature",
+        "source": "The Nature",
+        "target": "crowley",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Sun",
+        "source": "The Sun",
+        "target": "crowley",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_crowley_The Universe",
+        "source": "The Universe",
+        "target": "crowley",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_data sci_The Need",
+        "source": "The Need",
+        "target": "data sci",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_data sci_The University",
+        "source": "The University",
+        "target": "data sci",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "databaseINBOX",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Divine Knowledge",
+        "source": "Divine Knowledge",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Early Modern",
+        "source": "Early Modern",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "databaseINBOX",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "databaseINBOX",
+        "weight": 9
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_John Dee",
+        "source": "John Dee",
+        "target": "databaseINBOX",
+        "weight": 18
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Middle Ages",
+        "source": "Middle Ages",
+        "target": "databaseINBOX",
+        "weight": 21
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Natural Magic",
+        "source": "Natural Magic",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Natural Philosophy",
+        "source": "Natural Philosophy",
+        "target": "databaseINBOX",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_New York",
+        "source": "New York",
+        "target": "databaseINBOX",
+        "weight": 9
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_Seventeenth Century",
+        "source": "Seventeenth Century",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Author",
+        "source": "The Author",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Book",
+        "source": "The Book",
+        "target": "databaseINBOX",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Church",
+        "source": "The Church",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Hermetic",
+        "source": "The Hermetic",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Idea",
+        "source": "The Idea",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The One",
+        "source": "The One",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The Soul",
+        "source": "The Soul",
+        "target": "databaseINBOX",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_databaseINBOX_The World",
+        "source": "The World",
+        "target": "databaseINBOX",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_early modern_The Renaissance",
+        "source": "The Renaissance",
+        "target": "early modern",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_economics marxism_New York",
+        "source": "New York",
+        "target": "economics marxism",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_emblem studies_New York",
+        "source": "New York",
+        "target": "emblem studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "esoteric studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "esoteric studies",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "esoteric studies",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "esoteric studies",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "esoteric studies",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_Middle Ages",
+        "source": "Middle Ages",
+        "target": "esoteric studies",
+        "weight": 12
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_New York",
+        "source": "New York",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Art",
+        "source": "The Art",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Author",
+        "source": "The Author",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Book",
+        "source": "The Book",
+        "target": "esoteric studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Evolution",
+        "source": "The Evolution",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Hermetic",
+        "source": "The Hermetic",
+        "target": "esoteric studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Key",
+        "source": "The Key",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The Notion",
+        "source": "The Notion",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_esoteric studies_The University",
+        "source": "The University",
+        "target": "esoteric studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_New York",
+        "source": "New York",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The Art",
+        "source": "The Art",
+        "target": "game studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The Creation",
+        "source": "The Creation",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The Role",
+        "source": "The Role",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The Sacred",
+        "source": "The Sacred",
+        "target": "game studies",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The Works",
+        "source": "The Works",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_The World",
+        "source": "The World",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_game studies_What Is",
+        "source": "What Is",
+        "target": "game studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hermetic_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "hermetic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hermetic_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "hermetic",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hermetic_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "hermetic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hermetic_Middle Ages",
+        "source": "Middle Ages",
+        "target": "hermetic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hermetic_The Image",
+        "source": "The Image",
+        "target": "hermetic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history of science_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "history of science",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history of science_The History",
+        "source": "The History",
+        "target": "history of science",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history philosophy_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "history philosophy",
+        "weight": 22
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history philosophy_Middle Ages",
+        "source": "Middle Ages",
+        "target": "history philosophy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history philosophy_New York",
+        "source": "New York",
+        "target": "history philosophy",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history philosophy_The Book",
+        "source": "The Book",
+        "target": "history philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_history philosophy_The Origins",
+        "source": "The Origins",
+        "target": "history philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "hp emblems",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_Middle Ages",
+        "source": "Middle Ages",
+        "target": "hp emblems",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_New York",
+        "source": "New York",
+        "target": "hp emblems",
+        "weight": 7
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_The Author",
+        "source": "The Author",
+        "target": "hp emblems",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_The Book",
+        "source": "The Book",
+        "target": "hp emblems",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_The First",
+        "source": "The First",
+        "target": "hp emblems",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_The Light",
+        "source": "The Light",
+        "target": "hp emblems",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_hp emblems_The University",
+        "source": "The University",
+        "target": "hp emblems",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_kabbalah_New York",
+        "source": "New York",
+        "target": "kabbalah",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_learning_New York",
+        "source": "New York",
+        "target": "learning",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_learning_The Soul",
+        "source": "The Soul",
+        "target": "learning",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_learning_This Book",
+        "source": "This Book",
+        "target": "learning",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_John Dee",
+        "source": "John Dee",
+        "target": "magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_Middle Ages",
+        "source": "Middle Ages",
+        "target": "magic",
+        "weight": 10
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_The Author",
+        "source": "The Author",
+        "target": "magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_The Book",
+        "source": "The Book",
+        "target": "magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_The Essence",
+        "source": "The Essence",
+        "target": "magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_The Role",
+        "source": "The Role",
+        "target": "magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_magic_The Spirit",
+        "source": "The Spirit",
+        "target": "magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_medieval magic_The Art",
+        "source": "The Art",
+        "target": "medieval magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_medieval magic_The Key",
+        "source": "The Key",
+        "target": "medieval magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_medieval studies medieval philosophy_Middle Ages",
+        "source": "Middle Ages",
+        "target": "medieval studies medieval philosophy",
+        "weight": 8
+      }
+    },
+    {
+      "data": {
+        "id": "rel_medieval studies medieval philosophy_New York",
+        "source": "New York",
+        "target": "medieval studies medieval philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_medieval studies medieval philosophy_The Art",
+        "source": "The Art",
+        "target": "medieval studies medieval philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_music_New York",
+        "source": "New York",
+        "target": "music",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_music_The Creation",
+        "source": "The Creation",
+        "target": "music",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_music_The Moon",
+        "source": "The Moon",
+        "target": "music",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_narrative and instructional design_New York",
+        "source": "New York",
+        "target": "narrative and instructional design",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_narrative and instructional design_The Role",
+        "source": "The Role",
+        "target": "narrative and instructional design",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "neoplatonism",
+        "weight": 15
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "neoplatonism",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_Middle Ages",
+        "source": "Middle Ages",
+        "target": "neoplatonism",
+        "weight": 8
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_New York",
+        "source": "New York",
+        "target": "neoplatonism",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The Book",
+        "source": "The Book",
+        "target": "neoplatonism",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The Concept",
+        "source": "The Concept",
+        "target": "neoplatonism",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The History",
+        "source": "The History",
+        "target": "neoplatonism",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The Latin",
+        "source": "The Latin",
+        "target": "neoplatonism",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The One",
+        "source": "The One",
+        "target": "neoplatonism",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The Structure",
+        "source": "The Structure",
+        "target": "neoplatonism",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_neoplatonism_The University",
+        "source": "The University",
+        "target": "neoplatonism",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_New York",
+        "source": "New York",
+        "target": "philosophy",
+        "weight": 10
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The Art",
+        "source": "The Art",
+        "target": "philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The History",
+        "source": "The History",
+        "target": "philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The Origins",
+        "source": "The Origins",
+        "target": "philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The Role",
+        "source": "The Role",
+        "target": "philosophy",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The Way",
+        "source": "The Way",
+        "target": "philosophy",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_philosophy_The World",
+        "source": "The World",
+        "target": "philosophy",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_pkd_New York",
+        "source": "New York",
+        "target": "pkd",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_pkd_The Book",
+        "source": "The Book",
+        "target": "pkd",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_pkd_Who Is",
+        "source": "Who Is",
+        "target": "pkd",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "renaissance magic",
+        "weight": 9
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Della Mirandola",
+        "source": "Della Mirandola",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_For Pico",
+        "source": "For Pico",
+        "target": "renaissance magic",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "renaissance magic",
+        "weight": 32
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Giovanni Pico",
+        "source": "Giovanni Pico",
+        "target": "renaissance magic",
+        "weight": 74
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Hermes Trismegistus",
+        "source": "Hermes Trismegistus",
+        "target": "renaissance magic",
+        "weight": 15
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_His Ideas",
+        "source": "His Ideas",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_His Work",
+        "source": "His Work",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_His Works",
+        "source": "His Works",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_John Dee",
+        "source": "John Dee",
+        "target": "renaissance magic",
+        "weight": 55
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "renaissance magic",
+        "weight": 36
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Middle Ages",
+        "source": "Middle Ages",
+        "target": "renaissance magic",
+        "weight": 16
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Modern Chemistry",
+        "source": "Modern Chemistry",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Natural Magic",
+        "source": "Natural Magic",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Natural Philosophy",
+        "source": "Natural Philosophy",
+        "target": "renaissance magic",
+        "weight": 8
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_New York",
+        "source": "New York",
+        "target": "renaissance magic",
+        "weight": 46
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Of God",
+        "source": "Of God",
+        "target": "renaissance magic",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_On Alchemy",
+        "source": "On Alchemy",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Pico Della Mirandola",
+        "source": "Pico Della Mirandola",
+        "target": "renaissance magic",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_Seventeenth Century",
+        "source": "Seventeenth Century",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Art",
+        "source": "The Art",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Author",
+        "source": "The Author",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Beginning",
+        "source": "The Beginning",
+        "target": "renaissance magic",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Book",
+        "source": "The Book",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Case",
+        "source": "The Case",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Development",
+        "source": "The Development",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Evolution",
+        "source": "The Evolution",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Greek",
+        "source": "The Greek",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Hermetic",
+        "source": "The Hermetic",
+        "target": "renaissance magic",
+        "weight": 4
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The History",
+        "source": "The History",
+        "target": "renaissance magic",
+        "weight": 5
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Intellect",
+        "source": "The Intellect",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Light",
+        "source": "The Light",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Magician",
+        "source": "The Magician",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Mysteries",
+        "source": "The Mysteries",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Origins",
+        "source": "The Origins",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Philosopher",
+        "source": "The Philosopher",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Practice",
+        "source": "The Practice",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Renaissance",
+        "source": "The Renaissance",
+        "target": "renaissance magic",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Soul",
+        "source": "The Soul",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Sun",
+        "source": "The Sun",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Texts",
+        "source": "The Texts",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Union",
+        "source": "The Union",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The University",
+        "source": "The University",
+        "target": "renaissance magic",
+        "weight": 34
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Use",
+        "source": "The Use",
+        "target": "renaissance magic",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance magic_The Word",
+        "source": "The Word",
+        "target": "renaissance magic",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance studies_The Case",
+        "source": "The Case",
+        "target": "renaissance studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_renaissance studies_The Renaissance",
+        "source": "The Renaissance",
+        "target": "renaissance studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_Cambridge University Press",
+        "source": "Cambridge University Press",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_Giordano Bruno",
+        "source": "Giordano Bruno",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_Marsilio Ficino",
+        "source": "Marsilio Ficino",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_New York",
+        "source": "New York",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_The Influence",
+        "source": "The Influence",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_The Origins",
+        "source": "The Origins",
+        "target": "western esotericism religious studies",
+        "weight": 2
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_The Secrets",
+        "source": "The Secrets",
+        "target": "western esotericism religious studies",
+        "weight": 3
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_The University",
+        "source": "The University",
+        "target": "western esotericism religious studies",
+        "weight": 6
+      }
+    },
+    {
+      "data": {
+        "id": "rel_western esotericism religious studies_The World",
+        "source": "The World",
+        "target": "western esotericism religious studies",
+        "weight": 1
+      }
+    },
+    {
+      "data": {
+        "id": "rel_witchcraft studies Hutton_Middle Ages",
+        "source": "Middle Ages",
+        "target": "witchcraft studies Hutton",
+        "weight": 2
+      }
     }
   ]
 }

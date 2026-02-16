@@ -62,8 +62,28 @@
     },
     {
       "name": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]",
+      "completed": 5,
+      "total": 5
+    },
+    {
+      "name": "Phase 19: Documentation & Meta-Dashboard [COMPLETE]",
+      "completed": 4,
+      "total": 4
+    },
+    {
+      "name": "Phase 21: Hotfix & Stabilization [RUNNING]",
       "completed": 4,
       "total": 5
+    },
+    {
+      "name": "Phase 22: Landing Screen & Modularization [COMPLETE]",
+      "completed": 6,
+      "total": 7
+    },
+    {
+      "name": "Phase 20: Deployment & Release [COMPLETE]",
+      "completed": 3,
+      "total": 3
     },
     {
       "name": "Phase 14: Portfolio V5 (Public Exhibition) <!-- id: 39 -->",
@@ -71,7 +91,7 @@
       "total": 2
     }
   ],
-  "total_tasks": 40,
-  "completed_tasks": 33,
+  "total_tasks": 59,
+  "completed_tasks": 51,
   "current_focus": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]"
 }

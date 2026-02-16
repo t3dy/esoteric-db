@@ -81,14 +81,19 @@
         }
 
         function renderCharts(stats) {
+            // Ensure data exists to prevent .map() crashes
+            const topics = stats.topics || [];
+            const timeline = stats.timeline || [];
+            const wordcloud = stats.wordcloud || [];
+
             // 1. Topic Doughnut
             const ctxTopic = document.getElementById('topicChart').getContext('2d');
             new Chart(ctxTopic, {
                 type: 'doughnut',
                 data: {
-                    labels: stats.topics.map(s => s.label),
+                    labels: topics.map(s => s.label),
                     datasets: [{
-                        data: stats.topics.map(s => s.value),
+                        data: topics.map(s => s.value),
                         backgroundColor: [
                             '#4F46E5', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#6366F1'
                         ],
@@ -107,10 +112,10 @@
             new Chart(ctxTimeline, {
                 type: 'line',
                 data: {
-                    labels: stats.timeline.map(s => s.label),
+                    labels: timeline.map(s => s.label),
                     datasets: [{
                         label: 'Documents Added',
-                        data: stats.timeline.map(s => s.value),
+                        data: timeline.map(s => s.value),
                         borderColor: '#4F46E5',
                         backgroundColor: 'rgba(79, 70, 229, 0.1)',
                         fill: true,
@@ -133,7 +138,7 @@
             canvas.height = container.offsetHeight;
 
             WordCloud(canvas, {
-                list: stats.wordcloud.map(x => [x.word, x.weight]),
+                list: wordcloud.map(x => [x.word, x.weight]),
                 gridSize: 8,
                 weightFactor: (size) => Math.log(size + 1) * 15,
                 fontFamily: 'Inter, sans-serif',

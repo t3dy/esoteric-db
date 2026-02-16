@@ -63,7 +63,21 @@
         }
 
         function renderGraph(data) {
-            const elements = data.elements || data;
+            // Remap flat JSON to Cytoscape format { data: { ... } }
+            const nodes = (data.nodes || []).map(n => ({ data: { ...n } }));
+            const nodeIds = new Set((data.nodes || []).map(n => n.id));
+
+            // Filter edges to ensure they only refer to existing nodes
+            const edges = (data.edges || [])
+                .filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
+                .map(e => ({ data: { ...e } }));
+
+            const elements = [...nodes, ...edges];
+
+            if (elements.length === 0) {
+                document.getElementById('status').innerText = "Empty Graph Data";
+                return;
+            }
 
             cytoscape({
                 container: document.getElementById('cy'),

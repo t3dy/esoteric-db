@@ -14,7 +14,7 @@ except ImportError:
     HAS_PYPDF = False
 
 # --- Configuration ---
-DB_NAME = "esoteric_v5.db"
+DB_NAME = "esoteric.db"
 EXPORT_DIR = "docs"
 ROOT_DOCS_DIR = "."
 
@@ -337,9 +337,26 @@ def export_json(conn, export_path, static=False):
     cursor.execute("SELECT DISTINCT author FROM documents WHERE author != 'Unknown' ORDER BY author")
     authors = [r[0] for r in cursor.fetchall()]
 
+    # Timeline
+    cursor.execute("SELECT strftime('%Y-%m', created_at) as month, COUNT(*) FROM documents GROUP BY month ORDER BY month LIMIT 24")
+    timeline = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
+
+    # Word Cloud (Top Entities)
+    cursor.execute('''
+        SELECT e.name, COUNT(r.id) as freq 
+        FROM entities e 
+        JOIN relationships r ON e.id = r.target_id 
+        GROUP BY e.name 
+        ORDER BY freq DESC 
+        LIMIT 100
+    ''')
+    wordcloud = [{"word": row[0], "weight": row[1]} for row in cursor.fetchall()]
+
     stats = { 
         "topics": topic_counts, 
         "authors": authors,
+        "timeline": timeline,
+        "wordcloud": wordcloud,
         "total_docs": len(docs),
         "generated_at": datetime.now().isoformat()
     }
@@ -433,7 +450,8 @@ def export_json(conn, export_path, static=False):
         edges.append({"data": {"id": f"chat_ent_{c_id}_{e_name}", "source": c_id, "target": e_name, "weight": 2 }})
 
     with open(os.path.join(export_path, "graph.json"), "w") as f:
-        json.dump({"elements": {"nodes": nodes, "edges": edges}}, f, indent=2)
+        # graph.html expects { nodes: [], edges: [] } now due to my remapping fix
+        json.dump({"nodes": nodes, "edges": edges}, f, indent=2)
 
     # 5. Chats and Questions
     cursor.execute("SELECT id, title, created_at, topic, path FROM chats")
@@ -581,20 +599,23 @@ def export_json(conn, export_path, static=False):
             graph["nodes"].append({"id": str(ent['id']), "label": ent['name'], "type": "Entity"})
 
     # Edges from Notes
+    node_ids = set([n['id'] for n in graph['nodes']])
     for note in notes:
-        if note['source_id'] and note['subject_id']:
+        src_id = note['source_id']
+        tgt_id = str(note['subject_id'])
+        if src_id in node_ids and tgt_id in node_ids:
              graph["edges"].append({
-                 "source": note['source_id'],
-                 "target": str(note['subject_id']),
+                 "source": src_id,
+                 "target": tgt_id,
                  "label": note['claim_text'][:30] + "..." if note['claim_text'] else "Analyzes",
                  "type": "analyzes"
              })
 
-    with open(os.path.join(export_path, "graph.json"), "w") as f:
+    with open(os.path.join(export_path, "scholar_graph.json"), "w") as f:
         json.dump(graph, f, indent=2)
 
     # 6. Documentation (V8.1)
-    docs = []
+    documentation_files = []
     # Files to include
     doc_files = [
         ("CHANGELOG.md", "Version History"),
@@ -610,14 +631,20 @@ def export_json(conn, export_path, static=False):
         fpath = os.path.join(root_dir, fname)
         if os.path.exists(fpath):
             with open(fpath, "r", encoding="utf-8") as f:
-                docs.append({
+                documentation_files.append({
                     "id": fname,
                     "title": title,
-                    "content": f.read()
+                    "content": f.read(),
+                    "type": "documentation"
                 })
     
+    # Merge with existing docs catalog from step 1
+    # Note: 'docs' was defined at line 325. We need to persist it or re-fetch.
+    # To be safe, let's re-fetch or just append documentation_files to the existing list.
+    full_docs = docs + documentation_files
+    
     with open(os.path.join(export_path, "docs.json"), "w") as f:
-        json.dump(docs, f, indent=2)
+        json.dump(full_docs, f, indent=2)
 
     # 7. Project Metadata (Design Lab)
     # Parse task.md for stats
