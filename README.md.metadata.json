@@ -1,5 +1,6 @@
 {
   "artifactType": "ARTIFACT_TYPE_OTHER",
-  "summary": "Instructions for running the scanner, testing locally, and deploying to GitHub Pages.",
-  "updatedAt": "2026-02-16T00:03:15.174987100Z"
+  "summary": "Documentation for the Esoteric Database Seed project.",
+  "updatedAt": "2026-02-16T00:55:16.610475100Z",
+  "version": "1"
 }

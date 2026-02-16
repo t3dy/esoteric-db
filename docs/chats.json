@@ -1,0 +1,46 @@
+[
+  {
+    "id": "chat_001",
+    "title": "Welcome to Esoteric DB",
+    "date": "2026-02-15T16:58:43.002769",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is this database?",
+        "ordinal": 1
+      },
+      {
+        "role": "assistant",
+        "content": "This is the Seed of your Esoteric Studies Database. It currently indexes your local PDFs.",
+        "ordinal": 2
+      },
+      {
+        "role": "user",
+        "content": "What can I do here?",
+        "ordinal": 3
+      },
+      {
+        "role": "assistant",
+        "content": "You can search for documents, visualize connections in the Graph tab, and eventually, I will be able to answer questions based on your library!",
+        "ordinal": 4
+      }
+    ]
+  },
+  {
+    "id": "chat_002",
+    "title": "Sample Analysis: Alchemy",
+    "date": "2026-02-15T16:58:43.002780",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Find documents about Alchemy.",
+        "ordinal": 1
+      },
+      {
+        "role": "assistant",
+        "content": "I found several documents. Check the Library tab and filter by 'Alchemy'.",
+        "ordinal": 2
+      }
+    ]
+  }
+]

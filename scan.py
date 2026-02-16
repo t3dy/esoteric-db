@@ -319,13 +319,40 @@ def export_json(conn, export_path):
     with open(os.path.join(export_path, "graph.json"), "w") as f:
         json.dump(graph_data, f)
 
+    # 5. Chats (chats.json) - Dummy Data for Seed
+    # In a real version, we'd query the `chats` and `chat_messages` tables.
+    print("Building chat index...")
+    chats = [
+        {
+            "id": "chat_001",
+            "title": "Welcome to Esoteric DB",
+            "date": datetime.now().isoformat(),
+            "messages": [
+                {"role": "user", "content": "What is this database?", "ordinal": 1},
+                {"role": "assistant", "content": "This is the Seed of your Esoteric Studies Database. It currently indexes your local PDFs.", "ordinal": 2},
+                {"role": "user", "content": "What can I do here?", "ordinal": 3},
+                {"role": "assistant", "content": "You can search for documents, visualize connections in the Graph tab, and eventually, I will be able to answer questions based on your library!", "ordinal": 4}
+            ]
+        },
+        {
+             "id": "chat_002",
+             "title": "Sample Analysis: Alchemy",
+             "date": datetime.now().isoformat(),
+             "messages": [
+                 {"role": "user", "content": "Find documents about Alchemy.", "ordinal": 1},
+                 {"role": "assistant", "content": "I found several documents. Check the Library tab and filter by 'Alchemy'.", "ordinal": 2}
+             ]
+        }
+    ]
+    with open(os.path.join(export_path, "chats.json"), "w") as f:
+        json.dump(chats, f, indent=2)
 
-    # 5. Config
+    # 6. Config
     config = {
         "features": {
             "search": True,
-            "graph": True, # ENABLED!
-            "chat": False
+            "graph": True,
+            "chat": True # ENABLED!
         },
         "generated_at": datetime.now().isoformat()
     }

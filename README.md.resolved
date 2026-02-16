@@ -1,67 +1,50 @@
 # Esoteric Studies Database (Seed)
 
-This is the "Seed" implementation of your Esoteric Studies Database.
+**[✨ LIVE DASHBOARD ✨](https://t3dy.github.io/esoteric-db/)**
 
-## Features
-*   **Scanner:** [scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py) indexes your PDFs, creates a robust SQLite database, and exports JSON.
-*   **Database:** A SQLite DB (`esoteric.db`) with a core schema for documents plus empty tables ("Nubs") for future features like Full Text Search, Knowledge Graph, and Chat Logs.
-*   **Dashboard:** A generic [index.html](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/docs/index.html) viewer that loads the exported JSON.
+This is the "Seed" implementation of your Esoteric Studies Database. It acts as a static, serverless "file cabinet" for your PDF library, deployed via GitHub Pages.
+
+## Features Implemented
+
+### 1. The Seed (Foundation)
+- **Scanner ([scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py))**: Indexes PDFs, calculates SHA256 hashes for identity, and extracts metadata (size, date, topic/folder).
+- **Database ([esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db))**: A SQLite database that serves as the single source of truth.
+- **Export**: Generates static JSON artifacts (`docs.json`, `stats.json`) for the frontend.
+
+### 2. Text & Search
+- **Extraction**: Uses `pypdf` to read the first 2 pages of every document.
+- **Search Index**: Compiles a lightweight client-side search index (`search.json`).
+- **UI**: Fuzzy search bar fully operational in the dashboard.
+
+### 3. Knowledge Graph
+- **Entity Extraction**: Heuristic-based extraction of "Concepts" (capitalized phrases).
+- **Visualization**: Interactive node-link diagram using **Cytoscape.js**.
+- **Graph**: Connects **Topics** (Blue) -> **Documents** (Gray) -> **Entities** (Green).
 
 ## Quick Start
-
 ### 1. Requirements
-*   Python 3.x
-*   No external pip packages needed for the basic text-only scan! (Uses standard lib `sqlite3`, [json](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py#141-179), `hashlib`, `os`).
+```bash
+pip install -r requirements.txt
+```
 
 ### 2. Run the Scan
-1.  Place your PDFs in a folder (or use the current folder).
-2.  Run the scanner:
-    ```bash
-    python scan.py --dir "C:/path/to/your/pdf/library"
-    ```
-    *(If you run it without arguments, it scans the current directory)*.
+Place your PDFs in a folder (or use the current folder).
+```bash
+python scan.py --dir "C:/path/to/your/pdf/library"
+```
+This updates [esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db) and regenerates the `docs/` JSON files.
 
-3.  This will create:
-    *   `esoteric.db` (The SQLite Source of Truth)
-    *   `docs/` folder containing:
-        *   `docs.json`
-        *   `stats.json`
-        *   `config.json`
+### 3. Deploy
+```bash
+git add .
+git commit -m "Update content"
+git push
+```
+GitHub Pages will automatically rebuild the site from the `/docs` folder.
 
-### 3. View the Dashboard Locally
-1.  Go to the `docs/` folder.
-2.  You likely need a lightweight server because modern browsers block `fetch` from `file://` URLs.
-    ```bash
-    cd docs
-    python -m http.server
-    ```
-3.  Open `http://localhost:8000` in your browser.
-
-## Deploying to GitHub Pages
-
-1.  **Initialize Git:**
-    ```bash
-    git init
-    git add .
-    git commit -m "Initial commit of Esoteric Seed"
-    ```
-
-2.  **Create a Repo on GitHub:**
-    *   Go to GitHub.com -> New Repository.
-    *   Name it (e.g., `esoteric-db`).
-
-3.  **Push:**
-    ```bash
-    git remote add origin https://github.com/YOUR_USERNAME/esoteric-db.git
-    git branch -M main
-    git push -u origin main
-    ```
-
-4.  **Enable Pages:**
-    *   Go to Repository Settings -> **Pages**.
-    *   Under "Build and deployment", select **Source** -> `Deploy from a branch`.
-    *   Select Branch: `main`, Folder: `/docs` (Important! Select the docs folder, not root).
-    *   Click Save.
-
-5.  **Done!**
-    Your dashboard will be live at `https://YOUR_USERNAME.github.io/esoteric-db/`.
+## Project Structure
+- [scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py): The brain. Scans files, extracts text/entities, updates DB, exports JSON.
+- [esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db): The memory. SQLite file containing all metadata and text chunks.
+- `docs/`: The body. Static HTML/JS/JSON files served to the web.
+    - [index.html](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/docs/index.html): Single Page Application (Alpine.js + Tailwind).
+    - `*.json`: Data feeds for the UI.

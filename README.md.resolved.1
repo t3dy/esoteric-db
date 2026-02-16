@@ -1,0 +1,50 @@
+# Esoteric Studies Database (Seed)
+
+**[✨ LIVE DASHBOARD ✨](https://t3dy.github.io/esoteric-db/)**
+
+This is the "Seed" implementation of your Esoteric Studies Database. It acts as a static, serverless "file cabinet" for your PDF library, deployed via GitHub Pages.
+
+## Features Implemented
+
+### 1. The Seed (Foundation)
+- **Scanner ([scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py))**: Indexes PDFs, calculates SHA256 hashes for identity, and extracts metadata (size, date, topic/folder).
+- **Database ([esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db))**: A SQLite database that serves as the single source of truth.
+- **Export**: Generates static JSON artifacts (`docs.json`, `stats.json`) for the frontend.
+
+### 2. Text & Search
+- **Extraction**: Uses `pypdf` to read the first 2 pages of every document.
+- **Search Index**: Compiles a lightweight client-side search index (`search.json`).
+- **UI**: Fuzzy search bar fully operational in the dashboard.
+
+### 3. Knowledge Graph
+- **Entity Extraction**: Heuristic-based extraction of "Concepts" (capitalized phrases).
+- **Visualization**: Interactive node-link diagram using **Cytoscape.js**.
+- **Graph**: Connects **Topics** (Blue) -> **Documents** (Gray) -> **Entities** (Green).
+
+## Quick Start
+### 1. Requirements
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the Scan
+Place your PDFs in a folder (or use the current folder).
+```bash
+python scan.py --dir "C:/path/to/your/pdf/library"
+```
+This updates [esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db) and regenerates the `docs/` JSON files.
+
+### 3. Deploy
+```bash
+git add .
+git commit -m "Update content"
+git push
+```
+GitHub Pages will automatically rebuild the site from the `/docs` folder.
+
+## Project Structure
+- [scan.py](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/scan.py): The brain. Scans files, extracts text/entities, updates DB, exports JSON.
+- [esoteric.db](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/esoteric.db): The memory. SQLite file containing all metadata and text chunks.
+- `docs/`: The body. Static HTML/JS/JSON files served to the web.
+    - [index.html](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/docs/index.html): Single Page Application (Alpine.js + Tailwind).
+    - `*.json`: Data feeds for the UI.

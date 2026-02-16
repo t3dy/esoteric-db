@@ -2,7 +2,7 @@
   "features": {
     "search": true,
     "graph": true,
-    "chat": false
+    "chat": true
   },
-  "generated_at": "2026-02-15T16:43:18.017306"
+  "generated_at": "2026-02-15T16:58:43.003361"
 }
