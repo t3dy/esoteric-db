@@ -11,9 +11,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js for Insights -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Cytoscape.js for Graph -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
     <style>
         [x-cloak] {
             display: none !important;
+        }
+
+        #cy {
+            width: 100%;
+            height: 600px;
+            display: block;
         }
     </style>
 </head>
@@ -179,8 +187,24 @@
             </div>
         </div>
 
+        <!-- Tab Content: Graph -->
+        <div x-show="activeTab === 'graph'" x-cloak>
+            <div x-show="!config.features?.graph" class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                <p class="text-sm text-yellow-700">Graph is disabled in config.json.</p>
+            </div>
+
+            <div x-show="config.features?.graph">
+                <div class="bg-white shadow sm:rounded-lg p-4">
+                    <div id="cy" class="border rounded bg-gray-50"></div>
+                    <p class="text-xs text-gray-500 mt-2 text-center">
+                        Showing connections between Topics (Blue), Documents (Gray), and Top Concepts (Green).
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <!-- Tab Content: Features (Stubs) -->
-        <div x-show="['graph', 'chat'].includes(activeTab)" x-cloak>
+        <div x-show="['chat'].includes(activeTab)" x-cloak>
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
                 <div class="flex">
                     <div class="flex-shrink-0">
@@ -211,6 +235,7 @@
                 searchQuery: '', // Document filter
                 fullTextQuery: '', // Search tab query
                 config: {},
+                cy: null,
 
                 get filteredDocs() {
                     if (this.searchQuery === '') return this.docs;
@@ -282,6 +307,19 @@
                             if (searchRes.ok) this.searchIndex = await searchRes.json();
                         }
 
+                        if (this.config.features?.graph) {
+                            const graphRes = await fetch('graph.json');
+                            if (graphRes.ok) {
+                                const graphData = await graphRes.json();
+                                // Initialize Cytoscape when tab is clicked
+                                this.$watch('activeTab', value => {
+                                    if (value === 'graph' && !this.cy) {
+                                        this.$nextTick(() => this.renderGraph(graphData));
+                                    }
+                                });
+                            }
+                        }
+
                     } catch (e) {
                         console.error("Error loading data:", e);
                     }
@@ -305,6 +343,52 @@
                             scales: {
                                 y: { beginAtZero: true }
                             }
+                        }
+                    });
+                },
+
+                renderGraph(data) {
+                    console.log("Rendering Graph with", data.nodes.length, "nodes");
+                    this.cy = cytoscape({
+                        container: document.getElementById('cy'),
+                        elements: [
+                            ...data.nodes.map(n => ({ data: n })),
+                            ...data.links.map(l => ({ data: l }))
+                        ],
+                        style: [
+                            {
+                                selector: 'node',
+                                style: {
+                                    'label': 'data(label)',
+                                    'font-size': 10,
+                                    'text-valign': 'center',
+                                    'text-halign': 'right'
+                                }
+                            },
+                            {
+                                selector: 'node[type="topic"]',
+                                style: { 'background-color': '#0074D9', 'width': 30, 'height': 30 }
+                            },
+                            {
+                                selector: 'node[type="document"]',
+                                style: { 'background-color': '#AAAAAA', 'width': 10, 'height': 10, 'label': '' }
+                            },
+                            {
+                                selector: 'node[type="entity"]',
+                                style: { 'background-color': '#2ECC40', 'width': 15, 'height': 15 }
+                            },
+                            {
+                                selector: 'edge',
+                                style: {
+                                    'width': 1,
+                                    'line-color': '#ccc',
+                                    'curve-style': 'bezier'
+                                }
+                            }
+                        ],
+                        layout: {
+                            name: 'cose',
+                            animate: false
                         }
                     });
                 }

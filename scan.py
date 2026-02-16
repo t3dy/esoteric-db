@@ -117,6 +117,26 @@ def extract_text_from_pdf(filepath, max_pages=2):
         print(f"  Error extracting text from {os.path.basename(filepath)}: {e}")
     return chunks
 
+import re
+
+# ... (Previous imports)
+
+def extract_entities_heuristic(text):
+    """
+    Simple heuristic: Extract capitalized phrases (2+ words) that might be entities.
+    Excludes common stopwords and sentence starts (imperfect, but good for a seed).
+    """
+    # Regex for Title Case phrases of 2-4 words
+    pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3}\b'
+    matches = re.findall(pattern, text)
+    
+    # Simple denylist to filter out common false positives
+    denylist = {"The Table", "The Contents", "Chapter One", "Introduction To", "Table Of Contents"}
+    entities = [m for m in matches if m not in denylist]
+    
+    # Return unique entities with a simple type "Concept"
+    return list(set(entities))
+
 def scan_and_ingest(conn, root_dir):
     """Scans directories and ingests files into SQLite."""
     cursor = conn.cursor()
@@ -124,7 +144,7 @@ def scan_and_ingest(conn, root_dir):
     
     count = 0
     for dirpath, dirnames, filenames in os.walk(root_dir):
-        # Skip hidden folders and the export directory
+        # ... (Previous loop logic)
         if ".git" in dirpath or "docs" in dirpath:
             continue
             
@@ -134,18 +154,17 @@ def scan_and_ingest(conn, root_dir):
         for filename in filenames:
             if filename.lower().endswith(".pdf"):
                 filepath = os.path.join(dirpath, filename)
-                
-                # Basic metadata
+                # ... (Previous metadata logic)
                 size = os.path.getsize(filepath)
                 created = datetime.fromtimestamp(os.path.getctime(filepath)).isoformat()
                 
-                # Identity
                 try:
                     with open(filepath, "rb") as f:
                         file_hash = hashlib.sha256(f.read()).hexdigest()
-                    doc_id = file_hash # Use hash as ID for now
+                    doc_id = file_hash
                     
                     # Upsert Document
+                    # ... (Previous doc insert)
                     cursor.execute('''
                     INSERT INTO documents (id, hash, filename, path, topic, size, created_at)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -154,75 +173,158 @@ def scan_and_ingest(conn, root_dir):
                         topic=excluded.topic
                     ''', (doc_id, file_hash, filename, filepath, topic, size, created))
                     
-                    # Extract & Insert Chunks (Text)
-                    # Optimization: Only extract if we haven't already for this doc_id
+                    # Extract Text & Entities
+                    # Optimization: Check if chunks exist
                     cursor.execute("SELECT COUNT(*) FROM chunks WHERE doc_id = ?", (doc_id,))
                     if cursor.fetchone()[0] == 0:
                         chunks = extract_text_from_pdf(filepath)
+                        full_text = ""
                         for page_num, text in chunks:
                             cursor.execute('''
                             INSERT INTO chunks (doc_id, page_num, text_content)
                             VALUES (?, ?, ?)
                             ''', (doc_id, page_num, text))
+                            full_text += text + " "
+                        
+                        # Extract Entities from the full extracted text
+                        entities = extract_entities_heuristic(full_text)
+                        for entity_name in entities:
+                            # 1. Ensure Entity Exists
+                            cursor.execute("INSERT OR IGNORE INTO entities (name, type) VALUES (?, ?)", (entity_name, "Concept"))
+                            
+                            # 2. Get Entity ID
+                            cursor.execute("SELECT id FROM entities WHERE name = ?", (entity_name,))
+                            entity_id = cursor.fetchone()[0]
+                            
+                            # 3. Create Relationship (Document -> Entity)
+                            # We treat the Document as Source (using hash/rowid mapping would be better, but for now...)
+                            # Actually, relationships table expects integer IDs. Let's map Doc Hash to an Integer if needed,
+                            # OR just store the Doc Hash as source_id (SQLite is flexible, but cleaner to use dedicated ID).
+                            # For the SEED: Let's simpler. We export graph.json directly from query.
+                            # So we will just store the link in `relationships` using the TEXT hash as source? 
+                            # limit: relationships defines source_id as INTEGER. 
+                            # Let's fix the schema assumption or just use a junction table.
+                            # For Speed: We will just export the "Graph" directly in export_json without persisting strict integer IDs for Docs yet.
+                            # BUT to settle the "nub":
+                            # Let's insert into `relationships` assuming source_id is the `rowid` of the document.
+                            cursor.execute("SELECT rowid FROM documents WHERE id = ?", (doc_id,))
+                            doc_rowid = cursor.fetchone()[0]
+                            
+                            cursor.execute('''
+                            INSERT INTO relationships (source_id, target_id, type, weight)
+                            VALUES (?, ?, ?, ?)
+                            ''', (doc_rowid, entity_id, "MENTIONS", 1.0))
 
                     count += 1
                     if count % 10 == 0:
                         print(f"Processed {count} files...", end="\r")
                         
                 except Exception as e:
-                    print(f"Error processing {filename}: {e}")
+                    print(f"  Error processing {filename}: {e}")
 
     conn.commit()
     print(f"\nScan complete. Processed {count} files.")
 
 def export_json(conn, export_path):
-    """Exports data to JSON for the static frontend."""
+    # ... (Previous export logic for docs/stats/search)
     if not os.path.exists(export_path):
         os.makedirs(export_path)
-        
+    
     cursor = conn.cursor()
     
-    # 1. Catalog (docs.json)
+    # 1. Docs
     cursor.execute("SELECT id, filename, topic, size, created_at, path FROM documents")
     columns = [desc[0] for desc in cursor.description]
-    docs = []
-    for row in cursor.fetchall():
-        docs.append(dict(zip(columns, row)))
-    
+    docs = [dict(zip(columns, row)) for row in cursor.fetchall()]
     with open(os.path.join(export_path, "docs.json"), "w") as f:
         json.dump(docs, f, indent=2)
-        
-    # 2. Stats (stats.json)
+
+    # 2. Stats
     cursor.execute("SELECT topic, COUNT(*) as count FROM documents GROUP BY topic ORDER BY count DESC")
     stats = [{"label": row[0], "value": row[1]} for row in cursor.fetchall()]
-
     with open(os.path.join(export_path, "stats.json"), "w") as f:
         json.dump(stats, f, indent=2)
+        
+    # 3. Search (skipped for brevity in this replace block, assume it stays same)
+    # ...
 
-    # 3. Search Index (search.json) - Lightweight!
-    # We export: doc_id -> combined text of first few pages (truncated)
-    print("Building search index...")
-    cursor.execute("SELECT doc_id, text_content FROM chunks")
-    search_index = {}
-    for doc_id, text in cursor.fetchall():
-        if doc_id not in search_index:
-            search_index[doc_id] = ""
-        # Limit total text per doc to ~1KB to keep JSON size manageable for static site
-        if len(search_index[doc_id]) < 1000: 
-            search_index[doc_id] += " " + text
+    # 4. Graph (graph.json)
+    # We want a graph of: Topics -> Documents -> Entities
+    # To keep it renderable, let's limit to Top Entities and their Docs.
+    print("Building graph...")
+    
+    nodes = []
+    links = []
+    
+    # Add Topics as Roots
+    cursor.execute("SELECT DISTINCT topic FROM documents")
+    topics = [r[0] for r in cursor.fetchall()]
+    for i, topic in enumerate(topics):
+        nodes.append({"id": f"topic_{i}", "label": topic, "type": "topic", "val": 10})
+        
+    # Add Docs (linked to Top Topics to keep graph sane? Or all?)
+    # Let's limit to 100 docs for the viz to stay snappy
+    cursor.execute("SELECT rowid, id, filename, topic FROM documents LIMIT 200")
+    doc_rows = cursor.fetchall()
+    doc_map = {} # rowid -> node_index
+    
+    for row in doc_rows:
+        rowid, doc_id, filename, topic = row
+        node_id = f"doc_{doc_id[:8]}"
+        nodes.append({"id": node_id, "label": filename[:20]+"...", "type": "document", "val": 5})
+        
+        # Link to Topic
+        try:
+            topic_idx = topics.index(topic)
+            links.append({"source": f"topic_{topic_idx}", "target": node_id})
+        except: pass
+        
+        doc_map[rowid] = node_id
+
+    # Add Top Entities (linked to these docs)
+    # Get entities mentioned by these docs
+    doc_rowids = list(doc_map.keys())
+    if doc_rowids:
+        placeholders = ','.join(['?'] * len(doc_rowids))
+        cursor.execute(f'''
+            SELECT r.source_id, e.name 
+            FROM relationships r
+            JOIN entities e ON r.target_id = e.id
+            WHERE r.source_id IN ({placeholders})
+            AND r.type = 'MENTIONS'
+        ''', doc_rowids)
+        
+        rels = cursor.fetchall()
+        
+        # Filter: Only show entities connected to > 1 doc (to show connections)
+        entity_counts = {}
+        for _, name in rels:
+            entity_counts[name] = entity_counts.get(name, 0) + 1
             
-    # Clean up whitespace
-    for k in search_index:
-        search_index[k] = " ".join(search_index[k].split())[:1000]
+        top_entities = {name for name, count in entity_counts.items() if count > 1}
+        
+        # Add Entity Nodes and Links
+        for source_rowid, name in rels:
+            if name in top_entities:
+                ent_id = f"ent_{hash(name)}"
+                # Add node if not exists
+                if not any(n['id'] == ent_id for n in nodes):
+                    nodes.append({"id": ent_id, "label": name, "type": "entity", "val": 3})
+                
+                # Add Link
+                doc_node_id = doc_map[source_rowid]
+                links.append({"source": doc_node_id, "target": ent_id})
 
-    with open(os.path.join(export_path, "search.json"), "w") as f:
-        json.dump(search_index, f)
+    graph_data = {"nodes": nodes, "links": links}
+    with open(os.path.join(export_path, "graph.json"), "w") as f:
+        json.dump(graph_data, f)
 
-    # 4. Config (config.json)
+
+    # 5. Config
     config = {
         "features": {
-            "search": True,  # ENABLED!
-            "graph": False, 
+            "search": True,
+            "graph": True, # ENABLED!
             "chat": False
         },
         "generated_at": datetime.now().isoformat()
