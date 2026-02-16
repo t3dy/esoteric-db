@@ -1,16 +1,8 @@
 {
   "topics": [
     {
-      "label": "Agrippa",
-      "value": 24
-    },
-    {
       "label": "Apuleis",
       "value": 1
-    },
-    {
-      "label": "Arabic alchemy",
-      "value": 5
     },
     {
       "label": "Arthurian",
@@ -21,32 +13,12 @@
       "value": 4
     },
     {
-      "label": "Bruno",
-      "value": 21
-    },
-    {
       "label": "Cavendish",
       "value": 7
     },
     {
-      "label": "Christian Cabalah",
-      "value": 1
-    },
-    {
-      "label": "Copenhaver",
-      "value": 17
-    },
-    {
-      "label": "David Litwa",
-      "value": 9
-    },
-    {
-      "label": "Dee",
-      "value": 41
-    },
-    {
       "label": "Devil",
-      "value": 7
+      "value": 10
     },
     {
       "label": "Digital Humanities",
@@ -57,20 +29,12 @@
       "value": 6
     },
     {
-      "label": "FM Van Helmont",
-      "value": 2
-    },
-    {
-      "label": "Ficino",
-      "value": 6
-    },
-    {
-      "label": "Fludd",
-      "value": 5
-    },
-    {
       "label": "Game Design",
-      "value": 25
+      "value": 26
+    },
+    {
+      "label": "General",
+      "value": 15
     },
     {
       "label": "Grimoire",
@@ -78,7 +42,7 @@
     },
     {
       "label": "Hilma af Klint",
-      "value": 28
+      "value": 29
     },
     {
       "label": "Idriesh Shah",
@@ -89,40 +53,16 @@
       "value": 14
     },
     {
-      "label": "Kircher",
-      "value": 3
-    },
-    {
       "label": "Margaret Jacob",
       "value": 10
-    },
-    {
-      "label": "O-Meara",
-      "value": 24
-    },
-    {
-      "label": "Paracelsus",
-      "value": 12
-    },
-    {
-      "label": "Pico",
-      "value": 61
     },
     {
       "label": "RAW HPL PKD WSB etc misc SF",
       "value": 13
     },
     {
-      "label": "Reuchlin",
-      "value": 13
-    },
-    {
       "label": "Robin Hood",
       "value": 9
-    },
-    {
-      "label": "Rosarium Philosophorum",
-      "value": 3
     },
     {
       "label": "Rosicrucian",
@@ -137,16 +77,12 @@
       "value": 22
     },
     {
-      "label": "Zika",
-      "value": 6
-    },
-    {
       "label": "albertus magnus",
       "value": 4
     },
     {
       "label": "alchemy",
-      "value": 46
+      "value": 247
     },
     {
       "label": "altered states",
@@ -154,19 +90,11 @@
     },
     {
       "label": "ancient magic gnostic pgm etc",
-      "value": 32
+      "value": 43
     },
     {
       "label": "art of memory",
       "value": 1
-    },
-    {
-      "label": "articles",
-      "value": 13
-    },
-    {
-      "label": "atalanta fugiens",
-      "value": 13
     },
     {
       "label": "blake",
@@ -174,19 +102,11 @@
     },
     {
       "label": "bohme",
-      "value": 7
-    },
-    {
-      "label": "book review",
-      "value": 93
+      "value": 1
     },
     {
       "label": "book reviews unsorted",
       "value": 54
-    },
-    {
-      "label": "chemistry",
-      "value": 18
     },
     {
       "label": "code social media content creation",
@@ -206,7 +126,7 @@
     },
     {
       "label": "databaseINBOX",
-      "value": 33
+      "value": 36
     },
     {
       "label": "design",
@@ -222,7 +142,11 @@
     },
     {
       "label": "emblem studies",
-      "value": 4
+      "value": 5
+    },
+    {
+      "label": "esoteric studies",
+      "value": 39
     },
     {
       "label": "game studies",
@@ -241,10 +165,6 @@
       "value": 24
     },
     {
-      "label": "hermetica",
-      "value": 11
-    },
-    {
       "label": "history of science",
       "value": 1
     },
@@ -257,16 +177,8 @@
       "value": 34
     },
     {
-      "label": "illustrations",
-      "value": 2
-    },
-    {
-      "label": "intentionality",
-      "value": 17
-    },
-    {
       "label": "kabbalah",
-      "value": 18
+      "value": 8
     },
     {
       "label": "learning",
@@ -290,7 +202,7 @@
     },
     {
       "label": "medieval studies medieval philosophy",
-      "value": 10
+      "value": 11
     },
     {
       "label": "music",
@@ -302,535 +214,100 @@
     },
     {
       "label": "neoplatonism",
-      "value": 75
-    },
-    {
-      "label": "occult",
-      "value": 2
-    },
-    {
-      "label": "pdf",
-      "value": 15
+      "value": 103
     },
     {
       "label": "philosophy",
-      "value": 19
+      "value": 25
     },
     {
       "label": "pkd",
-      "value": 34
-    },
-    {
-      "label": "poetry lit",
-      "value": 8
+      "value": 35
     },
     {
       "label": "psychedelic",
       "value": 9
     },
     {
-      "label": "religion",
-      "value": 17
-    },
-    {
       "label": "renaissance magic",
-      "value": 17
+      "value": 263
     },
     {
       "label": "renaissance studies",
       "value": 16
     },
     {
-      "label": "roger bacon",
-      "value": 5
-    },
-    {
       "label": "social science",
       "value": 1
     },
     {
-      "label": "spiritual alchemy",
-      "value": 5
-    },
-    {
-      "label": "trithemius",
-      "value": 28
-    },
-    {
       "label": "western esotericism religious studies",
-      "value": 54
+      "value": 71
     },
     {
       "label": "witchcraft studies Hutton",
       "value": 16
-    },
-    {
-      "label": "zosimos",
-      "value": 16
     }
   ],
-  "timeline": [
-    {
-      "label": "2023-05",
-      "value": 13
-    },
-    {
-      "label": "2024-09",
-      "value": 380
-    },
-    {
-      "label": "2024-10",
-      "value": 22
-    },
-    {
-      "label": "2024-11",
-      "value": 124
-    },
-    {
-      "label": "2024-12",
-      "value": 212
-    },
-    {
-      "label": "2025-01",
-      "value": 43
-    },
-    {
-      "label": "2025-05",
-      "value": 67
-    },
-    {
-      "label": "2025-06",
-      "value": 22
-    },
-    {
-      "label": "2025-07",
-      "value": 40
-    },
-    {
-      "label": "2025-08",
-      "value": 51
-    },
-    {
-      "label": "2025-09",
-      "value": 51
-    },
-    {
-      "label": "2025-10",
-      "value": 336
-    },
-    {
-      "label": "2025-11",
-      "value": 6
-    },
-    {
-      "label": "2026-01",
-      "value": 14
-    },
-    {
-      "label": "2026-02",
-      "value": 269
-    }
+  "authors": [
+    "''Sefer Yetzirah''_ Twelve Commentaries on ''Sefer Yetzirah'' and the Extant Remnants of R. Isaac of Bedresh's Commentary _ '\u05e1\u05e4",
+    "Akiba ben Joseph_ Knut Stenring",
+    "Aryeh Kaplan",
+    "Brian Copenhaver",
+    "Compagni, Vittoria Perrone (author)",
+    "Copenhaver, Brian P. (editor)",
+    "DR STEPHEN. CLARK SKINNER (DANIEL.)_ Daniel Clark",
+    "EMANUEL SWEDENBORG_ GEORGE F. DOLE_ Lisa Hyatt Cooper_ Jonathan",
+    "Emanuel Swedenborg",
+    "Iamblichus, Emma C. Clarke, John M. Dillon, Jackson P. Hershbell",
+    "Obrist, Barbara (author)",
+    "Patrick Mulcahy",
+    "Perrone-Compagni Vittoria",
+    "R.G. Gurgel Pereira",
+    "Sebastian Normandin Charles T Wolfe Sebastian Normandin Charles T Wolfe",
+    "Sepher Yetsirah (2002)",
+    "Van den Kerchove, Anna",
+    "[Ambix 1937-may vol. 1 iss. 1] Partington, J. R.",
+    "[Anglia",
+    "[Archives d'Histoire Doctrinale et Litt\u00e9raire du Moyen \u00c2ge vol. 76 iss. 1] Obrist, Barbara (author)",
+    "[Archives d'Histoire Doctrinale et Litt\u00e9raire du Moyen \u00c2ge vol. 79 iss. 1] Calvet, Antoine (author)",
+    "[Aries 2015-jan 01 vol. 15 iss. 1] Bull, Christian H.",
+    "[Critical Inquiry 1990-apr vol. 16 iss. 3] Davidson, Arnold I.",
+    "[Early Science and Medicine vol. 5 iss. 2] Perrone Compagni, Vittoria",
+    "[Early Science and Medicine vol. 5 iss. 2] Vittoria Perrone Compagni",
+    "[France Chicago Collection] Pierre Hadot",
+    "[Gnosis_ Journal of Gnostic Studies 2018-apr 04 vol. 3 iss. 1] Bull, Christian H.",
+    "[Gnosis_ Journal of Gnostic Studies 2018-apr 04 vol. 3 iss. 1] van den Kerchove, Anna",
+    "[Hermetica Mediaevalia] Lucentini Paolo, Perrone Compagni Vittoria",
+    "[Hispanic studies_ culture and ideas 50] Borges, Jorge Luis_ Swedenborg, Emanuel_ Swedenborg, Emanuel_ Ro",
+    "[History & Philosophy of the Life Sciences vol. 17 iss. 2] Review by_ Vittoria Perrone Compagni",
+    "[Instrumenta Patristica et Mediaevalia 40] Paolo Lucentini (editor), Iaria Parri (editor), Vittoria Perrone",
+    "[Jerusalem Studies in Jewish Thought _ \u05de\u05d7\u05e7\u05e8\u05d9 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05d1\u05de\u05d7\u05e9\u05d1\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc iss. \u05db\u05e8\u05da \u05db\u05d0] Giulio Busi",
+    "[Jerusalem Studies in Jewish Thought _ \u05de\u05d7\u05e7\u05e8\u05d9 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05d1\u05de\u05d7\u05e9\u05d1\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc iss. \u05db\u05e8\u05da \u05db\u05d1] \u05e6\u05d7\u05d9 \u05d5\u05d9\u05d9\u05e1 and Tzahi Weiss",
+    "[Jewish Quarterly Review 1967-jan vol. 57 iss. 3] Rosh-Pinnah, Eliyahu",
+    "[Jewish Quarterly Review vol. 103 iss. 1] Weiss, Tzahi",
+    "[Journal of Early Christian Studies vol. 10 iss. 4] Brakke, David (author)",
+    "[Journal of the American Academy of Religion 2011-sep 01 vol. 79 iss. 4] Segol, M.",
+    "[Magic Ritual and Witchcraft vol. 4 iss. 1] Wouter J. Hanegraaff (author)",
+    "[Magic Ritual and Witchcraft vol. 4 iss. 2] Brian P. Copenhaver (author)",
+    "[New Blackfriars 2016-oct 26 vol. 98 iss. 1076] Kruger, Matthew",
+    "[New Century Edition Ser.] Jonathan S. Rose_ Stuart Shotwell_ Mary Lou Bertucci",
+    "[Northern world 55] Swedenborg, Emanuel_Schuchard, Marsha Keith",
+    "[Numen 2014-jun 09 vol. 61 iss. 4] Bull, Christian",
+    "[Numen vol. 59 iss. 1] Bull, Christian H.",
+    "[Nuncius vol. 3 iss. 2] PERRONE COMPAGNI, VITTORIA",
+    "[Religion 2015-nov 02 vol. 46 iss. 3] Bull, Christian H.",
+    "[SWEDENBORG STUDIES] Ernst Benz_ Nicholas Goodrick-Clarke",
+    "[Speculum 1985-jan vol. 60 iss. 1] Newman, William_ Obrist, Barbara",
+    "[Studies in Religion_Sciences Religieuses 2012-aug 10 vol. 41 iss. 3] Kaler, M.",
+    "[Swedenborg Studies] Jose Antonio Anton-Pacheco_ Steven Skattebo",
+    "[The Classical Review 1926-dec vol. 40 iss. 6] Rose, H. J.",
+    "[The Classical Review 1955-jun vol. 5 iss. 2] Rose, H. J.",
+    "[The Journal of Value Inquiry 2021-jun vol. 55 iss. 2] Sharpe, Matthew (author)",
+    "[The New Middle Ages ] Marla Segol (auth.)",
+    "[Traditio vol. 67] Obrist, Barbara",
+    "[Waste Management & Research 1985-jan vol. 3 iss. 1]"
   ],
-  "wordcloud": [
-    {
-      "word": "jstor",
-      "weight": 1763
-    },
-    {
-      "word": "university",
-      "weight": 1319
-    },
-    {
-      "word": "org",
-      "weight": 963
-    },
-    {
-      "word": "book",
-      "weight": 962
-    },
-    {
-      "word": "terms",
-      "weight": 910
-    },
-    {
-      "word": "history",
-      "weight": 762
-    },
-    {
-      "word": "http",
-      "weight": 723
-    },
-    {
-      "word": "www",
-      "weight": 712
-    },
-    {
-      "word": "shakespeare",
-      "weight": 688
-    },
-    {
-      "word": "century",
-      "weight": 676
-    },
-    {
-      "word": "content",
-      "weight": 648
-    },
-    {
-      "word": "renaissance",
-      "weight": 615
-    },
-    {
-      "word": "magic",
-      "weight": 606
-    },
-    {
-      "word": "philosophy",
-      "weight": 594
-    },
-    {
-      "word": "science",
-      "weight": 586
-    },
-    {
-      "word": "der",
-      "weight": 577
-    },
-    {
-      "word": "information",
-      "weight": 551
-    },
-    {
-      "word": "published",
-      "weight": 546
-    },
-    {
-      "word": "press",
-      "weight": 546
-    },
-    {
-      "word": "were",
-      "weight": 541
-    },
-    {
-      "word": "subject",
-      "weight": 538
-    },
-    {
-      "word": "conditions",
-      "weight": 535
-    },
-    {
-      "word": "und",
-      "weight": 534
-    },
-    {
-      "word": "your",
-      "weight": 521
-    },
-    {
-      "word": "author",
-      "weight": 505
-    },
-    {
-      "word": "pico",
-      "weight": 503
-    },
-    {
-      "word": "downloaded",
-      "weight": 485
-    },
-    {
-      "word": "studies",
-      "weight": 484
-    },
-    {
-      "word": "such",
-      "weight": 476
-    },
-    {
-      "word": "early",
-      "weight": 471
-    },
-    {
-      "word": "die",
-      "weight": 459
-    },
-    {
-      "word": "article",
-      "weight": 449
-    },
-    {
-      "word": "sonnets",
-      "weight": 448
-    },
-    {
-      "word": "modern",
-      "weight": 433
-    },
-    {
-      "word": "des",
-      "weight": 417
-    },
-    {
-      "word": "text",
-      "weight": 410
-    },
-    {
-      "word": "volume",
-      "weight": 406
-    },
-    {
-      "word": "study",
-      "weight": 405
-    },
-    {
-      "word": "alchemy",
-      "weight": 396
-    },
-    {
-      "word": "art",
-      "weight": 395
-    },
-    {
-      "word": "world",
-      "weight": 393
-    },
-    {
-      "word": "scholars",
-      "weight": 377
-    },
-    {
-      "word": "works",
-      "weight": 371
-    },
-    {
-      "word": "page",
-      "weight": 370
-    },
-    {
-      "word": "archive",
-      "weight": 370
-    },
-    {
-      "word": "stable",
-      "weight": 364
-    },
-    {
-      "word": "both",
-      "weight": 364
-    },
-    {
-      "word": "nature",
-      "weight": 340
-    },
-    {
-      "word": "upon",
-      "weight": 338
-    },
-    {
-      "word": "texts",
-      "weight": 338
-    },
-    {
-      "word": "review",
-      "weight": 337
-    },
-    {
-      "word": "series",
-      "weight": 334
-    },
-    {
-      "word": "von",
-      "weight": 333
-    },
-    {
-      "word": "english",
-      "weight": 326
-    },
-    {
-      "word": "part",
-      "weight": 319
-    },
-    {
-      "word": "edition",
-      "weight": 313
-    },
-    {
-      "word": "com",
-      "weight": 311
-    },
-    {
-      "word": "research",
-      "weight": 311
-    },
-    {
-      "word": "digital",
-      "weight": 310
-    },
-    {
-      "word": "life",
-      "weight": 307
-    },
-    {
-      "word": "alchemical",
-      "weight": 306
-    },
-    {
-      "word": "john",
-      "weight": 303
-    },
-    {
-      "word": "access",
-      "weight": 303
-    },
-    {
-      "word": "medieval",
-      "weight": 302
-    },
-    {
-      "word": "available",
-      "weight": 301
-    },
-    {
-      "word": "cambridge",
-      "weight": 300
-    },
-    {
-      "word": "vol",
-      "weight": 299
-    },
-    {
-      "word": "thought",
-      "weight": 297
-    },
-    {
-      "word": "man",
-      "weight": 284
-    },
-    {
-      "word": "students",
-      "weight": 282
-    },
-    {
-      "word": "books",
-      "weight": 281
-    },
-    {
-      "word": "scholarship",
-      "weight": 277
-    },
-    {
-      "word": "tradition",
-      "weight": 270
-    },
-    {
-      "word": "forms",
-      "weight": 268
-    },
-    {
-      "word": "journal",
-      "weight": 265
-    },
-    {
-      "word": "technology",
-      "weight": 261
-    },
-    {
-      "word": "game",
-      "weight": 255
-    },
-    {
-      "word": "christian",
-      "weight": 254
-    },
-    {
-      "word": "however",
-      "weight": 253
-    },
-    {
-      "word": "introduction",
-      "weight": 253
-    },
-    {
-      "word": "doi",
-      "weight": 253
-    },
-    {
-      "word": "utc",
-      "weight": 252
-    },
-    {
-      "word": "edited",
-      "weight": 248
-    },
-    {
-      "word": "society",
-      "weight": 244
-    },
-    {
-      "word": "support",
-      "weight": 243
-    },
-    {
-      "word": "social",
-      "weight": 243
-    },
-    {
-      "word": "should",
-      "weight": 242
-    },
-    {
-      "word": "library",
-      "weight": 239
-    },
-    {
-      "word": "della",
-      "weight": 238
-    },
-    {
-      "word": "form",
-      "weight": 237
-    },
-    {
-      "word": "london",
-      "weight": 236
-    },
-    {
-      "word": "ancient",
-      "weight": 235
-    },
-    {
-      "word": "range",
-      "weight": 234
-    },
-    {
-      "word": "https",
-      "weight": 234
-    },
-    {
-      "word": "three",
-      "weight": 230
-    },
-    {
-      "word": "philosophical",
-      "weight": 229
-    },
-    {
-      "word": "years",
-      "weight": 228
-    },
-    {
-      "word": "wide",
-      "weight": 228
-    },
-    {
-      "word": "knowledge",
-      "weight": 227
-    },
-    {
-      "word": "here",
-      "weight": 225
-    }
-  ]
+  "total_docs": 1692,
+  "generated_at": "2026-02-15T17:35:54.619264"
 }

@@ -1,8 +1,1 @@
-{
-  "features": {
-    "search": true,
-    "graph": true,
-    "chat": true
-  },
-  "generated_at": "2026-02-15T17:06:13.728873"
-}
+{"features": {"search": true, "graph": false, "chat": false}, "status": "Catalog Ready"}
