@@ -1641,8 +1641,8 @@
   },
   {
     "name": "John Dee",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"English polymath, Enochian magician.\", \"Tradition\": \"Occult Philosophy\"}"
   },
   {
     "name": "Tycho Brahe",
@@ -2486,8 +2486,8 @@
   },
   {
     "name": "Isaac Newton",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Natural philosopher with deep alchemical interests.\", \"Tradition\": \"Alchemical Natural Philosophy\"}"
   },
   {
     "name": "Vladimir Nabokov",
@@ -3311,8 +3311,8 @@
   },
   {
     "name": "Frances Yates",
-    "type": "Entity",
-    "attributes": null
+    "type": "Scholar",
+    "attributes": "{\"Bio\": \"Pioneer of the 'Hermetic Tradition' in the Renaissance.\"}"
   },
   {
     "name": "Early Modern Hermetic",
@@ -3341,8 +3341,8 @@
   },
   {
     "name": "Pierre Hadot",
-    "type": "Entity",
-    "attributes": null
+    "type": "Scholar",
+    "attributes": "{\"Biography\": \"Modern philosopher who reframed ancient philosophy as a 'way of life'.\", \"Contributions\": \"- Concept of 'Spiritual Exercises' applied to Hermetic initiatory dialogues.\", \"Tradition\": \"Ancient Philosophy & Praxis\"}"
   },
   {
     "name": "Werner Beierwaltes",
@@ -5696,8 +5696,8 @@
   },
   {
     "name": "Marsilio Ficino",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Renaissance translator of the CH (1463).\", \"Tradition\": \"Renaissance Platonism\"}"
   },
   {
     "name": "Marguerite Your",
@@ -5771,8 +5771,8 @@
   },
   {
     "name": "Michael Maier",
-    "type": "Entity",
-    "attributes": null
+    "type": "Alchemist",
+    "attributes": "{\"Biography\": \"Physician to Rudolf II and a key figure in late alchemical emblem culture.\", \"Contributions\": \"- Symbolic synthesis of music, text, and image in Atalanta Fugiens.\", \"Tradition\": \"Rosicrucian Hermetism\", \"Associated Texts\": \"[Atalanta Fugiens](file:///...)\"}"
   },
   {
     "name": "Pietro Ramo",
@@ -6241,8 +6241,8 @@
   },
   {
     "name": "Atalanta Fugiens",
-    "type": "Entity",
-    "attributes": null
+    "type": "Text",
+    "attributes": "{\"Origin\": \"1617\", \"Author\": \"Michael Maier\", \"Themes\": \"Emblems, Music, Alchemy\"}"
   },
   {
     "name": "Michael \nMaier",
@@ -6836,8 +6836,8 @@
   },
   {
     "name": "Hermes Trismegistus",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Legendary Hellenistic sage, merger of Hermes and Thoth.\", \"Tradition\": \"Hermetism\"}"
   },
   {
     "name": "Raymundus Lullius",
@@ -10186,8 +10186,8 @@
   },
   {
     "name": "Giordano Bruno",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Infinite universe theorist, Hermetic martyr.\", \"Tradition\": \"Hermetic Cosmology\"}"
   },
   {
     "name": "Massachusetts Institute",
@@ -10491,8 +10491,8 @@
   },
   {
     "name": "Corpus Hermeticum",
-    "type": "Entity",
-    "attributes": null
+    "type": "Text",
+    "attributes": "{\"Origin\": \"2nd-3rd c CE\", \"Language\": \"Greek\", \"Themes\": \"Soteriology, Cosmology, Gnosis\"}"
   },
   {
     "name": "The Corpus Hermeti",
@@ -15886,8 +15886,8 @@
   },
   {
     "name": "Aurora Consurgens",
-    "type": "Entity",
-    "attributes": null
+    "type": "Historical Text",
+    "attributes": "{\"Estimated Origin\": \"14th\\u201315th century\", \"Language\": \"Latin\", \"Key Themes\": \"Mystical alchemy; Allegorical imagery; Spiritual transformation\", \"Summary\": \"A late medieval alchemical text integrating Christian mysticism with alchemical symbolism.\"}"
   },
   {
     "name": "Attic Greek",
@@ -30191,8 +30191,8 @@
   },
   {
     "name": "Paolo Lucentini",
-    "type": "Entity",
-    "attributes": null
+    "type": "Scholar",
+    "attributes": "{\"Bio\": \"Editor of 'Hermes Latinus', focused on medieval transmission.\"}"
   },
   {
     "name": "Ilaria Parri",
@@ -38346,8 +38346,8 @@
   },
   {
     "name": "Garth Fowden",
-    "type": "Entity",
-    "attributes": null
+    "type": "Scholar",
+    "attributes": "{\"Bio\": \"Author of 'The Egyptian Hermes', focused on late antique context.\"}"
   },
   {
     "name": "With Pierre Hadot",
@@ -40731,8 +40731,8 @@
   },
   {
     "name": "Heinrich Cornelius Agrippa",
-    "type": "Entity",
-    "attributes": null
+    "type": "Alchemist",
+    "attributes": "{\"Biography\": \"German polymath and author of the most influential compendium of occult philosophy in the West.\", \"Contributions\": \"- Systematized Renaissance magical-Hermetic cosmology; - Integration of magic and mechanics.\", \"Tradition\": \"Renaissance Occult Philosophy\", \"Associated Texts\": \"De occulta philosophia\"}"
   },
   {
     "name": "Heinrich Corne",
@@ -40766,8 +40766,8 @@
   },
   {
     "name": "Lodovico Lazzarelli",
-    "type": "Entity",
-    "attributes": null
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Hermetic poet, disciple of Correggio.\", \"Tradition\": \"Hermetism\"}"
   },
   {
     "name": "Giovanni\nMercurio",
@@ -107436,8 +107436,8 @@
   },
   {
     "name": "Paracelsus",
-    "type": "Alchemist",
-    "attributes": "{\"source\": \"Seed List\", \"category\": \"alchemist\"}"
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Reformer of medicine via Iatrochemistry.\", \"Tradition\": \"Spagyrics\"}"
   },
   {
     "name": "Ireneus Philalethes",
@@ -107496,8 +107496,8 @@
   },
   {
     "name": "Picatrix",
-    "type": "Alchemy Text",
-    "attributes": "{\"source\": \"Seed List\", \"category\": \"alchemy text\"}"
+    "type": "Text",
+    "attributes": "{\"Origin\": \"11th c\", \"Language\": \"Arabic/Latin\", \"Themes\": \"Astral Magic, Talismans\"}"
   },
   {
     "name": "Chemical Wedding of Christian Rosenkreutz",
@@ -108161,8 +108161,8 @@
   },
   {
     "name": "Asclepius",
-    "type": "Hermetic Topic",
-    "attributes": "{\"source\": \"Frequency Mining\", \"frequency\": 218}"
+    "type": "Text",
+    "attributes": "{\"Origin\": \"Late Antique\", \"Language\": \"Latin\", \"Themes\": \"Theurgy, Statues, Fatality\"}"
   },
   {
     "name": "Hermetic",
@@ -108458,5 +108458,650 @@
     "name": "Coptic",
     "type": "Hermetic Topic",
     "attributes": "{\"source\": \"Frequency Mining\", \"frequency\": 19}"
+  },
+  {
+    "name": "Ogdoad and Ennead",
+    "type": "Historical Text",
+    "attributes": "{\"Estimated Origin\": \"Late Antique (Nag Hammadi Codex VI)\", \"Language\": \"Coptic\", \"Key Themes\": \"Regeneration; Mystical ascent; Initiation; Father-Son dialogue\", \"Summary\": \"A Hermetic tractate preserved in the Nag Hammadi corpus centered on regeneration and ascent.\"}"
+  },
+  {
+    "name": "Liber XXIV philosophorum",
+    "type": "Text",
+    "attributes": "{\"Origin\": \"12th c\", \"Language\": \"Latin\", \"Themes\": \"Apophaticism, 24 Definitions\"}"
+  },
+  {
+    "name": "Giovanni Pico della Mirandola",
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Architect of Christian Cabala.\", \"Tradition\": \"Humanism\"}"
+  },
+  {
+    "name": "Jean-Pierre Mah\u00e9",
+    "type": "Scholar",
+    "attributes": "{\"Bio\": \"French philologist, editor of Coptic Hermetica.\"}"
+  },
+  {
+    "name": "Theurgy",
+    "type": "Topic",
+    "attributes": "{\"Definition\": \"Ritual techniques aimed at divine union or the animation of sacred objects.\", \"Related Terms\": \"Ritual magic; God-making; Statue animation\", \"Visual Markers\": \"Alters; Rays of light; Symbols of focus\"}"
+  },
+  {
+    "name": "Prisca Theologia",
+    "type": "Topic",
+    "attributes": "{\"Definition\": \"The Renaissance doctrine of a primordial divine revelation transmitted through a lineage of ancient sages.\", \"Related Terms\": \"Ancient Theology; Perennialism\", \"Visual Markers\": \"Golden chains; Sage portraits\"}"
+  },
+  {
+    "name": "De sex rerum principiis",
+    "type": "Text",
+    "attributes": "{\"Origin\": \"12th c\", \"Language\": \"Latin\", \"Themes\": \"Metaphysics\"}"
+  },
+  {
+    "name": "CH I - Poimandres",
+    "type": "Text",
+    "attributes": "{\"Origin\": \"2nd-3rd c CE\", \"Themes\": \"Creation, Nous, Anthropogenesis\"}"
+  },
+  {
+    "name": "CH II - To Asclepius",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"God as Circle, Transcendence\"}"
+  },
+  {
+    "name": "CH III - Sacred Discourse",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Cosmic Order\"}"
+  },
+  {
+    "name": "CH IV - The Mixing Bowl",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Intellect, Baptism\"}"
+  },
+  {
+    "name": "CH V - God is Invisible",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Immanence, Manifestation\"}"
+  },
+  {
+    "name": "CH VI - In God Alone is Good",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Goodness, Ontology\"}"
+  },
+  {
+    "name": "CH VII - Ignorance is Evil",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Gnosis, Salvation\"}"
+  },
+  {
+    "name": "CH VIII - No Perishing",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Transformation, Metamorphosis\"}"
+  },
+  {
+    "name": "CH IX - Thought and Sense",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Epistemology, Mind\"}"
+  },
+  {
+    "name": "CH X - The Key",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Metaphysical Unity\"}"
+  },
+  {
+    "name": "CH XI - Mind to Hermes",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Divine Instruction\"}"
+  },
+  {
+    "name": "CH XII - On the Common Mind",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Universal Mind\"}"
+  },
+  {
+    "name": "CH XIII - On Rebirth",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Regeneration, Silence, Initiation\"}"
+  },
+  {
+    "name": "CH XIV - Letter to Asclepius",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Divine Essence\"}"
+  },
+  {
+    "name": "CH XV - Cosmic Unity",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"All is One\"}"
+  },
+  {
+    "name": "CH XVI - Definitions to Asclepius",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Theology, Polemic\"}"
+  },
+  {
+    "name": "CH XVII - To Asclepius",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Statues, Presence\"}"
+  },
+  {
+    "name": "CH XVIII - Letter to Ammon",
+    "type": "Text",
+    "attributes": "{\"Themes\": \"Kingship, Praise\"}"
+  },
+  {
+    "name": "Nag Hammadi VI - Ogdoad and Ennead",
+    "type": "Text",
+    "attributes": "{\"Origin\": \"4th c CE\", \"Language\": \"Coptic\", \"Themes\": \"Ascent, Mystery\"}"
+  },
+  {
+    "name": "Tat",
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Disciple/Son of Hermes in the dialogues.\", \"Tradition\": \"Hermetism\"}"
+  },
+  {
+    "name": "Ammon",
+    "type": "Figure",
+    "attributes": "{\"Biography\": \"Royal student of Hermes.\", \"Tradition\": \"Hermetism\"}"
+  },
+  {
+    "name": "Andr\u00e9-Jean Festugi\u00e8re",
+    "type": "Scholar",
+    "attributes": "{\"Bio\": \"Editor of the Greek CH, focused on philosophical context.\"}"
+  },
+  {
+    "name": "Lesson 001: DB Arch - Schema Evolution",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 1 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 002: DB Arch - Journal Mode",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 2 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 003: DB Arch - MD5 Hashing",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 3 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 004: DB Arch - Atomic Ingestion",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 4 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 005: DB Arch - FTS5 Indexing",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 5 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 006: DB Arch - Relation Mapping",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 6 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 007: DB Arch - Provenance",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 7 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 008: DB Arch - Constraint Logic",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 8 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 009: DB Arch - Normalization",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 9 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 010: DB Arch - JSON Blobs",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 10 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 011: DB Arch - WAL Locks",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 11 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 012: DB Arch - Query Performance",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 12 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 013: DB Arch - Data Integrity",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 13 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 014: DB Arch - Backup Loops",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 14 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 015: DB Arch - Migration Scripts",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 15 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 016: DB Arch - Audit Trails",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 16 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 017: DB Arch - Concurrency",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 17 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 018: DB Arch - Type Consistency",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 18 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 019: DB Arch - Entity Dedup",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 19 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 020: DB Arch - Master IDs",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Database & Architecture\", \"Insight\": \"Deep architectural lesson 20 regarding database stability and scholarly data integrity.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 021: UI/UX - Mansion Metaphor",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 21 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 022: UI/UX - Room Isolation",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 22 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 023: UI/UX - Ambient Glow",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 23 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 024: UI/UX - Side Navigation",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 24 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 025: UI/UX - Responsive Grids",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 25 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 026: UI/UX - Visual Hierarchy",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 26 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 027: UI/UX - Typography Vibe",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 27 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 028: UI/UX - Micro-interactions",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 28 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 029: UI/UX - Alpine.js Scoping",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 29 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 030: UI/UX - Loading States",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 30 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 031: UI/UX - Empty State UI",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 31 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 032: UI/UX - Error Recovery",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 32 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 033: UI/UX - Context Drawers",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 33 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 034: UI/UX - OmniSearch Access",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 34 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 035: UI/UX - Breadcrumb Paths",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 35 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 036: UI/UX - Aesthetic Polish",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 36 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 037: UI/UX - Dark Mode HSL",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 37 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 038: UI/UX - Interactive Charts",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 38 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 039: UI/UX - Map Projection",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 39 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 040: UI/UX - Component Reusability",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Interface & UX\", \"Insight\": \"Design lesson 40 on creating a premium, room-based mansion experience.\", \"Designer\": \"Interface Designer\"}"
+  },
+  {
+    "name": "Lesson 041: Relational - The Golden Chain",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 41 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 042: Relational - Cross-Tradition",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 42 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 043: Relational - Mention Counts",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 43 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 044: Relational - Citation Loops",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 44 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 045: Relational - Entity Linking",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 45 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 046: Relational - Topic Clustering",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 46 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 047: Relational - Author Profiles",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 47 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 048: Relational - Text Lineages",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 48 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 049: Relational - Epoch Mapping",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 49 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 050: Relational - Symbolic Frequencies",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 50 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 051: Relational - Scholarly Haunting",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 51 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 052: Relational - Metabolic Summaries",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 52 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 053: Relational - OmniIndex Building",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 53 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 054: Relational - Recommendation Engine",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 54 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 055: Relational - Graph Connectivity",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 55 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 056: Relational - Edge Weighting",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 56 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 057: Relational - Node Centrality",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 57 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 058: Relational - Context Persistence",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 58 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 059: Relational - Strategy Classifier",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 59 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 060: Relational - Inquiry Mapping",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Relational Browsing\", \"Insight\": \"Feature lesson 60 on building deep connectivity between disparate scholarly entities.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 061: DH Strategy - Silences in Data",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 61 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 062: DH Strategy - Historiography",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 62 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 063: DH Strategy - Ancestry of Ideas",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 63 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 064: DH Strategy - Thematic Clusters",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 64 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 065: DH Strategy - Primary Sources",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 65 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 066: DH Strategy - Scholarship Drift",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 66 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 067: DH Strategy - Archive Access",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 67 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 068: DH Strategy - Digital Philology",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 68 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 069: DH Strategy - Context Engineering",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 69 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 070: DH Strategy - Dataset Narrative",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 70 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 071: DH Strategy - Reflexive Research",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 71 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 072: DH Strategy - Open Scholarship",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 72 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 073: DH Strategy - Curation Loops",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 73 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 074: DH Strategy - Evidence Mining",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 74 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 075: DH Strategy - Textual Criticism",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 75 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 076: DH Strategy - Hermeneutics",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 76 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 077: DH Strategy - Symbolic Reading",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 77 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 078: DH Strategy - Legacy Preservation",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 78 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 079: DH Strategy - Knowledge Graphs",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 79 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 080: DH Strategy - Narrative Integrity",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Digital Humanities\", \"Insight\": \"DH lesson 80 on fulfilling the scholarly mission of the mansion.\", \"Designer\": \"Narrative Designer\"}"
+  },
+  {
+    "name": "Lesson 081: Future-Proof - PDF Metadata Mining",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 81 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 082: Future-Proof - Generative Plugs",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 82 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 083: Future-Proof - LLM Context",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 83 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 084: Future-Proof - Prompt Stability",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 84 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 085: Future-Proof - API Readiness",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 85 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 086: Future-Proof - Markdown Export",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 86 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 087: Future-Proof - JSON Scalability",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 87 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 088: Future-Proof - Version Control",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 88 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 089: Future-Proof - Snippet Retrieval",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 89 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 090: Future-Proof - Page-Level Linking",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 90 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 091: Future-Proof - OCR Robustness",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 91 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 092: Future-Proof - Entity Extraction",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 92 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 093: Future-Proof - Sentiment Analysis",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 93 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 094: Future-Proof - Cross-Platform",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 94 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 095: Future-Proof - Mobile Access",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 95 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 096: Future-Proof - Search Analytics",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 96 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 097: Future-Proof - User Profiling",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 97 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 098: Future-Proof - Task Velocity",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 98 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 099: Future-Proof - Feature Glows",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 99 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
+  },
+  {
+    "name": "Lesson 100: Future-Proof - Branch Management",
+    "type": "Lesson",
+    "attributes": "{\"Category\": \"Library & Generative\", \"Insight\": \"Generative lesson 100 on preparing the database for advanced AI and research integration.\", \"Designer\": \"Branch Manager\"}"
   }
 ]

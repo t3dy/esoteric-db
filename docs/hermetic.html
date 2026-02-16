@@ -67,13 +67,14 @@
 <body class="flex flex-col h-screen overflow-hidden">
 
     <!-- Header -->
-    <header class="glass px-8 py-5 flex items-center justify-between z-10">
+    <header class="glass px-8 py-5 flex items-center justify-between z-10" x-data="{ showInstructions: true }">
         <div>
             <h1 class="text-2xl font-black flex items-center gap-3">
                 <span class="text-emerald-500">🏛</span> Hermetic Workbench
             </h1>
             <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Hermetic Tradition • <a
-                    href="reference.html" class="hover:text-emerald-500 transition">Reference Portal</a></p>
+                    href="index.html" class="hover:text-emerald-500 transition">Return to Hub</a> • <button
+                    @click="showInstructions = true" class="text-emerald-600 hover:underline">Help</button></p>
         </div>
         <div class="flex items-center gap-4">
             <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
@@ -87,55 +88,76 @@
                     class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Lineage</button>
             </div>
         </div>
-    </header>
 
-    <div class="flex flex-1 overflow-hidden relative">
-        <!-- Explorer (Left) -->
-        <main class="flex-1 overflow-y-auto p-10">
-            <div class="max-w-5xl mx-auto space-y-8">
+        <!-- Onscreen Instructions (Tour Guide) -->
+        <div x-show="showInstructions" x-cloak
+            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div
+                class="bg-slate-900 rounded-[2.5rem] shadow-2xl max-w-lg w-full p-10 border border-emerald-900/30 space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full -mr-16 -mt-16 blur-2xl">
+                </div>
 
-                <!-- Research Guide / Instructions -->
-                <div class="bg-emerald-900/10 border border-emerald-500/20 p-6 rounded-3xl flex gap-6 items-start">
-                    <div class="text-3xl text-emerald-500">📖</div>
+                <div class="flex items-center gap-4 relative">
+                    <div class="text-4xl bg-emerald-900/20 p-4 rounded-2xl border border-emerald-500/20">🏛</div>
                     <div>
-                        <h3 class="font-black text-emerald-400 uppercase tracking-tighter text-sm mb-2">Hermetic
-                            Exploration Guide</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">
-                            Welcome to the <span class="text-slate-200 font-bold">Hermetic Scholarly Gallery</span>. Use
-                            the tools above to navigate the tradition:
-                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Filter by Period</span>
-                            to trace the transmission of Gnosis through history.
-                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Toggle Figures</span>
-                            to see the scholars and magi behind the texts.
-                            <br>• <span class="text-emerald-500 font-bold underline cursor-help">Click any card</span>
-                            to expand deep metadata and view source PDFs.
-                        </p>
+                        <h2 class="text-2xl font-black serif italic text-emerald-400">Hermetic Guide</h2>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-emerald-600/60">Narrative
+                            Designer's Brief</p>
                     </div>
                 </div>
 
-            </div>
-
-            <!-- Golden Chain Visualizer (Lineage Mode Only) -->
-            <div id="lineage-visual" class="hidden space-y-8 animate-in fade-in duration-500">
-                <div id="epoch-banner" class="glass p-8 rounded-[2.5rem] border-emerald-500/20 glow-emerald">
-                    <!-- Banner content here -->
+                <div class="space-y-4 text-slate-300 leading-relaxed text-sm font-medium">
+                    <p>Welcome to the <strong>Hermetic Study</strong>. Here we trace the "Golden Chain" of transmission
+                        from the Egyptian Thoth to the Renaissance Magi.</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-emerald-500 font-bold">1.</span>
+                            <span><strong>Lineage Mode:</strong> Toggle to "Lineage" to see the <em>Golden Chain
+                                    Visualizer</em>, mapping the core epochs of Hermetic thought.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-emerald-500 font-bold">2.</span>
+                            <span><strong>Tracing Transmission:</strong> Click nodes in the graph to see how specific
+                                ideas traveled across centuries.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-500 font-bold">3.</span>
+                            <span><strong>Primary Records:</strong> Switch to "Documents" to browse the specific
+                                treatises (Corpus Hermeticum, Asclepius) that anchor the lineage.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div
-                    class="glass p-10 rounded-[3rem] overflow-hidden relative min-h-[500px] flex items-center justify-center">
-                    <svg id="golden-chain-svg" class="w-full h-full absolute inset-0"></svg>
-                    <div id="lineage-nodes" class="relative w-full h-full z-10"></div>
+
+                <div class="pt-6 border-t border-white/5 flex justify-end">
+                    <button @click="showInstructions = false"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-3 rounded-xl font-black uppercase tracking-widest transition shadow-lg shadow-emerald-900/40">
+                        Follow the Chain
+                    </button>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <!-- Result Counter -->
-            <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
-                Loading lineage data...
-            </div>
+    <!-- Golden Chain Visualizer (Lineage Mode Only) -->
+    <div id="lineage-visual" class="hidden space-y-8 animate-in fade-in duration-500">
+        <div id="epoch-banner" class="glass p-8 rounded-[2.5rem] border-emerald-500/20 glow-emerald">
+            <!-- Banner content here -->
+        </div>
+        <div class="glass p-10 rounded-[3rem] overflow-hidden relative min-h-[500px] flex items-center justify-center">
+            <svg id="golden-chain-svg" class="w-full h-full absolute inset-0"></svg>
+            <div id="lineage-nodes" class="relative w-full h-full z-10"></div>
+        </div>
+    </div>
 
-            <!-- Content Grid/List -->
-            <div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Cards injected here -->
-            </div>
+    <!-- Result Counter -->
+    <div id="counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest px-2">
+        Loading lineage data...
+    </div>
+
+    <!-- Content Grid/List -->
+    <div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Cards injected here -->
+    </div>
     </div>
     </main>
 
@@ -171,8 +193,14 @@
                     fetch('data/snapshots/hermetic_lineage.json')
                 ]);
 
-                if (dRes.ok) docs = (await dRes.json()).filter(d => d.topic === 'hermetic' || (d.path && d.path.includes('hermetic')));
-                if (sRes.ok) figures = (await sRes.json()).filter(e => e.type.includes('Hermetic'));
+                if (dRes.ok) {
+                    const allDocs = await dRes.json();
+                    docs = allDocs.filter(d => d.topic === 'hermetic' || (d.path && d.path.includes('hermetic')));
+                }
+                if (sRes.ok) {
+                    const allEnts = await sRes.json();
+                    figures = allEnts.filter(e => e.type && e.type.includes('Hermetic'));
+                }
                 if (lRes.ok) lineageData = await lRes.json();
 
                 renderPills();
@@ -238,17 +266,17 @@
             `;
 
             // Simple Node Rendering
-            nodesContainer.innerHTML = lineageData.nodes.map((n, i) => `
+            nodesContainer.innerHTML = (lineageData.nodes || []).map((n, i) => `
                 <div class="absolute bg-slate-900 border border-emerald-500/40 p-4 rounded-2xl cursor-pointer hover:border-emerald-500 transition-all group" 
                      style="left: ${20 + (i % 3) * 30}%; top: ${20 + Math.floor(i / 3) * 30}%; transform: translate(-50%, -50%)"
                      onclick="openItem('figures', '${n.id}')">
-                    <div class="text-xs font-black text-emerald-500 uppercase tracking-tighter mb-1">${n.period}</div>
-                    <div class="text-sm font-bold text-white group-hover:text-emerald-400 serif italic">${n.label}</div>
+                    <div class="text-xs font-black text-emerald-500 uppercase tracking-tighter mb-1">${n.period || 'Unknown Epoch'}</div>
+                    <div class="text-sm font-bold text-white group-hover:text-emerald-400 serif italic">${n.label || 'Untitled Node'}</div>
                 </div>
             `).join('');
 
             // Draw Edges (Simple SVG)
-            svg.innerHTML = lineageData.edges.map(e => `
+            svg.innerHTML = (lineageData.edges || []).map(e => `
                 <line x1="20%" y1="20%" x2="50%" y2="20%" stroke="rgba(16, 185, 129, 0.1)" stroke-width="1" />
             `).join('');
 
@@ -287,7 +315,16 @@
 
             let filtered = data.filter(item => {
                 const nameMatch = (item.title || item.filename || item.name || '').toLowerCase().includes(q);
-                const catMatch = !activeFilters.category || (mode === 'docs' ? item.period === activeFilters.category : (item.attributes && JSON.parse(item.attributes).period === activeFilters.category));
+                let catMatch = true;
+                if (activeFilters.category) {
+                    if (mode === 'docs') {
+                        catMatch = item.period === activeFilters.category;
+                    } else {
+                        let attrs = {};
+                        try { if (item.attributes) attrs = JSON.parse(item.attributes); } catch (e) { }
+                        catMatch = attrs.period === activeFilters.category;
+                    }
+                }
                 return nameMatch && catMatch;
             });
 

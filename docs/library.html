@@ -63,13 +63,16 @@
 <body class="flex flex-col h-screen">
 
     <!-- Header -->
-    <header class="bg-white border-b px-8 py-4 flex items-center justify-between shadow-sm z-10">
+    <header class="bg-white border-b px-8 py-4 flex items-center justify-between shadow-sm z-10"
+        x-data="{ showInstructions: true }">
         <div>
             <h1 class="text-xl font-bold flex items-center gap-2">
                 <span class="text-emerald-600">🏛</span> Scholarly Workbench
             </h1>
             <p class="text-[10px] text-slate-400 uppercase tracking-widest">Library V8.3.2 • <a href="index.html"
-                    class="hover:text-emerald-600 transition">Return to Hub</a></p>
+                    class="hover:text-emerald-600 transition">Return to Hub</a> • <button
+                    @click="showInstructions = true" class="text-emerald-600 font-bold hover:underline">Help</button>
+            </p>
         </div>
         <div class="flex items-center gap-4">
             <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
@@ -77,6 +80,53 @@
                 SEARCH <span class="ml-2 border border-slate-200 px-1 rounded text-[9px]">CTRL K</span>
             </button>
             <div id="stats-summary" class="text-xs font-mono text-slate-500">Loading metrics...</div>
+        </div>
+
+        <!-- Onscreen Instructions (Tour Guide) -->
+        <div x-show="showInstructions" x-cloak
+            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+            <div
+                class="bg-white rounded-[2rem] shadow-2xl max-w-lg w-full p-10 border border-slate-200 space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full -mr-16 -mt-16"></div>
+
+                <div class="flex items-center gap-4 relative">
+                    <div class="text-4xl bg-emerald-100 p-4 rounded-2xl">👩‍🏫</div>
+                    <div>
+                        <h2 class="text-2xl font-black serif italic text-slate-800">Library Tour Guide</h2>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-emerald-600">Interface
+                            Designer's Brief</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-slate-600 leading-relaxed text-sm">
+                    <p>Welcome to the <strong>Manuscript Library</strong>. This room is optimized for high-fidelity
+                        access to your primary source corpus.</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-emerald-500 font-bold">1.</span>
+                            <span><strong>Filter by Movement:</strong> Use the pills to isolate Hermetic, Alchemical, or
+                                Platonic texts.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-500 font-bold">2.</span>
+                            <span><strong>Rich Metadata:</strong> Click any document to open the "Scholarly Drawer" and
+                                see its Author, Period, and Research Summary.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-500 font-bold">3.</span>
+                            <span><strong>Quick Portals:</strong> From the drawer, you can leap directly into the
+                                <strong>Knowledge Graph</strong> or <strong>Dictionary</strong>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100 flex justify-end">
+                    <button @click="showInstructions = false"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold transition shadow-lg shadow-emerald-200">
+                        Enter Library
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Esoteric DB - Lessons Lab</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Inter:wght@400;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .lesson-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.6);
+        }
+    </style>
+</head>
+
+<body class="p-8" x-data="lessonsApp()">
+
+    <div class="max-w-7xl mx-auto space-y-12" x-data="{ showInstructions: true }">
+        <!-- Header -->
+        <div class="flex justify-between items-end border-b border-slate-800 pb-8">
+            <div>
+                <h1 class="text-6xl font-black italic text-indigo-400 tracking-tighter">Lessons Lab</h1>
+                <p class="text-slate-400 font-mono text-xs uppercase tracking-[0.3em] mt-2">100 Discrete Insights •
+                    <button @click="showInstructions = true" class="text-indigo-400 hover:underline">Help</button>
+                </p>
+            </div>
+            <div class="flex gap-4">
+                <a href="design.html"
+                    class="bg-indigo-950 text-indigo-400 border border-indigo-900 px-6 py-2 rounded-full font-bold text-sm hover:bg-indigo-900 transition">Design
+                    Team</a>
+                <a href="index.html"
+                    class="bg-slate-800 text-slate-300 px-6 py-2 rounded-full font-bold text-sm hover:bg-slate-700 transition">Exit</a>
+            </div>
+        </div>
+
+        <!-- Onscreen Instructions (Tour Guide) -->
+        <div x-show="showInstructions" x-cloak
+            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div
+                class="bg-slate-900 rounded-[2.5rem] shadow-2xl max-w-lg w-full p-10 border border-indigo-900/30 space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full -mr-16 -mt-16 blur-2xl">
+                </div>
+
+                <div class="flex items-center gap-4 relative">
+                    <div class="text-4xl bg-indigo-900/20 p-4 rounded-2xl border border-indigo-500/20">🎓</div>
+                    <div>
+                        <h2 class="text-2xl font-black serif italic text-indigo-400">Lesson Master's Guide</h2>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-indigo-600/60">Branch Manager's
+                            Brief</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-slate-300 leading-relaxed text-sm font-medium">
+                    <p>Welcome to the <strong>Lessons Lab</strong>. Here, our own development struggles are codified
+                        into a curriculum of scholarly engineering.</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-indigo-400 font-bold">1.</span>
+                            <span><strong>Filtering Wisdom:</strong> Use the category pills to focus on <em>Database
+                                    Architecture</em>, <em>UX Design</em>, or <em>Digital Humanities
+                                    Strategy</em>.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-indigo-400 font-bold">2.</span>
+                            <span><strong>Designer Insights:</strong> Each card credits the specific member of the
+                                <strong>Design Team</strong> (Branch Manager, Narrative Designer, etc.) who authored the
+                                lesson.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-indigo-400 font-bold">3.</span>
+                            <span><strong>Applying Strategy:</strong> Use these lessons as "Cheat Codes" when prompting
+                                the AI to modify the mansion in V10.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-6 border-t border-white/5 flex justify-end">
+                    <button @click="showInstructions = false"
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-3 rounded-xl font-black uppercase tracking-widest transition shadow-lg shadow-indigo-900/40">
+                        Gather Wisdom
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-2">
+            <template x-for="cat in categories">
+                <button @click="filter = cat"
+                    class="px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border transition"
+                    :class="filter === cat ? 'bg-indigo-600 border-indigo-400 text-white' : 'bg-slate-900 border-slate-800 text-slate-500 hover:border-slate-600'"
+                    x-text="cat">
+                </button>
+            </template>
+        </div>
+
+        <!-- Lessons Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <template x-for="lesson in filteredLessons()" :key="lesson.id">
+                <div
+                    class="lesson-card bg-slate-900/40 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-[10px] font-black font-mono text-indigo-500 opacity-60" x-text="lesson.id">
+                            </div>
+                            <div class="px-2 py-0.5 rounded bg-indigo-950/50 border border-indigo-900 text-[10px] font-bold text-indigo-300"
+                                x-text="lesson.category"></div>
+                        </div>
+                        <h3 class="text-xl font-bold leading-tight mb-3" x-text="lesson.title"></h3>
+                        <p class="text-sm text-slate-400 leading-relaxed italic" x-text="lesson.insight"></p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-2">
+                        <div class="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-[10px]">👤
+                        </div>
+                        <div class="text-[10px] uppercase font-black tracking-widest text-slate-500"
+                            x-text="lesson.designer"></div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <script>
+        function lessonsApp() {
+            return {
+                filter: 'ALL',
+                categories: ['ALL', 'Database & Architecture', 'Interface & UX', 'Relational Browsing', 'Digital Humanities', 'Library & Generative'],
+                lessons: [],
+                async init() {
+                    try {
+                        const res = await fetch('lessons.json');
+                        if (res.ok) {
+                            this.lessons = await res.json();
+                        } else {
+                            console.error("Failed to load lessons.json");
+                        }
+                    } catch (e) {
+                        console.error("Error loading lessons:", e);
+                    }
+                },
+
+                filteredLessons() {
+                    if (this.filter === 'ALL') return this.lessons;
+                    return this.lessons.filter(l => l.category === this.filter);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,137 +1,27 @@
 {
   "phases": [
     {
-      "name": "Phase 2: Visualizations & Polish <!-- id: 4 -->",
-      "completed": 1,
-      "total": 1
-    },
-    {
-      "name": "Phase 3: Chat Ingestion & Q&A Indexing <!-- id: 6 -->",
-      "completed": 2,
-      "total": 3
-    },
-    {
-      "name": "Phase 4: Deep Metadata & Topic Dashboards [DONE] <!-- id: 10 -->",
-      "completed": 3,
-      "total": 3
-    },
-    {
-      "name": "Phase 5: Silent Enrichment & Entity Mining [DONE] <!-- id: 14 -->",
-      "completed": 3,
-      "total": 3
-    },
-    {
-      "name": "Phase 6: Deep Search & Graph [DONE] <!-- id: 18 -->",
-      "completed": 2,
-      "total": 2
-    },
-    {
-      "name": "Phase 7: Chat Ingestion [DONE] <!-- id: 21 -->",
-      "completed": 3,
-      "total": 3
-    },
-    {
-      "name": "Phase 8: Historiography Dashboards [DONE] <!-- id: 25 -->",
-      "completed": 3,
-      "total": 3
-    },
-    {
-      "name": "Phase 9: Inquiry Metrics [DONE] <!-- id: 29 -->",
-      "completed": 2,
-      "total": 2
-    },
-    {
-      "name": "Phase 14: Portfolio Narratives (Data Science) [DONE]",
-      "completed": 2,
-      "total": 2
-    },
-    {
-      "name": "Phase 15: Deep Textual Compendium & Glossary [IN PROGRESS]",
-      "completed": 4,
-      "total": 4
-    },
-    {
-      "name": "Phase 16: Alchemy & Hermetic Specialized Expansion (V6) [PLANNING]",
-      "completed": 2,
-      "total": 5
-    },
-    {
-      "name": "Phase 17: Digital Interactive Dictionary (V7) [DEPRECATED / ABSORBED INTO V8]",
-      "completed": 2,
-      "total": 2
-    },
-    {
-      "name": "Phase 18: Reference-First Data Science Workbench (V8) [IN PROGRESS]",
-      "completed": 5,
-      "total": 5
-    },
-    {
-      "name": "Phase 19: Documentation & Meta-Dashboard [COMPLETE]",
-      "completed": 4,
-      "total": 4
-    },
-    {
-      "name": "Phase 21: Hotfix & Stabilization [RUNNING]",
-      "completed": 4,
-      "total": 5
-    },
-    {
-      "name": "Phase 23: Deconstructing the Monolith [COMPLETE]",
-      "completed": 5,
-      "total": 5
-    },
-    {
-      "name": "Phase 24: Modular Portal Stabilization (Hotfix V8.3.1) [COMPLETE]",
-      "completed": 5,
-      "total": 5
-    },
-    {
-      "name": "Phase 20: Deployment & Release [COMPLETE]",
-      "completed": 3,
-      "total": 3
-    },
-    {
-      "name": "Phase 26: Scholarly Workbench Overhaul (DH/UX/DB) [COMPLETE]",
-      "completed": 6,
-      "total": 6
-    },
-    {
-      "name": "Phase 27: Scholarly Roadmap & Advanced Research Features [PLANNING]",
+      "name": "Phase 2-30: Historical Context [DONE]",
       "completed": 0,
-      "total": 5
+      "total": 0
     },
     {
-      "name": "Phase 28: Alchemy & Hermetic Overhaul (DH/UX/DB) [COMPLETE]",
-      "completed": 6,
-      "total": 6
+      "name": "Phase 31-36: Meta-Enrichment & Interactive Tables [IN PROGRESS]",
+      "completed": 2,
+      "total": 3
     },
     {
-      "name": "Phase 29: Chat Intelligence Dashboards (Questions & Tables) [COMPLETE]",
-      "completed": 4,
-      "total": 4
-    },
-    {
-      "name": "Phase 30: Premium Design & Metrics Facelift (UX/DH) [COMPLETE]",
-      "completed": 4,
-      "total": 4
-    },
-    {
-      "name": "Phase 31: Metadata Enrichment & UX Refinement (V8.5) [IN PROGRESS]",
-      "completed": 4,
-      "total": 6
-    },
-    {
-      "name": "Phase 32: Alchemy Dictionary Enrichment (V8.6) [PLANNING]",
-      "completed": 0,
-      "total": 7
-    },
-    {
-      "name": "Phase 33: Hermetic Tradition Gallery & Deep Scan (V8.7) [PLANNING]",
+      "name": "Phase 37: Alchemist Browser & Scholarly Metadata (V9.4) [IN PROGRESS]",
       "completed": 2,
       "total": 5
+    },
+    {
+      "name": "Phase 38: The Lessons Database & Dashboard (V9.5) [IN PROGRESS]",
+      "completed": 2,
+      "total": 6
     }
   ],
-  "total_tasks": 103,
-  "completed_tasks": 81,
-  "current_focus": "Phase 31: Metadata Enrichment & UX Refinement (V8.5) [IN PROGRESS]"
+  "total_tasks": 14,
+  "completed_tasks": 6,
+  "current_focus": "Phase 38: The Lessons Database & Dashboard (V9.5) [IN PROGRESS]"
 }

@@ -479,6 +479,21 @@ def export_json(conn, export_path, static=False):
     with open(os.path.join(export_path, "entities.json"), "w") as f:
         json.dump(all_ent, f, indent=2)
 
+    # 5b. Lessons (For Lessons Lab)
+    cursor.execute("SELECT id, name, attributes FROM entities WHERE type = 'Lesson'")
+    lessons = []
+    for r in cursor.fetchall():
+        attrs = json.loads(r[2]) if r[2] else {}
+        lessons.append({
+            "id": f"L{str(r[0]).zfill(3)}",
+            "title": r[1],
+            "category": attrs.get("category", "General"),
+            "insight": attrs.get("insight", "No insight provided."),
+            "designer": attrs.get("designer", "Unknown")
+        })
+    with open(os.path.join(export_path, "lessons.json"), "w") as f:
+        json.dump(lessons, f, indent=2)
+
     # 6. Knowledge Graph (graph.json)
     nodes = []
     edges = []

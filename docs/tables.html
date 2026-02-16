@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esoteric DB - Table Laboratory</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Crimson+Pro:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="assets/omni_search.js"></script>
     <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: #020617;
@@ -28,7 +34,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Premium Table Styling */
         .markdown-table table {
             @apply w-full border-collapse rounded-xl overflow-hidden text-sm;
         }
@@ -51,7 +56,7 @@
     </style>
 </head>
 
-<body class="p-8 md:p-12 space-y-12">
+<body class="p-8 md:p-12 space-y-12" x-data="tableApp()">
 
     <!-- Header -->
     <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
@@ -63,9 +68,13 @@
             <p class="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold mt-3">Extracted Tabular Data • <a
                     href="reference.html" class="text-emerald-400 hover:underline">Reference Portal</a></p>
         </div>
-        <div class="flex gap-4">
+        <div class="flex items-center gap-4">
+            <button onclick="window.dispatchEvent(new KeyboardEvent('keydown', {ctrlKey: true, key: 'k'}))"
+                class="px-3 py-1.5 glass border border-white/10 rounded-lg text-slate-400 text-[10px] font-black hover:bg-slate-800 transition">
+                SEARCH <span class="ml-2 border border-white/20 px-1 rounded text-[9px]">CTRL K</span>
+            </button>
             <div class="glass px-6 py-3 rounded-2xl">
-                <div id="count-t" class="text-2xl font-black text-white">0</div>
+                <div class="text-2xl font-black text-white" x-text="tables.length">0</div>
                 <div class="text-[8px] text-slate-500 uppercase font-black">Matrices Found</div>
             </div>
         </div>
@@ -74,90 +83,123 @@
     <!-- Filters -->
     <section class="max-w-7xl mx-auto">
         <div class="glass p-6 rounded-[2rem] flex flex-col md:flex-row gap-4">
-            <input type="text" id="search" oninput="render()" placeholder="Search tables (headers or content)..."
+            <input type="text" x-model="search" placeholder="Search matrices (headers or content)..."
                 class="flex-1 bg-slate-900/50 border border-white/5 rounded-2xl p-4 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
-            <select id="topicFilter" onchange="render()"
-                class="bg-slate-900 border border-white/5 rounded-2xl p-4 text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <select x-model="topicFilter"
+                class="bg-slate-900 border border-white/5 rounded-2xl p-4 text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 min-w-[200px]">
                 <option value="all">All Topics</option>
+                <template x-for="topic in topics" :key="topic">
+                    <option :value="topic" x-text="topic"></option>
+                </template>
             </select>
         </div>
     </section>
 
     <!-- Content -->
-    <section id="results" class="max-w-7xl mx-auto space-y-8">
-        <!-- Tables injected here -->
-    </section>
-
-    <script>
-        let tables = [];
-
-        async function init() {
-            try {
-                const res = await fetch('tables.json');
-                if (res.ok) {
-                    tables = await res.json();
-                    document.getElementById('count-t').innerText = tables.length;
-
-                    const topics = [...new Set(tables.map(t => t.topic))];
-                    const select = document.getElementById('topicFilter');
-                    topics.forEach(t => {
-                        const opt = document.createElement('option');
-                        opt.value = t;
-                        opt.innerText = t;
-                        select.appendChild(opt);
-                    });
-
-                    render();
-                }
-            } catch (e) {
-                console.error(e);
-            }
-        }
-
-        function render() {
-            const q = document.getElementById('search').value.toLowerCase();
-            const topic = document.getElementById('topicFilter').value;
-            const container = document.getElementById('results');
-
-            const filtered = tables.filter(item => {
-                const matchQ = item.content.toLowerCase().includes(q) || item.chat.toLowerCase().includes(q);
-                const matchTopic = topic === 'all' || item.topic === topic;
-                return matchQ && matchTopic;
-            });
-
-            container.innerHTML = filtered.map((item, idx) => `
-                <div class="glass p-8 rounded-[2.5rem] space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500" style="animation-delay: ${idx * 50}ms">
-                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
-                        <div class="flex flex-col gap-1">
-                            <h2 class="text-xl font-black text-emerald-400 serif italic">${item.title || 'Scholarly Data Table'}</h2>
-                            <div class="flex items-center gap-3">
-                                <span class="text-[9px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full border border-emerald-500/20 font-black uppercase">${item.topic}</span>
-                                <span class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">${item.chat}</span>
-                            </div>
+    <section class="max-w-7xl mx-auto space-y-4">
+        <template x-for="(item, idx) in filteredTables" :key="idx">
+            <div class="glass rounded-[2rem] overflow-hidden transition-all duration-300"
+                :class="expandedIdx === idx ? 'ring-2 ring-emerald-500/50' : 'hover:bg-white/[0.02]'">
+                <!-- Header / Trigger -->
+                <div @click="expandedIdx = (expandedIdx === idx ? null : idx)"
+                    class="p-8 cursor-pointer flex justify-between items-center group">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="text-xl font-black text-emerald-400 serif italic group-hover:text-emerald-300 transition"
+                            x-text="item.title || 'Scholarly Data Table'"></h2>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="text-[9px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full border border-emerald-500/20 font-black uppercase"
+                                x-text="item.topic"></span>
+                            <span class="text-[9px] text-slate-500 uppercase tracking-widest font-bold"
+                                x-text="item.chat"></span>
                         </div>
-                        <button onclick="copyTable(${idx})" class="text-[10px] font-black text-slate-600 hover:text-emerald-400 uppercase transition">Copy Markdown</button>
                     </div>
-                    
-                    ${item.prompt ? `
-                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5 space-y-2">
-                        <h4 class="text-[9px] font-black text-slate-500 uppercase tracking-[0.2em]">Contextual Prompt</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed italic">"${item.prompt}"</p>
-                    </div>
-                    ` : ''}
-
-                    <div class="markdown-table overflow-x-auto">
-                        ${marked.parse(item.content)}
+                    <div class="flex items-center gap-6">
+                        <span
+                            class="text-[10px] font-black text-slate-600 group-hover:text-emerald-500 uppercase transition"
+                            x-text="expandedIdx === idx ? 'Collapse' : 'Expand View'"></span>
+                        <div class="text-slate-600 transition-transform duration-300"
+                            :class="expandedIdx === idx ? 'rotate-180 text-emerald-500' : ''">▼</div>
                     </div>
                 </div>
-            `).join('');
-        }
 
-        function copyTable(idx) {
-            navigator.clipboard.writeText(tables[idx].content);
-            alert("Table markdown copied to clipboard.");
-        }
+                <!-- Expanded Body -->
+                <div x-show="expandedIdx === idx" x-collapse x-cloak
+                    class="p-8 pt-0 border-t border-white/5 space-y-8 animate-in fade-in duration-500">
+                    <div class="flex justify-end pt-4">
+                        <button @click="copyTable(item.content)"
+                            class="text-[10px] font-black text-slate-600 hover:text-emerald-400 uppercase transition">Copy
+                            Markdown</button>
+                    </div>
 
-        init();
+                    <template x-if="item.prompt">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5 space-y-2">
+                            <h4 class="text-[9px] font-black text-slate-500 uppercase tracking-[0.2em]">Contextual
+                                Prompt</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed italic"
+                                x-text="'&quot;' + item.prompt + '&quot;'"></p>
+                        </div>
+                    </template>
+
+                    <div class="markdown-table overflow-x-auto" x-html="marked.parse(item.content)"></div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Empty State -->
+        <template x-if="filteredTables.length === 0">
+            <div class="py-20 text-center glass rounded-[3rem] border-dashed border-white/10">
+                <div class="text-4xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold text-slate-400">No matrices match your criteria.</h3>
+                <p class="text-sm text-slate-600 mt-2">Try adjusting your filters or search terms.</p>
+            </div>
+        </template>
+    </section>
+
+    <!-- Loader -->
+    <div id="loader" class="text-center py-12" x-show="loading">
+        <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-emerald-500 border-t-transparent">
+        </div>
+        <p class="mt-4 text-slate-500 font-mono text-[10px] uppercase tracking-widest">Reconstructing Tabular
+            Knowledge...</p>
+    </div>
+
+    <script>
+        function tableApp() {
+            return {
+                tables: [],
+                topics: [],
+                search: '',
+                topicFilter: 'all',
+                expandedIdx: null,
+                loading: true,
+                async init() {
+                    try {
+                        const res = await fetch('tables.json');
+                        if (res.ok) {
+                            this.tables = await res.json();
+                            this.topics = [...new Set(this.tables.map(t => t.topic))].sort();
+                        }
+                    } catch (e) {
+                        console.error("Failed to load tables:", e);
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+                get filteredTables() {
+                    const q = this.search.toLowerCase();
+                    return this.tables.filter(item => {
+                        const matchQ = (item.content + item.title + item.prompt + item.chat).toLowerCase().includes(q);
+                        const matchTopic = this.topicFilter === 'all' || item.topic === this.topicFilter;
+                        return matchQ && matchTopic;
+                    });
+                },
+                copyTable(content) {
+                    navigator.clipboard.writeText(content);
+                    alert("Matrix markdown copied to clipboard.");
+                }
+            }
+        }
     </script>
 </body>
 

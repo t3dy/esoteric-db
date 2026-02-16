@@ -9,9 +9,9 @@ from bs4 import BeautifulSoup
 def init_chats_db(conn):
     """Adds chat-related tables to the schema."""
     cursor = conn.cursor()
-    # For development/refinement, we drop to ensure schema matches
-    cursor.execute("DROP TABLE IF EXISTS prompts")
-    cursor.execute("DROP TABLE IF EXISTS tables")
+    # PREVENT DATA LOSS: Only create if not exists
+    # cursor.execute("DROP TABLE IF EXISTS prompts")
+    # cursor.execute("DROP TABLE IF EXISTS tables")
     
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS chats (
@@ -44,6 +44,11 @@ def init_chats_db(conn):
         mentions_figure TEXT,
         mentions_text TEXT,
         mentions_scholar TEXT,
+        strategy_summary TEXT,
+        prompt_topic TEXT,
+        prompt_alchemist TEXT,
+        prompt_scholar TEXT,
+        prompt_text TEXT,
         order_index INTEGER,
         FOREIGN KEY(chat_id) REFERENCES chats(id)
     )
@@ -60,6 +65,49 @@ def init_chats_db(conn):
     )
     ''')
     conn.commit()
+
+def html_table_to_markdown(soup_table):
+    """Crude conversion of BS4 table tag to Markdown."""
+    rows = soup_table.find_all('tr')
+    if not rows: return None
+    
+    md_rows = []
+    for i, row in enumerate(rows):
+        cols = row.find_all(['td', 'th'])
+        # Clean text
+        row_data = [c.get_text(strip=True).replace("|", "\\|") for c in cols]
+        if not row_data: continue
+        
+        md_rows.append("| " + " | ".join(row_data) + " |")
+        
+        # Add separator after header
+        if i == 0:
+            md_rows.append("| " + " | ".join(["---"] * len(row_data)) + " |")
+            
+    return "\n".join(md_rows)
+
+def save_table(cursor, chat_id, content, msg, chat_data, topic):
+    """Helper to save table to DB."""
+    prompt = ""
+    # Capture prompt from previous message if it exists
+    if msg['index'] > 0:
+        prev_msg = next((m for m in chat_data['messages'] if m['index'] == msg['index']-1), None)
+        if prev_msg: prompt = prev_msg['content']
+    
+    # Fallback: if table is in the middle of a message, the first part is the "prompt"
+    if not prompt and len(msg['content'].split(content[:20])[0]) > 5:
+        prompt = msg['content'].split(content[:20])[0].strip()
+
+    title = "Scholarly Data Table"
+    if prompt:
+        title_line = prompt.split("\n")[0].strip()
+        if len(title_line) > 50: title_line = title_line[:47] + "..."
+        title = title_line
+
+    cursor.execute('''
+        INSERT INTO tables (chat_id, content, prompt, title, topic)
+        VALUES (?, ?, ?, ?, ?)
+    ''', (chat_id, content, prompt[:500], title, topic))
 
 def parse_chat_html(filepath):
     """Parses a single chat index.html file."""
@@ -84,15 +132,26 @@ def parse_chat_html(filepath):
     msg_divs = soup.find_all('div', class_='msg')
     for i, div in enumerate(msg_divs):
         role_div = div.find('div', class_='role')
-        role = role_div.text.lower() if role_div else "unknown"
-        # Content is the text after the role div
-        content = div.get_text(strip=True, separator='\n')
-        # Clean up role prefix in content if necessary
-        if role_div:
-            content = content.replace(role_div.text, "", 1).strip()
+        role = role_div.get_text(strip=True).lower() if role_div else "unknown"
+        
+        # Look for bubble content
+        bubble = div.find('div', class_='bubble')
+        if bubble:
+            # We want to preserve the HTML tables if they exist
+            # but for general mining, we get the text content
+            content = bubble.get_text(strip=True, separator='\n')
+            # However, for the 'content' field in messages, we'll store everything except the role
+            msg_html = str(bubble)
+        else:
+            content = div.get_text(strip=True, separator='\n')
+            if role_div:
+                content = content.replace(role_div.text, "", 1).strip()
+            msg_html = str(div)
+
         messages.append({
             "role": role,
             "content": content,
+            "html": msg_html,
             "index": i
         })
 
@@ -215,32 +274,25 @@ def ingest_all_chats(db_path, chats_dir):
                 VALUES (?, ?, ?, ?)
                 ''', (chat_id, msg['role'], msg['content'], msg['index']))
                 
-                # --- [NEW] Table Mining (V5) ---
+                # --- [NEW] Table Mining (V5/V9.3) ---
+                has_extracted_table = False
+                
+                # 1. Markdown Table Mining
                 if "|" in msg['content'] and "---" in msg['content']:
-                    # More permissive regex for typical markdown tables
                     table_matches = re.findall(r'(\|.*\|.*\n\|[\s|:-]+\n(?:\|.*\|.*\n)+)', msg['content'])
                     for full_table in table_matches:
-                        # Capture prompt from previous message if it exists
-                        prompt = ""
-                        if msg['index'] > 0:
-                            prev_msg = next((m for m in chat_data['messages'] if m['index'] == msg['index']-1), None)
-                            if prev_msg: prompt = prev_msg['content']
-                        
-                        # Fallback: if table is in the middle of a message, the first part is the "prompt"
-                        if not prompt and len(msg['content'].split(full_table)[0]) > 5:
-                            prompt = msg['content'].split(full_table)[0].strip()
+                        has_extracted_table = True
+                        save_table(cursor, chat_id, full_table, msg, chat_data, topic)
 
-                        # Heuristic Title: First line of prompt or a generic title
-                        title = "Scholarly Data Table"
-                        if prompt:
-                            title_line = prompt.split("\n")[0].strip()
-                            if len(title_line) > 50: title_line = title_line[:47] + "..."
-                            title = title_line
-
-                        cursor.execute('''
-                            INSERT INTO tables (chat_id, content, prompt, title, topic)
-                            VALUES (?, ?, ?, ?, ?)
-                        ''', (chat_id, full_table, prompt, title, topic))
+                # 2. HTML Table Mining (V9.3)
+                if not has_extracted_table and "<table>" in msg.get('html', ''):
+                    temp_soup = BeautifulSoup(msg['html'], 'html.parser')
+                    html_tables = temp_soup.find_all('table')
+                    for table_tag in html_tables:
+                        # Convert HTML table back to Markdown for consistency in the Lab
+                        md_table = html_table_to_markdown(table_tag)
+                        if md_table:
+                            save_table(cursor, chat_id, md_table, msg, chat_data, topic)
 
                 # Scholar Linking (Optimized)
                 if scholar_regex:

@@ -1,0 +1,71 @@
+# Scholarly Metadata Style Guide & Templating
+
+This guide defines the "Rich Profile" standard for entities in the Esoteric Studies Database. Our goal is to move from "thin" records (name-only) to "thick" scholarly profiles that enable deep relational browsing.
+
+---
+
+## 1. Alchemist (Individual Figure)
+**Entities**: *Paracelsus, Isaac Newton, Maria the Jewess, Heinrich Khunrath*
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Biography** | A 2-3 sentence overview of their life and origins. | "German-Swiss physician, alchemist, and late-medieval philosopher..." |
+| **Contributions** | Bulleted list of key theoretical or practical breakthroughs. | "- Introduced chemical medicine (iatrochemistry); - Challenged Galenic medicine..." |
+| **Tradition** | The school of thought or lineage. | "Spagyric, Hermeticism" |
+| **Associated Texts** | List of works in our database. | "[Archidoxis](file:///...) [Paragranum](file:///...)" |
+
+---
+
+## 2. Document Title (The Physical Object/PDF)
+**Entities**: *Atalanta Fugiens (PDF), Bibliotheca Chemica Curiosa*
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Author** | The primary credited individual. | "Michael Maier" |
+| **Publication Year** | Year of the specific edition in our PDF. | "1617" |
+| **Summary** | Academic abstract of the content. | "An alchemical emblem book containing 50 emblems with musical fugues..." |
+| **Physical Context** | Library or collection origin. | "Duveen Collection, University of Wisconsin" |
+
+---
+
+## 3. Historical Text (The Abstract Work)
+**Entities**: *The Emerald Tablet, Corpus Hermeticum, Aurora Consurgens*
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Estimated Origin** | Historical era or century. | "c. 8th Century (Arabic version); Hellenistic origins." |
+| **Language** | Original and translation languages. | "Latin (trans. from Arabic)" |
+| **Key Themes** | Metadata tags for searchability. | "Macrocosm/Microcosm, Correspondence" |
+
+---
+
+## 4. Time Period (Epoch)
+**Entities**: *Renaissance, Hellenistic Egypt, Early Modern Europe*
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Span** | Start and End dates (approx). | "1450 - 1650" |
+| **Shift** | What changed in alchemy during this time? | "Transition from laboratory practice to spiritual 'theosophy'." |
+| **Major Figures** | Links to Alchemist profiles. | "[Pico della Mirandola](file:///...), [John Dee](file:///...)" |
+
+---
+
+## 5. Topic (Keyword/Category)
+**Entities**: *Nigredo, Spagyrics, Kabbalah, Transmutation*
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Definition** | Concise scholarly definition. | "The 'blackening' or initial stage of the Great Work, associated with putrefaction." |
+| **Related Terms** | Synonyms or closely associated concepts. | "Melanosis, Putrefactio" |
+| **Visual Markers** | Common symbols or colors. | "The Crow, The Grave, Black Sun" |
+
+---
+
+## Implementation Strategy: "Rich Profiles"
+
+Every entity in [entities.json](file:///C:/Users/PC/.gemini/antigravity/brain/8ef6c353-03ac-4c6f-971a-b13c1c18e6fe/esoteric_seed/docs/entities.json) should aspire to have these fields populated in its `attributes` JSON object.
+
+### Relational Guidelines
+- **Cross-Links**: Always use standard Markdown links to other files (`[Name](file:///...)`).
+- **Standardization**: Dates should be YYYY or YYYY-YYYY.
+- **Tone**: Maintain a "Data Science Research" tone—objective, scholarly, yet accessible.

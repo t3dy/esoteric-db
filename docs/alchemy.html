@@ -67,19 +67,67 @@
 <body class="flex flex-col h-screen overflow-hidden">
 
     <!-- Header -->
-    <header class="glass px-8 py-5 flex items-center justify-between z-10">
+    <header class="glass px-8 py-5 flex items-center justify-between z-10" x-data="{ showInstructions: true }">
         <div>
             <h1 class="text-2xl font-black flex items-center gap-3">
                 <span class="text-amber-500">🧪</span> Alchemy Workbench
             </h1>
             <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">The Alchemical Opus • <a
-                    href="reference.html" class="hover:text-amber-500 transition">Reference Portal</a></p>
+                    href="index.html" class="hover:text-amber-500 transition">Return to Hub</a> • <button
+                    @click="showInstructions = true" class="text-amber-500 hover:underline">Help</button></p>
         </div>
         <div class="flex bg-slate-900/50 p-1 rounded-xl border border-white/5">
             <button id="btn-docs" onclick="setMode('docs')"
                 class="px-6 py-2 text-xs font-black rounded-lg transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/20">Documents</button>
             <button id="btn-dict" onclick="setMode('dict')"
                 class="px-6 py-2 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-white">Dictionary</button>
+        </div>
+
+        <!-- Onscreen Instructions (Tour Guide) -->
+        <div x-show="showInstructions" x-cloak
+            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div
+                class="bg-slate-900 rounded-[2.5rem] shadow-2xl max-w-lg w-full p-10 border border-amber-900/30 space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+
+                <div class="flex items-center gap-4 relative">
+                    <div class="text-4xl bg-amber-900/20 p-4 rounded-2xl border border-amber-500/20">🧪</div>
+                    <div>
+                        <h2 class="text-2xl font-black serif italic text-amber-400">Alchemist's Guide</h2>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-amber-600/60">Narrative
+                            Designer's Brief</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-slate-300 leading-relaxed text-sm font-medium">
+                    <p>Behold the <strong>Alchemy Workbench</strong>. Here, the "Silent Work" of the manuscript is
+                        cross-referenced with the "Spoken Definition" of the dictionary.</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-amber-500 font-bold">1.</span>
+                            <span><strong>Dual Mode:</strong> Toggle between <em>Documents</em> (primary sources) and
+                                <em>Dictionary</em> (lexicon of terms).</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-amber-500 font-bold">2.</span>
+                            <span><strong>Refining Filters:</strong> Use the specialized pills to filter by Material,
+                                Operation, or Scholarly Topic.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-amber-500 font-bold">3.</span>
+                            <span><strong>The Opus:</strong> Click an entry to reveal its context drawer. From here, you
+                                can launch the associated PDF or pivot to related entities.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-6 border-t border-white/5 flex justify-end">
+                    <button @click="showInstructions = false"
+                        class="bg-amber-600 hover:bg-amber-500 text-white px-10 py-3 rounded-xl font-black uppercase tracking-widest transition shadow-lg shadow-amber-900/40">
+                        Begin the Work
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 

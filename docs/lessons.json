@@ -1,0 +1,702 @@
+[
+  {
+    "id": "L36267",
+    "title": "Lesson 001: DB Arch - Schema Evolution",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36268",
+    "title": "Lesson 002: DB Arch - Journal Mode",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36269",
+    "title": "Lesson 003: DB Arch - MD5 Hashing",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36270",
+    "title": "Lesson 004: DB Arch - Atomic Ingestion",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36271",
+    "title": "Lesson 005: DB Arch - FTS5 Indexing",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36272",
+    "title": "Lesson 006: DB Arch - Relation Mapping",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36273",
+    "title": "Lesson 007: DB Arch - Provenance",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36274",
+    "title": "Lesson 008: DB Arch - Constraint Logic",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36275",
+    "title": "Lesson 009: DB Arch - Normalization",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36276",
+    "title": "Lesson 010: DB Arch - JSON Blobs",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36277",
+    "title": "Lesson 011: DB Arch - WAL Locks",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36278",
+    "title": "Lesson 012: DB Arch - Query Performance",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36279",
+    "title": "Lesson 013: DB Arch - Data Integrity",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36280",
+    "title": "Lesson 014: DB Arch - Backup Loops",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36281",
+    "title": "Lesson 015: DB Arch - Migration Scripts",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36282",
+    "title": "Lesson 016: DB Arch - Audit Trails",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36283",
+    "title": "Lesson 017: DB Arch - Concurrency",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36284",
+    "title": "Lesson 018: DB Arch - Type Consistency",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36285",
+    "title": "Lesson 019: DB Arch - Entity Dedup",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36286",
+    "title": "Lesson 020: DB Arch - Master IDs",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36287",
+    "title": "Lesson 021: UI/UX - Mansion Metaphor",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36288",
+    "title": "Lesson 022: UI/UX - Room Isolation",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36289",
+    "title": "Lesson 023: UI/UX - Ambient Glow",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36290",
+    "title": "Lesson 024: UI/UX - Side Navigation",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36291",
+    "title": "Lesson 025: UI/UX - Responsive Grids",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36292",
+    "title": "Lesson 026: UI/UX - Visual Hierarchy",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36293",
+    "title": "Lesson 027: UI/UX - Typography Vibe",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36294",
+    "title": "Lesson 028: UI/UX - Micro-interactions",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36295",
+    "title": "Lesson 029: UI/UX - Alpine.js Scoping",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36296",
+    "title": "Lesson 030: UI/UX - Loading States",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36297",
+    "title": "Lesson 031: UI/UX - Empty State UI",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36298",
+    "title": "Lesson 032: UI/UX - Error Recovery",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36299",
+    "title": "Lesson 033: UI/UX - Context Drawers",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36300",
+    "title": "Lesson 034: UI/UX - OmniSearch Access",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36301",
+    "title": "Lesson 035: UI/UX - Breadcrumb Paths",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36302",
+    "title": "Lesson 036: UI/UX - Aesthetic Polish",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36303",
+    "title": "Lesson 037: UI/UX - Dark Mode HSL",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36304",
+    "title": "Lesson 038: UI/UX - Interactive Charts",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36305",
+    "title": "Lesson 039: UI/UX - Map Projection",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36306",
+    "title": "Lesson 040: UI/UX - Component Reusability",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36307",
+    "title": "Lesson 041: Relational - The Golden Chain",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36308",
+    "title": "Lesson 042: Relational - Cross-Tradition",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36309",
+    "title": "Lesson 043: Relational - Mention Counts",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36310",
+    "title": "Lesson 044: Relational - Citation Loops",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36311",
+    "title": "Lesson 045: Relational - Entity Linking",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36312",
+    "title": "Lesson 046: Relational - Topic Clustering",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36313",
+    "title": "Lesson 047: Relational - Author Profiles",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36314",
+    "title": "Lesson 048: Relational - Text Lineages",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36315",
+    "title": "Lesson 049: Relational - Epoch Mapping",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36316",
+    "title": "Lesson 050: Relational - Symbolic Frequencies",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36317",
+    "title": "Lesson 051: Relational - Scholarly Haunting",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36318",
+    "title": "Lesson 052: Relational - Metabolic Summaries",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36319",
+    "title": "Lesson 053: Relational - OmniIndex Building",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36320",
+    "title": "Lesson 054: Relational - Recommendation Engine",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36321",
+    "title": "Lesson 055: Relational - Graph Connectivity",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36322",
+    "title": "Lesson 056: Relational - Edge Weighting",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36323",
+    "title": "Lesson 057: Relational - Node Centrality",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36324",
+    "title": "Lesson 058: Relational - Context Persistence",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36325",
+    "title": "Lesson 059: Relational - Strategy Classifier",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36326",
+    "title": "Lesson 060: Relational - Inquiry Mapping",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36327",
+    "title": "Lesson 061: DH Strategy - Silences in Data",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36328",
+    "title": "Lesson 062: DH Strategy - Historiography",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36329",
+    "title": "Lesson 063: DH Strategy - Ancestry of Ideas",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36330",
+    "title": "Lesson 064: DH Strategy - Thematic Clusters",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36331",
+    "title": "Lesson 065: DH Strategy - Primary Sources",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36332",
+    "title": "Lesson 066: DH Strategy - Scholarship Drift",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36333",
+    "title": "Lesson 067: DH Strategy - Archive Access",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36334",
+    "title": "Lesson 068: DH Strategy - Digital Philology",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36335",
+    "title": "Lesson 069: DH Strategy - Context Engineering",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36336",
+    "title": "Lesson 070: DH Strategy - Dataset Narrative",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36337",
+    "title": "Lesson 071: DH Strategy - Reflexive Research",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36338",
+    "title": "Lesson 072: DH Strategy - Open Scholarship",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36339",
+    "title": "Lesson 073: DH Strategy - Curation Loops",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36340",
+    "title": "Lesson 074: DH Strategy - Evidence Mining",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36341",
+    "title": "Lesson 075: DH Strategy - Textual Criticism",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36342",
+    "title": "Lesson 076: DH Strategy - Hermeneutics",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36343",
+    "title": "Lesson 077: DH Strategy - Symbolic Reading",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36344",
+    "title": "Lesson 078: DH Strategy - Legacy Preservation",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36345",
+    "title": "Lesson 079: DH Strategy - Knowledge Graphs",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36346",
+    "title": "Lesson 080: DH Strategy - Narrative Integrity",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36347",
+    "title": "Lesson 081: Future-Proof - PDF Metadata Mining",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36348",
+    "title": "Lesson 082: Future-Proof - Generative Plugs",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36349",
+    "title": "Lesson 083: Future-Proof - LLM Context",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36350",
+    "title": "Lesson 084: Future-Proof - Prompt Stability",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36351",
+    "title": "Lesson 085: Future-Proof - API Readiness",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36352",
+    "title": "Lesson 086: Future-Proof - Markdown Export",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36353",
+    "title": "Lesson 087: Future-Proof - JSON Scalability",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36354",
+    "title": "Lesson 088: Future-Proof - Version Control",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36355",
+    "title": "Lesson 089: Future-Proof - Snippet Retrieval",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36356",
+    "title": "Lesson 090: Future-Proof - Page-Level Linking",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36357",
+    "title": "Lesson 091: Future-Proof - OCR Robustness",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36358",
+    "title": "Lesson 092: Future-Proof - Entity Extraction",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36359",
+    "title": "Lesson 093: Future-Proof - Sentiment Analysis",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36360",
+    "title": "Lesson 094: Future-Proof - Cross-Platform",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36361",
+    "title": "Lesson 095: Future-Proof - Mobile Access",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36362",
+    "title": "Lesson 096: Future-Proof - Search Analytics",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36363",
+    "title": "Lesson 097: Future-Proof - User Profiling",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36364",
+    "title": "Lesson 098: Future-Proof - Task Velocity",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36365",
+    "title": "Lesson 099: Future-Proof - Feature Glows",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  },
+  {
+    "id": "L36366",
+    "title": "Lesson 100: Future-Proof - Branch Management",
+    "category": "General",
+    "insight": "No insight provided.",
+    "designer": "Unknown"
+  }
+]
